@@ -10,18 +10,14 @@ public class NearestNeighbour {
 
 
 
-    public NearestNeighbour(){
-        
+
+
+    public static void main(String [ ] args)
+    {
+        String string = "IT WORKS";
+		System.out.println(string);
+        new NearestNeighbour();  
     }
 
 
-
-
-
-}
-
-public static void main(String [ ] args)
-{
-      NearestNeighbour nn = new NearestNeighbour();
-      
 }
