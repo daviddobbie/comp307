@@ -14,8 +14,16 @@ public class NearestNeighbour {
 
     public static void main(String [ ] args)
     {
-        String string = "IT WORKS";
-		System.out.println(string);
+        String error ="";
+
+        if(args.length != 2){
+            error = "Need 2 file arguments";
+            System.out.println(error);
+            return;
+        }
+
+        
+		System.out.println(args.length);
         new NearestNeighbour();  
     }
 
