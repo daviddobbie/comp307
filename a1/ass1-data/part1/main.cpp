@@ -17,7 +17,7 @@ using namespace std;
 #include <stdlib.h>
 #include <string.h>
 
-bool DEBUG = false;
+bool DEBUG = true;
 
 enum typeFlower { setosa = 0, versicolor = 1, virginica =2, unknown=3}; 
 
@@ -75,7 +75,13 @@ int parseFile(char* fileName, int isTraining){
       p.petalLength = strtod(ptr, &ptr); 
       p.petalWidth = strtod(ptr, &ptr);
 
-      p.type = classifier(ptr);
+      //prevents loading of the test set of data
+      if(isTraining){
+         p.type = classifier(ptr);
+      }
+      else{ 
+        p.type=unknown;
+      }
 
       //diagnostic print out of data stored
       if(DEBUG)
@@ -83,8 +89,10 @@ int parseFile(char* fileName, int isTraining){
         p.sepalLength, p.sepalWidth, p.petalLength, p.petalWidth, (int)p.type);
 
       iterId ++;
-      if(isTraining)trainedPlants.push_back(p);
-      else testPlants.push_back(p);
+      if (p.sepalLength != 0.0 && p.sepalWidth != 0.0 && p.petalLength != 0.0 && p.petalWidth !=0.0){ 
+        if(isTraining)trainedPlants.push_back(p);
+        else testPlants.push_back(p);
+      }
   }
 
   fclose(inFile);
@@ -145,7 +153,12 @@ int main(int argc, char** argv)
     testFile = *(argv+2);
     parseFile(testFile, 0);
 
-    if(DEBUG) printPlantVector(trainedPlants);
+    if(DEBUG){
+      cout << "Printing vector of trained Plants \n";
+      printPlantVector(trainedPlants);
+      cout << "Printing vector of test plants \n";
+      printPlantVector(testPlants);
+    }
   }
   std::cout << "Closing...\n";
   return 0;
