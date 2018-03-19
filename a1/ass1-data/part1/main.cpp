@@ -19,6 +19,8 @@ using namespace std;
 
 bool DEBUG = true;
 
+
+
 enum typeFlower { setosa = 0, versicolor = 1, virginica =2, unknown=3}; 
 
 typedef struct
@@ -31,9 +33,6 @@ typedef struct
   typeFlower type;
 }plant;
 
-vector<plant> trainedPlants;
-
-vector<plant> testPlants;
 
 typeFlower classifier(char* str);
 
@@ -42,13 +41,14 @@ typeFlower classifier(char* str);
 @Function: parses the data provided in the file into the format required
             to apply the ML technqiue
 */
-int parseFile(char* fileName, int isTraining){
+ vector<plant> parseFile(char* fileName, int isTraining){
   char* localName = fileName;
 
   char line[256];
 
   int iterId=0;
 
+  vector<plant> v;
 
   std::cout << "Parsing..."<< localName<< "\n";
 
@@ -58,7 +58,7 @@ int parseFile(char* fileName, int isTraining){
   if(!inFile){
 
     std::cout << "Opening file failed\n";
-    return 0;
+    return v;
   }
 
   // parse thru each line, returns it as a string
@@ -90,14 +90,13 @@ int parseFile(char* fileName, int isTraining){
 
       iterId ++;
       if (p.sepalLength != 0.0 && p.sepalWidth != 0.0 && p.petalLength != 0.0 && p.petalWidth !=0.0){ 
-        if(isTraining)trainedPlants.push_back(p);
-        else testPlants.push_back(p);
+        v.push_back(p);
       }
   }
 
   fclose(inFile);
   std::cout << "Parsing "<< localName<< " Complete \n";
-  return 0;
+  return v;
 
 }
 /*
@@ -143,21 +142,31 @@ int main(int argc, char** argv)
   char * trainingFile;
   char * testFile;
 
+
+  vector<plant> trainedPlants;
+  vector<plant> testPlants;
+  vector<plant> testPlantsAnswers;
+
   if(argc != 3){
     std::cerr << "You must enter two datasets, the training set and the test set\n";
   }
   else{
     trainingFile = *(argv+1);
-    parseFile(trainingFile, 1);
+    trainedPlants = parseFile(trainingFile, 1);
 
     testFile = *(argv+2);
-    parseFile(testFile, 0);
+    testPlants =  parseFile(testFile, 0);
+
+    testPlantsAnswers = parseFile(testFile, 1);
+
 
     if(DEBUG){
       cout << "Printing vector of trained Plants \n";
       printPlantVector(trainedPlants);
       cout << "Printing vector of test plants \n";
       printPlantVector(testPlants);
+      cout << "Printing vector of test plants answers\n";
+      printPlantVector(testPlantsAnswers);
     }
   }
   std::cout << "Closing...\n";
