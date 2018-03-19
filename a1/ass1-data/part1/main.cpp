@@ -17,6 +17,9 @@ using namespace std;
 #include <stdlib.h>
 #include <string.h>
 
+bool DEBUG = false;
+
+enum typeFlower { setosa = 0, versicolor = 1, virginica =2, unknown=3}; 
 
 typedef struct
 {
@@ -25,13 +28,14 @@ typedef struct
   double sepalWidth;
   double petalLength;
   double petalWidth;
-  char* type;
+  typeFlower type;
 }plant;
 
 vector<plant> trainedPlants;
 
 vector<plant> testPlants;
 
+typeFlower classifier(char* str);
 
 /*
 @Inputs: file name to be parse
@@ -57,13 +61,9 @@ int parseFile(char* fileName, int isTraining){
     return 0;
   }
 
-
-
-
-
   // parse thru each line, returns it as a string
   while (fgets(line, sizeof(line), inFile)) { // standard C I/O file reading loop
-      printf("%s",line);
+      if(DEBUG) printf("%s",line);
       char * ptr;
 
       plant p;
@@ -74,11 +74,13 @@ int parseFile(char* fileName, int isTraining){
       p.sepalWidth = strtod(ptr, &ptr);    
       p.petalLength = strtod(ptr, &ptr); 
       p.petalWidth = strtod(ptr, &ptr);
-      p.type = ptr;
+
+      p.type = classifier(ptr);
 
       //diagnostic print out of data stored
-      printf("%d, %lf %lf %lf %lf %s\n", p.id, 
-      p.sepalLength, p.sepalWidth, p.petalLength, p.petalWidth, p.type);
+      if(DEBUG)
+        printf("%d, %lf %lf %lf %lf %i\n", p.id, 
+        p.sepalLength, p.sepalWidth, p.petalLength, p.petalWidth, (int)p.type);
 
       iterId ++;
       if(isTraining)trainedPlants.push_back(p);
@@ -86,10 +88,30 @@ int parseFile(char* fileName, int isTraining){
   }
 
   fclose(inFile);
-
+  std::cout << "Parsing "<< localName<< " Complete \n";
   return 0;
 
 }
+/*
+@Inputs: char string of flower code
+@Functions: converts from string to enum
+*/
+typeFlower classifier(char* str){
+  std::string s(str);
+
+  if(s.find("setosa") != std::string::npos){
+    return setosa;
+  }
+  else if(s.find("versicolor") != std::string::npos){
+    return versicolor;
+  }
+  else if(s.find("virginica") != std::string::npos){
+    return virginica;
+  }
+  return unknown;  
+}
+
+
 /*
 @Inputs: vector of plants to print out
 @Function: prints out all of the plants on the vector, used for diagnostics
@@ -97,8 +119,8 @@ int parseFile(char* fileName, int isTraining){
 int printPlantVector(vector<plant> v){
   cout << "Printing out whole vector\n";
   for(int i=0; i< v.size(); ++i)
-    printf("%d, %lf %lf %lf %lf %s\n", v[i].id, v[i].sepalLength, v[i].sepalWidth,
-     v[i].petalLength, v[i].petalWidth,v[i].type);
+    printf("%d, %lf %lf %lf %lf %i\n", v[i].id, v[i].sepalLength, v[i].sepalWidth,
+     v[i].petalLength, v[i].petalWidth,(int)v[i].type);
 
 return 1;
 }
@@ -123,7 +145,7 @@ int main(int argc, char** argv)
     testFile = *(argv+2);
     parseFile(testFile, 0);
 
-    printPlantVector(trainedPlants);
+    if(DEBUG) printPlantVector(trainedPlants);
   }
   std::cout << "Closing...\n";
   return 0;
