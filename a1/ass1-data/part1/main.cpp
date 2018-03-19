@@ -11,6 +11,7 @@ using namespace std;
 #include <fstream>
 #include <string>
 #include <vector>
+#include <set>
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -27,9 +28,9 @@ typedef struct
   char* type;
 }plant;
 
-//vector<plant>  trainedPlants;
+vector<plant> trainedPlants;
 
-//vector<plant>  testPlants;
+vector<plant> testPlants;
 
 
 /*
@@ -73,14 +74,14 @@ int parseFile(char* fileName, int isTraining){
       p.sepalWidth = strtod(ptr, &ptr);    
       p.petalLength = strtod(ptr, &ptr); 
       p.petalWidth = strtod(ptr, &ptr);
-      strcpy(p.type, ptr);
+      p.type = ptr;
 
       //diagnostic print out of data stored
       printf("%d, %lf %lf %lf %lf %s\n", p.id, p.sepalLength, p.sepalWidth, p.petalLength, p.petalWidth, p.type);
 
       iterId ++;
-      //if(isTraining)trainedPlants.push_back(p);
-      //else testPlants.push_back(p);
+      if(isTraining)trainedPlants.push_back(p);
+      else testPlants.push_back(p);
   }
 
   fclose(inFile);
