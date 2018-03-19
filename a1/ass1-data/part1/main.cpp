@@ -77,7 +77,8 @@ int parseFile(char* fileName, int isTraining){
       p.type = ptr;
 
       //diagnostic print out of data stored
-      printf("%d, %lf %lf %lf %lf %s\n", p.id, p.sepalLength, p.sepalWidth, p.petalLength, p.petalWidth, p.type);
+      printf("%d, %lf %lf %lf %lf %s\n", p.id, 
+      p.sepalLength, p.sepalWidth, p.petalLength, p.petalWidth, p.type);
 
       iterId ++;
       if(isTraining)trainedPlants.push_back(p);
@@ -89,6 +90,19 @@ int parseFile(char* fileName, int isTraining){
   return 0;
 
 }
+/*
+@Inputs: vector of plants to print out
+@Function: prints out all of the plants on the vector, used for diagnostics
+*/
+int printPlantVector(vector<plant> v){
+  cout << "Printing out whole vector\n";
+  for(int i=0; i< v.size(); ++i)
+    printf("%d, %lf %lf %lf %lf %s\n", v[i].id, v[i].sepalLength, v[i].sepalWidth,
+     v[i].petalLength, v[i].petalWidth,v[i].type);
+
+return 1;
+}
+
 
 /*
 @Inputs: command arguments: the dataset to be parse and read from
@@ -108,6 +122,8 @@ int main(int argc, char** argv)
 
     testFile = *(argv+2);
     parseFile(testFile, 0);
+
+    printPlantVector(trainedPlants);
   }
   std::cout << "Closing...\n";
   return 0;
