@@ -28,7 +28,7 @@ enum typeFlower { setosa = 0, versicolor = 1, virginica =2, unknown=3};
 
 typedef struct{
   float max=0;
-  float min=99999.99;
+  float min=INFINITY;
   float range=0;
 }stats;
 
@@ -39,6 +39,10 @@ typedef struct{
   stats petalWidth;
 }measure;
 
+typedef struct{
+  int id;
+  float dist;
+}flowerDist;
 
 typedef struct
 {
@@ -192,18 +196,41 @@ return 1;
             then assign the majority one to the tested plant
 @Return: the type that the test plant is classified into.
 */
-typeFlower nearestNeighbour(plant t, vector<plant> v, int k){
-  float sepalLengthDiff = 0.0;
-  float sepalWidthDiff = 0.0;
-  float petalLengthDiff = 0.0;
-  float petalWidthDiff = 0.0;
+typeFlower nearestNeighbour(plant t, vector<plant> v, int k, measure trainedStats){
+  vector<flowerDist> distVector;
+  flowerDist distCurrentFlower;
 
+  distCurrentFlower.dist = 0.0;
+
+  vector<int> closest;
+
+
+  float sepalLengthDiffNorm = 0.0;
+  float sepalWidthDiffNorm = 0.0;
+  float petalLengthDiffNorm = 0.0;
+  float petalWidthDiffNorm = 0.0;
 
   for(int i=0; i< v.size(); ++i){
+      distCurrentFlower.dist = 0;
+      distCurrentFlower.id = v[i].id;
+      //calculates distance of test plant with all trained plants
+      sepalLengthDiffNorm = pow((v[i].sepalLength - t.sepalLength),2)/pow(trainedStats.sepalLength.range,2);
+      sepalWidthDiffNorm = pow((v[i].sepalWidth - t.sepalWidth),2)/pow(trainedStats.sepalWidth.range,2);
+      petalLengthDiffNorm = pow((v[i].petalLength - t.petalLength),2)/pow(trainedStats.petalLength.range,2);
+      petalWidthDiffNorm = pow((v[i].petalWidth - t.petalWidth),2)/pow(trainedStats.petalWidth.range,2);
+
+      distCurrentFlower.dist = sqrt(sepalLengthDiffNorm + sepalWidthDiffNorm + petalLengthDiffNorm + petalWidthDiffNorm);
+
+      distVector.push_back(distCurrentFlower);
+      if(DEBUG)printf("%f\n", distCurrentFlower.dist);
+
 
 
 
   }
+  
+
+
   return setosa;
 }
 
@@ -237,7 +264,9 @@ int main(int argc, char** argv)
     testPlantsAnswers = parseFile(testFile, 1);
 
     trainedStats = getVectorStats(trainedPlants);
-    
+
+    nearestNeighbour(testPlants[0],trainedPlants, 5, trainedStats);
+
     if(DEBUG){
       cout << "Printing vector of trained Plants \n";
       printPlantVector(trainedPlants);
