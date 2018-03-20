@@ -295,10 +295,6 @@ float assessResults(vector<plant> answers, vector<plant> results){
     }
   return 100*(1.0 - error/size);
 }
-
-
-
-
 /*
 @Inputs: command arguments: the dataset to be parse and read from
 @Function: to initialise the datasets in the program to be processed
@@ -328,7 +324,7 @@ int main(int argc, char** argv)
     k = stoi(*(argv+3));
 
     testPlantsAnswers = parseFile(testFile, 1);
-    
+
     cout << "k = " << k << "\n";
 
     trainedStats = getVectorStats(trainedPlants);
