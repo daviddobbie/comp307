@@ -148,18 +148,17 @@ measure getVectorStats(vector<plant> v){
   measure vectorStats;
 
   for(int i=0; i< v.size(); ++i){
-  
-  vectorStats.sepalLength.max = fmaxf(vectorStats.sepalLength.max, v[i].sepalLength);
-  vectorStats.sepalLength.min = fminf(vectorStats.sepalLength.min, v[i].sepalLength);
+    vectorStats.sepalLength.max = fmaxf(vectorStats.sepalLength.max, v[i].sepalLength);
+    vectorStats.sepalLength.min = fminf(vectorStats.sepalLength.min, v[i].sepalLength);
 
-  vectorStats.petalLength.max = fmaxf(vectorStats.petalLength.max, v[i].petalLength);
-  vectorStats.petalLength.min = fminf(vectorStats.petalLength.min, v[i].petalLength);
+    vectorStats.petalLength.max = fmaxf(vectorStats.petalLength.max, v[i].petalLength);
+    vectorStats.petalLength.min = fminf(vectorStats.petalLength.min, v[i].petalLength);
 
-  vectorStats.sepalWidth.max = fmaxf(vectorStats.sepalWidth.max, v[i].sepalWidth);
-  vectorStats.sepalWidth.min = fminf(vectorStats.sepalWidth.min, v[i].sepalWidth);
+    vectorStats.sepalWidth.max = fmaxf(vectorStats.sepalWidth.max, v[i].sepalWidth);
+    vectorStats.sepalWidth.min = fminf(vectorStats.sepalWidth.min, v[i].sepalWidth);
 
-  vectorStats.petalWidth.max = fmaxf(vectorStats.petalWidth.max, v[i].petalWidth);
-  vectorStats.petalWidth.min = fminf(vectorStats.petalWidth.min, v[i].petalWidth);
+    vectorStats.petalWidth.max = fmaxf(vectorStats.petalWidth.max, v[i].petalWidth);
+    vectorStats.petalWidth.min = fminf(vectorStats.petalWidth.min, v[i].petalWidth);
   }
   vectorStats.sepalLength.range = vectorStats.sepalLength.max - vectorStats.sepalLength.min;
   vectorStats.petalLength.range = vectorStats.petalLength.max - vectorStats.petalLength.min;
@@ -203,15 +202,36 @@ bool compareByDist(flowerDist &a, flowerDist &b)
 @Function: Figures out dominant type in classification, returns it
 */
 typeFlower voteClassify(vector<flowerDist> v){
-  int countSetosa, countVirginica, countVersicolor = 0;
+  int countFlower [3] = {0,0,0};
 
   for(int i=0; i< v.size(); ++i){
-      if(v[i].type==setosa) countSetosa++;
-      if(v[i].type==virginica) countVirginica++;
-      if(v[i].type==versicolor) countVersicolor++;
+      if(v[i].type==setosa) countFlower[0] = countFlower[0]+1;
+      if(v[i].type==virginica) countFlower[1] = countFlower[1]+1;
+      if(v[i].type==versicolor) countFlower[2] = countFlower[2]+1;
   }
-
-
+  int largestIndex = 0;
+  int countMax = 0;
+  for(int i = 0; i < 3; i++){
+    if(countFlower[i]>countMax){
+      largestIndex = i;
+      countMax = countFlower[i];
+    }
+    //if there is an equal amount, give a 50/50 choice that next one beats it
+    else if(countFlower[i]==countMax){
+      if(rand()%100 > 50){
+        largestIndex = i;
+        countMax = countFlower[i];
+      }
+    }
+  }
+  switch(largestIndex){
+    case 0:
+      return setosa;
+    case 1:
+      return virginica;
+    case 2:
+      return versicolor;
+  }
   return unknown;
 }
 
@@ -264,7 +284,13 @@ typeFlower nearestNeighbour(plant t, vector<plant> v, int k, measure trainedStat
   }
   return voteClassify(kVector);
 }
-
+/*
+@Inputs: 2 vectors of the test set, one being sorted by nearestNeighbour, the other being the answer set.
+@Function: Compares the answers and the results to assess the accuracy of it, returns float on accuracy
+*/
+float assessResults(vector<plant> answers, vector<plant> results){
+  return 100.0;
+}
 
 
 
@@ -297,7 +323,12 @@ int main(int argc, char** argv)
 
     trainedStats = getVectorStats(trainedPlants);
 
-    printf("SHOULD EQUAL 3:   %d\n",nearestNeighbour(testPlants[0],trainedPlants, 5, trainedStats)); //DUMMY PLANT BEING TESTED: REMOVE ME
+    //executes nearest Neighbour on the test set, wrties the new type to it
+    for(int i=0; i< testPlants.size(); ++i){
+        testPlants[i].type = nearestNeighbour(testPlants[i],trainedPlants, 5, trainedStats);
+    }
+
+
 
     if(DEBUG){
       cout << "Printing vector of trained Plants \n";
