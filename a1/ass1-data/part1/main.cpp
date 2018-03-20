@@ -5,6 +5,8 @@ Answer for COMP307 - Introduction to Artifical Intelligence
 Assignment 1 - Part 1
 Nearest Neighbour Method
 */
+
+
 using namespace std;
 
 #include <iostream>
@@ -16,12 +18,27 @@ using namespace std;
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <math.h>
 
 bool DEBUG = true;
 
 
 
 enum typeFlower { setosa = 0, versicolor = 1, virginica =2, unknown=3}; 
+
+typedef struct{
+  float max=0;
+  float min=99999.99;
+  float range=0;
+}stats;
+
+typedef struct{
+  stats sepalLength;
+  stats petalLength;
+  stats sepalWidth;
+  stats petalWidth;
+}measure;
+
 
 typedef struct
 {
@@ -123,6 +140,43 @@ typeFlower classifier(char* str){
 @Inputs: vector of plants to print out
 @Function: prints out all of the plants on the vector, used for diagnostics
 */
+measure getVectorStats(vector<plant> v){
+  measure vectorStats;
+
+  for(int i=0; i< v.size(); ++i){
+  
+  vectorStats.sepalLength.max = fmaxf(vectorStats.sepalLength.max, v[i].sepalLength);
+  vectorStats.sepalLength.min = fminf(vectorStats.sepalLength.min, v[i].sepalLength);
+
+  vectorStats.petalLength.max = fmaxf(vectorStats.petalLength.max, v[i].petalLength);
+  vectorStats.petalLength.min = fminf(vectorStats.petalLength.min, v[i].petalLength);
+
+  vectorStats.sepalWidth.max = fmaxf(vectorStats.sepalWidth.max, v[i].sepalWidth);
+  vectorStats.sepalWidth.min = fminf(vectorStats.sepalWidth.min, v[i].sepalWidth);
+
+  vectorStats.petalWidth.max = fmaxf(vectorStats.petalWidth.max, v[i].petalWidth);
+  vectorStats.petalWidth.min = fminf(vectorStats.petalWidth.min, v[i].petalWidth);
+  }
+  vectorStats.sepalLength.range = vectorStats.sepalLength.max - vectorStats.sepalLength.min;
+  vectorStats.petalLength.range = vectorStats.petalLength.max - vectorStats.petalLength.min;
+  vectorStats.sepalWidth.range = vectorStats.sepalWidth.max - vectorStats.sepalWidth.min;
+  vectorStats.petalWidth.range = vectorStats.petalWidth.max - vectorStats.petalWidth.min;
+
+  if(DEBUG){
+    printf("Sepal Length: Max:%f, Min%f, Range:%f \n",vectorStats.sepalLength.max, vectorStats.sepalLength.min, vectorStats.sepalLength.range);
+    printf("Petal Length: Max:%f, Min%f, Range:%f \n",vectorStats.petalLength.max, vectorStats.petalLength.min, vectorStats.petalLength.range);  
+    printf("Sepal Width: Max:%f, Min%f, Range:%f \n",vectorStats.sepalWidth.max, vectorStats.sepalWidth.min, vectorStats.sepalWidth.range);
+    printf("Petal Width: Max:%f, Min%f, Range:%f \n",vectorStats.petalWidth.max, vectorStats.petalWidth.min, vectorStats.petalWidth.range);
+  }
+
+
+  return vectorStats;
+}
+
+/*
+@Inputs: vector of plants to print out
+@Function: prints out all of the plants on the vector, used for diagnostics
+*/
 int printPlantVector(vector<plant> v){
   cout << "Printing out whole vector\n";
   for(int i=0; i< v.size(); ++i)
@@ -131,6 +185,29 @@ int printPlantVector(vector<plant> v){
 
 return 1;
 }
+
+/*
+@Inputs: testing plant, vector of trained plants, k value, attributes of training set
+@Function: Calculate distance of plant from trained plants, return k smallest,
+            then assign the majority one to the tested plant
+@Return: the type that the test plant is classified into.
+*/
+typeFlower nearestNeighbour(plant t, vector<plant> v, int k){
+  float sepalLengthDiff = 0.0;
+  float sepalWidthDiff = 0.0;
+  float petalLengthDiff = 0.0;
+  float petalWidthDiff = 0.0;
+
+
+  for(int i=0; i< v.size(); ++i){
+
+
+
+  }
+  return setosa;
+}
+
+
 
 
 /*
@@ -141,7 +218,7 @@ int main(int argc, char** argv)
 {
   char * trainingFile;
   char * testFile;
-
+  measure trainedStats;
 
   vector<plant> trainedPlants;
   vector<plant> testPlants;
@@ -159,7 +236,8 @@ int main(int argc, char** argv)
 
     testPlantsAnswers = parseFile(testFile, 1);
 
-
+    trainedStats = getVectorStats(trainedPlants);
+    
     if(DEBUG){
       cout << "Printing vector of trained Plants \n";
       printPlantVector(trainedPlants);
