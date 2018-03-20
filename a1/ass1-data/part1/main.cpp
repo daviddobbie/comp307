@@ -41,6 +41,7 @@ typedef struct{
 typedef struct{
   int id;
   float dist;
+  typeFlower type;
 }flowerDist;
 
 typedef struct
@@ -202,7 +203,16 @@ bool compareByDist(flowerDist &a, flowerDist &b)
 @Function: Figures out dominant type in classification, returns it
 */
 typeFlower voteClassify(vector<flowerDist> v){
-  return setosa;
+  int countSetosa, countVirginica, countVersicolor = 0;
+
+  for(int i=0; i< v.size(); ++i){
+      if(v[i].type==setosa) countSetosa++;
+      if(v[i].type==virginica) countVirginica++;
+      if(v[i].type==versicolor) countVersicolor++;
+  }
+
+
+  return unknown;
 }
 
 /*
@@ -228,6 +238,7 @@ typeFlower nearestNeighbour(plant t, vector<plant> v, int k, measure trainedStat
   for(int i=0; i< v.size(); ++i){
       distCurrentFlower.dist = 0;
       distCurrentFlower.id = v[i].id;
+      distCurrentFlower.type = v[i].type;
       //calculates distance of test plant with all trained plants
       sepalLengthDiffNorm = pow((v[i].sepalLength - t.sepalLength),2)/pow(trainedStats.sepalLength.range,2);
       sepalWidthDiffNorm = pow((v[i].sepalWidth - t.sepalWidth),2)/pow(trainedStats.sepalWidth.range,2);
@@ -251,9 +262,6 @@ typeFlower nearestNeighbour(plant t, vector<plant> v, int k, measure trainedStat
       printf("%d, %f\n", kVector[i].id, kVector[i].dist);
     }
   }
-
-
-
   return voteClassify(kVector);
 }
 
@@ -289,7 +297,7 @@ int main(int argc, char** argv)
 
     trainedStats = getVectorStats(trainedPlants);
 
-    nearestNeighbour(testPlants[0],trainedPlants, 5, trainedStats); //DUMMY PLANT BEING TESTED: REMOVE ME
+    printf("SHOULD EQUAL 3:   %d\n",nearestNeighbour(testPlants[0],trainedPlants, 5, trainedStats)); //DUMMY PLANT BEING TESTED: REMOVE ME
 
     if(DEBUG){
       cout << "Printing vector of trained Plants \n";
