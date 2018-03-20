@@ -234,17 +234,22 @@ typeFlower nearestNeighbour(plant t, vector<plant> v, int k, measure trainedStat
 
   //sort by smallest distances
   std::sort(distVector.begin(), distVector.end(), compareByDist);
+
+  //extract 5 smallest values
+  vector<flowerDist> kVector(distVector.begin(), distVector.begin()+(k)); 
+
   if(DEBUG){
-    for(int i=0; i< distVector.size(); ++i){
-      printf("%d, %f\n", distVector[i].id, distVector[i].dist);
+    for(int i=0; i< kVector.size(); ++i){
+      printf("%d, %f\n", kVector[i].id, kVector[i].dist);
     }
   }
 
-  
 
 
   return setosa;
 }
+
+
 
 
 
