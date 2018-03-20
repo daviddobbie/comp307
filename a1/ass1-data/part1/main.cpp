@@ -249,7 +249,6 @@ typeFlower nearestNeighbour(plant t, vector<plant> v, int k, measure trainedStat
 
   vector<int> closest;
 
-
   float sepalLengthDiffNorm = 0.0;
   float sepalWidthDiffNorm = 0.0;
   float petalLengthDiffNorm = 0.0;
@@ -294,7 +293,7 @@ float assessResults(vector<plant> answers, vector<plant> results){
     for(int i=0; i< answers.size(); ++i){
       if (answers[i].type!=results[i].type) error = error +1.0;
     }
-  return (1.0 - error/size);
+  return 100*(1.0 - error/size);
 }
 
 
@@ -328,11 +327,13 @@ int main(int argc, char** argv)
 
     k = stoi(*(argv+3));
 
-
     testPlantsAnswers = parseFile(testFile, 1);
+    
+    cout << "k = " << k << "\n";
 
     trainedStats = getVectorStats(trainedPlants);
     cout << "Started classification of the test dataset\n";
+
     //executes nearest Neighbour on the test set, wrties the new type to it
     for(int i=0; i< testPlants.size(); ++i){
         testPlants[i].type = nearestNeighbour(testPlants[i],trainedPlants, k, trainedStats);
