@@ -39,6 +39,7 @@
         "vector": "cpp",
         "xmemory": "cpp",
         "set": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "algorithm": "cpp"
     }
 }

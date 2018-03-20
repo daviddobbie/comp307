@@ -14,6 +14,7 @@ using namespace std;
 #include <string>
 #include <vector>
 #include <set>
+#include <algorithm>
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -21,8 +22,6 @@ using namespace std;
 #include <math.h>
 
 bool DEBUG = true;
-
-
 
 enum typeFlower { setosa = 0, versicolor = 1, virginica =2, unknown=3}; 
 
@@ -191,6 +190,14 @@ return 1;
 }
 
 /*
+Comparator of the distance measure struct
+*/
+bool compareByDist(flowerDist &a, flowerDist &b)
+{
+    return a.dist < b.dist;
+}
+
+/*
 @Inputs: testing plant, vector of trained plants, k value, attributes of training set
 @Function: Calculate distance of plant from trained plants, return k smallest,
             then assign the majority one to the tested plant
@@ -222,18 +229,22 @@ typeFlower nearestNeighbour(plant t, vector<plant> v, int k, measure trainedStat
       distCurrentFlower.dist = sqrt(sepalLengthDiffNorm + sepalWidthDiffNorm + petalLengthDiffNorm + petalWidthDiffNorm);
 
       distVector.push_back(distCurrentFlower);
-      if(DEBUG)printf("%f\n", distCurrentFlower.dist);
-
-
-
-
+      if(DEBUG)printf("%d, %f\n", distCurrentFlower.id, distCurrentFlower.dist);
   }
+
+  //sort by smallest distances
+  std::sort(distVector.begin(), distVector.end(), compareByDist);
+  if(DEBUG){
+    for(int i=0; i< distVector.size(); ++i){
+      printf("%d, %f\n", distVector[i].id, distVector[i].dist);
+    }
+  }
+
   
 
 
   return setosa;
 }
-
 
 
 
@@ -265,7 +276,7 @@ int main(int argc, char** argv)
 
     trainedStats = getVectorStats(trainedPlants);
 
-    nearestNeighbour(testPlants[0],trainedPlants, 5, trainedStats);
+    nearestNeighbour(testPlants[0],trainedPlants, 5, trainedStats); //DUMMY PLANT BEING TESTED: REMOVE ME
 
     if(DEBUG){
       cout << "Printing vector of trained Plants \n";
