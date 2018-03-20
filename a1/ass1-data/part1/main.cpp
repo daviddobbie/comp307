@@ -21,7 +21,7 @@ using namespace std;
 #include <string.h>
 #include <math.h>
 
-bool DEBUG = true;
+bool DEBUG = false;
 
 enum typeFlower { setosa = 0, versicolor = 1, virginica =2, unknown=3}; 
 
@@ -294,7 +294,7 @@ float assessResults(vector<plant> answers, vector<plant> results){
     for(int i=0; i< answers.size(); ++i){
       if (answers[i].type!=results[i].type) error = error +1.0;
     }
-  return (100 - error/size);
+  return (1.0 - error/size);
 }
 
 
@@ -310,12 +310,14 @@ int main(int argc, char** argv)
   char * testFile;
   measure trainedStats;
 
+  int k;
+
   vector<plant> trainedPlants;
   vector<plant> testPlants;
   vector<plant> testPlantsAnswers;
 
-  if(argc != 3){
-    std::cerr << "You must enter two datasets, the training set and the test set\n";
+  if(argc != 4){
+    std::cerr << "You must enter two datasets, the training set and the test set, and a k value\n";
   }
   else{
     trainingFile = *(argv+1);
@@ -324,17 +326,20 @@ int main(int argc, char** argv)
     testFile = *(argv+2);
     testPlants =  parseFile(testFile, 0);
 
+    k = stoi(*(argv+3));
+
+
     testPlantsAnswers = parseFile(testFile, 1);
 
     trainedStats = getVectorStats(trainedPlants);
-
+    cout << "Started classification of the test dataset\n";
     //executes nearest Neighbour on the test set, wrties the new type to it
     for(int i=0; i< testPlants.size(); ++i){
-        testPlants[i].type = nearestNeighbour(testPlants[i],trainedPlants, 5, trainedStats);
+        testPlants[i].type = nearestNeighbour(testPlants[i],trainedPlants, k, trainedStats);
     }
-
+    cout << "Finished classification of the test dataset\n";
     cout << "Percentage of correct classification = " << assessResults(testPlantsAnswers,testPlants) << "\%\n";
-/*
+
     if(DEBUG){
       cout << "Printing vector of trained Plants \n";
       printPlantVector(trainedPlants);
@@ -343,7 +348,7 @@ int main(int argc, char** argv)
       cout << "Printing vector of test plants answers\n";
       printPlantVector(testPlantsAnswers);
     }
-    */
+    
   }
   std::cout << "Closing...\n";
   return 0;
