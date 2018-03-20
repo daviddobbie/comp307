@@ -198,6 +198,14 @@ bool compareByDist(flowerDist &a, flowerDist &b)
 }
 
 /*
+@Inputs: k long vector of distances and IDs (the closest)
+@Function: Figures out dominant type in classification, returns it
+*/
+typeFlower voteClassify(vector<flowerDist> v){
+  return setosa;
+}
+
+/*
 @Inputs: testing plant, vector of trained plants, k value, attributes of training set
 @Function: Calculate distance of plant from trained plants, return k smallest,
             then assign the majority one to the tested plant
@@ -246,7 +254,7 @@ typeFlower nearestNeighbour(plant t, vector<plant> v, int k, measure trainedStat
 
 
 
-  return setosa;
+  return voteClassify(kVector);
 }
 
 
