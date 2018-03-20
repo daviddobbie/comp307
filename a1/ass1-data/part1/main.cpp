@@ -289,7 +289,12 @@ typeFlower nearestNeighbour(plant t, vector<plant> v, int k, measure trainedStat
 @Function: Compares the answers and the results to assess the accuracy of it, returns float on accuracy
 */
 float assessResults(vector<plant> answers, vector<plant> results){
-  return 100.0;
+  float error = 0;
+  float size = (float)answers.size();
+    for(int i=0; i< answers.size(); ++i){
+      if (answers[i].type!=results[i].type) error = error +1.0;
+    }
+  return (100 - error/size);
 }
 
 
@@ -328,8 +333,8 @@ int main(int argc, char** argv)
         testPlants[i].type = nearestNeighbour(testPlants[i],trainedPlants, 5, trainedStats);
     }
 
-
-
+    cout << "Percentage of correct classification = " << assessResults(testPlantsAnswers,testPlants) << "\%\n";
+/*
     if(DEBUG){
       cout << "Printing vector of trained Plants \n";
       printPlantVector(trainedPlants);
@@ -338,6 +343,7 @@ int main(int argc, char** argv)
       cout << "Printing vector of test plants answers\n";
       printPlantVector(testPlantsAnswers);
     }
+    */
   }
   std::cout << "Closing...\n";
   return 0;
