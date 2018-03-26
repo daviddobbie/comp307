@@ -29,7 +29,7 @@ bool DEBUG = false;
 class Instance{
     private:
     int id = 0;
-    string category;
+    int category;
     vector<bool> vals;
 
     public:
@@ -37,7 +37,7 @@ class Instance{
     Inputs: category type, ordered vector of booleans
     Function: initalises the 
     */
-    Instance(int identify, string cat, vector<bool> v)
+    Instance(int identify, int cat, vector<bool> v)
     {
         //if(DEBUG) cout << "Created a new instance\n";
         id =identify;
@@ -48,10 +48,10 @@ class Instance{
     bool getAtt(int index){
         return vals[index];
     }
-    string getCategory(){
+    int getCategory(){
         return category;
     }
-    int printInst(){
+    void printInst(){
         cout << "Instance ID = " << id<< "; category = " << category;
         cout << "; Boolean List = ";
         for(int i=0; i< vals.size(); ++i){
@@ -59,7 +59,7 @@ class Instance{
             if (!vals[i]) cout << " false";                     
         }
         cout << "\n";
-        return 1;
+        return;
     }
 
 };
@@ -72,6 +72,18 @@ typedef struct{
   vector<string> attNameList;
 }dataSetStruct;
 
+/*
+    Input: category name vector, word to compare with
+    Function: converts the string type to an int, reduces computation intenisty of comparing
+*/
+int catStringToInt(vector<string> catNameList, string word){
+    for (int i=0; i < catNameList.size(); ++i){
+        if(word==catNameList[i])
+            return i;
+    }
+
+    return 0;
+}
 
 /*
 @Inputs: file name to be parse
@@ -82,7 +94,7 @@ typedef struct{
   char* localName = fileName;
   char line[256];
   int iterId=0;
-  int catRead;
+  int catRead = '\0';
 
   int lineNo = 0;
 
@@ -102,7 +114,7 @@ typedef struct{
       if(DEBUG) printf("%s",line);
       
       vector<bool> loadedBoolList;
-      string instCatRead="";
+      int instCatRead=0;
 
       stringstream lineStr(line); 
       string word;
@@ -112,7 +124,7 @@ typedef struct{
       while(lineStr >> word){
         if(DEBUG)cout<<"Parsed Word: "<<word<<"\n";
 
-        if(lineNo==0) ds.catNameList.push_back(word); //if 2nd row, we have the column headers of attributes
+        if(lineNo==0) ds.catNameList.push_back(word); //if 1st row, we have the column headers of categories
         else if(lineNo==1) ds.attNameList.push_back(word); //if 2nd row, we have the column headers of attributes
         else{ 
             if(word=="true"){
@@ -124,20 +136,20 @@ typedef struct{
                 if(DEBUG)cout<<"Pushed: "<<word<<"\n";
             }
             else{
-                instCatRead = word;
+                instCatRead = catStringToInt(ds.catNameList,word);
             }
         }
       }
       
       lineNo++;
-      if(instCatRead!=""){ //ignores lines that had no category read
+      if(lineNo>2){ //ignores lines that had no category read
         Instance inst(iterId, instCatRead, loadedBoolList);
         //diagnostic print out of data stored
         if(DEBUG) inst.printInst();
 
         ds.instList.push_back(inst);
-        iterId++;
-      }
+        iterId ++;
+    }
   }
 
   fclose(inFile);
@@ -145,6 +157,8 @@ typedef struct{
   return ds;
 
 }
+
+
 
 /*
     Inputs: dataSetStruct with attributeNames, InstanceList, and the categoryNames
@@ -155,10 +169,14 @@ int printDS(dataSetStruct ds){
     for(int i = 0; i<ds.attNameList.size(); ++i){
         cout <<  ds.attNameList[i] << "\t";
     }
+    cout << "\n Category Names:\n"; 
+    for(int i = 0; i<ds.catNameList.size(); ++i){
+        cout <<  ds.catNameList[i] << "\t";
+    }
     cout << "\n";
     cout << "Instance List:\n"; 
     for(int i = 0; i<ds.instList.size(); ++i){
-        cout << ds.instList[i].printInst();
+        ds.instList[i].printInst();
     }
 
 
