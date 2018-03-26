@@ -16,6 +16,7 @@ using namespace std;
 #include <set>
 #include <algorithm>
 #include <sstream>
+#include <map>
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -23,16 +24,22 @@ using namespace std;
 #include <math.h>
 
 bool DEBUG = false;
+
+typedef struct{
+    int category;
+    double prob;
+}catProb;
+
 /*
     The class object of an instance
 */
 class Instance{
-    private:
+    public:  
     int id = 0;
     int category;
     vector<bool> vals;
 
-    public:
+
     /*
     Inputs: category type, ordered vector of booleans
     Function: initalises the 
@@ -67,6 +74,27 @@ class Instance{
 
 };
 
+class Node{
+    public:
+        Node* left = nullptr;
+        Node* right = nullptr;
+        string bestAttribute;
+        vector<bool> attribList;
+        double probAttrib;
+
+        Node (){
+        }
+        void setLeft(Node * n){
+            left = n;
+        }
+        void setRight(Node *n){
+            right = n;
+        }
+};
+
+
+
+
 /*
 */
 typedef struct{
@@ -74,7 +102,54 @@ typedef struct{
   vector<string> catNameList;
   vector<string> attNameList;
 }dataSetStruct;
+/*
+    @Inputs: the list of instances
+    @Function: returns the probalilty of the modal attribute in the instance list
+*/
 
+double instListAttributePurity(vector<Instance> instList){
+    map<vector<bool>, int> instMap;
+    int max = 0;
+    for(int i = 0; i<instList.size(); ++i){
+        vector<bool> vb = instList[i].vals;
+        if(instMap.count(vb)>0){
+            instMap[vb] +=1;
+            if(instMap[vb] > max){
+                max = instMap[vb];
+            }
+        }else{
+            instMap.insert(pair<vector<bool>,int>(vb, 1));
+        }
+    }
+    return (double)(max)/(double)(instList.size());
+}
+
+/*
+    @Inputs: the list of instances
+    @Function: returns the probalilty of the modal category in the instance list
+*/
+catProb instListCategoryPurity(vector<Instance> instList){
+    catProb cp;
+    map<int, int> instMap;
+    int max = 0;
+    int modeCat = 0;
+    for(int i = 0; i<instList.size(); ++i){
+        int cat = instList[i].category;
+        if(instMap.count(cat)>0){
+            instMap[cat] +=1;
+            if(instMap[cat] > max){
+                max = instMap[cat];
+                modeCat = cat;
+            }
+        }else{
+            instMap.insert(pair<int,int>(cat, 0));
+        }
+    }
+    cp.category = modeCat;
+    cp.prob = (double)(max)/(double)(instList.size());
+
+    return cp;
+}
 /*
     Input: category name vector, word to compare with
     Function: converts the string type to an int, reduces computation intenisty of comparing
@@ -89,7 +164,7 @@ int catStringToInt(vector<string> catNameList, string word){
 }
 
 /*
-@Inputs: file name to be parse
+@Inputs: file name to be parsed
 @Function: parses the data provided in the file into the format required
             to apply the ML technqiue
 */
@@ -161,7 +236,28 @@ int catStringToInt(vector<string> catNameList, string word){
 
 }
 
+/*
+    @Inputs: set of instances still at the node, and list of attributes still present
+    @Function: builds the decision tree using the information given
+*/
+Node BuildTree(dataSetStruct ds, string modeAttribute, double modeProb){
+    Node n;
+    int modeCat = instListCategoryPurity(ds.instList).category;
+    double modeCatProb = instListCategoryPurity(ds.instList).prob;
+    if(ds.instList.empty()){
+        n.bestAttribute = modeAttribute;
+        n.probAttrib = modeProb;
+        return n;      
+    }
+    if(modeCatProb >= 1.00){ //all instances pure
+        n.probAttrib =1.00;
+        n.bestAttribute = ds.catNameList[modeCat];
+        return n;
+    }
 
+
+
+}
 
 /*
     Inputs: dataSetStruct with attributeNames, InstanceList, and the categoryNames
@@ -185,7 +281,7 @@ int printDS(dataSetStruct ds){
 
     return 0;
 }
-/* @Inputs: the datastruct of all of the datasets vectors
+/* @Inputs: the pointer to the datastruct of all of the datasets vectors
    @Function: clears all of the categories in the data set, removing the answers
 */
 int clearAnswers(dataSetStruct *ds){
@@ -242,9 +338,13 @@ int main(int argc, char** argv)
     cout << "Opening Answers Dataset...\n";  
     printDS(testAnswers);
 
+    if(DEBUG){
+        cout << instListAttributePurity(trainData.instList) << "\n";
+        cout << "cat="<< instListCategoryPurity(trainData.instList).category <<
+        " p= "<< instListCategoryPurity(trainData.instList).prob << "\n";
+    }
 
 
     return 0;
-
-    
+ 
 }
