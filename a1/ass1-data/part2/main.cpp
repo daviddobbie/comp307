@@ -22,10 +22,7 @@ using namespace std;
 #include <string.h>
 #include <math.h>
 
-bool DEBUG = true;
-
-
-
+bool DEBUG = false;
 /*
     The class object of an instance
 */
@@ -68,21 +65,28 @@ class Instance{
 };
 
 /*
+*/
+typedef struct{
+  vector<Instance> instList;
+  vector<string> catNameList;
+  vector<string> attNameList;
+}dataSetStruct;
+
+
+/*
 @Inputs: file name to be parse
 @Function: parses the data provided in the file into the format required
             to apply the ML technqiue
 */
- vector<Instance> parseFile(char* fileName, int isTraining){
+ dataSetStruct parseFile(char* fileName, int isTraining){
   char* localName = fileName;
   char line[256];
   int iterId=0;
   int catRead;
 
-  bool isFirstLine = true;
+  int lineNo = 0;
 
-  vector<Instance> vInst;
-  vector<string> catNames;
-  vector<string> attNames;
+  dataSetStruct ds;
 
 
   std::cout << "Parsing..."<< localName<< "\n";
@@ -90,7 +94,7 @@ class Instance{
   inFile = fopen(localName, "r");
   if(!inFile){
     std::cout << "Opening file failed\n";
-    return vInst;
+    return ds;
   }
 
   // parse thru each line, returns it as a string
@@ -98,7 +102,7 @@ class Instance{
       if(DEBUG) printf("%s",line);
       
       vector<bool> loadedBoolList;
-      string instCatRead;
+      string instCatRead="";
 
       stringstream lineStr(line); 
       string word;
@@ -108,7 +112,8 @@ class Instance{
       while(lineStr >> word){
         if(DEBUG)cout<<"Parsed Word: "<<word<<"\n";
 
-        if(isFirstLine) attNames.push_back(word); //if first row, we have the column headers of attributes
+        if(lineNo==0) ds.catNameList.push_back(word); //if 2nd row, we have the column headers of attributes
+        else if(lineNo==1) ds.attNameList.push_back(word); //if 2nd row, we have the column headers of attributes
         else{ 
             if(word=="true"){
                 loadedBoolList.push_back(true);
@@ -119,28 +124,46 @@ class Instance{
                 if(DEBUG)cout<<"Pushed: "<<word<<"\n";
             }
             else{
-                catNames.push_back(word);
                 instCatRead = word;
             }
         }
       }
       
-      if(isFirstLine) isFirstLine=false; //finishes reading first line
+      lineNo++;
+      if(instCatRead!=""){ //ignores lines that had no category read
+        Instance inst(iterId, instCatRead, loadedBoolList);
+        //diagnostic print out of data stored
+        if(DEBUG) inst.printInst();
 
-      Instance inst(iterId, instCatRead, loadedBoolList);
-      //diagnostic print out of data stored
-      if(DEBUG) inst.printInst();
-
-      vInst.push_back(inst);
-      iterId++;
+        ds.instList.push_back(inst);
+        iterId++;
+      }
   }
 
   fclose(inFile);
   std::cout << "Parsing "<< localName<< " Complete \n";
-  return vInst;
+  return ds;
 
 }
 
+/*
+    Inputs: dataSetStruct with attributeNames, InstanceList, and the categoryNames
+    Function: prints out full dataset in its raw form
+*/
+int printDS(dataSetStruct ds){
+    cout << "Attribute Names:\n"; 
+    for(int i = 0; i<ds.attNameList.size(); ++i){
+        cout <<  ds.attNameList[i] << "\t";
+    }
+    cout << "\n";
+    cout << "Instance List:\n"; 
+    for(int i = 0; i<ds.instList.size(); ++i){
+        cout << ds.instList[i].printInst();
+    }
+
+
+    return 0;
+}
 
 /*
 @Inputs: command arguments: the dataset to be parse and read from
@@ -154,10 +177,9 @@ int main(int argc, char** argv)
     int numCategories;
     int numAtts;
 
-    vector<string> categoryNames;
-    vector<string> attNames;
-    vector<Instance> trainingInstances;
-    vector<Instance> testInstances;
+    dataSetStruct training;
+    dataSetStruct testing;
+
 
     /*
     vector<bool> dataVect;
@@ -172,10 +194,12 @@ int main(int argc, char** argv)
     }
 
     trainingFile = *(argv+1);
-    trainingInstances = parseFile(trainingFile, 1);
+    training = parseFile(trainingFile, 1);
+
+    printDS(training);
 
     testFile = *(argv+2);
-    testInstances =  parseFile(testFile, 0);
+    testing =  parseFile(testFile, 0);
     return 0;
 
     
