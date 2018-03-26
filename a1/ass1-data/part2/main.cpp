@@ -51,6 +51,9 @@ class Instance{
     int getCategory(){
         return category;
     }
+    void clearCategory(){
+        category = 0; //reinitialises to 0
+    }
     void printInst(){
         cout << "Instance ID = " << id<< "; category = " << category;
         cout << "; Boolean List = ";
@@ -92,7 +95,7 @@ int catStringToInt(vector<string> catNameList, string word){
 */
  dataSetStruct parseFile(char* fileName, int isTraining){
   char* localName = fileName;
-  char line[256];
+  char line[1024];
   int iterId=0;
   int catRead = '\0';
 
@@ -182,6 +185,16 @@ int printDS(dataSetStruct ds){
 
     return 0;
 }
+/* @Inputs: the datastruct of all of the datasets vectors
+   @Function: clears all of the categories in the data set, removing the answers
+*/
+int clearAnswers(dataSetStruct *ds){
+    for(int i = 0; i<(*ds).instList.size(); ++i){
+        (*ds).instList[i].clearCategory();
+        cout << (*ds).instList[i].getCategory() <<"\n";
+    }
+    return 0;
+}
 
 /*
 @Inputs: command arguments: the dataset to be parse and read from
@@ -195,8 +208,9 @@ int main(int argc, char** argv)
     int numCategories;
     int numAtts;
 
-    dataSetStruct training;
-    dataSetStruct testing;
+    dataSetStruct trainData;
+    dataSetStruct testData;
+    dataSetStruct testAnswers;
 
 
     /*
@@ -212,12 +226,24 @@ int main(int argc, char** argv)
     }
 
     trainingFile = *(argv+1);
-    training = parseFile(trainingFile, 1);
-
-    printDS(training);
+    trainData = parseFile(trainingFile, 1);
 
     testFile = *(argv+2);
-    testing =  parseFile(testFile, 0);
+    testData =  parseFile(testFile, 0);
+
+    testAnswers = parseFile(testFile, 0);
+
+    clearAnswers(&testData);
+
+    cout << "Opening Test Dataset...\n";
+    printDS(testData);
+    cout << "Opening Training Dataset...\n";   
+    printDS(trainData);
+    cout << "Opening Answers Dataset...\n";  
+    printDS(testAnswers);
+
+
+
     return 0;
 
     
