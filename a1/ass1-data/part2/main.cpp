@@ -32,7 +32,7 @@ bool DEBUG = true;
 class Instance{
     private:
     int id = 0;
-    int category;
+    string category;
     vector<bool> vals;
 
     public:
@@ -40,10 +40,10 @@ class Instance{
     Inputs: category type, ordered vector of booleans
     Function: initalises the 
     */
-    Instance(int i, int cat, vector<bool> v)
+    Instance(int identify, string cat, vector<bool> v)
     {
         //if(DEBUG) cout << "Created a new instance\n";
-        id =i;
+        id =identify;
         category =cat;
         vals = v;
 
@@ -51,8 +51,18 @@ class Instance{
     bool getAtt(int index){
         return vals[index];
     }
-    int getCategory(){
+    string getCategory(){
         return category;
+    }
+    int printInst(){
+        cout << "Instance ID = " << id<< "; category = " << category;
+        cout << "; Boolean List = ";
+        for(int i=0; i< vals.size(); ++i){
+            if (vals[i]) cout << " true";
+            if (!vals[i]) cout << " false";                     
+        }
+        cout << "\n";
+        return 1;
     }
 
 };
@@ -69,8 +79,6 @@ class Instance{
   int catRead;
 
   bool isFirstLine = true;
-
-  vector<bool> valsRead;
 
   vector<Instance> vInst;
   vector<string> catNames;
@@ -89,21 +97,42 @@ class Instance{
   while (fgets(line, sizeof(line), inFile)) { // standard C I/O file reading loop
       if(DEBUG) printf("%s",line);
       
-      
+      vector<bool> loadedBoolList;
+      string instCatRead;
+
       stringstream lineStr(line); 
       string word;
-      
+
+
+      //parses through line by line, pushes to respective stacks, etc.
       while(lineStr >> word){
         if(DEBUG)cout<<"Parsed Word: "<<word<<"\n";
-        if(isFirstLine) attNames.push_back(word);
 
+        if(isFirstLine) attNames.push_back(word); //if first row, we have the column headers of attributes
+        else{ 
+            if(word=="true"){
+                loadedBoolList.push_back(true);
+                if(DEBUG)cout<<"Pushed: "<<word<<"\n";
+            }
+            else if(word=="false"){
+                loadedBoolList.push_back(false);
+                if(DEBUG)cout<<"Pushed: "<<word<<"\n";
+            }
+            else{
+                catNames.push_back(word);
+                instCatRead = word;
+            }
+        }
       }
-
+      
       if(isFirstLine) isFirstLine=false; //finishes reading first line
 
-      Instance inst(iterId, catRead, valsRead);
+      Instance inst(iterId, instCatRead, loadedBoolList);
       //diagnostic print out of data stored
+      if(DEBUG) inst.printInst();
+
       vInst.push_back(inst);
+      iterId++;
   }
 
   fclose(inFile);
