@@ -303,7 +303,6 @@ Node* BuildTree(dataSetStruct ds, int modeCategory, double modeProb){
     if(ds.instList.empty()){//no more instances to classifym make leaf node
         cout << "1. No more instances to make, this node is a leaf\n";
         (*n).category = modeCategory;
-        (*n).bestAttribute = ds.catNameList[modeCat];
         (*n).probAttrib = modeProb;
         (*n).isLeaf = true;
         //cout << "Probability of Category: " << (*n).probAttrib 
@@ -322,7 +321,7 @@ Node* BuildTree(dataSetStruct ds, int modeCategory, double modeProb){
     }
     if(ds.attNameList.empty()){//run out of attributes to branch off, make impure
         cout << "3. Ran out of attributes to branch off, making impure leaf\n";
-        (*n).probAttrib = modeCatProb;
+        (*n).probAttrib = instListCategoryProb(ds.instList).prob;
         (*n).bestAttribute = ds.catNameList[modeCat];
         (*n).category = modeCat;  
         (*n).isLeaf = true; 
@@ -406,13 +405,16 @@ void printNode (Node*n, int depth, int ifLeft){
     for(int i = 0; i < depth; ++i){
         cout << "\t";
     }
-    if(ifLeft && !(*n).isLeaf)cout << (*n).bestAttribute << " = true \n";
-    else if (!ifLeft && !(*n).isLeaf) cout << (*n).bestAttribute << " = false \n";
-    else cout << "Class " << (*n).bestAttribute << ", prob = " << (*n).probAttrib << "\n"; 
-    if((*n).left != nullptr){
+    Node * ln = (*n).left;
+    Node * rn = (*n).right;
+    if(ln != nullptr){
+        if(!(*ln).isLeaf) cout << (*ln).bestAttribute << " = true \n";
+        else cout << "Class " << (*ln).category << ", prob = " << (*ln).probAttrib << "\n"; 
         printNode((*n).left, depth + 1, 1);
     }
-    if((*n).right != nullptr){
+    if(rn != nullptr){
+        if(!(*rn).isLeaf) cout << (*rn).bestAttribute << " = false \n";
+        else cout << "Class " << (*rn).category  << ", prob = " << (*rn).probAttrib << "\n"; 
         printNode((*n).right, depth + 1, 0);
     }
 }
@@ -483,7 +485,7 @@ int main(int argc, char** argv)
 
 
     catProb cp = instListCategoryProb(trainData.instList);
-
+    cout << "Prob Mean";
     Node * rootNode = BuildTree(trainData, cp.category, cp.prob);
 
     printNode(rootNode, 0,1);
