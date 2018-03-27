@@ -94,8 +94,17 @@ class Node{
         void setAttribute(string at){
             bestAttribute = at;
         }
-        void debugPrint(){
-            cout << "NODE DEBUG WORKS\n";
+        void print(int isLeft){
+            if(!isLeaf){
+                if(isLeft)
+                    std::cout << bestAttribute << " = true: \n";
+                else{
+                    std::cout << bestAttribute << " = false: \n";
+                }
+            }else{
+                std::cout << "Class " << category  << ", prob = " << probAttrib << "\n";
+            }
+
         }
 };
 
@@ -142,23 +151,39 @@ double instListAttributeProb(vector<Instance> instList){
 catProb instListCategoryProb(vector<Instance> instList){
     catProb cp;
     map<int, int> instMap;
-    int max = 0;
+    int max = 1;
     int modeCat = 0;
     for(int i = 0; i<instList.size(); ++i){ //iterate through each instance
         int cat = instList[i].category;
+
         if(instMap.count(cat)>0){
             instMap[cat] +=1;
-            if(instMap[cat] > max){
+            if(instMap[cat] >= max){
                 max = instMap[cat];
                 modeCat = cat;
             }
         }else{
             instMap.insert(pair<int,int>(cat, 1));
+            if(instMap[cat] >= max){
+                max = instMap[cat];
+                modeCat = cat;
+            }
         }
     }
+    /*
+    cout << "Data talley:\n"; 
+    for(int i = 0; i<instMap.size(); ++i){
+        cout << "Key="<< i <<" Value=" << instMap[i] << "\n";
+    }
+    cout << "Instance List:\n"; 
+    for(int i = 0; i<instList.size(); ++i){
+        instList[i].printInst();
+    }
+    */
     cp.category = modeCat;
     cp.prob = (double)(max)/(double)(instList.size());
-
+    if(instList.size() == 0) cp.prob = 0.0;
+    //cout<< "cat:" << cp.category << " prob:" << cp.prob << "\n";
     return cp;
 }
 /*
@@ -298,10 +323,8 @@ int printDS(dataSetStruct ds){
 */
 Node* BuildTree(dataSetStruct ds, int modeCategory, double modeProb){
     Node *n = new Node();
-    int modeCat = instListCategoryProb(ds.instList).category;
-    double modeCatProb = instListCategoryProb(ds.instList).prob;
-    if(ds.instList.empty()){//no more instances to classifym make leaf node
-        cout << "1. No more instances to make, this node is a leaf\n";
+    if(ds.instList.empty()){//no more instances to classify make leaf node
+        //cout << "1. No more instances to make, this node is a leaf\n";
         (*n).category = modeCategory;
         (*n).probAttrib = modeProb;
         (*n).isLeaf = true;
@@ -309,29 +332,31 @@ Node* BuildTree(dataSetStruct ds, int modeCategory, double modeProb){
         //<< "  The category: " << (*n).category << "\n";   
         return n;      
     }
+    int modeCat = instListCategoryProb(ds.instList).category;
+    double modeCatProb = instListCategoryProb(ds.instList).prob;
     if(modeCatProb >= 1.00){ //all instances pure, make leaf node
-        cout << "2. All instances are pure, this node is a leaf\n";
+        //cout << "2. All instances are pure, this node is a leaf\n";
+
         (*n).probAttrib =1.00;
-        (*n).bestAttribute = ds.catNameList[modeCat];
-        (*n).category = modeCategory;   
+        (*n).category = modeCat;   
         (*n).isLeaf = true;  
-        cout << "Probability of Category: " << (*n).probAttrib 
-        << "  The category: " << (*n).category << "\n";    
+        //cout << "Probability of Category: " << (*n).probAttrib 
+        //<< "  The category: " << (*n).category << "\n";    
         return n;
     }
     if(ds.attNameList.empty()){//run out of attributes to branch off, make impure
-        cout << "3. Ran out of attributes to branch off, making impure leaf\n";
+        //cout << "3. Ran out of attributes to branch off, making impure leaf\n";
         (*n).probAttrib = instListCategoryProb(ds.instList).prob;
-        (*n).bestAttribute = ds.catNameList[modeCat];
         (*n).category = modeCat;  
         (*n).isLeaf = true; 
+ 
         //cout << "Probability of Category: " << (*n).probAttrib 
         //<< "  The category: " << (*n).category << "\n";  
 
         return n;
     }
     else{ //find the best attribute to split on
-        cout << "4. Figuring out the best attribute to split on\n";
+        //cout << "4. Figuring out the best attribute to split on\n";
         (*n).isLeaf = false;
         for(int i = 0; i < ds.attNameList.size(); ++i){
             //separate instances into two sets based on results
@@ -357,7 +382,7 @@ Node* BuildTree(dataSetStruct ds, int modeCategory, double modeProb){
             if (weightedAvgImpurity < bestWeightedAvgImpurity){ //decides best
                 //printf("Changing Best Attribute\n");
                 bestGlobalAttribute = ds.attNameList[i];
-                cout << bestGlobalAttribute << "\n";
+                //cout << bestGlobalAttribute << "\n";
                 bestTrueInstance = resultTrue;
                 bestFalseInstance = resultFalse;
                 //printf("Loaded best attribute\n");
@@ -367,7 +392,7 @@ Node* BuildTree(dataSetStruct ds, int modeCategory, double modeProb){
         vector<string> newAttributes = ds.attNameList;
         newAttributes.erase(remove(newAttributes.begin(), newAttributes.end(), bestGlobalAttribute)
                         , newAttributes.end());
-        printf("Removed best attribute\n");
+        //printf("Removed best attribute\n");
         dataSetStruct newDSTrue;
         dataSetStruct newDSFalse;
 
@@ -381,7 +406,7 @@ Node* BuildTree(dataSetStruct ds, int modeCategory, double modeProb){
         newDSFalse.attNameList = newAttributes;
         newDSFalse.catNameList = ds.catNameList;
         //printf("Making Node\n");
-        std::cout << "attribute=" << bestGlobalAttribute << "\n";
+        //std::cout << "attribute=" << bestGlobalAttribute << "\n";
         //(*n).debugPrint();
 
         (*n).setAttribute(bestGlobalAttribute);
@@ -390,7 +415,7 @@ Node* BuildTree(dataSetStruct ds, int modeCategory, double modeProb){
         //printf("Started left branch\n");
         (*n).setRight(BuildTree(newDSFalse, modeCategory, modeProb));
         //printf("Started right branch\n");
-        printf("Made Node\n");
+        //printf("Made Node\n");
         return n;
     }
 
@@ -403,20 +428,23 @@ Node* BuildTree(dataSetStruct ds, int modeCategory, double modeProb){
 */
 void printNode (Node*n, int depth, int ifLeft){
     for(int i = 0; i < depth; ++i){
-        cout << "\t";
+        std::cout << "   ";
     }
-    Node * ln = (*n).left;
-    Node * rn = (*n).right;
-    if(ln != nullptr){
-        if(!(*ln).isLeaf) cout << (*ln).bestAttribute << " = true \n";
-        else cout << "Class " << (*ln).category << ", prob = " << (*ln).probAttrib << "\n"; 
-        printNode((*n).left, depth + 1, 1);
+    (*n).print(ifLeft);
+
+    Node * nl = (*n).left;
+    Node * nr = (*n).right;    
+
+    if(nl!=nullptr){
+        if((*nl).isLeaf) printNode(nl, depth+2, 1);
+        else printNode(nl, depth+1, 1);
     }
-    if(rn != nullptr){
-        if(!(*rn).isLeaf) cout << (*rn).bestAttribute << " = false \n";
-        else cout << "Class " << (*rn).category  << ", prob = " << (*rn).probAttrib << "\n"; 
-        printNode((*n).right, depth + 1, 0);
+
+    if(nr!=nullptr){
+        if((*nr).isLeaf) printNode(nr, depth+2, 0);
+        else printNode(nr, depth+1, 0);
     }
+    
 }
 
 
@@ -485,7 +513,6 @@ int main(int argc, char** argv)
 
 
     catProb cp = instListCategoryProb(trainData.instList);
-    cout << "Prob Mean";
     Node * rootNode = BuildTree(trainData, cp.category, cp.prob);
 
     printNode(rootNode, 0,1);
