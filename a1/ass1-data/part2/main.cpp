@@ -78,6 +78,7 @@ class Node{
     public:
         Node* left = nullptr;
         Node* right = nullptr;
+        bool isLeaf = false;
         int category = 0;
         string bestAttribute = "";
         double probAttrib = 0.00;
@@ -302,7 +303,9 @@ Node* BuildTree(dataSetStruct ds, int modeCategory, double modeProb){
     if(ds.instList.empty()){//no more instances to classifym make leaf node
         cout << "1. No more instances to make, this node is a leaf\n";
         (*n).category = modeCategory;
+        (*n).bestAttribute = ds.catNameList[modeCat];
         (*n).probAttrib = modeProb;
+        (*n).isLeaf = true;
         //cout << "Probability of Category: " << (*n).probAttrib 
         //<< "  The category: " << (*n).category << "\n";   
         return n;      
@@ -310,7 +313,9 @@ Node* BuildTree(dataSetStruct ds, int modeCategory, double modeProb){
     if(modeCatProb >= 1.00){ //all instances pure, make leaf node
         cout << "2. All instances are pure, this node is a leaf\n";
         (*n).probAttrib =1.00;
-        (*n).category = modeCategory;     
+        (*n).bestAttribute = ds.catNameList[modeCat];
+        (*n).category = modeCategory;   
+        (*n).isLeaf = true;  
         cout << "Probability of Category: " << (*n).probAttrib 
         << "  The category: " << (*n).category << "\n";    
         return n;
@@ -318,7 +323,9 @@ Node* BuildTree(dataSetStruct ds, int modeCategory, double modeProb){
     if(ds.attNameList.empty()){//run out of attributes to branch off, make impure
         cout << "3. Ran out of attributes to branch off, making impure leaf\n";
         (*n).probAttrib = modeCatProb;
-        (*n).category = modeCat;   
+        (*n).bestAttribute = ds.catNameList[modeCat];
+        (*n).category = modeCat;  
+        (*n).isLeaf = true; 
         //cout << "Probability of Category: " << (*n).probAttrib 
         //<< "  The category: " << (*n).category << "\n";  
 
@@ -326,6 +333,7 @@ Node* BuildTree(dataSetStruct ds, int modeCategory, double modeProb){
     }
     else{ //find the best attribute to split on
         cout << "4. Figuring out the best attribute to split on\n";
+        (*n).isLeaf = false;
         for(int i = 0; i < ds.attNameList.size(); ++i){
             //separate instances into two sets based on results
             vector<Instance> resultTrue;
@@ -390,7 +398,24 @@ Node* BuildTree(dataSetStruct ds, int modeCategory, double modeProb){
     return nullptr;
 }
 
-
+/*
+    Input: node, int depth
+    Output: recursively print out the whole tree
+*/
+void printNode (Node*n, int depth, int ifLeft){
+    for(int i = 0; i < depth; ++i){
+        cout << "\t";
+    }
+    if(ifLeft && !(*n).isLeaf)cout << (*n).bestAttribute << " = true \n";
+    else if (!ifLeft && !(*n).isLeaf) cout << (*n).bestAttribute << " = false \n";
+    else cout << "Class " << (*n).bestAttribute << ", prob = " << (*n).probAttrib << "\n"; 
+    if((*n).left != nullptr){
+        printNode((*n).left, depth + 1, 1);
+    }
+    if((*n).right != nullptr){
+        printNode((*n).right, depth + 1, 0);
+    }
+}
 
 
 /* @Inputs: the pointer to the datastruct of all of the datasets vectors
@@ -461,7 +486,7 @@ int main(int argc, char** argv)
 
     Node * rootNode = BuildTree(trainData, cp.category, cp.prob);
 
-
+    printNode(rootNode, 0,1);
     return 0;
  
 }
