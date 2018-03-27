@@ -78,10 +78,9 @@ class Node{
     public:
         Node* left = nullptr;
         Node* right = nullptr;
-        int category;
-        string bestAttribute;
-        vector<bool> attribList;
-        double probAttrib;
+        int category = 0;
+        string bestAttribute = "";
+        double probAttrib = 0.00;
 
         Node (){
         }
@@ -91,12 +90,18 @@ class Node{
         void setRight(Node *n){
             right = n;
         }
+        void setAttribute(string at){
+            bestAttribute = at;
+        }
+        void debugPrint(){
+            cout << "NODE DEBUG WORKS\n";
+        }
 };
 
 
 vector<Instance> bestTrueInstance;
 vector<Instance> bestFalseInstance;
-string bestAttribute;
+string bestGlobalAttribute = "";
 double bestWeightedAvgImpurity = 2000;
 
 
@@ -194,7 +199,7 @@ int catStringToInt(vector<string> catNameList, string word){
 
   // parse thru each line, returns it as a string
   while (fgets(line, sizeof(line), inFile)) { // standard C I/O file reading loop
-      if(DEBUG) printf("%s",line);
+      //printf("Line: %s",line);
       
       vector<bool> loadedBoolList;
       int instCatRead=0;
@@ -262,87 +267,6 @@ double computeImpurity(vector<Instance> v){
 
     return 2*impurity;
 }
-
-
-
-/*
-    @Inputs: set of instances still at the node, and list of attributes still present
-    @Function: builds the decision tree using the information given
-*/
-Node* BuildTree(dataSetStruct ds, int modeCategory, double modeProb){
-    Node *n;
-    int modeCat = instListCategoryProb(ds.instList).category;
-    double modeCatProb = instListCategoryProb(ds.instList).prob;
-    if(ds.instList.empty()){//no more instances to classify
-        cout << "1. No more instances to make, this node is a leaf\n";
-        (*n).category = modeCategory;
-        (*n).probAttrib = modeProb;
-        return n;      
-    }
-    if(modeCatProb >= 1.00){ //all instances pure
-        cout << "2. All instances are pure, this node is a leaf\n";
-        (*n).probAttrib =1.00;
-        (*n).category = modeCategory;        
-        return n;
-    }
-    if(ds.attNameList.empty()){//run out of attributes to branch off, make impure
-        cout << "3. Ran out of attributes to branch off, making impure leaf\n";
-        (*n).probAttrib = modeCatProb;
-        (*n).probAttrib = modeCat;    
-        return n;
-    }
-    else{ //find the best attribute to split on
-        cout << "4. Figuring out the best attribute to split on\n";
-        for(int i = 0; i < ds.attNameList.size(); ++i){
-            //separate instances into two sets based on results
-            vector<Instance> resultTrue;
-            vector<Instance> resultFalse;  
-            for(int j = 0; j < ds.instList.size(); ++j){
-                if(ds.instList[j].vals[i]){ //peek the attributes of the data
-                    resultTrue.push_back(ds.instList[j]);
-                }else{
-                    resultFalse.push_back(ds.instList[j]);
-                }
-            }
-            //compute the weighted purity of each set
-            double trueFract = (double)resultTrue.size()/(double)ds.instList.size();
-            double falseFract = (double)resultFalse.size()/(double)ds.instList.size();           
-            double impurityTrue = computeImpurity(resultTrue)*trueFract;
-            double impurityFalse = computeImpurity(resultFalse)*falseFract;
-            double weightedAvgImpurity = impurityTrue + impurityFalse;
-            if (weightedAvgImpurity < bestWeightedAvgImpurity){ //decides best
-                bestAttribute = ds.attNameList[i];
-                bestTrueInstance = resultTrue;
-                bestFalseInstance = resultFalse;
-            }
-        }
-        //build the next subtrees with remianing attributes
-        vector<string> newAttributes = ds.attNameList;
-        newAttributes.erase(remove(newAttributes.begin(), newAttributes.end(), bestAttribute)
-                        , newAttributes.end());
-
-        dataSetStruct newDSTrue;
-        dataSetStruct newDSFalse;
-
-        newDSTrue.instList = bestTrueInstance;
-        newDSTrue.attNameList = newAttributes;
-        newDSTrue.catNameList = ds.catNameList;
-
-        newDSFalse.instList = bestFalseInstance;
-        newDSFalse.attNameList = newAttributes;
-        newDSFalse.catNameList = ds.catNameList;
-
-        (*n).left = BuildTree(newDSTrue, modeCategory, modeProb);
-        (*n).right = BuildTree(newDSFalse, modeCategory, modeProb);
-
-        return n;
-    }
-
-
-}
-
-
-
 /*
     Inputs: dataSetStruct with attributeNames, InstanceList, and the categoryNames
     Function: prints out full dataset in its raw form
@@ -365,6 +289,110 @@ int printDS(dataSetStruct ds){
 
     return 0;
 }
+
+
+/*
+    @Inputs: set of instances still at the node, and list of attributes still present
+    @Function: builds the decision tree using the information given
+*/
+Node* BuildTree(dataSetStruct ds, int modeCategory, double modeProb){
+    Node *n = new Node();
+    int modeCat = instListCategoryProb(ds.instList).category;
+    double modeCatProb = instListCategoryProb(ds.instList).prob;
+    if(ds.instList.empty()){//no more instances to classifym make leaf node
+        cout << "1. No more instances to make, this node is a leaf\n";
+        (*n).category = modeCategory;
+        (*n).probAttrib = modeProb;
+        //cout << "Probability of Category: " << (*n).probAttrib 
+        //<< "  The category: " << (*n).category << "\n";   
+        return n;      
+    }
+    if(modeCatProb >= 1.00){ //all instances pure, make leaf node
+        cout << "2. All instances are pure, this node is a leaf\n";
+        (*n).probAttrib =1.00;
+        (*n).category = modeCategory;     
+        cout << "Probability of Category: " << (*n).probAttrib 
+        << "  The category: " << (*n).category << "\n";    
+        return n;
+    }
+    if(ds.attNameList.empty()){//run out of attributes to branch off, make impure
+        cout << "3. Ran out of attributes to branch off, making impure leaf\n";
+        (*n).probAttrib = modeCatProb;
+        (*n).category = modeCat;   
+        //cout << "Probability of Category: " << (*n).probAttrib 
+        //<< "  The category: " << (*n).category << "\n";  
+
+        return n;
+    }
+    else{ //find the best attribute to split on
+        cout << "4. Figuring out the best attribute to split on\n";
+        for(int i = 0; i < ds.attNameList.size(); ++i){
+            //separate instances into two sets based on results
+            vector<Instance> resultTrue;
+            vector<Instance> resultFalse;  
+
+            for(int j = 0; j < ds.instList.size(); ++j){
+                //printf("Attribute Name=%s, True/False=%d\n", ds.attNameList[i].c_str(), (int)ds.instList[j].vals[i]);
+                if(ds.instList[j].vals[i]){ //peek the attributes of the data
+                    resultTrue.push_back(ds.instList[j]);
+                }else{
+                    resultFalse.push_back(ds.instList[j]);
+                }
+            }
+
+            //compute the weighted purity of each set
+            double trueFract = (double)resultTrue.size()/(double)ds.instList.size();
+            double falseFract = (double)resultFalse.size()/(double)ds.instList.size();           
+            double impurityTrue = computeImpurity(resultTrue)*trueFract;
+            double impurityFalse = computeImpurity(resultFalse)*falseFract;
+            double weightedAvgImpurity = impurityTrue + impurityFalse;
+            //printf("Purity Stats: %llf, %llf, %llf, %llf, %llf\n", trueFract, falseFract, impurityTrue, impurityFalse, weightedAvgImpurity);
+            if (weightedAvgImpurity < bestWeightedAvgImpurity){ //decides best
+                //printf("Changing Best Attribute\n");
+                bestGlobalAttribute = ds.attNameList[i];
+                cout << bestGlobalAttribute << "\n";
+                bestTrueInstance = resultTrue;
+                bestFalseInstance = resultFalse;
+                //printf("Loaded best attribute\n");
+            }
+        }
+        //build the next subtrees with remianing attributes
+        vector<string> newAttributes = ds.attNameList;
+        newAttributes.erase(remove(newAttributes.begin(), newAttributes.end(), bestGlobalAttribute)
+                        , newAttributes.end());
+        printf("Removed best attribute\n");
+        dataSetStruct newDSTrue;
+        dataSetStruct newDSFalse;
+
+        newDSTrue.instList = bestTrueInstance;
+        newDSTrue.attNameList = newAttributes;
+        newDSTrue.catNameList = ds.catNameList;
+
+        //printDS(newDSTrue);
+
+        newDSFalse.instList = bestFalseInstance;
+        newDSFalse.attNameList = newAttributes;
+        newDSFalse.catNameList = ds.catNameList;
+        //printf("Making Node\n");
+        std::cout << "attribute=" << bestGlobalAttribute << "\n";
+        //(*n).debugPrint();
+
+        (*n).setAttribute(bestGlobalAttribute);
+        //printf("Set Node's Attribute\n");
+        (*n).setLeft(BuildTree(newDSTrue, modeCategory, modeProb));
+        //printf("Started left branch\n");
+        (*n).setRight(BuildTree(newDSFalse, modeCategory, modeProb));
+        //printf("Started right branch\n");
+        printf("Made Node\n");
+        return n;
+    }
+
+    return nullptr;
+}
+
+
+
+
 /* @Inputs: the pointer to the datastruct of all of the datasets vectors
    @Function: clears all of the categories in the data set, removing the answers
 */
@@ -414,14 +442,14 @@ int main(int argc, char** argv)
     testAnswers = parseFile(testFile, 0);
 
     clearAnswers(&testData);
-
+/*
     cout << "Opening Test Dataset...\n";
     printDS(testData);
     cout << "Opening Training Dataset...\n";   
     printDS(trainData);
     cout << "Opening Answers Dataset...\n";  
     printDS(testAnswers);
-
+*/
     if(DEBUG){
         cout << instListAttributeProb(trainData.instList) << "\n";
         cout << "cat="<< instListCategoryProb(trainData.instList).category <<
