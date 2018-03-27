@@ -78,6 +78,7 @@ class Node{
     public:
         Node* left = nullptr;
         Node* right = nullptr;
+        int category;
         string bestAttribute;
         vector<bool> attribList;
         double probAttrib;
@@ -93,6 +94,10 @@ class Node{
 };
 
 
+vector<Instance> bestTrueInstance;
+vector<Instance> bestFalseInstance;
+string bestAttribute;
+double bestWeightedAvgImpurity = 2000;
 
 
 /*
@@ -107,7 +112,7 @@ typedef struct{
     @Function: returns the probalilty of the modal attribute in the instance list
 */
 
-double instListAttributePurity(vector<Instance> instList){
+double instListAttributeProb(vector<Instance> instList){
     map<vector<bool>, int> instMap;
     int max = 0;
     for(int i = 0; i<instList.size(); ++i){
@@ -128,12 +133,12 @@ double instListAttributePurity(vector<Instance> instList){
     @Inputs: the list of instances
     @Function: returns the probalilty of the modal category in the instance list
 */
-catProb instListCategoryPurity(vector<Instance> instList){
+catProb instListCategoryProb(vector<Instance> instList){
     catProb cp;
     map<int, int> instMap;
     int max = 0;
     int modeCat = 0;
-    for(int i = 0; i<instList.size(); ++i){
+    for(int i = 0; i<instList.size(); ++i){ //iterate through each instance
         int cat = instList[i].category;
         if(instMap.count(cat)>0){
             instMap[cat] +=1;
@@ -142,7 +147,7 @@ catProb instListCategoryPurity(vector<Instance> instList){
                 modeCat = cat;
             }
         }else{
-            instMap.insert(pair<int,int>(cat, 0));
+            instMap.insert(pair<int,int>(cat, 1));
         }
     }
     cp.category = modeCat;
@@ -235,29 +240,108 @@ int catStringToInt(vector<string> catNameList, string word){
   return ds;
 
 }
+/*
+    @Inputs: instance set
+    @Function: computes the purity of a set of instances based on categories
+*/
+double computeImpurity(vector<Instance> v){
+    double impurity = 0;
+    int total = v.size();
+    map<int, int> instMap; //key is the category id, value is the count of them
+    for(int i = 0; i<total; ++i){ //iterate thru categories
+        int cat = v[i].category;
+        if(instMap.count(cat)>0){
+            instMap[cat] += 1;
+        }else{
+            instMap.insert(pair<int,int>(cat, 1));
+        }
+    }
+    for(int i = 0; i<instMap.size(); ++i){
+        impurity = impurity + instMap[i]/total;
+    }
+
+    return 2*impurity;
+}
+
+
 
 /*
     @Inputs: set of instances still at the node, and list of attributes still present
     @Function: builds the decision tree using the information given
 */
-Node BuildTree(dataSetStruct ds, string modeAttribute, double modeProb){
-    Node n;
-    int modeCat = instListCategoryPurity(ds.instList).category;
-    double modeCatProb = instListCategoryPurity(ds.instList).prob;
-    if(ds.instList.empty()){
-        n.bestAttribute = modeAttribute;
-        n.probAttrib = modeProb;
+Node* BuildTree(dataSetStruct ds, int modeCategory, double modeProb){
+    Node *n;
+    int modeCat = instListCategoryProb(ds.instList).category;
+    double modeCatProb = instListCategoryProb(ds.instList).prob;
+    if(ds.instList.empty()){//no more instances to classify
+        cout << "1. No more instances to make, this node is a leaf\n";
+        (*n).category = modeCategory;
+        (*n).probAttrib = modeProb;
         return n;      
     }
     if(modeCatProb >= 1.00){ //all instances pure
-        n.probAttrib =1.00;
-        n.bestAttribute = ds.catNameList[modeCat];
+        cout << "2. All instances are pure, this node is a leaf\n";
+        (*n).probAttrib =1.00;
+        (*n).category = modeCategory;        
+        return n;
+    }
+    if(ds.attNameList.empty()){//run out of attributes to branch off, make impure
+        cout << "3. Ran out of attributes to branch off, making impure leaf\n";
+        (*n).probAttrib = modeCatProb;
+        (*n).probAttrib = modeCat;    
+        return n;
+    }
+    else{ //find the best attribute to split on
+        cout << "4. Figuring out the best attribute to split on\n";
+        for(int i = 0; i < ds.attNameList.size(); ++i){
+            //separate instances into two sets based on results
+            vector<Instance> resultTrue;
+            vector<Instance> resultFalse;  
+            for(int j = 0; j < ds.instList.size(); ++j){
+                if(ds.instList[j].vals[i]){ //peek the attributes of the data
+                    resultTrue.push_back(ds.instList[j]);
+                }else{
+                    resultFalse.push_back(ds.instList[j]);
+                }
+            }
+            //compute the weighted purity of each set
+            double trueFract = (double)resultTrue.size()/(double)ds.instList.size();
+            double falseFract = (double)resultFalse.size()/(double)ds.instList.size();           
+            double impurityTrue = computeImpurity(resultTrue)*trueFract;
+            double impurityFalse = computeImpurity(resultFalse)*falseFract;
+            double weightedAvgImpurity = impurityTrue + impurityFalse;
+            if (weightedAvgImpurity < bestWeightedAvgImpurity){ //decides best
+                bestAttribute = ds.attNameList[i];
+                bestTrueInstance = resultTrue;
+                bestFalseInstance = resultFalse;
+            }
+        }
+        //build the next subtrees with remianing attributes
+        vector<string> newAttributes = ds.attNameList;
+        newAttributes.erase(remove(newAttributes.begin(), newAttributes.end(), bestAttribute)
+                        , newAttributes.end());
+
+        dataSetStruct newDSTrue;
+        dataSetStruct newDSFalse;
+
+        newDSTrue.instList = bestTrueInstance;
+        newDSTrue.attNameList = newAttributes;
+        newDSTrue.catNameList = ds.catNameList;
+
+        newDSFalse.instList = bestFalseInstance;
+        newDSFalse.attNameList = newAttributes;
+        newDSFalse.catNameList = ds.catNameList;
+
+        (*n).left = BuildTree(newDSTrue, modeCategory, modeProb);
+        (*n).right = BuildTree(newDSFalse, modeCategory, modeProb);
+
         return n;
     }
 
 
-
 }
+
+
 
 /*
     Inputs: dataSetStruct with attributeNames, InstanceList, and the categoryNames
@@ -339,10 +423,15 @@ int main(int argc, char** argv)
     printDS(testAnswers);
 
     if(DEBUG){
-        cout << instListAttributePurity(trainData.instList) << "\n";
-        cout << "cat="<< instListCategoryPurity(trainData.instList).category <<
-        " p= "<< instListCategoryPurity(trainData.instList).prob << "\n";
+        cout << instListAttributeProb(trainData.instList) << "\n";
+        cout << "cat="<< instListCategoryProb(trainData.instList).category <<
+        " p= "<< instListCategoryProb(trainData.instList).prob << "\n";
     }
+
+
+    catProb cp = instListCategoryProb(trainData.instList);
+
+    Node * rootNode = BuildTree(trainData, cp.category, cp.prob);
 
 
     return 0;
