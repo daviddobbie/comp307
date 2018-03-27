@@ -73,7 +73,7 @@ class Instance{
     }
 
 };
-
+static int idGlobal = 0;
 class Node{
     public:
         Node* left = nullptr;
@@ -82,8 +82,11 @@ class Node{
         int category = 0;
         string bestAttribute = "";
         double probAttrib = 0.00;
-
+        int id = 0;
+        
         Node (){
+            idGlobal ++;
+            id = idGlobal;
         }
         void setLeft(Node * n){
             left = n;
@@ -95,16 +98,8 @@ class Node{
             bestAttribute = at;
         }
         void print(int isLeft){
-            if(!isLeaf){
-                if(isLeft)
-                    std::cout << bestAttribute << " = true: \n";
-                else{
-                    std::cout << bestAttribute << " = false: \n";
-                }
-            }else{
-                std::cout << "Class " << category  << ", prob = " << probAttrib << "\n";
-            }
-
+            //std::cout << id << " ";
+            
         }
 };
 
@@ -426,25 +421,33 @@ Node* BuildTree(dataSetStruct ds, int modeCategory, double modeProb){
     Input: node, int depth
     Output: recursively print out the whole tree
 */
-void printNode (Node*n, int depth, int ifLeft){
-    for(int i = 0; i < depth; ++i){
-        std::cout << "   ";
-    }
-    (*n).print(ifLeft);
+void printNode (Node*n, int depth){
+
 
     Node * nl = (*n).left;
     Node * nr = (*n).right;    
 
-    if(nl!=nullptr){
-        if((*nl).isLeaf) printNode(nl, depth+2, 1);
-        else printNode(nl, depth+1, 1);
+    string indent = "";
+    for(int i = 0; i < depth; ++i){
+            indent = indent + "   ";
     }
 
-    if(nr!=nullptr){
-        if((*nr).isLeaf) printNode(nr, depth+2, 0);
-        else printNode(nr, depth+1, 0);
+    if(!(*n).isLeaf){
+
+        std::cout << indent << (*n).bestAttribute << " = true: \n";
+        if(nl!=nullptr){
+            printNode(nl, depth+1);
+        }
+
+        std::cout << indent << (*n).bestAttribute << " = false: \n";         
+        if(nr!=nullptr){
+            printNode(nr, depth+1);
+        }
+    }else{
+
+         std::cout << indent << "Class " << (*n).category  << ", prob = " << (*n).probAttrib << "\n";
     }
-    
+ 
 }
 
 
@@ -515,7 +518,7 @@ int main(int argc, char** argv)
     catProb cp = instListCategoryProb(trainData.instList);
     Node * rootNode = BuildTree(trainData, cp.category, cp.prob);
 
-    printNode(rootNode, 0,1);
+    printNode(rootNode, 0);
     return 0;
  
 }
