@@ -355,6 +355,7 @@ Node* BuildTree(dataSetStruct ds, int modeCategory, double modeProb){
         (*n).isLeaf = false;
         for(int i = 0; i < ds.attNameList.size(); ++i){
             //separate instances into two sets based on results
+
             vector<Instance> resultTrue;
             vector<Instance> resultFalse;  
 
@@ -514,7 +515,7 @@ int main(int argc, char** argv)
         " p= "<< instListCategoryProb(trainData.instList).prob << "\n";
     }
 
-
+    printDS(trainData);
     catProb cp = instListCategoryProb(trainData.instList);
     Node * rootNode = BuildTree(trainData, cp.category, cp.prob);
 
