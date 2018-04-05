@@ -590,7 +590,7 @@ int main(int argc, char** argv)
     printDS(testAnswers);
 
     cout << "Classification accuracy: " << computeAccuracy(testAnswers.instList, testData.instList)*100 << "\% \n";
-
+    cout << "Baseline accuracy: " << cp.prob*100 << "\% \n";
     return 0;
  
 }
