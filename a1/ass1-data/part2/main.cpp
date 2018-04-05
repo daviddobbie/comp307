@@ -418,6 +418,58 @@ Node* BuildTree(dataSetStruct ds, int modeCategory, double modeProb){
     return nullptr;
 }
 
+
+/*
+    @Input: attributeList vector of strings, the attribute being compared
+    @Function: returns the index of the attribute in the vector
+*/
+int getAttribIndex(vector<string> attributeList, string a){
+    int ind = 0;
+    for(int i = 0; i<attributeList.size(); ++i){
+        if (attributeList[i] == a) return i;
+    }
+    return ind;
+}
+
+/*
+    @Inputs: int depth at tree, current node working on, instance being tested on
+    @Function: returns category that the instance is classified on (an int)
+*/
+int nodeWiseClassify(int depth, Node *n, Instance inst, vector<string> attList){
+    int cat = 0;
+    if ((*n).isLeaf){ //hits the end of the tree, classifies the instance
+        return (*n).category;
+    }
+    // decides which child node to go down.
+    cout << "At depth= "<< depth <<" We have attrib = "<< inst.getAtt(depth) << "\n";
+
+    int attribIndex = getAttribIndex(attList, (*n).bestAttribute);
+    
+
+    if(inst.getAtt(attribIndex)){ //if instance is true at this layer
+        return nodeWiseClassify(depth+1, (*n).left, inst, attList);
+    }else{
+        return nodeWiseClassify(depth+1, (*n).right, inst, attList);
+    }
+    return cat;
+}
+
+
+
+/*
+    @Inputs: the starting node for the comparison, vector of instances
+    @Function: takes a set of instances and uses the generated decsion tree
+                to guide classification of each point. Edits in place of vector
+ */
+void DecisionTreeClassification(Node *n, vector<Instance> *vi, vector<string> attList ){
+    for(int i = 0; i < (*vi).size() ; ++i){
+        cout << "   For ID = " << i<< "\n";
+        (*vi)[i].category = nodeWiseClassify(0, n ,(*vi)[i], attList);
+    }
+
+}
+
+
 /*
     Input: node, int depth
     Output: recursively print out the whole tree
@@ -449,6 +501,20 @@ void printNode (Node*n, int depth){
          std::cout << indent << "Class " << (*n).category  << ", prob = " << (*n).probAttrib << "\n";
     }
  
+}
+
+/*
+@Inputs: 2 instance vectors, both have to be the same size
+@Function: returns the accuracy of the classification of one of the vectors
+*/
+double computeAccuracy(vector<Instance> answers, vector<Instance> attempt){
+    int total = attempt.size();
+    int accurateCount = 0;
+    for(int i = 0; i < attempt.size(); ++i){
+        if (answers[i].category == attempt[i].category) accurateCount ++;
+    }
+
+    return (double)accurateCount/(double)total;
 }
 
 
@@ -514,12 +580,17 @@ int main(int argc, char** argv)
         cout << "cat="<< instListCategoryProb(trainData.instList).category <<
         " p= "<< instListCategoryProb(trainData.instList).prob << "\n";
     }
-
-    printDS(trainData);
     catProb cp = instListCategoryProb(trainData.instList);
     Node * rootNode = BuildTree(trainData, cp.category, cp.prob);
 
     printNode(rootNode, 0);
+
+    DecisionTreeClassification(rootNode, &(testData.instList), (testData.attNameList));
+    printDS(testData);
+    printDS(testAnswers);
+
+    cout << "Classification accuracy: " << computeAccuracy(testAnswers.instList, testData.instList)*100 << "\% \n";
+
     return 0;
  
 }
