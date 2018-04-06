@@ -441,7 +441,7 @@ int nodeWiseClassify(int depth, Node *n, Instance inst, vector<string> attList){
         return (*n).category;
     }
     // decides which child node to go down.
-    cout << "At depth= "<< depth <<" We have attrib = "<< inst.getAtt(depth) << "\n";
+    if(DEBUG) cout << "At depth= "<< depth <<" We have attrib = "<< inst.getAtt(depth) << "\n";
 
     int attribIndex = getAttribIndex(attList, (*n).bestAttribute);
     
@@ -463,7 +463,7 @@ int nodeWiseClassify(int depth, Node *n, Instance inst, vector<string> attList){
  */
 void DecisionTreeClassification(Node *n, vector<Instance> *vi, vector<string> attList ){
     for(int i = 0; i < (*vi).size() ; ++i){
-        cout << "   For ID = " << i<< "\n";
+        if(DEBUG) cout << "   For ID = " << i<< "\n";
         (*vi)[i].category = nodeWiseClassify(0, n ,(*vi)[i], attList);
     }
 
