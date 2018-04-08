@@ -26,11 +26,6 @@ using namespace std;
 bool DEBUG = false;
 
 
-typedef struct{
-    vector<int> row;
-    vector<int> col;
-    vector<bool> sgn;   
-}feature;
 
 /*
     The class object of an Image
@@ -55,7 +50,7 @@ class Image{
                 if (matrix[r][c]) cout << (char)254u;
                 else cout << " ";
             }
-        cout << "\n";
+        cout << "|\n";
         }
     }
     void clearImage(){
@@ -63,6 +58,41 @@ class Image{
         rows = 0;
         cols = 0;
         matrix.clear();
+    }
+};
+
+
+/*
+    Establishes the feature class
+*/
+class Feature{
+    public:
+    vector<int> row;
+    vector<int> col;
+    vector<bool> sgn;   
+    bool value;
+
+    bool setValueInput(Image img){
+        int sum = 0;
+        for(int i = 0; i< row.size(); ++i){
+            if(img.matrix[row[i]][col[i]] == sgn[i]) sum ++;
+        }
+        value = (sum >=3)?1:0;
+        return value;
+    }
+    Feature(int rowsMax, int colsMax, int numRndPxls){ //assume they are all 10x10
+        for (int i = 0; i < numRndPxls; ++i){
+            row.push_back(rand() % rowsMax);
+            col.push_back(rand() % colsMax);
+            sgn.push_back(rand() % 1);
+        }
+    }
+    void printFeature(){
+        cout << "Feature values {row,col,sgn} = ";
+        for(int i = 0; i<row.size(); ++i){
+            printf("{%d, %d, %d} ", row[i], col[i], (int)sgn[i]);
+        }
+        cout << "\n";
     }
 };
 /*
