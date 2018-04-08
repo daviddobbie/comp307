@@ -37,15 +37,62 @@ typedef struct{
 */
 class Image{
     public:
+    int id = 0;
     string categoryName;
     int rows;
     int cols;
-    vector<vector<int>> matrix;
+    vector<vector<bool>> matrix;
+    /*
+        @Inputs: none
+        @Functions: Prints out image and other diagnostic data
+    */
+    void printImage(){
+        cout<< "Rows: " << rows << " Cols: " << cols << "\n";
+        cout << "Image Id: "<< id << "\n";
+        cout << "Image Type: " << categoryName << "\n";
+        for(int r = 0; r<rows; ++r){
+            for(int c = 0; c<cols ; ++c){
+                if (matrix[r][c]) cout << (char)254u;
+                else cout << " ";
+            }
+        cout << "\n";
+        }
+    }
+    void clearImage(){
+        categoryName.clear();
+        rows = 0;
+        cols = 0;
+        matrix.clear();
+    }
 };
+/*
+    @Inputs: Take vector of bool data stream, no of rows, no of cols
+    @Function: Convert it to a matrix of data, image
+*/
+vector<vector<bool>> convertBoolToImage(vector<bool> data, int rows, int cols){
+    vector<vector<bool>> m;
+    vector<bool> tempCol;
+    for(int r = 0; r<rows; ++r){
+        for(int c = 0; c<cols ; ++c){
+            //cout << "data index = " << r*cols +c << "\n";
+            //cout << "resulting data = " << data[r*cols +c] << "\n";
+            tempCol.push_back(data[r*cols + c]);
+        }
+        m.push_back(tempCol);
+    }
+    return m;
+}
 
-vector<Image> parseFile(char* fileName, int isTraining){
+
+
+/*
+    @Inputs: takes in file name
+    @Function: Parses out data into a vector of different images being tested
+*/
+vector<Image> parseFile(char* fileName){
     vector<Image> vList;
     Image loadingImage;
+    vector<bool> dataQueue;
 
     // different loading stages:
         // 0 = P1
@@ -75,26 +122,50 @@ vector<Image> parseFile(char* fileName, int isTraining){
         while(lineStr >> word){
             if(DEBUG)cout<<"Parsed Word: "<<word<<"\n";
             if(word=="P1"){
-                if (loadingStage ==3)vList.push_back(loadingImage);
+                if(DEBUG)cout << "Detected P1 file \n";
+                //finished parsing last image
+                if(!dataQueue.empty() && loadingStage >=3){
+                    if(DEBUG)cout << "data queue length: " <<  dataQueue.size() << "\n";
+                    if(DEBUG)cout<< "Rows: " << loadingImage.rows << " Cols: " << 
+                    loadingImage.cols << "\n";
+                    /*
+                    for(bool b: dataQueue){
+                        cout<< b;
+                    }
+*/
+                    loadingImage.matrix = convertBoolToImage(dataQueue, 
+                        loadingImage.rows, loadingImage.cols);
+                    vList.push_back(loadingImage);
+                    if(DEBUG)cout << "Pushed Id: " << loadingImage.id << "\n";
+                    dataQueue.clear();
+                }
                 loadingStage = 0;
             }
             else if(loadingStage == 0){ //writing category to image
+                if(DEBUG)cout << "Loading category name \n";
                 loadingStage ++;
                 loadingImage.categoryName = word;
+                loadingImage.id = iterId;
+                iterId++;
             }
             else if(loadingStage == 1){ //recording rows and cols
+                if(DEBUG)cout << "Loading rows and cols \n";
                 loadingStage ++;
-                lineStr >> loadingImage.rows;
-                lineStr >> loadingImage.cols;
+                loadingImage.rows = stoi(line);
+                loadingImage.cols = stoi(line);
             }
-            else if(loadingStage == 2){ //recording data of rows and cols
+            else if(loadingStage >= 2){ //recording data of rows and cols
+                if(DEBUG)cout << "Loading data \n";
                 loadingStage ++;
-
+                for(char& c : word){
+                    if(DEBUG)cout << (bool)c;
+                    if(c == '1') dataQueue.push_back(true);
+                    else dataQueue.push_back(false);
+                }
             }
         }
         lineNo++;
     }
-
     fclose(inFile);
     std::cout << "Parsing "<< localName<< " Complete \n";
     return vList;
@@ -123,9 +194,11 @@ int main(int argc, char** argv)
 
 
     file = *(argv+1);
-    trainData = parseFile(file, 1);
+    trainData = parseFile(file);
 
-
+    for (Image t:trainData){
+        t.printImage();
+    }
     return 0;
  
 }
