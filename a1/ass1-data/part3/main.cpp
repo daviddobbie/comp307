@@ -7,8 +7,6 @@ Perceptron
 */
 
 
-using namespace std;
-
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -23,9 +21,45 @@ using namespace std;
 #include <string.h>
 #include <math.h>
 
+using namespace std;
+
+
+class Image;
+class Feature;
+
 bool DEBUG = false;
 
 
+
+/*
+    Establishes the feature class
+*/
+class Feature{
+    public:
+    vector<int> row;
+    vector<int> col;
+    vector<bool> sgn;   
+    bool value;
+
+
+    Feature(int rowsMax, int colsMax, int numRndPxls){ //assume they are all 10x10
+        for (int i = 0; i < numRndPxls; ++i){
+            row.push_back(rand() % rowsMax);
+            col.push_back(rand() % colsMax);
+            sgn.push_back(rand() % 2);
+        }
+    }
+    void printFeature(){
+        cout << "Feature values {row,col,sgn} = ";
+        for(int i = 0; i<row.size(); ++i){
+            printf("{%d, %d, %d} ", row[i], col[i], (int)sgn[i]);
+        }
+        cout << "\n";
+    }
+    Feature(){ //creates dummy feat
+        value=1;
+    }
+};
 
 /*
     The class object of an Image
@@ -37,6 +71,7 @@ class Image{
     int rows;
     int cols;
     vector<vector<bool>> matrix;
+    vector<bool> featVectValues;
     /*
         @Inputs: none
         @Functions: Prints out image and other diagnostic data
@@ -45,6 +80,9 @@ class Image{
         cout<< "Rows: " << rows << " Cols: " << cols << "\n";
         cout << "Image Id: "<< id << "\n";
         cout << "Image Type: " << categoryName << "\n";
+        cout << "featVectValues: ";
+        for(bool b:featVectValues) cout << b;
+        cout << "\n";
         for(int r = 0; r<rows; ++r){
             for(int c = 0; c<cols ; ++c){
                 if (matrix[r][c]) cout << (char)254u;
@@ -59,42 +97,39 @@ class Image{
         cols = 0;
         matrix.clear();
     }
-};
 
-
-/*
-    Establishes the feature class
-*/
-class Feature{
-    public:
-    vector<int> row;
-    vector<int> col;
-    vector<bool> sgn;   
-    bool value;
-
-    bool setValueInput(Image img){
+    bool setValueInput(Feature f){
+        int value = 0;
+        if (f.row.empty()) return true;
         int sum = 0;
-        for(int i = 0; i< row.size(); ++i){
-            if(img.matrix[row[i]][col[i]] == sgn[i]) sum ++;
+        for(int i = 0; i< f.row.size(); ++i){
+            if(matrix[f.row[i]][f.col[i]] == f.sgn[i]) sum ++;
         }
         value = (sum >=3)?1:0;
         return value;
     }
-    Feature(int rowsMax, int colsMax, int numRndPxls){ //assume they are all 10x10
-        for (int i = 0; i < numRndPxls; ++i){
-            row.push_back(rand() % rowsMax);
-            col.push_back(rand() % colsMax);
-            sgn.push_back(rand() % 1);
+
+    void setFeatVectValues(vector<Feature> featVect){
+        for(int i= 0; i < featVect.size(); ++i){
+            featVectValues.push_back(setValueInput(featVect[i]));
         }
+        //cout << "Length of valueVect = " << featVectValues.size() << "\n";
+        return;
     }
-    void printFeature(){
-        cout << "Feature values {row,col,sgn} = ";
-        for(int i = 0; i<row.size(); ++i){
-            printf("{%d, %d, %d} ", row[i], col[i], (int)sgn[i]);
+    void printfeatVectValues(){
+        //cout << "Length of valueVect = " << featVectValues.size() << "\n";
+        for(int b: featVectValues){
+            cout << b;
         }
-        cout << "\n";
     }
 };
+
+
+typedef struct{
+    vector<Feature> featVect;
+    vector<int> weightVect;
+}Perceptron;
+
 /*
     @Inputs: Take vector of bool data stream, no of rows, no of cols
     @Function: Convert it to a matrix of data, image
@@ -209,7 +244,7 @@ int main(int argc, char** argv)
     int numAtts;
 
     vector<Image> trainData;
-
+    Perceptron p;
     /*
     vector<bool> dataVect;
     dataVect.push_back(true);
@@ -225,10 +260,33 @@ int main(int argc, char** argv)
 
     file = *(argv+1);
     trainData = parseFile(file);
+    
+    //adds dummy feature to it.
+    Feature dummy_f = Feature();
+    p.featVect.push_back(dummy_f);
+    p.weightVect.push_back(1);
+
+    //load feature vector mapping.
+    for(int i = 0; i< 49; ++i){
+        Feature f = Feature(10,10,4); //assume 10 rows, 10 cols, 4 rnd positions
+        p.featVect.push_back(f);
+        p.weightVect.push_back(1);
+    }
+
+    //load feature vector values for each image
+    for(int i = 0; i < trainData.size(); ++i){
+        trainData[i].setFeatVectValues(p.featVect);
+        trainData[i].printfeatVectValues();
+    }
+    // prints each features mapping to an image.
+    for(Feature f:p.featVect){
+        f.printFeature();
+    }
 
     for (Image t:trainData){
         t.printImage();
     }
+
     return 0;
  
 }
