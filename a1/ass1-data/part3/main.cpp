@@ -212,7 +212,7 @@ vector<Image> parseFile(char* fileName){
                 word.erase(0,1); //removes # comment
                 int val = 0;
                 if (word=="X") loadingImage.cat=1; //classify X class a this number
-                else loadingImage.cat = -1; //classify O class as this number
+                else loadingImage.cat = 0; //classify O class as this number
                 loadingImage.id = iterId;
                 iterId++;
             }
@@ -239,6 +239,7 @@ vector<Image> parseFile(char* fileName){
     return vList;
 }
 
+
 /*
     @Inputs: Given a training set of images, and a perceptron for the weighting
     @Functions: tries to find the weights that best map the feature vector of inputs
@@ -247,43 +248,45 @@ vector<Image> parseFile(char* fileName){
 Perceptron neuralNetworkLearning(Perceptron p, vector<Image> vi){
     Perceptron new_p;
     //initialise weighting vector
-    double error_weight = 0.00005;
+    double error_weight = 0.2;
     //cout << "init weight vector, size = "<< p.weightVect.size() <<"\n";
     int k =0;
     int hits =0; //number of times we get an accurate match
 
     double y_estimate;
     double y_answer;
-    while(hits <= p.weightVect.size() && k <= 100){
+    while(hits < vi.size() && k < 100){
         hits = 0;
         for (Image img: vi){ //iterate thru each image to get their output vector, y
             y_estimate = 0;
             y_answer = img.cat;
             for(int i = 0; i < p.weightVect.size(); ++i){
                 y_estimate = y_estimate + p.weightVect[i]*(double)img.featVectValues[i]; //implemetation of weight w/ feature
-                //cout<<y_estimate <<"\n";
+                
             }
-            //if(img.id == 0)cout << "error=" <<y_estimate - y_answer<< "\n";
-            if (abs(y_estimate - y_answer) < 1){//the perceptron has made an accurate prediction on this image
+            //since threshold function is a step function
+            if (y_estimate > 0) y_estimate = 1;
+            else y_estimate = 0;
+
+
+            if (y_estimate==y_answer){//the perceptron has made an accurate prediction on this image
                 //printf("We have a hit!\n");
                 hits ++;
             }else{
-                if(y_estimate - y_answer > 0){ //if error positive, subtract
-                    for(int i = 0; i < p.weightVect.size(); ++i){
-                        //correction for an incorrect match
-                        p.weightVect[i] = p.weightVect[i] - error_weight*(y_estimate-y_answer)*img.featVectValues[i];
-                    }
-                }else{
-                    for(int i = 0; i < p.weightVect.size(); ++i){ //if error negative, add
-                        //correction for an incorrect match
-                        p.weightVect[i] = p.weightVect[i] + error_weight*(y_estimate-y_answer)*img.featVectValues[i];
-                    }
+                for(int i = 0; i < p.weightVect.size(); ++i){
+                    //correction for an incorrect match
+                    p.weightVect[i] = p.weightVect[i] - 
+                    error_weight*(y_estimate-y_answer)*(double)img.featVectValues[i];
+                    //cout << p.weightVect[i] << "\n";
+                    
                 }
+                //cout << "\n";
             }
         }
         k++;
     }
     cout << "Number of training cycles = " << k << "\n";
+    cout << "Classifcation accuracy = " << (100*hits)/(double)vi.size() << "\% \n";
     new_p.featVect = p.featVect;
     new_p.weightVect = p.weightVect;
     return new_p;
@@ -296,6 +299,7 @@ int main(int argc, char** argv)
 
     int numCategories;
     int numAtts;
+
 
     vector<Image> trainData;
     Perceptron p;
@@ -325,6 +329,11 @@ int main(int argc, char** argv)
         //trainData[i].printfeatVectValues();
     }
     //for (Image t:trainData){t.printImage();}
+    
+    // prints each features mapping to an image.
+    for(Feature f:p.featVect){
+        f.printFeature();
+    }
 
     Perceptron answer_p = neuralNetworkLearning(p, trainData);
 
@@ -333,10 +342,7 @@ int main(int argc, char** argv)
         cout << weights << "\n";
     }
 
-    // prints each features mapping to an image.
-    for(Feature f:p.featVect){
-        f.printFeature();
-    }
+
     return 0;
  
 }
