@@ -248,7 +248,7 @@ Perceptron neuralNetworkLearning(Perceptron p, vector<Image> vi){
     Perceptron new_p;
     //initialise weighting vector
     double error_weight = 0.00005;
-    cout << "init weight vector, size = "<< p.weightVect.size() <<"\n";
+    //cout << "init weight vector, size = "<< p.weightVect.size() <<"\n";
     int k =0;
     int hits =0; //number of times we get an accurate match
 
@@ -264,7 +264,7 @@ Perceptron neuralNetworkLearning(Perceptron p, vector<Image> vi){
                 //cout<<y_estimate <<"\n";
             }
             //if(img.id == 0)cout << "error=" <<y_estimate - y_answer<< "\n";
-            if (abs(y_estimate - y_answer) <= 1){//the perceptron has made an accurate prediction on this image
+            if (abs(y_estimate - y_answer) < 1){//the perceptron has made an accurate prediction on this image
                 //printf("We have a hit!\n");
                 hits ++;
             }else{
@@ -324,19 +324,19 @@ int main(int argc, char** argv)
         trainData[i].setFeatVectValues(p.featVect);
         //trainData[i].printfeatVectValues();
     }
-    // prints each features mapping to an image.
-    for(Feature f:p.featVect){
-        f.printFeature();
-    }
-
     //for (Image t:trainData){t.printImage();}
 
     Perceptron answer_p = neuralNetworkLearning(p, trainData);
 
+    cout << "The weights vector acquired [w]: \n";
     for(double weights :answer_p.weightVect){
         cout << weights << "\n";
     }
 
+    // prints each features mapping to an image.
+    for(Feature f:p.featVect){
+        f.printFeature();
+    }
     return 0;
  
 }
