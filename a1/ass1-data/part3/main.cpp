@@ -127,7 +127,7 @@ class Image{
 
 typedef struct{
     vector<Feature> featVect;
-    vector<int> weightVect;
+    vector<double> weightVect;
 }Perceptron;
 
 /*
@@ -209,6 +209,7 @@ vector<Image> parseFile(char* fileName){
             else if(loadingStage == 0){ //writing category to image
                 if(DEBUG)cout << "Loading category name \n";
                 loadingStage ++;
+                word.erase(0,1); //removes # comment
                 loadingImage.categoryName = word;
                 loadingImage.id = iterId;
                 iterId++;
@@ -235,6 +236,15 @@ vector<Image> parseFile(char* fileName){
     std::cout << "Parsing "<< localName<< " Complete \n";
     return vList;
 }
+
+/*
+    @Inputs:
+    @Functions:
+*/
+int neuralNetworkLearning(){
+    
+}
+
 
 int main(int argc, char** argv)
 {
