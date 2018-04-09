@@ -67,7 +67,7 @@ class Feature{
 class Image{
     public:
     int id = 0;
-    string categoryName;
+    double cat;
     int rows;
     int cols;
     vector<vector<bool>> matrix;
@@ -79,7 +79,7 @@ class Image{
     void printImage(){
         cout<< "Rows: " << rows << " Cols: " << cols << "\n";
         cout << "Image Id: "<< id << "\n";
-        cout << "Image Type: " << categoryName << "\n";
+        cout << "Image Type: " << cat<< "\n";
         cout << "featVectValues: ";
         for(bool b:featVectValues) cout << b;
         cout << "\n";
@@ -92,7 +92,7 @@ class Image{
         }
     }
     void clearImage(){
-        categoryName.clear();
+        cat = 0;
         rows = 0;
         cols = 0;
         matrix.clear();
@@ -134,7 +134,7 @@ typedef struct{
     @Inputs: Take vector of bool data stream, no of rows, no of cols
     @Function: Convert it to a matrix of data, image
 */
-vector<vector<bool>> convertBoolToImage(vector<bool> data, int rows, int cols){
+vector<vector<bool>> convertVectorToImage(vector<bool> data, int rows, int cols){
     vector<vector<bool>> m;
     vector<bool> tempCol;
     for(int r = 0; r<rows; ++r){
@@ -198,7 +198,7 @@ vector<Image> parseFile(char* fileName){
                         cout<< b;
                     }
 */
-                    loadingImage.matrix = convertBoolToImage(dataQueue, 
+                    loadingImage.matrix = convertVectorToImage(dataQueue, 
                         loadingImage.rows, loadingImage.cols);
                     vList.push_back(loadingImage);
                     if(DEBUG)cout << "Pushed Id: " << loadingImage.id << "\n";
@@ -210,7 +210,9 @@ vector<Image> parseFile(char* fileName){
                 if(DEBUG)cout << "Loading category name \n";
                 loadingStage ++;
                 word.erase(0,1); //removes # comment
-                loadingImage.categoryName = word;
+                int val = 0;
+                if (word=="X") loadingImage.cat=1; //classify X class a this number
+                else loadingImage.cat = -1; //classify O class as this number
                 loadingImage.id = iterId;
                 iterId++;
             }
@@ -238,11 +240,53 @@ vector<Image> parseFile(char* fileName){
 }
 
 /*
-    @Inputs:
-    @Functions:
+    @Inputs: Given a training set of images, and a perceptron for the weighting
+    @Functions: tries to find the weights that best map the feature vector of inputs
+                into the classification output.
 */
-int neuralNetworkLearning(){
-    
+Perceptron neuralNetworkLearning(Perceptron p, vector<Image> vi){
+    Perceptron new_p;
+    //initialise weighting vector
+    double error_weight = 0.00005;
+    cout << "init weight vector, size = "<< p.weightVect.size() <<"\n";
+    int k =0;
+    int hits =0; //number of times we get an accurate match
+
+    double y_estimate;
+    double y_answer;
+    while(hits <= p.weightVect.size() && k <= 100){
+        hits = 0;
+        for (Image img: vi){ //iterate thru each image to get their output vector, y
+            y_estimate = 0;
+            y_answer = img.cat;
+            for(int i = 0; i < p.weightVect.size(); ++i){
+                y_estimate = y_estimate + p.weightVect[i]*(double)img.featVectValues[i]; //implemetation of weight w/ feature
+                //cout<<y_estimate <<"\n";
+            }
+            //if(img.id == 0)cout << "error=" <<y_estimate - y_answer<< "\n";
+            if (abs(y_estimate - y_answer) <= 1){//the perceptron has made an accurate prediction on this image
+                //printf("We have a hit!\n");
+                hits ++;
+            }else{
+                if(y_estimate - y_answer > 0){ //if error positive, subtract
+                    for(int i = 0; i < p.weightVect.size(); ++i){
+                        //correction for an incorrect match
+                        p.weightVect[i] = p.weightVect[i] - error_weight*(y_estimate-y_answer)*img.featVectValues[i];
+                    }
+                }else{
+                    for(int i = 0; i < p.weightVect.size(); ++i){ //if error negative, add
+                        //correction for an incorrect match
+                        p.weightVect[i] = p.weightVect[i] + error_weight*(y_estimate-y_answer)*img.featVectValues[i];
+                    }
+                }
+            }
+        }
+        k++;
+    }
+    cout << "Number of training cycles = " << k << "\n";
+    new_p.featVect = p.featVect;
+    new_p.weightVect = p.weightVect;
+    return new_p;
 }
 
 
@@ -255,18 +299,11 @@ int main(int argc, char** argv)
 
     vector<Image> trainData;
     Perceptron p;
-    /*
-    vector<bool> dataVect;
-    dataVect.push_back(true);
-    Image newImage(2, dataVect);
-    */
-
 
     if(argc != 2){
         std::cerr << "You must enter one file name\n";
         return 1;
     }
-
 
     file = *(argv+1);
     trainData = parseFile(file);
@@ -275,7 +312,6 @@ int main(int argc, char** argv)
     Feature dummy_f = Feature();
     p.featVect.push_back(dummy_f);
     p.weightVect.push_back(1);
-
     //load feature vector mapping.
     for(int i = 0; i< 49; ++i){
         Feature f = Feature(10,10,4); //assume 10 rows, 10 cols, 4 rnd positions
@@ -286,15 +322,19 @@ int main(int argc, char** argv)
     //load feature vector values for each image
     for(int i = 0; i < trainData.size(); ++i){
         trainData[i].setFeatVectValues(p.featVect);
-        trainData[i].printfeatVectValues();
+        //trainData[i].printfeatVectValues();
     }
     // prints each features mapping to an image.
     for(Feature f:p.featVect){
         f.printFeature();
     }
 
-    for (Image t:trainData){
-        t.printImage();
+    //for (Image t:trainData){t.printImage();}
+
+    Perceptron answer_p = neuralNetworkLearning(p, trainData);
+
+    for(double weights :answer_p.weightVect){
+        cout << weights << "\n";
     }
 
     return 0;
