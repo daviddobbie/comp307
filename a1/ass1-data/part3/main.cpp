@@ -252,7 +252,8 @@ Perceptron neuralNetworkLearning(Perceptron p, vector<Image> vi){
     //cout << "init weight vector, size = "<< p.weightVect.size() <<"\n";
     int k =0;
     int hits =0; //number of times we get an accurate match
-
+    vector<double> hitsResults;
+    vector<int> k_axis;
     double y_estimate;
     double y_answer;
     while(hits < vi.size() && k < 100){
@@ -283,8 +284,17 @@ Perceptron neuralNetworkLearning(Perceptron p, vector<Image> vi){
                 //cout << "\n";
             }
         }
+        hitsResults.push_back((100*hits)/(double)vi.size());
+        k_axis.push_back(k);
         k++;
     }
+    cout << "Tracking classification per learning cycle" << "\n";
+    cout << "Learning Cycles   Classifcation Accuracy" << "\n";
+
+    for(int i = 0; i< hitsResults.size() ; ++i){
+        cout << k_axis[i] << "   "<< hitsResults[i] << "\n";
+    }
+
     cout << "Number of training cycles = " << k << "\n";
     cout << "Classifcation accuracy = " << (100*hits)/(double)vi.size() << "\% \n";
     new_p.featVect = p.featVect;
