@@ -1,0 +1,313 @@
+Parsing....\hepatitis-training.dat
+Parsing .\hepatitis-training.dat Complete
+Parsing....\hepatitis-test.dat
+Parsing .\hepatitis-test.dat Complete
+Parsing....\hepatitis-test.dat
+Parsing .\hepatitis-test.dat Complete
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+HISTOLOGY = true:
+   SGOT = true:
+      BILIRUBIN = true:
+         VARICES = true:
+            ASCITES = true:
+               SPIDERS = true:
+                  Class 0, prob = 1
+               SPIDERS = false:
+                  SPLEENPALPABLE = true:
+                     FIRMLIVER = true:
+                        Class 0, prob = 0.8
+                     FIRMLIVER = false:
+                        BIGLIVER = true:
+                           Class 0, prob = 1
+                        BIGLIVER = false:
+                           Class 1, prob = 1
+                  SPLEENPALPABLE = false:
+                     Class 1, prob = 1
+            ASCITES = false:
+               SPIDERS = true:
+                  Class 0, prob = 0.8
+               SPIDERS = false:
+                  SPLEENPALPABLE = true:
+                     FIRMLIVER = true:
+                        BIGLIVER = true:
+                           ANOREXIA = true:
+                              Class 0, prob = 0.8
+                           ANOREXIA = false:
+                              MALAISE = true:
+                                 Class 0, prob = 0.8
+                              MALAISE = false:
+                                 FATIGUE = true:
+                                    Class 0, prob = 0.8
+                                 FATIGUE = false:
+                                    ANTIVIRALS = true:
+                                       STEROID = true:
+                                          Class 1, prob = 1
+                                       STEROID = false:
+                                          Class 0, prob = 1
+                                    ANTIVIRALS = false:
+                                       Class 0, prob = 0.8
+                        BIGLIVER = false:
+                           Class 0, prob = 0.8
+                     FIRMLIVER = false:
+                        Class 0, prob = 0.8
+                  SPLEENPALPABLE = false:
+                     Class 0, prob = 0.8
+         VARICES = false:
+            ASCITES = true:
+               SPIDERS = true:
+                  Class 0, prob = 0.8
+               SPIDERS = false:
+                  SPLEENPALPABLE = true:
+                     Class 0, prob = 1
+                  SPLEENPALPABLE = false:
+                     FIRMLIVER = true:
+                        Class 0, prob = 0.8
+                     FIRMLIVER = false:
+                        BIGLIVER = true:
+                           ANOREXIA = true:
+                              Class 1, prob = 1
+                           ANOREXIA = false:
+                              Class 0, prob = 1
+                        BIGLIVER = false:
+                           Class 0, prob = 0.8
+            ASCITES = false:
+               SPIDERS = true:
+                  Class 0, prob = 0.8
+               SPIDERS = false:
+                  SPLEENPALPABLE = true:
+                     Class 1, prob = 1
+                  SPLEENPALPABLE = false:
+                     Class 0, prob = 1
+      BILIRUBIN = false:
+         Class 0, prob = 1
+   SGOT = false:
+      BILIRUBIN = true:
+         VARICES = true:
+            ASCITES = true:
+               SPIDERS = true:
+                  Class 0, prob = 1
+               SPIDERS = false:
+                  SPLEENPALPABLE = true:
+                     Class 0, prob = 1
+                  SPLEENPALPABLE = false:
+                     FIRMLIVER = true:
+                        Class 1, prob = 1
+                     FIRMLIVER = false:
+                        Class 0, prob = 1
+            ASCITES = false:
+               Class 1, prob = 1
+         VARICES = false:
+            ASCITES = true:
+               SPIDERS = true:
+                  Class 0, prob = 0.8
+               SPIDERS = false:
+                  SPLEENPALPABLE = true:
+                     FIRMLIVER = true:
+                        Class 1, prob = 1
+                     FIRMLIVER = false:
+                        Class 0, prob = 1
+                  SPLEENPALPABLE = false:
+                     FIRMLIVER = true:
+                        BIGLIVER = true:
+                           ANOREXIA = true:
+                              Class 0, prob = 1
+                           ANOREXIA = false:
+                              Class 1, prob = 1
+                        BIGLIVER = false:
+                           Class 0, prob = 0.8
+                     FIRMLIVER = false:
+                        Class 0, prob = 1
+            ASCITES = false:
+               Class 1, prob = 1
+      BILIRUBIN = false:
+         VARICES = true:
+            ASCITES = true:
+               SPIDERS = true:
+                  SPLEENPALPABLE = true:
+                     FIRMLIVER = true:
+                        Class 0, prob = 1
+                     FIRMLIVER = false:
+                        BIGLIVER = true:
+                           Class 1, prob = 1
+                        BIGLIVER = false:
+                           Class 0, prob = 1
+                  SPLEENPALPABLE = false:
+                     Class 0, prob = 0.8
+               SPIDERS = false:
+                  SPLEENPALPABLE = true:
+                     FIRMLIVER = true:
+                        Class 1, prob = 1
+                     FIRMLIVER = false:
+                        Class 0, prob = 1
+                  SPLEENPALPABLE = false:
+                     Class 0, prob = 0.8
+            ASCITES = false:
+               Class 1, prob = 1
+         VARICES = false:
+            Class 1, prob = 1
+HISTOLOGY = false:
+   SGOT = true:
+      BILIRUBIN = true:
+         VARICES = true:
+            ASCITES = true:
+               SPIDERS = true:
+                  Class 0, prob = 1
+               SPIDERS = false:
+                  SPLEENPALPABLE = true:
+                     FIRMLIVER = true:
+                        Class 0, prob = 0.8
+                     FIRMLIVER = false:
+                        BIGLIVER = true:
+                           Class 0, prob = 1
+                        BIGLIVER = false:
+                           Class 1, prob = 1
+                  SPLEENPALPABLE = false:
+                     Class 1, prob = 1
+            ASCITES = false:
+               Class 0, prob = 0.8
+         VARICES = false:
+            Class 0, prob = 0.8
+      BILIRUBIN = false:
+         Class 0, prob = 1
+   SGOT = false:
+      BILIRUBIN = true:
+         VARICES = true:
+            ASCITES = true:
+               SPIDERS = true:
+                  SPLEENPALPABLE = true:
+                     FIRMLIVER = true:
+                        Class 0, prob = 1
+                     FIRMLIVER = false:
+                        BIGLIVER = true:
+                           ANOREXIA = true:
+                              Class 1, prob = 1
+                           ANOREXIA = false:
+                              Class 0, prob = 1
+                        BIGLIVER = false:
+                           Class 0, prob = 1
+                  SPLEENPALPABLE = false:
+                     Class 0, prob = 1
+               SPIDERS = false:
+                  Class 0, prob = 1
+            ASCITES = false:
+               SPIDERS = true:
+                  Class 0, prob = 1
+               SPIDERS = false:
+                  Class 1, prob = 1
+         VARICES = false:
+            Class 0, prob = 0.8
+      BILIRUBIN = false:
+         VARICES = true:
+            ASCITES = true:
+               SPIDERS = true:
+                  Class 0, prob = 1
+               SPIDERS = false:
+                  SPLEENPALPABLE = true:
+                     FIRMLIVER = true:
+                        BIGLIVER = true:
+                           ANOREXIA = true:
+                              Class 1, prob = 1
+                           ANOREXIA = false:
+                              Class 0, prob = 1
+                        BIGLIVER = false:
+                           Class 0, prob = 0.8
+                     FIRMLIVER = false:
+                        Class 0, prob = 1
+                  SPLEENPALPABLE = false:
+                     Class 0, prob = 0.8
+            ASCITES = false:
+               Class 0, prob = 0.8
+         VARICES = false:
+            Class 0, prob = 0.8
+Attribute Names:
+AGE     FEMALE  STEROID ANTIVIRALS      FATIGUE MALAISE ANOREXIA        BIGLIVER        FIRMLIVER       SPLEENPALPABLE  SPIDERS ASCITES VARICES BILIRUBIN       SGOT    HISTOLOGY
+ Category Names:
+live    die
+Instance List:
+Instance ID = 0; category = 0; Boolean List =  false false true true true true true true false false true true true false false true
+Instance ID = 1; category = 0; Boolean List =  false false true true false false false false false false false true true true false false
+Instance ID = 2; category = 0; Boolean List =  false false true true true true true true true true true true true false false true
+Instance ID = 3; category = 0; Boolean List =  true false false true false true true false false true true true true true false false
+Instance ID = 4; category = 0; Boolean List =  false false true true true true true true true true true true true false false false
+Instance ID = 5; category = 0; Boolean List =  false false false true false false false true true false true true true true true true
+Instance ID = 6; category = 0; Boolean List =  true false false true false true true true true true true true true false false false
+Instance ID = 7; category = 0; Boolean List =  true false true true false true true false false true true true true true false true
+Instance ID = 8; category = 0; Boolean List =  false false false true false true true true false true true true true false true false
+Instance ID = 9; category = 0; Boolean List =  false false true true false true true true false true true true true true true false
+Instance ID = 10; category = 1; Boolean List =  false false false true false false false true false true false false false true false true
+Instance ID = 11; category = 0; Boolean List =  false false false true false true true true true true true true true true true true
+Instance ID = 12; category = 1; Boolean List =  true false false true false false true true true true false false true true false true
+Instance ID = 13; category = 0; Boolean List =  true false false true false false true false false true false true true false false true
+Instance ID = 14; category = 1; Boolean List =  false false true true false false false true false true false false false true false true
+Instance ID = 15; category = 0; Boolean List =  false false true true true true true true true true true true true true true false
+Instance ID = 16; category = 0; Boolean List =  true true false true false true true false false false false true true false true true
+Instance ID = 17; category = 0; Boolean List =  false true false true false false false false false false false true true true false false
+Instance ID = 18; category = 0; Boolean List =  false false false true false false true true false true false true true false true true
+Instance ID = 19; category = 0; Boolean List =  false false true true false false false true true true true true true false false false
+Instance ID = 20; category = 0; Boolean List =  false false true true true true true true true true true true true false false true
+Instance ID = 21; category = 0; Boolean List =  false false true true false false false true true true false true false true false false
+Instance ID = 22; category = 0; Boolean List =  true false false false true true true true true true true true true false false false
+Instance ID = 23; category = 1; Boolean List =  true false true true false false true true false false false false true false false true
+Instance ID = 24; category = 0; Boolean List =  false false true false false true true true false false true true true true false false
+Instance ID = 25; category = 0; Boolean List =  false false true true true true true true true true true true true false false false
+Instance ID = 26; category = 1; Boolean List =  true false false true false false true true true true true false true true false true
+Attribute Names:
+AGE     FEMALE  STEROID ANTIVIRALS      FATIGUE MALAISE ANOREXIA        BIGLIVER        FIRMLIVER       SPLEENPALPABLE  SPIDERS ASCITES VARICES BILIRUBIN       SGOT    HISTOLOGY
+ Category Names:
+live    die
+Instance List:
+Instance ID = 0; category = 0; Boolean List =  false false true true true true true true false false true true true false false true
+Instance ID = 1; category = 0; Boolean List =  false false true true false false false false false false false true true true false false
+Instance ID = 2; category = 0; Boolean List =  false false true true true true true true true true true true true false false true
+Instance ID = 3; category = 0; Boolean List =  true false false true false true true false false true true true true true false false
+Instance ID = 4; category = 0; Boolean List =  false false true true true true true true true true true true true false false false
+Instance ID = 5; category = 1; Boolean List =  false false false true false false false true true false true true true true true true
+Instance ID = 6; category = 0; Boolean List =  true false false true false true true true true true true true true false false false
+Instance ID = 7; category = 0; Boolean List =  true false true true false true true false false true true true true true false true
+Instance ID = 8; category = 0; Boolean List =  false false false true false true true true false true true true true false true false
+Instance ID = 9; category = 0; Boolean List =  false false true true false true true true false true true true true true true false
+Instance ID = 10; category = 1; Boolean List =  false false false true false false false true false true false false false true false true
+Instance ID = 11; category = 0; Boolean List =  false false false true false true true true true true true true true true true true
+Instance ID = 12; category = 1; Boolean List =  true false false true false false true true true true false false true true false true
+Instance ID = 13; category = 0; Boolean List =  true false false true false false true false false true false true true false false true
+Instance ID = 14; category = 1; Boolean List =  false false true true false false false true false true false false false true false true
+Instance ID = 15; category = 0; Boolean List =  false false true true true true true true true true true true true true true false
+Instance ID = 16; category = 0; Boolean List =  true true false true false true true false false false false true true false true true
+Instance ID = 17; category = 0; Boolean List =  false true false true false false false false false false false true true true false false
+Instance ID = 18; category = 0; Boolean List =  false false false true false false true true false true false true true false true true
+Instance ID = 19; category = 0; Boolean List =  false false true true false false false true true true true true true false false false
+Instance ID = 20; category = 0; Boolean List =  false false true true true true true true true true true true true false false true
+Instance ID = 21; category = 0; Boolean List =  false false true true false false false true true true false true false true false false
+Instance ID = 22; category = 0; Boolean List =  true false false false true true true true true true true true true false false false
+Instance ID = 23; category = 0; Boolean List =  true false true true false false true true false false false false true false false true
+Instance ID = 24; category = 0; Boolean List =  false false true false false true true true false false true true true true false false
+Instance ID = 25; category = 0; Boolean List =  false false true true true true true true true true true true true false false false
+Instance ID = 26; category = 0; Boolean List =  true false false true false false true true true true true false true true false true
+Classification accuracy: 88.8889%
+Baseline accuracy: 80%
