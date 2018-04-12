@@ -318,7 +318,7 @@ int printDS(dataSetStruct ds){
 */
 Node* BuildTree(dataSetStruct ds, int modeCategory, double modeProb){
     Node *n = new Node();
-    if(ds.instList.empty()){//no more instances to classify make leaf node
+    if(ds.instList.empty()){//no more instances to classify make leaf node with baseline
         //cout << "1. No more instances to make, this node is a leaf\n";
         (*n).category = modeCategory;
         (*n).probAttrib = modeProb;
@@ -353,6 +353,7 @@ Node* BuildTree(dataSetStruct ds, int modeCategory, double modeProb){
     else{ //find the best attribute to split on
         //cout << "4. Figuring out the best attribute to split on\n";
         (*n).isLeaf = false;
+        bestWeightedAvgImpurity = 2000; // resets best weighted impurity for this section
         for(int i = 0; i < ds.attNameList.size(); ++i){
             //separate instances into two sets based on results
 
@@ -374,31 +375,61 @@ Node* BuildTree(dataSetStruct ds, int modeCategory, double modeProb){
             double impurityTrue = computeImpurity(resultTrue)*trueFract;
             double impurityFalse = computeImpurity(resultFalse)*falseFract;
             double weightedAvgImpurity = impurityTrue + impurityFalse;
-            //printf("Purity Stats: %llf, %llf, %llf, %llf, %llf\n", trueFract, falseFract, impurityTrue, impurityFalse, weightedAvgImpurity);
-            if (weightedAvgImpurity < bestWeightedAvgImpurity){ //decides best
-                //printf("Changing Best Attribute\n");
+            if(DEBUG) printf("Purity Stats: %llf, %llf, %llf, %llf, weighted avg. impurity = %llf, best impurity = %llf\n", trueFract, falseFract, impurityTrue, impurityFalse, weightedAvgImpurity, bestWeightedAvgImpurity);
+
+            if (weightedAvgImpurity <= bestWeightedAvgImpurity){ //decides best
+                //if(DEBUG)printf("Changing Best Attribute\n");
+                bestWeightedAvgImpurity = weightedAvgImpurity;
                 bestGlobalAttribute = ds.attNameList[i];
                 //cout << bestGlobalAttribute << "\n";
                 bestTrueInstance = resultTrue;
                 bestFalseInstance = resultFalse;
+                if(DEBUG)cout << "Loading best attribute to " <<  bestGlobalAttribute << "\n";
                 //printf("Loaded best attribute\n");
             }
         }
+        if(DEBUG)cout << "Best attribute is " <<  bestGlobalAttribute << "\n";
         //build the next subtrees with remianing attributes
         vector<string> newAttributes = ds.attNameList;
+        //find index of removed attribute
+        int removeAttribIndex = find(newAttributes.begin(), newAttributes.end(), bestGlobalAttribute) - newAttributes.begin();
+
         newAttributes.erase(remove(newAttributes.begin(), newAttributes.end(), bestGlobalAttribute)
-                        , newAttributes.end());
+                        ,newAttributes.end());
+        if(DEBUG)cout << "remaining attribute list: \n";
+
+        vector<Instance> newTrueInstanceList;
+        vector<Instance> newFalseInstanceList;
+
+        /*removes the best attributes from the boolean list of each attribute*/
+        for(Instance inst : bestTrueInstance){
+            inst.vals.erase(inst.vals.begin() + removeAttribIndex);
+            newTrueInstanceList.push_back(inst);
+        }
+        for(Instance inst : bestFalseInstance){
+            inst.vals.erase(inst.vals.begin() + removeAttribIndex);
+            newFalseInstanceList.push_back(inst);
+        }
+
+        if(DEBUG){
+            for(string s:newAttributes){
+                cout << s << ", ";
+            }
+            cout << "\n";
+            printDS(ds);
+        }
+
         //printf("Removed best attribute\n");
         dataSetStruct newDSTrue;
         dataSetStruct newDSFalse;
 
-        newDSTrue.instList = bestTrueInstance;
+        newDSTrue.instList = newTrueInstanceList;
         newDSTrue.attNameList = newAttributes;
         newDSTrue.catNameList = ds.catNameList;
 
         //printDS(newDSTrue);
 
-        newDSFalse.instList = bestFalseInstance;
+        newDSFalse.instList = newFalseInstanceList;
         newDSFalse.attNameList = newAttributes;
         newDSFalse.catNameList = ds.catNameList;
         //printf("Making Node\n");
@@ -581,16 +612,16 @@ int main(int argc, char** argv)
         " p= "<< instListCategoryProb(trainData.instList).prob << "\n";
     }
     catProb cp = instListCategoryProb(trainData.instList);
+    catProb cpAnswer = instListCategoryProb(testAnswers.instList); //gathers baseline accuracy
     Node * rootNode = BuildTree(trainData, cp.category, cp.prob);
 
     printNode(rootNode, 0);
 
     DecisionTreeClassification(rootNode, &(testData.instList), (testData.attNameList));
-    printDS(testData);
-    printDS(testAnswers);
+    if(DEBUG)printDS(testAnswers);
 
     cout << "Classification accuracy: " << computeAccuracy(testAnswers.instList, testData.instList)*100 << "\% \n";
-    cout << "Baseline accuracy: " << cp.prob*100 << "\% \n";
+    cout << "Baseline accuracy: " << cpAnswer.prob*100 << "\% \n";
     return 0;
  
 }
