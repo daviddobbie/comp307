@@ -377,7 +377,7 @@ Node* BuildTree(dataSetStruct ds, int modeCategory, double modeProb){
             double weightedAvgImpurity = impurityTrue + impurityFalse;
             if(DEBUG) printf("Purity Stats: %llf, %llf, %llf, %llf, weighted avg. impurity = %llf, best impurity = %llf\n", trueFract, falseFract, impurityTrue, impurityFalse, weightedAvgImpurity, bestWeightedAvgImpurity);
 
-            if (weightedAvgImpurity <= bestWeightedAvgImpurity){ //decides best
+            if (weightedAvgImpurity <= bestWeightedAvgImpurity){ //decides best wegihted average impurity
                 //if(DEBUG)printf("Changing Best Attribute\n");
                 bestWeightedAvgImpurity = weightedAvgImpurity;
                 bestGlobalAttribute = ds.attNameList[i];
