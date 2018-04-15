@@ -21,7 +21,11 @@ using namespace std;
 #include <string.h>
 #include <math.h>
 
-bool DEBUG = false;
+#include "bpnn/feature.h"
+#include "bpnn/backprop.h"
+
+
+bool debug = false;
 
 enum typeFlower { setosa = 0, versicolor = 1, virginica =2, unknown=3}; 
 
@@ -84,7 +88,7 @@ typeFlower classifier(char* str);
 
   // parse thru each line, returns it as a string
   while (fgets(line, sizeof(line), inFile)) { // standard C I/O file reading loop
-      if(DEBUG) printf("%s",line);
+      if(debug) printf("%s",line);
       char * ptr;
 
       plant p;
@@ -105,7 +109,7 @@ typeFlower classifier(char* str);
       }
 
       //diagnostic print out of data stored
-      if(DEBUG)
+      if(debug)
         printf("%d, %lf %lf %lf %lf %i\n", p.id, 
         p.sepalLength, p.sepalWidth, p.petalLength, p.petalWidth, (int)p.type);
 
@@ -165,7 +169,7 @@ measure getVectorStats(vector<plant> v){
   vectorStats.sepalWidth.range = vectorStats.sepalWidth.max - vectorStats.sepalWidth.min;
   vectorStats.petalWidth.range = vectorStats.petalWidth.max - vectorStats.petalWidth.min;
 
-  if(DEBUG){
+  if(debug){
     printf("Sepal Length: Max:%f, Min%f, Range:%f \n",vectorStats.sepalLength.max, vectorStats.sepalLength.min, vectorStats.sepalLength.range);
     printf("Petal Length: Max:%f, Min%f, Range:%f \n",vectorStats.petalLength.max, vectorStats.petalLength.min, vectorStats.petalLength.range);  
     printf("Sepal Width: Max:%f, Min%f, Range:%f \n",vectorStats.sepalWidth.max, vectorStats.sepalWidth.min, vectorStats.sepalWidth.range);
@@ -267,7 +271,7 @@ typeFlower nearestNeighbour(plant t, vector<plant> v, int k, measure trainedStat
       distCurrentFlower.dist = sqrt(sepalLengthDiffNorm + sepalWidthDiffNorm + petalLengthDiffNorm + petalWidthDiffNorm);
 
       distVector.push_back(distCurrentFlower);
-      if(DEBUG)printf("%d, %f\n", distCurrentFlower.id, distCurrentFlower.dist);
+      if(debug)printf("%d, %f\n", distCurrentFlower.id, distCurrentFlower.dist);
   }
 
   //sort by smallest distances
@@ -276,7 +280,7 @@ typeFlower nearestNeighbour(plant t, vector<plant> v, int k, measure trainedStat
   //extract 5 smallest values
   vector<flowerDist> kVector(distVector.begin(), distVector.begin()+(k)); 
 
-  if(DEBUG){
+  if(debug){
     for(int i=0; i< kVector.size(); ++i){
       printf("%d, %f\n", kVector[i].id, kVector[i].dist);
     }
@@ -337,7 +341,7 @@ int main(int argc, char** argv)
     cout << "Finished classification of the test dataset\n";
     cout << "Percentage of correct classification = " << assessResults(testPlantsAnswers,testPlants) << "\%\n";
 
-    if(DEBUG){
+    if(debug){
       cout << "Printing vector of trained Plants \n";
       printPlantVector(trainedPlants);
       cout << "Printing vector of test plants \n";

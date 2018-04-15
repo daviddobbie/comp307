@@ -17,7 +17,7 @@
 /* standard include files required  */
 
 #include <stdio.h>
-#include <unistd.h>
+#include <io.h>
 #include <sys/types.h>
 #include <sys/stat.h>      
 #include <fcntl.h>
