@@ -21,6 +21,14 @@ using namespace std;
 #include <string.h>
 #include <math.h>
 
+#include "vgp\src\allc.h"
+#include "vgp\src\common.h"
+#include "vgp\src\fit.h"
+#include "vgp\src\node.h"
+#include "vgp\src\op.h"
+#include "vgp\src\pop.h"
+#include "vgp\src\rand.h"
+
 bool DEBUG = false;
 
 
@@ -84,9 +92,10 @@ int main(int argc, char** argv)
 
 
     parseFile(testFile, 1);
+  }
   std::cout << "Closing...\n";
   return 0;
-}
+} 
 
 
 

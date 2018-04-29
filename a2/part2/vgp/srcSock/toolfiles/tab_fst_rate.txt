@@ -1,0 +1,12 @@
+exp 1 pop:500 gen:50 initmaxdep:5 maxdep:7 initmindep:3 mindep:3 v:~ patfn:%1%.txt mut:30 elite:10 rate:%2% bio:%3% seed:~
+string for print %.2f
+table tabfstrate Results of using error propagation on the shape datasets using SRS as the classification strategy.
+| Dataset %1%           | Classes | Prop. Rate %2% |2_ Generations                     |2_ Time (s)                         |2_ Accuracy                            |
+|_                      |_        |_               |_ Bio off %3=off% |_ Bio on %3=on% |_ Bio off %3=off% |_ Bio on %3=on%  |_ Bio off %3=off%  |_ Bio on %3=on%    |__
+| %../../se_4_1320_pat% |         |_ off %0.0%     |_ ~bestgen(5)~    |_ ---           |_ ~besttime(5)~   |_ ---            |_ ~besttest(5)~\\\%|_ ---              |
+|  Shape                | 4       |_ 0.4 %0.4%     |_ ~~              |_ ~bestgen(5)~  |_ ~~              |_ ~besttime(5)~  |_ ~~\\\%           |_ ~besttest(5)~\\\%|
+|_                      |_        |_ 1.0 %1.0%     |_ ~~              |_ ~~            |_ ~~              |_ ~~             |_ ~~\\\%           |_ ~~\\\%           |
+| %../../ce_5_pat%      |         |_ off %0.0%     |_ ~~              |_ ---           |_ ~~              |_ ---            |_ ~~\\\%           |_ ---              |
+|  Coin                 | 5       |_ 0.4 %0.4%     |_ ~~              |_ ~~            |_ ~~              |_ ~~             |_ ~~\\\%           |_ ~~\\\%           |
+|_                      |_        |_ 1.0 %1.0%     |_ ~~              |_ ~~            |_ ~~              |_ ~~             |_ ~~\\\%           |_ ~~\\\%           |
+end table

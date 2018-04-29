@@ -1,0 +1,20 @@
+#~stdcom pop:500 gen:50 initmaxdep:5 maxdep:7 initmindep:3 mindep:3 v:403
+#~dataset:shape patfn:../../se_4_1320_pat.txt
+#~dataset:coin patfn:../../ce_5_pat.txt
+#~mut:10
+#~mut:20
+#~mut:30
+#~elite:10
+#~elite:15
+#~bio:on
+#~bio:off
+#~seed:0500
+#~seed:1000
+#~seed:2000
+#~seed:3000
+#~seed:4000
+#~rate:0.0
+#~rate:0.4
+#~rate:1.0
+##stdcom dataset: mut:30 elite:10 bio: rate: seed:
+#end
