@@ -76,9 +76,12 @@ int main(int argc, char** argv)
   char * trainingFile;
   char * testFile;
 
-  int k;
 
 
+  // initialise the population set
+  Pop * pop;
+  long num = 10.0;
+  InitPop(pop,num);
 
   if(argc != 4){
     std::cerr << "You must enter two datasets, the training set and the test set, and a k value\n";
