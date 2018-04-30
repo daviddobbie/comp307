@@ -1,0 +1,57 @@
+***************
+*** 47,54 ****
+    ../../src/Fitness.h ../../src/GeneticProgram.h ../../src/GPConfig.h \
+    ../../src/Random.h ../../src/Crossover.h ../../src/Mutation.h \
+    ../../src/Selection.h ../../src/Fitness.h ../../src/NodeSet.h \
+-   ../../src/GPConfig.h ../../src/Function.h ../../src/Terminal.h \
+-   ../../src/NodeVector.h ../../src/NodeVector.cpp ReturnDouble.h \
+    ../../src/ReturnData.h XDouble.h ../../src/Terminal.h
+  DivideDouble.o: DivideDouble.cpp DivideDouble.h ../../src/Function.h \
+    ../../src/Node.h ../../src/ReturnData.h ReturnDouble.h \
+--- 47,53 ----
+    ../../src/Fitness.h ../../src/GeneticProgram.h ../../src/GPConfig.h \
+    ../../src/Random.h ../../src/Crossover.h ../../src/Mutation.h \
+    ../../src/Selection.h ../../src/Fitness.h ../../src/NodeSet.h \
++   ../../src/Function.h ../../src/Terminal.h ReturnDouble.h \
+    ../../src/ReturnData.h XDouble.h ../../src/Terminal.h
+  DivideDouble.o: DivideDouble.cpp DivideDouble.h ../../src/Function.h \
+    ../../src/Node.h ../../src/ReturnData.h ReturnDouble.h \
+***************
+*** 67,85 ****
+  RandDouble.o: RandDouble.cpp ../../src/GPConfig.h ../../src/Random.h \
+    ../../src/Crossover.h ../../src/GeneticProgram.h ../../src/ReturnData.h \
+    ../../src/Node.h ../../src/Mutation.h ../../src/Selection.h \
+-   ../../src/Fitness.h ../../src/NodeSet.h ../../src/GPConfig.h \
+-   ../../src/Function.h ../../src/Terminal.h ../../src/NodeVector.h \
+-   ../../src/NodeVector.cpp RandDouble.h ../../src/Terminal.h \
+-   ReturnDouble.h ../../src/ReturnData.h
+  ReturnDouble.o: ReturnDouble.cpp ReturnDouble.h ../../src/ReturnData.h
+  main.o: main.cpp ../../src/GridPopulation.h ../../src/Population.h \
+    ../../src/GeneticProgram.h ../../src/ReturnData.h ../../src/Node.h \
+    ../../src/Mutation.h ../../src/Crossover.h ../../src/Selection.h \
+    ../../src/GPConfig.h ../../src/Random.h ../../src/Fitness.h \
+    ../../src/NodeSet.h ../../src/Function.h ../../src/Terminal.h \
+-   ../../src/NodeVector.h ../../src/NodeVector.cpp ../../src/Fitness.h \
+-   ../../src/GeneticProgram.h ../../src/NodeSet.h \
+-   ../../src/ProgramGenerator.h PlusDouble.h ../../src/Function.h \
+-   MinusDouble.h MultDouble.h DivideDouble.h XDouble.h \
+-   ../../src/Terminal.h RandDouble.h ReturnDouble.h ../../src/ReturnData.h \
+-   SymbolicFitness.h ../../src/GPConfig.h
+--- 66,82 ----
+  RandDouble.o: RandDouble.cpp ../../src/GPConfig.h ../../src/Random.h \
+    ../../src/Crossover.h ../../src/GeneticProgram.h ../../src/ReturnData.h \
+    ../../src/Node.h ../../src/Mutation.h ../../src/Selection.h \
++   ../../src/Fitness.h ../../src/NodeSet.h ../../src/Function.h \
++   ../../src/Terminal.h RandDouble.h ../../src/Terminal.h ReturnDouble.h \
++   ../../src/ReturnData.h
+  ReturnDouble.o: ReturnDouble.cpp ReturnDouble.h ../../src/ReturnData.h
+  main.o: main.cpp ../../src/GridPopulation.h ../../src/Population.h \
+    ../../src/GeneticProgram.h ../../src/ReturnData.h ../../src/Node.h \
+    ../../src/Mutation.h ../../src/Crossover.h ../../src/Selection.h \
+    ../../src/GPConfig.h ../../src/Random.h ../../src/Fitness.h \
+    ../../src/NodeSet.h ../../src/Function.h ../../src/Terminal.h \
++   ../../src/Fitness.h ../../src/GeneticProgram.h ../../src/NodeSet.h \
++   ../../src/ProgramGenerator.h ../../src/NodeVector.h PlusDouble.h \
++   ../../src/Function.h MinusDouble.h MultDouble.h DivideDouble.h \
++   XDouble.h ../../src/Terminal.h RandDouble.h ReturnDouble.h \
++   ../../src/ReturnData.h SymbolicFitness.h ../../src/GPConfig.h

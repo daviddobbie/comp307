@@ -1,0 +1,199 @@
+#!/usr/bin/perl
+
+
+# convert2structure
+#
+# Takes standard generation files (.gen) in the current directory and
+# converts them into their basic structure. This may be something like;
+#
+# ( + ( - A B ) C )  =>  ( ( # # ) # )
+#
+# The idea is that tree with the same structure and fitness may be able to be
+# considered to be the same. If we are in fact dealing with large repetitions
+# of the same tree then we are wasting some valuable resource which could be
+# used to derive greater variations.
+#
+#
+# Use:
+# ./conver2structure
+#
+# Generation files should not be compressed.
+# Call when in the same directory as the .gen files.
+#
+#
+# Written by Michael Foster, December 2004 during a summer studentship at
+# RMIT. micfoste@cs.rmit.edu.au
+#
+# Change Log:
+#
+# 10/12/04
+# Changing filenames to full name so that the program can be called from any
+# directory.
+# Program now converts to general formula;
+#    * Functions always follow a (
+#    * A depth one program will consist of a single terminal
+#    * Terminals will either be surrounded with space or be a final terminal
+#    in a function in which case they are bordered to the right by a )
+
+
+#Thanks to: http://archive.ncsa.uiuc.edu/General/Training/PerlIntro/
+
+
+###### Program Subroutines ################################
+
+sub checkExist 
+{
+   return( -e $_[0] );
+}
+
+sub checkReadable
+{
+   return( -r $_[0] );
+}
+
+sub convertFileName
+{
+   $temp = $_[0];
+
+   #print("\n\nRecieved: $temp\n\n");
+   #Check to see that its a .gen file
+   if($temp =~ /.gen$/)
+   {
+      #Change file type extension to .strc
+      $temp =~ s/\.gen/.strc/g;
+
+      #print("\n\nStructure Filename: $temp\n\n");
+      return $temp;
+   }
+   else
+   {
+      print("Non .gen file entered as input");
+      return NULL;
+   }
+}
+
+sub convert2strc
+{
+   #Create an arry for holding our output
+   @strc = '';
+   
+   #For each line in the data check if it is a program line or a Fitness line
+   for($k=0 ; $k<scalar(@_) ; $k++)
+   {
+      if($_[$k] =~ /^Fitness/)
+      {
+         push(@strc,$_[$k]);
+      }
+      
+      if($_[$k] =~ /^Program/)
+      {
+         #Want to do a funky regular expression here
+         $temp = &stripGeneralised($_[$k]);
+         
+         #print($temp);
+
+         #Add the line to the output array
+         push(@strc,$temp);
+         
+      } #Disregard the line if not a possible program
+   }
+
+   #return the output array
+
+   return @strc;
+}
+
+sub stripGeneralised
+{
+   $temp = $_[0];
+
+   #Remove the word Program from the start to make it easier
+   $temp =~ s/^Program //;
+ 
+   #Functions always come after a bracket. Replace with only a braket.
+   #(i+ X X) - we are replacing the i+ 
+   $temp =~ s/\(([^ ])*/\(/g;
+   
+   #Terminal are everything left that isnt a bracket basically.
+
+   #Get rid of the terminals that arent the last terminal
+   #( X X) Doing it twice because it will miss every second terminal in multi
+   #terminal situations. I think its because it sees it as part of the last
+   #token rather than going back a step and seeing it as a whole new entity.
+   #(Talking about the space.)
+   $temp =~ s/ ([A-Za-z0-9\.])+ / # /g;
+   $temp =~ s/ ([A-Za-z0-9\.])+ / # /g;
+
+   #Get rid of the final terminal in any function
+   $temp =~ s/ ([^ ^\)])+\)/ #)/g;
+   
+   #Get rid of depth 1 programs
+   #Any non-empty string which doesnt contain a legitimate tree character (#,
+   #(, ), or space should be replaced with a #
+   $temp =~ s/([^\(^\)^\s^#])+/#/;
+
+   $temp = "Program " . $temp;
+
+   return $temp;
+}
+
+###### End Program Subroutines ##############################
+
+
+###### Program Execution ####################################
+
+#Let the user choose what type of problem they are doing?
+
+# Capture all the file names of programs
+$genFiles = `ls *.gen`;
+
+#We also want to know the current directory of the user
+$dir = `pwd`;
+chop($dir);
+
+#print("Dir: $dir");
+
+#Now convert this string to an array
+@fileArray = split(/\n/,$genFiles);
+
+#We need the full path of every file. Append the file name to the current
+#directory.
+for($i=0 ; $i<scalar(@fileArray) ; $i++)
+{
+   $fileArray[$i] = $dir . "/" . $fileArray[$i];
+   #print("\n\nFILENAME: $fileArray[$i]\n\n");
+}
+
+
+#Print out a list of the files that we are converting
+print("Converting all .gen files to tree structure:\n");
+
+
+#For every file 
+for($i=0 ; $i<scalar(@fileArray) ; $i++)
+{
+   #Check that it exists and is readable.
+   if(&checkExist($fileArray[$i]) && &checkReadable(@fileArray[$i]))
+   {
+      #Open, read into temporary buffer and close.
+      open(GENFILE,$fileArray[$i]);
+      @genFile = <GENFILE>;
+      close(GENFILE);
+
+      #Get new name of file with .strc file type
+      $newFileName = &convertFileName($fileArray[$i]);
+
+      #Convert our data to the tree structure we are aiming for
+      @treestrc = &convert2strc(@genFile);
+
+      #Open another file for writing our structure to
+      open(STRCFILE, ">$newFileName");
+      print(STRCFILE @treestrc);
+      close(STRCFILE);
+      
+   }
+   else
+   {
+      print("File: $fileArray[$i], could not be opened");
+   }
+}

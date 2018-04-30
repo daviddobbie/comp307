@@ -1,0 +1,51 @@
+#ifndef _MULTINT_H_
+#define _MULTINT_H_
+
+/******************************************************************************
+ Header file
+ Class:        MultInt
+ Date created: 01/07/2002
+ Written by:   Dylan Mawhinney
+
+ MultInt is a sub class of Function, it accepts two integers as
+ arguments and returns the product of it's two arguments.
+******************************************************************************/
+class GPConfig;
+
+#include <string>
+#include "Function.h"
+
+class MultInt : public Function
+{
+   private:
+
+   public:
+      /*************
+       Constructor.
+      **************/
+      MultInt(GPConfig *conf);
+
+      /*********************
+       virtual destructor
+      *********************/
+      virtual ~MultInt();
+
+      static Function* generate(const string &name, GPConfig *conf);
+
+      /********************
+       Evaluate function
+      ********************/
+      virtual void evaluate(ReturnData *out);
+
+      /***********************************
+       Copies this function and it's
+       arguments and returns a pointer to
+       the new copy.
+      ***********************************/
+      virtual Node* copy();
+
+   protected:
+
+};
+
+#endif

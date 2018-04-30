@@ -1,0 +1,5 @@
+newgraph
+newcurve pts  linetype solid marktype none
+xaxis label : Generation
+yaxis label : Fitness
+title : Generation vs Fitness

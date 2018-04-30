@@ -1,0 +1,145 @@
+*****************************************
+Generation 0
+Time Mon Dec 13 17:02:41 2004
+BestFitness 52
+WorstFitness 89
+AverageFitness 86.8101
+AverageDepth 2.7737
+AverageSize 12.8074
+Evaluation 10000
+*****************************************
+Generation 1
+Time Mon Dec 13 17:02:42 2004
+BestFitness 52
+WorstFitness 89
+AverageFitness 81.313
+AverageDepth 4.078
+AverageSize 26.602
+Evaluation 11000
+*****************************************
+Generation 2
+Time Mon Dec 13 17:02:43 2004
+BestFitness 26
+WorstFitness 89
+AverageFitness 82.049
+AverageDepth 4.207
+AverageSize 26.371
+Evaluation 12000
+*****************************************
+Generation 3
+Time Mon Dec 13 17:02:43 2004
+BestFitness 26
+WorstFitness 89
+AverageFitness 82.257
+AverageDepth 4.365
+AverageSize 26.623
+Evaluation 13000
+*****************************************
+Generation 4
+Time Mon Dec 13 17:02:44 2004
+BestFitness 26
+WorstFitness 89
+AverageFitness 82.101
+AverageDepth 4.449
+AverageSize 26.876
+Evaluation 14000
+*****************************************
+Generation 5
+Time Mon Dec 13 17:02:44 2004
+BestFitness 16
+WorstFitness 89
+AverageFitness 81.259
+AverageDepth 4.518
+AverageSize 26.605
+Evaluation 15000
+*****************************************
+Generation 6
+Time Mon Dec 13 17:02:44 2004
+BestFitness 16
+WorstFitness 89
+AverageFitness 81.167
+AverageDepth 4.566
+AverageSize 25.651
+Evaluation 16000
+*****************************************
+Generation 7
+Time Mon Dec 13 17:02:45 2004
+BestFitness 16
+WorstFitness 89
+AverageFitness 79.744
+AverageDepth 4.641
+AverageSize 24.522
+Evaluation 17000
+*****************************************
+Generation 8
+Time Mon Dec 13 17:02:45 2004
+BestFitness 16
+WorstFitness 89
+AverageFitness 79.462
+AverageDepth 4.713
+AverageSize 22.926
+Evaluation 18000
+*****************************************
+Generation 9
+Time Mon Dec 13 17:02:46 2004
+BestFitness 10
+WorstFitness 89
+AverageFitness 77.173
+AverageDepth 4.735
+AverageSize 21.401
+Evaluation 19000
+*****************************************
+Generation 10
+Time Mon Dec 13 17:02:46 2004
+BestFitness 10
+WorstFitness 89
+AverageFitness 74.239
+AverageDepth 4.763
+AverageSize 20.402
+Evaluation 20000
+*****************************************
+Generation 11
+Time Mon Dec 13 17:02:47 2004
+BestFitness 8
+WorstFitness 89
+AverageFitness 72.453
+AverageDepth 4.746
+AverageSize 18.805
+Evaluation 21000
+*****************************************
+Generation 12
+Time Mon Dec 13 17:02:47 2004
+BestFitness 8
+WorstFitness 89
+AverageFitness 71.288
+AverageDepth 4.805
+AverageSize 17.565
+Evaluation 22000
+*****************************************
+Generation 13
+Time Mon Dec 13 17:02:48 2004
+BestFitness 8
+WorstFitness 89
+AverageFitness 68.62
+AverageDepth 4.804
+AverageSize 16.494
+Evaluation 23000
+*****************************************
+Generation 14
+Time Mon Dec 13 17:02:48 2004
+BestFitness 8
+WorstFitness 89
+AverageFitness 67.773
+AverageDepth 4.803
+AverageSize 16.331
+Evaluation 24000
+*****************************************
+Generation 15
+Time Mon Dec 13 17:02:48 2004
+BestFitness 0
+WorstFitness 89
+AverageFitness 65.872
+AverageDepth 4.828
+AverageSize 16.256
+Evaluation 25000
+Solution found!

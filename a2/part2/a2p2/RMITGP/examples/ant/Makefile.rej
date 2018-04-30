@@ -1,0 +1,125 @@
+***************
+*** 45,87 ****
+    ../../src/ReturnData.h ../../src/Node.h ../../src/Mutation.h \
+    ../../src/Crossover.h ../../src/Selection.h ../../src/GPConfig.h \
+    ../../src/Random.h ../../src/Fitness.h ../../src/NodeSet.h \
+-   ../../src/Function.h ../../src/Terminal.h ../../src/NodeVector.h \
+-   ../../src/NodeVector.cpp ../../src/ProgramGenerator.h \
+-   ../../src/NodeSet.h Move.h ../../src/Terminal.h TurnLeft.h TurnRight.h \
+-   ../../src/GPConfig.h Prog2.h ../../src/Function.h Prog3.h IfFoodAhead.h \
+-   ReturnDummy.h ../../src/ReturnData.h SantaFeFitness.h \
+-   ../../src/GeneticProgram.h ../../src/Fitness.h
+  SantaFeFitness.o: SantaFeFitness.cpp SantaFeFitness.h \
+    ../../src/GeneticProgram.h ../../src/ReturnData.h ../../src/Node.h \
+    ../../src/Fitness.h ../../src/GeneticProgram.h ../../src/GPConfig.h \
+    ../../src/Random.h ../../src/Crossover.h ../../src/Mutation.h \
+    ../../src/Selection.h ../../src/Fitness.h ../../src/NodeSet.h \
+-   ../../src/GPConfig.h ../../src/Function.h ../../src/Terminal.h \
+-   ../../src/NodeVector.h ../../src/NodeVector.cpp ReturnDummy.h \
+    ../../src/ReturnData.h
+  Move.o: Move.cpp SantaFeFitness.h ../../src/GeneticProgram.h \
+    ../../src/ReturnData.h ../../src/Node.h ../../src/Fitness.h \
+    ../../src/GeneticProgram.h Move.h ../../src/Terminal.h ReturnDummy.h \
+    ../../src/ReturnData.h ../../src/GPConfig.h ../../src/Random.h \
+    ../../src/Crossover.h ../../src/Mutation.h ../../src/Selection.h \
+-   ../../src/Fitness.h ../../src/NodeSet.h ../../src/GPConfig.h \
+-   ../../src/Function.h ../../src/Terminal.h ../../src/NodeVector.h \
+-   ../../src/NodeVector.cpp
+  TurnLeft.o: TurnLeft.cpp SantaFeFitness.h ../../src/GeneticProgram.h \
+    ../../src/ReturnData.h ../../src/Node.h ../../src/Fitness.h \
+    ../../src/GeneticProgram.h TurnLeft.h ../../src/Terminal.h \
+    ReturnDummy.h ../../src/ReturnData.h ../../src/GPConfig.h \
+    ../../src/Random.h ../../src/Crossover.h ../../src/Mutation.h \
+    ../../src/Selection.h ../../src/Fitness.h ../../src/NodeSet.h \
+-   ../../src/GPConfig.h ../../src/Function.h ../../src/Terminal.h \
+-   ../../src/NodeVector.h ../../src/NodeVector.cpp
+  TurnRight.o: TurnRight.cpp SantaFeFitness.h ../../src/GeneticProgram.h \
+    ../../src/ReturnData.h ../../src/Node.h ../../src/Fitness.h \
+    ../../src/GeneticProgram.h TurnRight.h ../../src/Terminal.h \
+    ../../src/GPConfig.h ../../src/Random.h ../../src/Crossover.h \
+    ../../src/Mutation.h ../../src/Selection.h ../../src/Fitness.h \
+-   ../../src/NodeSet.h ../../src/GPConfig.h ../../src/Function.h \
+-   ../../src/Terminal.h ../../src/NodeVector.h ../../src/NodeVector.cpp \
+    ReturnDummy.h ../../src/ReturnData.h
+  IfFoodAhead.o: IfFoodAhead.cpp SantaFeFitness.h \
+    ../../src/GeneticProgram.h ../../src/ReturnData.h ../../src/Node.h \
+--- 45,83 ----
+    ../../src/ReturnData.h ../../src/Node.h ../../src/Mutation.h \
+    ../../src/Crossover.h ../../src/Selection.h ../../src/GPConfig.h \
+    ../../src/Random.h ../../src/Fitness.h ../../src/NodeSet.h \
++   ../../src/Function.h ../../src/Terminal.h ../../src/ProgramGenerator.h \
++   ../../src/NodeVector.h ../../src/NodeSet.h Move.h ../../src/Terminal.h \
++   TurnLeft.h TurnRight.h ../../src/GPConfig.h Prog2.h \
++   ../../src/Function.h Prog3.h IfFoodAhead.h ReturnDummy.h \
++   ../../src/ReturnData.h SantaFeFitness.h ../../src/GeneticProgram.h \
++   ../../src/Fitness.h
+  SantaFeFitness.o: SantaFeFitness.cpp SantaFeFitness.h \
+    ../../src/GeneticProgram.h ../../src/ReturnData.h ../../src/Node.h \
+    ../../src/Fitness.h ../../src/GeneticProgram.h ../../src/GPConfig.h \
+    ../../src/Random.h ../../src/Crossover.h ../../src/Mutation.h \
+    ../../src/Selection.h ../../src/Fitness.h ../../src/NodeSet.h \
++   ../../src/Function.h ../../src/Terminal.h ReturnDummy.h \
+    ../../src/ReturnData.h
+  Move.o: Move.cpp SantaFeFitness.h ../../src/GeneticProgram.h \
+    ../../src/ReturnData.h ../../src/Node.h ../../src/Fitness.h \
+    ../../src/GeneticProgram.h Move.h ../../src/Terminal.h ReturnDummy.h \
+    ../../src/ReturnData.h ../../src/GPConfig.h ../../src/Random.h \
+    ../../src/Crossover.h ../../src/Mutation.h ../../src/Selection.h \
++   ../../src/Fitness.h ../../src/NodeSet.h ../../src/Function.h \
++   ../../src/Terminal.h
+  TurnLeft.o: TurnLeft.cpp SantaFeFitness.h ../../src/GeneticProgram.h \
+    ../../src/ReturnData.h ../../src/Node.h ../../src/Fitness.h \
+    ../../src/GeneticProgram.h TurnLeft.h ../../src/Terminal.h \
+    ReturnDummy.h ../../src/ReturnData.h ../../src/GPConfig.h \
+    ../../src/Random.h ../../src/Crossover.h ../../src/Mutation.h \
+    ../../src/Selection.h ../../src/Fitness.h ../../src/NodeSet.h \
++   ../../src/Function.h ../../src/Terminal.h
+  TurnRight.o: TurnRight.cpp SantaFeFitness.h ../../src/GeneticProgram.h \
+    ../../src/ReturnData.h ../../src/Node.h ../../src/Fitness.h \
+    ../../src/GeneticProgram.h TurnRight.h ../../src/Terminal.h \
+    ../../src/GPConfig.h ../../src/Random.h ../../src/Crossover.h \
+    ../../src/Mutation.h ../../src/Selection.h ../../src/Fitness.h \
++   ../../src/NodeSet.h ../../src/Function.h ../../src/Terminal.h \
+    ReturnDummy.h ../../src/ReturnData.h
+  IfFoodAhead.o: IfFoodAhead.cpp SantaFeFitness.h \
+    ../../src/GeneticProgram.h ../../src/ReturnData.h ../../src/Node.h \
+***************
+*** 89,108 ****
+    ../../src/Function.h ReturnDummy.h ../../src/ReturnData.h \
+    ../../src/GPConfig.h ../../src/Random.h ../../src/Crossover.h \
+    ../../src/Mutation.h ../../src/Selection.h ../../src/Fitness.h \
+-   ../../src/NodeSet.h ../../src/GPConfig.h ../../src/Function.h \
+-   ../../src/Terminal.h ../../src/NodeVector.h ../../src/NodeVector.cpp
+  Prog2.o: Prog2.cpp Prog2.h ../../src/Function.h ../../src/Node.h \
+    ../../src/ReturnData.h ReturnDummy.h ../../src/ReturnData.h \
+    ../../src/GPConfig.h ../../src/Random.h ../../src/Crossover.h \
+    ../../src/GeneticProgram.h ../../src/Mutation.h ../../src/Selection.h \
+-   ../../src/Fitness.h ../../src/NodeSet.h ../../src/GPConfig.h \
+-   ../../src/Function.h ../../src/Terminal.h ../../src/NodeVector.h \
+-   ../../src/NodeVector.cpp
+  Prog3.o: Prog3.cpp Prog3.h ../../src/Function.h ../../src/Node.h \
+    ../../src/ReturnData.h ReturnDummy.h ../../src/ReturnData.h \
+    ../../src/GPConfig.h ../../src/Random.h ../../src/Crossover.h \
+    ../../src/GeneticProgram.h ../../src/Mutation.h ../../src/Selection.h \
+-   ../../src/Fitness.h ../../src/NodeSet.h ../../src/GPConfig.h \
+-   ../../src/Function.h ../../src/Terminal.h ../../src/NodeVector.h \
+-   ../../src/NodeVector.cpp
+  ReturnDummy.o: ReturnDummy.cpp ReturnDummy.h ../../src/ReturnData.h
+--- 85,101 ----
+    ../../src/Function.h ReturnDummy.h ../../src/ReturnData.h \
+    ../../src/GPConfig.h ../../src/Random.h ../../src/Crossover.h \
+    ../../src/Mutation.h ../../src/Selection.h ../../src/Fitness.h \
++   ../../src/NodeSet.h ../../src/Function.h ../../src/Terminal.h
+  Prog2.o: Prog2.cpp Prog2.h ../../src/Function.h ../../src/Node.h \
+    ../../src/ReturnData.h ReturnDummy.h ../../src/ReturnData.h \
+    ../../src/GPConfig.h ../../src/Random.h ../../src/Crossover.h \
+    ../../src/GeneticProgram.h ../../src/Mutation.h ../../src/Selection.h \
++   ../../src/Fitness.h ../../src/NodeSet.h ../../src/Function.h \
++   ../../src/Terminal.h
+  Prog3.o: Prog3.cpp Prog3.h ../../src/Function.h ../../src/Node.h \
+    ../../src/ReturnData.h ReturnDummy.h ../../src/ReturnData.h \
+    ../../src/GPConfig.h ../../src/Random.h ../../src/Crossover.h \
+    ../../src/GeneticProgram.h ../../src/Mutation.h ../../src/Selection.h \
++   ../../src/Fitness.h ../../src/NodeSet.h ../../src/Function.h \
++   ../../src/Terminal.h
+  ReturnDummy.o: ReturnDummy.cpp ReturnDummy.h ../../src/ReturnData.h
