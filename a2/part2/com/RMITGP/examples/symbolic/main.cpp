@@ -44,9 +44,9 @@ int main (int argc, char* argv[])
    string s1;
   
    //Set the rates of mutation etc 
-   pop.setMutationRate(0.28);
-   pop.setCrossoverRate(0.70);
-   pop.setElitismRate(0.02);
+   pop.setMutationRate(0.05);
+   pop.setCrossoverRate(0.90);
+   pop.setElitismRate(0.05);
 
    //Alternative way to set mutation crossover etc
    //pop.setNumForMutation(10);
@@ -126,7 +126,7 @@ int main (int argc, char* argv[])
    
       /*Do 1000 generations, returns true if solution is found
         (see fitness class*/
-      if (pop.evolve(500))
+      if (pop.evolve(1000))
       {
          cout << "Found solution" << endl;
       }

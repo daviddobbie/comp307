@@ -62,8 +62,16 @@ void DivideInt::evaluate(ReturnData *out)
    getArgN(0)->evaluate(&r1); 
    getArgN(1)->evaluate(&r2);
 
-   if (r2.getData() != 0)
-      result = r1.getData() / r2.getData();
+   if (abs(r2.getData()) > 0.00001) //edited to prevent floating exceptions (division by 0)
+    try { 
+        result = r1.getData() / r2.getData();
+    } 
+    catch (...) {
+            result = 100000;
+    }
+
+
+      //result = r1.getData() / r2.getData();
    else
       result = INT_MAX;
 

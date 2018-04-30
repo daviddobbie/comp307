@@ -23,8 +23,8 @@ const int SymbolicFitness::FITNESS_CASES = 20;
 
 SymbolicFitness::SymbolicFitness(GPConfig *conf) : Fitness(conf)
 {
-   xValues = new int[FITNESS_CASES];
-   targetFunc = new int[FITNESS_CASES];
+   xValues = new double[FITNESS_CASES];
+   targetFunc = new double[FITNESS_CASES];
 }
 
 SymbolicFitness::~SymbolicFitness()
@@ -86,8 +86,8 @@ void SymbolicFitness::initFitness()
                   //sscanf(line, "%*[^0-9]%lf%*[^0-9]%lf", &xVal, &yVal);
 
 
-                  xVal = (int)strtod(line, &ptr);
-                  yVal = (int)strtod(ptr, &ptr);  
+                  xVal = (float)strtod(line, &ptr);
+                  yVal = (float)strtod(ptr, &ptr);  
                   printf("x=%f, y=%f\n",xVal, yVal);
 
 

@@ -20,8 +20,8 @@ class SymbolicFitness : public Fitness
    private:
       static const int FITNESS_CASES;
 
-      int *xValues;
-      int *targetFunc;
+      double *xValues;
+      double *targetFunc;
 
    protected:
 
