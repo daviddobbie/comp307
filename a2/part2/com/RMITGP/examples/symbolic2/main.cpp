@@ -37,15 +37,15 @@ int main (int argc, char* argv[])
    string s1;
   
    //Set the rates of mutation etc 
-   pop.setMutationRate(0.28);
-   pop.setCrossoverRate(0.70);
-   pop.setElitismRate(0.02);
+   pop.setMutationRate(0.20);
+   pop.setCrossoverRate(0.77);
+   pop.setElitismRate(0.03);
 
    //Set the return type for our programs
    pop.setReturnType(ReturnDouble::TYPENUM);
 
    //Set the depth limit for the system
-   symConfig.maxDepth = 6;
+   symConfig.maxDepth = 3;
    symConfig.minDepth = 1;
 
    //Set the depth limit for the population
@@ -108,7 +108,7 @@ int main (int argc, char* argv[])
    
       /*Do 1000 generations, returns true if solution is found
         (see fitness class*/
-      if (pop.evolve(100))
+      if (pop.evolve(1000))
       {
          cout << "Found solution" << endl;
       }

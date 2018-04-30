@@ -94,8 +94,8 @@ void SymbolicFitness::initFitness()
             stringstream ss(str);
 
             if (iterID > 1){
-                  float xVal;
-                  float yVal;
+                  double xVal;
+                  double yVal;
                   //extracts out the doubles number by number.
                   /*
                   while (*ptr == ' '){ ptr ++;}
@@ -106,8 +106,8 @@ void SymbolicFitness::initFitness()
                   //sscanf(line, "%*[^0-9]%lf%*[^0-9]%lf", &xVal, &yVal);
 
 
-                  xVal = (float)strtod(line, &ptr);
-                  yVal = (float)strtod(ptr, &ptr);  
+                  xVal = strtod(line, &ptr);
+                  yVal = strtod(ptr, &ptr);  
                   printf("x=%f, y=%f\n",xVal, yVal);
 
 
@@ -193,13 +193,14 @@ void SymbolicFitness::outputResults(GeneticProgram *program, const char *filenam
       XDouble::setValue(xDouble);
 
       program->evaluate(&rd);
-      
+  /*    
       outputFile << xDouble << " "
    //            << (3 * xDouble) + 14.45 << " "
                  << (1.5 * (xDouble * xDouble * xDouble)) +
                     (3.2 * (xDouble * xDouble)) +
                     (4.0 * xDouble) -127.2 << " "
                  << rd.getData() << endl;
+                 */
    }
 
    outputFile.close();
