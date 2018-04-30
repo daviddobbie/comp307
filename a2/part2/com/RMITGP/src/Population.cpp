@@ -917,7 +917,7 @@ istream& operator >> (istream& i, Population& p)
       }
       else
       {
-         cerr << "Ignoring line " << line << endl;
+         cerr << "Ignoring line (header info)" << line << endl;
       }
    }
 
@@ -975,7 +975,7 @@ istream& operator >> (istream& i, Population& p)
       }
       else
       {
-         cerr << "Ignoring line " << line << endl;
+         cerr << "Ignoring line (reading individual)" << line << endl;
       }
    }
 

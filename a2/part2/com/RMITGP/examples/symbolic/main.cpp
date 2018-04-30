@@ -75,7 +75,7 @@ int main (int argc, char* argv[])
    pop.setReturnType(ReturnInt::TYPENUM);
 
    //Set the depth limit for the system
-   symConfig.maxDepth = 7;
+   symConfig.maxDepth =12;
 
    //Set the depth limit for the population
    pop.setDepthLimit(symConfig.maxDepth);
@@ -106,7 +106,7 @@ int main (int argc, char* argv[])
    //Initialise the fitness 
    symConfig.fitnessObject->initFitness();
 
-   #if 0
+   #if 1
       pop.generateInitialPopulation();
    #else
       //Reading a population from a file

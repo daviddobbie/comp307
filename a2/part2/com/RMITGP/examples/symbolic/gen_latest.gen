@@ -1,8 +1,8 @@
-Population at generation 60
-File created at Mon Apr 30 12:58:56 2018
+Population at generation 0
+File created at Mon Apr 30 16:49:06 2018
 numIndividuals 100
-depthLimit 7
-initdepthLimit 7
+depthLimit 12
+initdepthLimit 12
 minDepth 1
 returnType 1
 mutationRate 0.28
@@ -10,701 +10,701 @@ crossoverRate 0.7
 elitismRate 0.02
 ###################################
 Individual 0
-Fitness 0
-Depth 7
-Size 41
+Fitness 110
+Depth 8
+Size 23
 Range 
-Program (i+ (i+ (i+ X (i/ X (i+ (i- X X) X))) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ irand154 (i- (i* (i* X X) X) (i/ (i/ irand124 X) irand137)))))
+Program (i* (i+ X (i- X (i/ (i/ irand36 (i+ (i+ X irand17) X)) (i- X (i+ (i* X irand76) (i* irand132 X)))))) X)
 ###################################
 Individual 1
-Fitness 1
-Depth 7
-Size 37
+Fitness 110
+Depth 3
+Size 5
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X X) (i- (i- (i- irand6 X) (i* X irand128)) X))))
+Program (i* (i+ X X) X)
 ###################################
 Individual 2
-Fitness 1
-Depth 7
-Size 47
+Fitness 126
+Depth 2
+Size 3
 Range 
-Program (i+ (i+ (i+ X (i/ (i+ X (i- X X)) X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X X) (i- (i- (i- X X) (i* X irand128)) (i* (i- irand162 irand138) (i- irand6 X))))))
+Program (i* X X)
 ###################################
 Individual 3
-Fitness 1
-Depth 7
-Size 39
+Fitness 126
+Depth 2
+Size 3
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X (i+ (i- X X) X)) (i+ (i* (i* X X) X) X))))
+Program (i* X X)
 ###################################
 Individual 4
-Fitness 1
-Depth 7
-Size 43
+Fitness 126
+Depth 2
+Size 3
 Range 
-Program (i+ (i+ (i+ X (i/ (i+ X (i- X X)) X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X (i+ (i- X X) X)) (i+ (i* (i* X X) X) X))))
+Program (i* X X)
 ###################################
 Individual 5
-Fitness 1
-Depth 7
-Size 39
+Fitness 126
+Depth 2
+Size 3
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i/ irand159 (i+ irand181 (i- X X))) (i- X (i* (i- irand162 X) irand162)))))
+Program (i* X X)
 ###################################
 Individual 6
-Fitness 1
-Depth 8
-Size 45
+Fitness 126
+Depth 2
+Size 3
 Range 
-Program (i+ (i+ (i+ X (i/ (i+ X (i- X X)) X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) (i+ (i- X X) X))))) (i+ X (i/ (i+ X (i+ (i- X X) X)) (i+ (i* X irand134) X))))
+Program (i* X X)
 ###################################
 Individual 7
-Fitness 1
-Depth 7
-Size 39
+Fitness 126
+Depth 3
+Size 7
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) X))) (i+ X (i/ (i+ (i/ irand134 X) X) (i- (i- (i- irand6 X) (i* X irand128)) (i* (i- X irand138) irand162)))))
+Program (i+ (i- X X) (i* X X))
 ###################################
 Individual 8
-Fitness 1
-Depth 7
-Size 41
+Fitness 126
+Depth 2
+Size 3
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X X) (i- (i- (i- irand6 X) (i* X irand128)) (i* (i- irand162 irand138) irand162)))))
+Program (i* X X)
 ###################################
 Individual 9
-Fitness 1
-Depth 7
-Size 43
+Fitness 126
+Depth 2
+Size 3
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X (i- (i- irand162 X) (i- X X))) (i- (i- (i- irand6 X) (i* X irand128)) irand153))))
+Program (i* X X)
 ###################################
 Individual 10
-Fitness 1
-Depth 7
-Size 41
+Fitness 126
+Depth 10
+Size 89
 Range 
-Program (i+ (i+ (i+ X (i/ (i+ X (i- X X)) X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X (i+ (i- X X) X)) (i+ (i* X irand134) X))))
+Program (i+ (i* X X) (i* (i* (i/ (i* irand47 (i+ irand46 (i/ (i+ (i+ X irand11) (i/ X X)) (i+ irand100 irand130)))) X) (i+ X (i+ X (i* X (i+ X (i/ irand69 (i* irand154 irand122))))))) (i/ (i+ irand53 X) (i- X (i- (i+ (i* (i* X irand105) (i+ X X)) (i+ (i* irand150 (i- irand169 X)) (i+ (i+ irand63 X) X))) (i- (i- (i/ (i+ X irand98) (i+ X X)) (i+ irand28 (i/ irand4 X))) (i- (i- (i- X irand72) X) (i- (i* irand174 irand138) (i/ irand130 irand64)))))))))
 ###################################
 Individual 11
-Fitness 1
-Depth 7
-Size 47
+Fitness 134
+Depth 2
+Size 3
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i* (i+ (i/ (i- X X) (i- X X)) (i/ (i- X irand199) (i+ irand114 X))) (i/ (i- (i/ X X) X) X))))
+Program (i/ irand118 irand93)
 ###################################
 Individual 12
-Fitness 1
-Depth 7
-Size 47
+Fitness 134
+Depth 2
+Size 3
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ (i+ (i+ X X) (i- X irand138)) (i+ X irand6)) (i- (i- X (i* irand162 X)) (i* (i- X irand31) irand162)))))
+Program (i/ irand84 irand28)
 ###################################
 Individual 13
-Fitness 1
-Depth 7
-Size 43
+Fitness 134
+Depth 3
+Size 7
 Range 
-Program (i+ (i+ (i+ X (i/ (i+ X (i- X X)) X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ irand134 (i+ (i- X X) X)) (i+ (i* (i* X irand130) X) irand128))))
+Program (i/ (i+ irand7 irand77) (i+ irand14 irand42))
 ###################################
 Individual 14
-Fitness 1
-Depth 7
-Size 39
+Fitness 134
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X X) (i- (i- (i- irand6 irand134) (i* X irand128)) (i* X irand162)))))
+Program irand3
 ###################################
 Individual 15
-Fitness 1
-Depth 7
-Size 47
+Fitness 134
+Depth 3
+Size 7
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X (i- (i- irand162 X) (i- X X))) (i- (i- (i- irand138 X) (i* X irand128)) (i+ irand6 (i/ X X))))))
+Program (i/ (i+ irand187 irand59) (i+ X irand171))
 ###################################
 Individual 16
-Fitness 1
-Depth 7
-Size 43
+Fitness 134
+Depth 5
+Size 21
 Range 
-Program (i+ (i+ (i+ X (i/ (i+ X (i- X X)) X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ irand134 (i+ (i- X X) X)) (i+ (i* (i* X irand130) X) X))))
+Program (i* (i/ (i- X (i- X irand122)) (i* (i/ X X) (i- X X))) (i/ X (i* (i/ X irand126) irand39)))
 ###################################
 Individual 17
-Fitness 1
-Depth 10
-Size 59
+Fitness 136
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X (i- (i+ X X) (i- X X))) (i- (i- (i- X irand134) (i- (i- (i+ (i- X X) X) (i* irand162 irand128)) (i* (i- X X) irand162))) (i* (i- X X) irand162)))))
+Program irand4
 ###################################
 Individual 18
-Fitness 1
-Depth 7
-Size 41
+Fitness 145
+Depth 5
+Size 11
 Range 
-Program (i+ (i+ (i+ X (i/ X (i+ (i- X X) X))) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ irand154 (i- (i* (i* X irand172) X) (i/ (i/ irand124 X) irand137)))))
+Program (i+ (i/ irand31 (i+ (i- irand7 X) (i- X X))) X)
 ###################################
 Individual 19
-Fitness 1
-Depth 7
-Size 41
+Fitness 147
+Depth 4
+Size 15
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ (i/ irand134 X) X) (i- (i+ X (i/ X X)) (i* (i- X irand138) irand162)))))
+Program (i* (i/ (i- irand159 X) (i* X irand112)) (i/ (i- X X) (i* X X)))
 ###################################
 Individual 20
-Fitness 1
-Depth 7
-Size 39
+Fitness 147
+Depth 6
+Size 63
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) X))) (i+ X (i/ (i+ X X) (i- (i- (i- irand6 X) (i* irand86 irand128)) (i* (i- irand162 irand138) (i- irand58 X))))))
+Program (i/ (i+ (i/ (i* (i* X irand131) (i- irand17 X)) (i* (i* irand157 X) (i* X irand121))) (i- (i- (i* X X) (i+ X X)) (i+ (i+ X irand157) (i* X irand130)))) (i- (i+ (i- (i/ irand89 irand80) (i+ X irand192)) (i- (i* irand85 X) (i* irand137 irand172))) (i+ (i+ (i+ X irand82) (i/ X X)) (i- (i+ X irand137) (i- irand69 X)))))
 ###################################
 Individual 21
-Fitness 1
-Depth 7
-Size 41
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X X) (i- (i- (i- irand6 X) (i* X irand128)) (i* (i+ X X) X)))))
+Program X
 ###################################
 Individual 22
-Fitness 1
-Depth 7
-Size 41
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X (i/ (i+ irand69 X) (i+ irand110 X))) (i- X (i* (i- irand162 X) irand162)))))
+Program X
 ###################################
 Individual 23
-Fitness 1
-Depth 7
-Size 45
+Fitness 148
+Depth 2
+Size 3
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ (i+ (i- X X) (i- X X)) (i+ X X)) (i- (i- (i- irand6 irand48) (i* X irand128)) X))))
+Program (i+ X X)
 ###################################
 Individual 24
-Fitness 1
-Depth 8
-Size 41
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) X))) (i+ X (i/ X (i- (i- (i* irand57 X) (i* X irand128)) (i* (i- irand162 X) (i- (i- irand6 X) (i* X irand128)))))))
+Program X
 ###################################
 Individual 25
-Fitness 1
-Depth 7
-Size 37
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) X))) (i+ X (i/ X (i- (i- (i* irand57 X) (i* X irand128)) (i* (i/ X X) (i- irand6 X))))))
+Program X
 ###################################
 Individual 26
-Fitness 1
-Depth 8
-Size 49
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X (i- (i+ X X) (i- X X))) (i- (i- (i+ (i- irand189 X) X) (i* irand162 irand128)) (i* (i- X X) irand162)))))
+Program X
 ###################################
 Individual 27
-Fitness 1
-Depth 7
-Size 41
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X X) (i- (i- (i- irand6 irand134) (i* X irand128)) (i* (i- irand162 irand138) irand162)))))
+Program X
 ###################################
 Individual 28
-Fitness 1
-Depth 8
-Size 49
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X (i- (i+ X X) (i- X X))) (i- (i- (i+ (i- irand189 X) X) (i* irand162 irand128)) (i* (i- X X) irand162)))))
+Program X
 ###################################
 Individual 29
-Fitness 1
-Depth 7
-Size 43
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) X))) (i+ X (i/ (i+ X (i/ (i* X X) (i+ X X))) (i- (i- (i- irand6 X) (i* irand189 irand128)) (i* (i- X X) irand162)))))
+Program X
 ###################################
 Individual 30
-Fitness 1
-Depth 7
-Size 47
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ (i+ X (i- X X)) X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X (i+ (i- X X) X)) (i+ (i* (i* X irand130) X) (i/ (i/ X irand80) X)))))
+Program X
 ###################################
 Individual 31
-Fitness 1
-Depth 7
-Size 41
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X X) (i- (i- (i- irand6 X) (i* X irand128)) (i* (i- irand162 irand138) X)))))
+Program X
 ###################################
 Individual 32
-Fitness 1
-Depth 7
-Size 45
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ (i+ (i+ X X) (i- X X)) (i+ X X)) (i- (i- (i- irand6 irand48) (i* X irand128)) X))))
+Program X
 ###################################
 Individual 33
-Fitness 1
-Depth 7
-Size 41
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X X) (i- (i- (i- irand6 X) (i* X irand128)) (i+ X (i- X X))))))
+Program X
 ###################################
 Individual 34
-Fitness 1
-Depth 7
-Size 39
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X (i+ (i- X X) X))) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ irand154 (i- (i* (i* X irand172) X) (i/ X irand137)))))
+Program X
 ###################################
 Individual 35
-Fitness 1
-Depth 7
-Size 39
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ X (i- (i- (i- irand6 X) (i* irand162 X)) (i* (i- X X) irand162)))))
+Program X
 ###################################
 Individual 36
-Fitness 1
-Depth 7
-Size 37
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) X))) (i+ X (i/ (i+ X X) (i- (i- (i- irand6 X) (i* irand86 irand128)) (i* (i- irand162 irand138) irand162)))))
+Program X
 ###################################
 Individual 37
-Fitness 1
-Depth 7
-Size 37
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X X) (i- (i- (i- irand6 X) (i* X irand128)) irand153))))
+Program X
 ###################################
 Individual 38
-Fitness 1
-Depth 7
-Size 43
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X (i- (i- irand162 irand186) (i- X X))) (i- (i- (i- irand6 X) (i* X irand128)) irand153))))
+Program X
 ###################################
 Individual 39
-Fitness 1
-Depth 7
-Size 45
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ (i+ (i+ X X) (i- irand51 X)) X) (i- (i- (i- irand6 irand48) (i* X irand128)) (i* X irand162)))))
+Program X
 ###################################
 Individual 40
-Fitness 1
-Depth 7
-Size 41
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) X))) (i+ X (i/ (i+ (i+ (i+ X X) (i- X X)) (i+ X X)) (i- (i- (i- irand6 irand48) (i* X irand128)) X))))
+Program X
 ###################################
 Individual 41
-Fitness 1
-Depth 7
-Size 39
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X X) (i- (i- (i- irand6 X) (i* X irand128)) (i/ X X)))))
+Program X
 ###################################
 Individual 42
-Fitness 1
-Depth 8
-Size 49
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X (i- (i+ X X) (i- X X))) (i- (i- (i+ (i- irand189 X) X) (i* irand162 irand128)) (i* (i- X X) irand162)))))
+Program X
 ###################################
 Individual 43
-Fitness 1
-Depth 7
-Size 43
+Fitness 148
+Depth 2
+Size 3
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X X) (i- (i- (i- X X) (i* X irand128)) (i* (i- irand162 irand138) (i- irand6 X))))))
+Program (i+ X X)
 ###################################
 Individual 44
-Fitness 1
-Depth 7
-Size 47
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X (i- (i- irand162 X) (i- X X))) (i- (i- (i- irand6 X) (i* X irand128)) (i+ irand6 (i- irand162 X))))))
+Program X
 ###################################
 Individual 45
-Fitness 1
-Depth 7
-Size 39
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ X (i- (i- (i- irand6 X) (i* X irand128)) (i* (i- irand162 irand138) irand162)))))
+Program X
 ###################################
 Individual 46
-Fitness 1
-Depth 7
-Size 39
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i/ X X) (i- (i- irand140 (i* X irand128)) (i* (i- X X) irand162)))))
+Program X
 ###################################
 Individual 47
-Fitness 1
-Depth 10
-Size 49
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X X) (i- (i- (i- irand6 X) (i* X irand128)) (i* (i+ X (i+ (i* (i* X irand130) (i/ X X)) X)) irand162)))))
+Program X
 ###################################
 Individual 48
-Fitness 1
-Depth 7
-Size 39
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i/ irand159 (i+ irand181 (i- X X))) (i- X (i* (i- irand162 X) irand162)))))
+Program X
 ###################################
 Individual 49
-Fitness 1
-Depth 7
-Size 39
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) X))) (i+ X (i/ (i+ X X) (i- (i- (i- irand6 X) (i* irand86 irand128)) (i* (i- irand162 irand138) (i- irand58 irand60))))))
+Program X
 ###################################
 Individual 50
-Fitness 1
-Depth 7
-Size 43
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) X))) (i+ X (i/ (i+ (i- (i- irand197 irand170) (i- X X)) X) (i- (i- (i- irand6 X) (i* X X)) (i* (i- irand162 irand138) irand162)))))
+Program X
 ###################################
 Individual 51
-Fitness 1
-Depth 7
-Size 39
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ X (i- (i- (i- irand6 X) (i* irand162 irand128)) (i* (i- X X) X)))))
+Program X
 ###################################
 Individual 52
-Fitness 1
-Depth 7
-Size 45
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X (i- X (i+ X X))) (i- (i- (i- irand6 X) (i- X X)) (i+ X (i/ X X))))))
+Program X
 ###################################
 Individual 53
-Fitness 1
-Depth 8
-Size 45
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ (i+ X (i- X X)) X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ irand134 (i+ (i- X (i- X X)) X)) (i+ (i* (i* X irand130) X) X))))
+Program X
 ###################################
 Individual 54
-Fitness 1
-Depth 7
-Size 43
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ (i+ X (i- X X)) X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X (i+ (i- X irand106) X)) (i+ (i* (i* X X) X) X))))
+Program X
 ###################################
 Individual 55
-Fitness 1
-Depth 7
-Size 43
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X X) (i- (i- (i- irand6 X) (i* X irand128)) (i* (i- irand162 irand138) (i- X X))))))
+Program X
 ###################################
 Individual 56
-Fitness 1
-Depth 7
-Size 45
+Fitness 148
+Depth 6
+Size 11
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) X))) (i+ X (i/ (i+ (i- (i- irand197 irand170) (i- X X)) X) (i- (i- (i- irand6 X) (i* irand86 irand128)) (i* (i- irand162 irand138) (i/ irand26 irand114))))))
+Program (i+ X (i* irand177 (i/ X (i+ irand183 (i+ X irand96)))))
 ###################################
 Individual 57
-Fitness 1
-Depth 7
-Size 45
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i* (i+ (i/ irand131 (i- X X)) (i/ (i- X irand199) (i+ irand114 X))) (i/ (i- (i/ X X) X) X))))
+Program X
 ###################################
 Individual 58
-Fitness 1
-Depth 7
-Size 41
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X (i/ (i* X X) (i+ irand110 X))) (i- X (i* (i- irand162 X) irand162)))))
+Program X
 ###################################
 Individual 59
-Fitness 2
-Depth 10
-Size 61
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X (i- (i+ X X) (i- X X))) (i- (i- (i- irand6 X) (i- (i- (i+ (i- X X) X) (i* irand162 irand128)) (i* (i- X X) irand162))) (i* (i- X (i- X X)) irand162)))))
+Program X
 ###################################
 Individual 60
-Fitness 2
-Depth 10
-Size 57
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X (i- (i+ X X) (i- X X))) (i- (i- (i- X irand134) (i- (i- (i+ (i- X X) X) (i* irand162 irand128)) (i* (i- X X) irand162))) (i* X irand162)))))
+Program X
 ###################################
 Individual 61
-Fitness 2
-Depth 7
-Size 31
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ X (i- (i- irand6 X) X))))
+Program X
 ###################################
 Individual 62
-Fitness 5
-Depth 7
-Size 47
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ (i+ X (i- X X)) X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X (i+ (i* irand162 irand128) X)) (i+ (i* (i* X irand130) X) (i/ (i/ X irand80) X)))))
+Program X
 ###################################
 Individual 63
-Fitness 30
-Depth 7
-Size 41
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X (i+ (i- X X) irand128))) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ irand154 (i- (i* (i* X irand172) X) (i/ (i/ irand124 X) irand137)))))
+Program X
 ###################################
 Individual 64
-Fitness 49
-Depth 7
-Size 45
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ (i+ X X) X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X (i+ (i- X X) X)) (i+ (i* (i* X irand130) X) (i/ (i/ X irand80) X)))))
+Program X
 ###################################
 Individual 65
-Fitness 49
-Depth 7
-Size 45
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ (i+ X (i/ X X)) (i/ (i+ X X) (i- (i- (i- X X) (i* X irand128)) (i* (i- irand162 irand6) irand162)))))
+Program X
 ###################################
 Individual 66
-Fitness 51
-Depth 7
-Size 39
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ (i/ irand124 X) X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X X) (i- (i- (i- irand6 X) (i* X irand128)) X))))
+Program X
 ###################################
 Individual 67
-Fitness 51
-Depth 7
-Size 41
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X (i+ X X))) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) X))) (i+ X (i/ (i+ X X) (i- (i- (i- irand6 X) (i* irand86 irand128)) (i* (i- irand162 irand138) (i- irand58 irand60))))))
+Program X
 ###################################
 Individual 68
-Fitness 51
-Depth 7
-Size 43
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ X (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X (i- (i- irand162 X) (i- X X))) (i- (i- (i- irand6 X) (i* X irand128)) (i+ irand6 (i/ X X))))))
+Program X
 ###################################
 Individual 69
-Fitness 56
-Depth 7
-Size 41
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ (i* irand42 (i+ irand162 irand152)) X) (i- (i- (i- irand6 X) (i* X irand128)) X))))
+Program X
 ###################################
 Individual 70
-Fitness 128
-Depth 7
-Size 37
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ (i+ X (i- X X)) X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ irand134 (i+ (i- X X) X)) X)))
+Program X
 ###################################
 Individual 71
-Fitness 2406
-Depth 7
-Size 41
+Fitness 148
+Depth 3
+Size 7
 Range 
-Program (i+ (i+ (i+ X (i/ X (i+ (i- X X) X))) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- irand133 X) X)))) (i+ X (i/ irand154 (i- (i* (i* X irand172) X) (i/ (i/ irand124 X) irand137)))))
+Program (i+ (i/ X irand82) (i+ X X))
 ###################################
 Individual 72
-Fitness 2416
-Depth 7
-Size 37
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ irand134 (i/ (i+ X X) (i- (i- (i- irand6 X) (i* X irand128)) X))))
+Program X
 ###################################
 Individual 73
-Fitness 2416
-Depth 7
-Size 35
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X X)) (i+ (i- X X) X)))) (i+ X (i/ X (i- (i- (i- irand6 X) (i* X irand128)) X))))
+Program X
 ###################################
 Individual 74
-Fitness 2468
-Depth 7
-Size 45
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ (i+ X (i- X X)) X)) (i+ irand138 (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ irand134 (i+ (i- X X) X)) (i+ (i* (i* X irand130) (i/ X X)) X))))
+Program X
 ###################################
 Individual 75
-Fitness 2480
-Depth 7
-Size 43
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i* irand139 (i* irand63 X)) (i- (i- (i- irand6 irand134) (i* X irand128)) (i* (i- irand162 irand138) irand162)))))
+Program X
 ###################################
 Individual 76
-Fitness 2799
-Depth 7
-Size 49
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ (i+ X (i- X X)) X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) (i+ X irand56))))) (i+ X (i/ (i+ X (i+ (i- X X) X)) (i+ (i* (i* X irand130) X) (i/ (i/ X irand80) X)))))
+Program X
 ###################################
 Individual 77
-Fitness 2898
-Depth 7
-Size 49
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ (i+ (i- X X) X) (i/ X X)) (i+ X (i+ (i+ (i+ irand67 X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X (i- (i- irand195 X) X)) (i- (i- (i- irand6 X) (i* X irand128)) (i+ irand6 (i/ X X))))))
+Program X
 ###################################
 Individual 78
-Fitness 2924
-Depth 7
-Size 37
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ irand162 X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X X) (i- (i- (i- irand6 X) (i* X irand128)) X))))
+Program X
 ###################################
 Individual 79
-Fitness 2924
-Depth 7
-Size 43
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ irand162 (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X (i- (i- irand162 X) (i- X X))) (i- (i- (i- irand6 X) (i* X irand128)) irand153))))
+Program X
 ###################################
 Individual 80
-Fitness 3080
-Depth 7
-Size 45
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ (i* (i- irand162 irand138) irand162) X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ irand134 (i+ (i- X X) X)) (i+ (i* (i* X irand130) (i/ X X)) X))))
+Program X
 ###################################
 Individual 81
-Fitness 3230
-Depth 7
-Size 41
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ irand172 (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X (i- X X)) (i- (i- (i- irand6 X) X) (i+ X (i/ X X))))))
+Program X
 ###################################
 Individual 82
-Fitness 3624
-Depth 7
-Size 45
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- irand43 irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ (i+ (i- X X) (i- X X)) (i+ X X)) (i- (i- (i- irand6 irand48) (i* X irand128)) X))))
+Program X
 ###################################
 Individual 83
-Fitness 4398
-Depth 7
-Size 53
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X (i+ (i- X X) X))) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) (i- irand162 irand138))))) (i+ X (i/ (i+ (i+ (i+ X X) (i- X irand138)) (i+ X irand6)) (i- (i- X (i* irand162 irand128)) (i* (i- X irand31) irand162)))))
+Program X
 ###################################
 Individual 84
-Fitness 5201
-Depth 7
-Size 47
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ (i- (i- irand162 X) (i- X X)) (i/ (i+ (i/ X X) X) (i- (i- (i- irand6 X) (i* X irand128)) (i* X irand162)))))
+Program X
 ###################################
 Individual 85
-Fitness 5556
-Depth 7
-Size 25
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X X))
+Program X
 ###################################
 Individual 86
-Fitness 5556
-Depth 7
-Size 39
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ X X)))) (i+ X (i/ (i+ X X) (i- (i- (i- irand6 X) (i* X irand128)) (i* (i- irand162 irand138) X)))))
+Program X
 ###################################
 Individual 87
-Fitness 5558
-Depth 7
-Size 41
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ (i- X X) (i/ (i/ X X) (i- (i- (i- irand6 irand48) (i* X irand128)) (i* X irand162)))))
+Program X
 ###################################
 Individual 88
-Fitness 5558
-Depth 7
-Size 49
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) (i- X X))))) (i+ X (i/ (i+ (i+ (i+ X X) (i- X X)) X) (i- (i- (i- irand6 irand48) (i* irand162 irand128)) (i* (i- X X) irand162)))))
+Program X
 ###################################
 Individual 89
-Fitness 10685
-Depth 7
-Size 43
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ (i+ X (i- X X)) X)) (i+ X (i+ (i/ (i/ irand156 X) (i* X irand4)) (i+ (i- X X) X)))) (i+ X (i/ (i+ irand134 (i+ (i- X X) X)) (i+ (i* (i* X irand130) X) X))))
+Program X
 ###################################
 Individual 90
-Fitness 11063
-Depth 7
-Size 41
+Fitness 148
+Depth 2
+Size 3
 Range 
-Program (i+ (i+ (i+ X (i+ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) X))) (i+ X (i/ (i+ (i+ (i+ X X) (i- X X)) (i+ X X)) (i- (i- (i- irand6 irand48) (i* X irand128)) X))))
+Program (i+ X X)
 ###################################
 Individual 91
-Fitness 11065
-Depth 7
-Size 49
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ (i+ (i- X X) X) (i/ X X)) (i+ X (i+ (i+ (i/ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X (i- (i- irand195 X) X)) (i- (i- (i- irand6 X) (i* X irand128)) (i+ irand6 (i/ X X))))))
+Program X
 ###################################
 Individual 92
-Fitness 11087
-Depth 7
-Size 49
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ (i- (i/ (i* X X) (i* irand110 X)) X) (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X X) (i- (i- (i- irand6 X) (i* X irand128)) (i* (i- irand162 irand138) irand162)))))
+Program X
 ###################################
 Individual 93
-Fitness 16003
-Depth 7
-Size 27
+Fitness 148
+Depth 4
+Size 7
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) X) (i+ X (i/ (i+ X X) (i- (i- (i- irand6 X) (i* X irand128)) (i* (i- irand162 irand138) X)))))
+Program (i+ X (i/ (i+ X X) irand48))
 ###################################
 Individual 94
-Fitness 16005
-Depth 7
-Size 45
+Fitness 148
+Depth 2
+Size 3
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) X))) (i+ (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X))) (i/ X (i- (i- (i+ X X) (i* X X)) X))))
+Program (i+ X X)
 ###################################
 Individual 95
-Fitness 26899
-Depth 7
-Size 39
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i* (i+ (i- X (i* X irand163)) (i/ (i+ X X) (i/ X X))) (i* (i/ irand88 (i+ irand133 X)) irand60)) (i+ X (i/ (i/ X X) (i- (i- (i- irand6 irand48) (i* X irand128)) (i* X irand162)))))
+Program X
 ###################################
 Individual 96
-Fitness 133317
-Depth 7
-Size 41
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i* (i- irand162 irand138) X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) X))) (i+ X (i/ (i- X irand134) (i- (i- (i- irand6 X) (i* X irand128)) (i* (i- irand162 X) (i- irand6 X))))))
+Program X
 ###################################
 Individual 97
-Fitness 722161
-Depth 7
-Size 39
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i- (i- irand6 X) (i* X irand128)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) X))) (i+ X (i/ X (i- (i- (i* irand57 X) (i* X irand128)) (i* (i- irand162 X) (i- irand6 X))))))
+Program X
 ###################################
 Individual 98
-Fitness 734389
-Depth 7
-Size 39
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ X X)) (i+ X (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ (i* (i/ (i- (i- X irand44) (i- X irand178)) (i/ (i+ irand43 X) X)) X) X))
+Program X
 ###################################
 Individual 99
-Fitness 4.9365e+06
-Depth 7
-Size 47
+Fitness 148
+Depth 1
+Size 1
 Range 
-Program (i+ (i+ (i+ X (i/ (i+ X (i- X X)) X)) (i+ (i* (i* irand5 (i+ X irand41)) X) (i+ (i+ (i+ X X) (i- X irand134)) (i+ (i- X X) X)))) (i+ X (i/ (i+ X (i+ (i- X X) X)) (i+ (i* X irand134) X))))
+Program X
