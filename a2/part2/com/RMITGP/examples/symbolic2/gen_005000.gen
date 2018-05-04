@@ -1,710 +1,710 @@
 Population at generation 5000
-File created at Mon Apr 30 17:44:01 2018
+File created at Fri May  4 12:30:21 2018
 numIndividuals 100
 depthLimit 3
 initdepthLimit 3
 minDepth 1
 returnType 2
-mutationRate 0.05
-crossoverRate 0.85
+mutationRate 0.15
+crossoverRate 0.8
 elitismRate 0.05
 ###################################
 Individual 0
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 1
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 2
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 3
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 4
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 5
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 6
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 7
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 8
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 9
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 10
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 11
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 13
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) (d* X X)) (d- (d* X X) X))
 ###################################
 Individual 12
-Fitness 49.4914
-Depth 8
-Size 51
+Fitness 20
+Depth 4
+Size 9
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ (d+ drand1.499963 X) (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- X X) (d- (d* X X) X))
 ###################################
 Individual 13
-Fitness 49.4914
-Depth 8
-Size 47
+Fitness 20
+Depth 5
+Size 13
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- X (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d- (d* X X) X) X))
 ###################################
 Individual 14
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 9
 Range 
-Program (d+ (d* (d+ (d+ X (d+ drand1.499963 X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d* X X))
 ###################################
 Individual 15
-Fitness 49.4914
-Depth 8
-Size 47
+Fitness 20
+Depth 4
+Size 9
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- X (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- X X) (d- (d* X X) X))
 ###################################
 Individual 16
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 5
+Size 13
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ X (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X (d* X X)) X))
 ###################################
 Individual 17
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 9
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ drand1.499963 X)) X))))
+Program (d* (d* X X) (d- (d* X X) X))
 ###################################
 Individual 18
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 5
+Size 13
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d- (d* X X) X) X))
 ###################################
 Individual 19
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 20
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 21
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 22
-Fitness 49.4914
-Depth 8
-Size 51
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X (d+ X X))))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 23
-Fitness 49.4914
-Depth 8
-Size 51
+Fitness 20
+Depth 4
+Size 7
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ (d+ X X) X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* X (d- (d* X X) X))
 ###################################
 Individual 24
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 6
+Size 15
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X (d- (d* X X) X)) X))
 ###################################
 Individual 25
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ X (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 26
-Fitness 49.4914
-Depth 8
-Size 47
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) X) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 27
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 13
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- X X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) (d* X X)))
 ###################################
 Individual 28
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 9
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- X X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- X X) (d- (d* X X) X))
 ###################################
 Individual 29
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) drand1.499963) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 30
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ X X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 31
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 drand1.499963) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 32
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) drand1.499963) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 33
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 34
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 35
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 9
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ drand1.499963 (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- X X) (d- (d* X X) X))
 ###################################
 Individual 36
-Fitness 49.4914
-Depth 8
-Size 45
+Fitness 20
+Depth 5
+Size 13
 Range 
-Program (d+ (d* (d+ X X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* (d* X X) X) X))
 ###################################
 Individual 37
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 38
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 39
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 9
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d* X X) (d- (d* X X) X))
 ###################################
 Individual 40
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 5
+Size 13
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ X X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d- (d* X X) X) X))
 ###################################
 Individual 41
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ drand1.499963 (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 42
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 drand1.499963) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 43
-Fitness 49.4914
-Depth 8
-Size 51
+Fitness 20
+Depth 5
+Size 13
 Range 
-Program (d+ (d* (d+ (d+ (d- drand1.499963 X) (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X (d* X X)) X))
 ###################################
 Individual 44
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 9
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- X X) (d- (d* X X) X))
 ###################################
 Individual 45
-Fitness 49.4914
-Depth 8
-Size 51
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ (d+ X X) (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 46
-Fitness 49.4914
-Depth 8
-Size 47
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X drand1.499963)) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 47
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 13
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) (d* X X)))
 ###################################
 Individual 48
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 9
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- X X))
 ###################################
 Individual 49
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 50
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 51
-Fitness 49.4914
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 9
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- X X))
 ###################################
 Individual 52
-Fitness 53.8672
-Depth 8
-Size 49
+Fitness 20
+Depth 5
+Size 13
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ drand1.499963 X))) X) (d+ (d+ (d+ X (d+ X X)) (d+ X X)) X))))
+Program (d* (d- (d* X (d* X X)) X) (d- (d* X X) X))
 ###################################
 Individual 53
-Fitness 53.8672
-Depth 8
-Size 47
+Fitness 20
+Depth 4
+Size 9
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X drand99.267228) (d+ X X)) X))))
+Program (d* (d- X X) (d- (d* X X) X))
 ###################################
 Individual 54
-Fitness 55.133
-Depth 8
-Size 51
+Fitness 20
+Depth 5
+Size 13
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X (d* X X)) X) (d- (d* X X) X))
 ###################################
 Individual 55
-Fitness 57.0601
-Depth 8
-Size 47
+Fitness 20
+Depth 4
+Size 9
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X X))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- X X) (d- (d* X X) X))
 ###################################
 Individual 56
-Fitness 57.0601
-Depth 9
-Size 51
+Fitness 20
+Depth 4
+Size 13
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ (d- drand1.499963 X) X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) (d* X X)) (d- (d* X X) X))
 ###################################
 Individual 57
-Fitness 57.0601
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ (d+ X X) (d+ X X)) drand1.499963) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 58
-Fitness 57.0601
-Depth 8
-Size 47
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ X X)) drand1.499963) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 59
-Fitness 57.0601
-Depth 8
-Size 47
+Fitness 20
+Depth 4
+Size 13
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X X))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) (d* X X)))
 ###################################
 Individual 60
-Fitness 57.0601
-Depth 8
-Size 47
+Fitness 20
+Depth 4
+Size 9
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ X X)) drand1.499963) drand34.545270))))
+Program (d* (d- X X) (d- (d* X X) X))
 ###################################
 Individual 61
-Fitness 59.2002
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ drand1.499963 (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 62
-Fitness 59.2002
-Depth 9
-Size 51
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X drand1.499963) (d+ X (d+ (d- drand1.499963 X) X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 63
-Fitness 59.2002
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X drand1.499963) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* drand22.602383 X) X))
 ###################################
 Individual 64
-Fitness 59.2002
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 9
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) drand1.499963))))
+Program (d* (d- (d* X X) X) (d- X X))
 ###################################
 Individual 65
-Fitness 59.2002
-Depth 8
-Size 47
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 X)) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X drand1.499963)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 66
-Fitness 59.2002
-Depth 8
-Size 47
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- X (d+ X (d+ drand1.499963 (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 67
-Fitness 59.2002
-Depth 8
-Size 51
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) (d- drand1.499963 X)) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) drand1.499963))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 68
-Fitness 68.5571
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 (d+ X (d+ X X))) (d+ X (d+ drand1.499963 X))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X X) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 69
-Fitness 68.5571
-Depth 8
-Size 45
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ drand1.499963 X))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X X) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 70
-Fitness 68.5571
-Depth 8
-Size 47
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ drand1.499963 X))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ (d+ X X) X) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 71
-Fitness 69.8477
-Depth 8
-Size 45
+Fitness 20
+Depth 4
+Size 9
 Range 
-Program (d+ (d* (d+ (d+ X X) drand1.499963) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X X))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ drand1.499963 X)) X))))
+Program (d* (d- X X) (d- (d* X X) X))
 ###################################
 Individual 72
-Fitness 71.6656
-Depth 8
-Size 51
+Fitness 20
+Depth 5
+Size 13
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X X)) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) (d+ drand1.499963 (d+ drand1.499963 X))))))
+Program (d* (d- (d* X (d* X X)) X) (d- (d* X X) X))
 ###################################
 Individual 73
-Fitness 71.6656
-Depth 8
-Size 53
+Fitness 20
+Depth 4
+Size 9
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ drand1.499963 (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) (d+ drand1.499963 (d+ drand1.499963 X))))))
+Program (d* (d- X X) (d- (d* X X) X))
 ###################################
 Individual 74
-Fitness 72.4484
-Depth 8
-Size 47
+Fitness 20
+Depth 4
+Size 13
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- X (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) (d* X X)))
 ###################################
 Individual 75
-Fitness 72.4484
-Depth 9
-Size 51
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X drand69.417002) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 (d- drand1.499963 X))) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 76
-Fitness 72.4484
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X X) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d+ X X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X (d+ X X))) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 77
-Fitness 72.4484
-Depth 8
-Size 47
+Fitness 20
+Depth 4
+Size 7
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- X (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* X (d- (d* X X) X))
 ###################################
 Individual 78
-Fitness 72.4484
-Depth 9
-Size 49
+Fitness 20
+Depth 5
+Size 15
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 drand1.499963)) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 (d- drand1.499963 X))) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) (d- (d* X X) X)))
 ###################################
 Individual 79
-Fitness 72.4484
-Depth 8
-Size 47
+Fitness 20
+Depth 4
+Size 9
 Range 
-Program (d+ (d* (d+ (d+ drand1.499963 (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X X))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ drand1.499963 X)) X))))
+Program (d* (d- X X) (d- (d* X X) X))
 ###################################
 Individual 80
-Fitness 73.8961
-Depth 8
-Size 51
+Fitness 20
+Depth 4
+Size 13
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- X X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) (d+ drand1.499963 X)) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) (d* X X)))
 ###################################
 Individual 81
-Fitness 81.9196
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ drand1.499963 X)) X) (d+ drand1.499963 (d+ X X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 82
-Fitness 85.144
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ X (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ drand1.499963 X)) drand1.499963))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 83
-Fitness 85.144
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- X X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ drand1.499963 X)) drand1.499963))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 84
-Fitness 85.144
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ drand1.499963 X)) drand1.499963))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 85
-Fitness 85.144
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ drand1.499963 X)) drand1.499963))))
+Program (d* (d- (d* X X) X) (d- (d* drand23.670155 X) X))
 ###################################
 Individual 86
-Fitness 117.457
-Depth 8
-Size 47
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X X) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 87
-Fitness 128.136
-Depth 8
-Size 47
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ (d+ X X) X)) (d- (d- (d- drand1.499963 X) (d+ X (d+ X X))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) drand63.909626) (d- (d* X X) X))
 ###################################
 Individual 88
-Fitness 134.618
-Depth 8
-Size 53
+Fitness 20
+Depth 4
+Size 9
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 (d+ X X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) (d+ drand1.499963 (d+ drand1.499963 X))))))
+Program (d* (d- X X) (d- (d* X X) X))
 ###################################
 Individual 89
-Fitness 141.297
-Depth 8
-Size 47
+Fitness 20
+Depth 4
+Size 9
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ X (d+ drand1.499963 X))) (d- (d- X (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) drand1.499963))))
+Program (d* (d- (d* X X) X) (d- X X))
 ###################################
 Individual 90
-Fitness 153.297
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 11
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ X (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) X) (d- (d* X X) X))
 ###################################
 Individual 91
-Fitness 153.297
-Depth 8
-Size 49
+Fitness 20
+Depth 4
+Size 9
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ X (d+ drand1.499963 X))) (d- (d- (d- X X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d* drand18.163064 drand90.058996) (d- (d* X X) X))
 ###################################
 Individual 92
-Fitness 159.457
-Depth 10
-Size 55
+Fitness 20
+Depth 1
+Size 1
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X (d- drand1.499963 X))) X) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- X X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ (d+ drand1.499963 (d+ drand1.499963 X)) X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program X
 ###################################
 Individual 93
-Fitness 173.029
-Depth 8
-Size 51
+Fitness 155.727
+Depth 5
+Size 15
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ (d+ drand1.499963 X) (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) (d- (d* X X) X)) (d- (d* X X) X))
 ###################################
 Individual 94
-Fitness 198.426
-Depth 8
-Size 53
+Fitness 155.727
+Depth 5
+Size 15
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) (d+ X (d+ X X))) (d+ drand1.499963 (d+ drand1.499963 X))) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X X) (d- (d* X X) X)) (d- (d* X X) X))
 ###################################
 Individual 95
-Fitness 219.166
-Depth 8
-Size 49
+Fitness 159.164
+Depth 3
+Size 7
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 X)) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X (d+ drand1.499963 X))))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- X X) (d+ X drand60.249278))
 ###################################
 Individual 96
-Fitness 225.133
-Depth 8
-Size 45
+Fitness 159.164
+Depth 3
+Size 7
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) drand1.499963) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- X X) (d- X X))
 ###################################
 Individual 97
-Fitness 225.133
-Depth 8
-Size 45
+Fitness 159.164
+Depth 4
+Size 9
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) X) (d- (d- (d- drand1.499963 X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X X) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* X drand51.631399) X) (d- X X))
 ###################################
 Individual 98
-Fitness 262.328
-Depth 9
-Size 51
+Fitness 262.168
+Depth 6
+Size 17
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) (d+ drand1.499963 X)) (d- (d- (d+ X X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X (d+ drand1.499963 (d+ X X))) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d* (d- (d* (d- (d* X X) X) X) (d* X X)) (d- (d* X X) X))
 ###################################
 Individual 99
-Fitness 279.719
-Depth 9
-Size 49
+Fitness 285.736
+Depth 3
+Size 7
 Range 
-Program (d+ (d* (d+ (d+ X (d+ X X)) X) drand1.499963) (d- (d- (d+ X X) (d+ X (d+ X (d+ X X)))) (d+ (d+ (d+ (d+ X (d+ drand1.499963 (d+ X X))) (d+ X (d+ X X))) X) (d+ (d+ (d+ X (d+ drand1.499963 X)) (d+ X X)) X))))
+Program (d/ (d+ drand99.508359 X) (d+ drand44.654583 drand11.009290))
