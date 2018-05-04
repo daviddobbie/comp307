@@ -1,0 +1,128 @@
+#!/usr/bin/perl
+
+#USAGE  :  ./jplot_fitness
+
+#AUTHOR : Michael Foster
+#DATE   : 13/12/04
+
+#BUGS
+#Currently the location of jgraph may need to be changed to reflect the
+#system. I was unable to get it to work when it found the path using whereis.
+#Someone with better Perl skills might know how to do this.
+
+#Determine the directory the script is being called for.
+$dir = `pwd`;
+chop($dir);
+
+#Get the JGraph Path
+$jgraph = `whereis jgraph`;
+chop($jgraph);
+
+#Check to see if the user has specified a run-log of a different name.
+if(scalar(@ARGV) > 0)
+{
+   if(scalar(@ARGV) > 1)
+   {
+      print("gplot_fitness only takes one argument, the run log file name.
+Program is assuming that standard file name (run-log.txt) is being
+used.\n");
+      $runlog = $dir . "/" . "run-log.txt";
+   }
+   else
+   {
+      $runlog = $ARGV[0];
+      
+      print("Using run log: $runlog\n");
+
+      $runlog = $dir . "/" . $ARGV[0];
+   }
+}
+else
+{
+   print("Using standard run log: run-log.txt\n");
+   $runlog = $dir . "/" . "run-log.txt";
+}
+
+#Check now to see that we can open it and it's readable.
+if(! (-e $runlog))
+{
+   print("Run Log does not exist.\n");
+}
+else
+{
+   if(! (-r $runlog))
+   {
+      print("Run Log could not be opened.\n");
+   }
+   else #We are free to keep going
+   {
+      #Open and read file into a temporary buffer.
+      open(RUNLOG, $runlog);
+      @runinfo = <RUNLOG>;
+      close(RUNLOG);
+
+      #Open up a new file for adding the graph info to
+      $newfile = $dir . "/" . "run-log.jgr";
+
+      #Get all the data to be written to the file
+      @data = &getGraphData(@runinfo);
+
+      #Open our new data file for writing
+      open(DAT, ">$newfile");
+      print(DAT @data);
+      close(DAT);
+
+      print("\nView graph using: gv run-log-jgr.ps\n\n");
+
+      #We then have to do the graphing.
+      system "/usr/local/bin/jgraph run-log.jgr > run-log-jgr.ps";
+   }
+}
+   
+sub getGraphData
+{
+   @output = '';
+
+   $extra = "newgraph\n";
+
+   push(@output, $extra);
+   
+   $temp = "newcurve pts ";
+   
+   #Check each line in the file to see if we need it.
+   for($i=0 ; $i<scalar(@_) ; $i++)
+   {
+      if($_[$i] =~ /^Generation/)
+      {
+         #Remove the word generation from the line
+         $temp2 = $_[$i];
+         $temp2 =~ s/^Generation //;
+         chop($temp2);
+         $temp = $temp . " " . $temp2;
+      }
+
+      if($_[$i] =~ /^BestFitness/)
+      {
+         #Get the fitness
+         $temp3 = $_[$i];
+         $temp3 =~ s/^BestFitness //;
+         chop($temp3);
+
+         $temp = $temp . " " . $temp3;
+      }
+   }
+
+   $temp = $temp . " linetype solid marktype none\n";
+   
+   push(@output, $temp);
+
+   $extra = "xaxis label : Generation\n";
+   push(@output,$extra);
+   $extra = "yaxis label : Fitness\n";
+   push(@output,$extra);
+   $extra = "title : Generation vs Fitness\n";
+   push(@output,$extra);
+   
+   return @output;
+}
+

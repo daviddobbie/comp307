@@ -1,0 +1,131 @@
+#!/usr/bin/perl
+
+#USAGE  :  ./gplot_fitness
+#AUTHOR : Michael Foster
+#DATE   : 13/12/04
+
+#Determine the directory the script is being called for.
+$dir = `pwd`;
+chop($dir);
+
+#Check to see if the user has specified a run-log of a different name.
+if(scalar(@ARGV) > 0)
+{
+   if(scalar(@ARGV) > 1)
+   {
+      print("gplot_fitness only takes one argument, the run log file name.
+Program is assuming that standard file name (run-log.txt) is being
+used.\n");
+      $runlog = $dir . "/" . "run-log.txt";
+   }
+   else
+   {
+      $runlog = $ARGV[0];
+      
+      print("Using run log: $runlog\n");
+
+      $runlog = $dir . "/" . $ARGV[0];
+   }
+}
+else
+{
+   print("Using standard run log: run-log.txt\n");
+   $runlog = $dir . "/" . "run-log.txt";
+}
+
+#Check now to see that we can open it and it's readable.
+if(! (-e $runlog))
+{
+   print("Run Log does not exist.\n");
+}
+else
+{
+   if(! (-r $runlog))
+   {
+      print("Run Log could not be opened.\n");
+   }
+   else #We are free to keep going
+   {
+      #Open and read file into a temporary buffer.
+      open(RUNLOG, $runlog);
+      @runinfo = <RUNLOG>;
+      close(RUNLOG);
+
+      #Open up a new file for adding the graph info to
+      $newfile = $dir . "/" . "run-log.dat";
+
+      #Get all the data to be written to the file
+      @data = &getGraphData(@runinfo);
+
+      #Open our new data file for writing
+      open(DAT, ">$newfile");
+      print(DAT @data);
+      close(DAT);
+
+      #Now want to create a batch file for setting up the graphing.
+      $newfile = $dir . "/" . "run-log.bat";
+
+      @data = &getBatchFileData;
+
+      open(BAT, ">$newfile");
+      print(BAT @data);
+      close(BAT);
+      
+      print("\nView graph using: gv run-log-gnu.ps\n\n");
+
+      #We then have to do the graphing.
+      system "gnuplot run-log.bat";
+      system "rm run-log.bat";
+
+   }
+}
+   
+sub getGraphData
+{
+   @output = '';
+
+   #Check each line in the file to see if we need it.
+   for($i=0 ; $i<scalar(@_) ; $i++)
+   {
+      if($_[$i] =~ /^Generation/)
+      {
+         #Remove the word generation from the line
+         $temp = $_[$i];
+         $temp =~ s/^Generation //;
+         chop($temp);
+      }
+
+      if($_[$i] =~ /^BestFitness/)
+      {
+         #Get the fitness
+         $temp2 = $_[$i];
+         $temp2 =~ s/^BestFitness //;
+
+         $temp = $temp . " " . $temp2;
+
+         push(@output,$temp);
+      }
+   }
+   
+   return @output;
+}
+
+sub getBatchFileData
+{
+   @output = '';
+
+   $line = "set xlabel \"Generation\"\n";
+   push(@output, $line);
+   $line = "set ylabel \"Best Fitness\"\n";
+   push(@output, $line);
+   $line = "set title \"Fitness vs Generation\"\n";
+   push(@output, $line);
+   $line = "set terminal postscript eps monochrome 26\n";
+   push(@output, $line);
+   $line = "set output \"run-log-gnu.ps\"\n";
+   push(@output, $line);
+   $line = "plot \"run-log.dat\" with linespoints\n";
+   push(@output, $line);
+
+   return @output;
+}
