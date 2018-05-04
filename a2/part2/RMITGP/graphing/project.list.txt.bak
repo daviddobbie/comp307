@@ -1,0 +1,90 @@
+TITLE
+============
+Analyse Genetic Programming Runs
+
+OBJECTIVE:
+To have a set of easy to be used scripts to produce commonly 
+postscript graphs for the RMIT GP package.
+
+
+The project will involve four phrases. 
+
+PHRASE ONE
+============
+Develop a basic script to capture the following information
+  - LOG FILES : run-logs
+  - GRAPHS    :
+    > BestFitness    vs. Generation     average method: static, all
+    > AverageFitness vs. Generation     average method: static, all
+    > AverageDepth   vs. Generation     average method: non-static
+    > AverageSize    vs. Generation     average method: non-static
+    > WorstFitness   vs. Generation     average method: non-static
+
+PHRASE TWO
+============
+Design a set of scripts to re-do the experiments presented in the 
+workshop paper.
+
+. LOG FILES : gen*
+
+. SCRIPT ONE 
+  - GRAPHS    :
+    > number of occurrences vs. size
+    > number of occurrences vs. depth
+    > number of occurrences vs. fitness
+  
+. SCRIPT TWO
+  - GRAPH     : 
+    > number of tree shapes vs. generation
+    
+. SCRIPT THREE
+  - GRAPHS
+    > number of evaluations vs fitness    and size
+    > number of evaluations vs generation and size
+
+. SCRIPT FOUR
+  - STATISTIC GATHERING
+    A script which analyzes the gen* files and collects information to 
+    store into a *.stat file.
+
+    Information needs is:
+    # TotalEvaluation 
+    # NoOfStringDistinct
+    # Top5MostFrequentlyEvaluatedPrograms, Fitness, NoOfEvaluations, FirstOccuredGenNo
+
+    # NoOfCommutative
+    # MostFrequentlyEvaluationNo
+    # Top5MostFrequentlyEvaluatedPrograms, Fitness, NoOfEvaluations, FirstOccuredGenNo
+
+    # Top5BestPrograms, Fitness, NoOfEvaluations, FirstOccuredGenNo
+
+
+ PHRASE THREE
+ ==============
+ Utilizing the newly created scripts to examine runs with decimation for 
+ the problems of Santa Fe Ant, Symbolic regression, MAX and Parity and have
+ a comparison with the standard approaches.
+
+
+ PHRASE FOUR
+ ==============
+ 
+ - Refine the script in phrase one to add one and two standard
+   deviation information 
+
+ - Refine the script in phrase one to add multiple runs
+
+ - Refine the script in phrase one to capture information in multiple
+   directories.
+
+ - Design a script to measure diversity of the programs 
+     genotype   - program differences
+     phenotype  - fitness differences
+
+ - Find a way to convert shape into a number to analyse
+   . fitness changes for the most frequently occurred shape
+   . fitness changes for the shape which has the best fitness
+   . plot fitness landscape with shape information
+
+ - Find out most frequently occurred longest patterns in the 
+   programs. 
