@@ -33,13 +33,13 @@ int main (int argc, char* argv[])
    GPConfig symConfig;
    
    //Declare a population, giving the size and a log file name
-   Population pop(100, 1000,  "run-log.txt", &symConfig);
+   Population pop(200, 1000,  "run-log.txt", &symConfig);
    string s1;
   
    //Set the rates of mutation etc 
-   pop.setMutationRate(0.20);
-   pop.setCrossoverRate(0.77);
-   pop.setElitismRate(0.03);
+   pop.setMutationRate(0.15);
+   pop.setCrossoverRate(0.80);
+   pop.setElitismRate(0.05);
 
    //Set the return type for our programs
    pop.setReturnType(ReturnDouble::TYPENUM);

@@ -15,7 +15,7 @@ using namespace std;
 #include "ReturnDouble.h"
 
 PlusDouble::PlusDouble(GPConfig *conf) :
-                          Function(ReturnDouble::TYPENUM, 2, "d+", conf)
+                          Function(ReturnDouble::TYPENUM, 2, "+", conf)
 {
    for (int i=0; i < maxArgs; i++)
    {

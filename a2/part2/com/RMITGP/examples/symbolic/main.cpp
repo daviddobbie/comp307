@@ -126,7 +126,7 @@ int main (int argc, char* argv[])
    
       /*Do 1000 generations, returns true if solution is found
         (see fitness class*/
-      if (pop.evolve(1000))
+      if (pop.evolve(5000))
       {
          cout << "Found solution" << endl;
       }

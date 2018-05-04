@@ -19,7 +19,7 @@ using namespace std;
 
 RandDouble::RandDouble(GPConfig *conf) :
                            Terminal(ReturnDouble::TYPENUM, "drand", conf),
-                           value(config->randomNumGenerator->randReal() * 100.0)
+                           value(config->randomNumGenerator->randReal()*100.0)
 {
 }
 
@@ -72,7 +72,7 @@ void RandDouble::print(string &s)
 {
    char str[100]; 
 
-   sprintf(str, "%s%f", getName().c_str(), value);
+   sprintf(str, "%f", value); //only have number, not indicator that it is random
    s.append(str); 
 }
 

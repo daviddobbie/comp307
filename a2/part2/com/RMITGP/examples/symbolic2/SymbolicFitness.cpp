@@ -157,8 +157,13 @@ void SymbolicFitness::assignFitness(GeneticProgram* pop[], int popSize)
          }
          else
          {
+               /*
             pop[i]->setFitness(pop[i]->getFitness() + 
-                               fabs(targetFunc[j] - rd.getData()));
+                           
+                           pow(fabs(targetFunc[j] - rd.getData()) , 2.0)    );
+                           */
+            pop[i]->setFitness(pop[i]->getFitness() + 
+                           fabs(targetFunc[j] - rd.getData())    );
          }
       }
    }
@@ -211,7 +216,7 @@ bool SymbolicFitness::solutionFound(GeneticProgram* pop[], int popSize)
    int i=0;
    for (; i<popSize; i++)
    {
-      if (pop[i]->getFitness() <= 0.0001)
+      if (pop[i]->getFitness() <= 0.1)
          return true;
    }
    return false;
