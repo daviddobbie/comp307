@@ -1,0 +1,21 @@
+
+# Config file for RMITGP 
+
+POP_SIZE: 1000    	#Population after decimation
+INITIAL_POP_SIZE: 1000	#Starting population
+DECIMATION_EVENT: 5	#Time until decimation complete
+GENERATIONS: 100	#Number of iterations
+MINDEPTH: 2		#Minimum depth of algorithm
+MAXDEPTH: 8		#Max depth (recommended max 10)
+ELITISM_RATE: 0.1	#Sum of rates must equal 1
+MUTATION_RATE: 0.45	# 0-1
+CROSSOVER_RATE: 0.45	# 0-1
+
+DYNAMIC_SELECTION: 0  	# Dynamic Range Selection: 0= false, 1= true
+
+DDL: 0			#Dynamic depth limitation 0=false, 1=true
+TARPEIAN: 0		#Tarpeian depth limitation 0=false, 1=true
+
+EMO: 0			#MultiObjective classification
+MUTATION_PROBABILITY: 0.3 # Used for EMO ONLY
+

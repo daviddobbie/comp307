@@ -1,0 +1,5000 @@
+*****************************************
+Generation 0
+Time Mon Sep  3 17:47:00 2012
+BestFitness 6478
+WorstFitness 1.07374e+11
+AverageFitness 8.95643e+09
+AverageDepth 3.301
+AverageSize 15.216
+Evaluation 1000
+ParsimonyCoeff 0
+*****************************************
+Generation 1
+Time Mon Sep  3 17:47:00 2012
+BestFitness 5742
+WorstFitness 1.07374e+11
+AverageFitness 1.29879e+09
+AverageDepth 3.92
+AverageSize 11.74
+Evaluation 1100
+ParsimonyCoeff 0
+*****************************************
+Generation 2
+Time Mon Sep  3 17:47:00 2012
+BestFitness 3275
+WorstFitness 1.07374e+11
+AverageFitness 6.42195e+09
+AverageDepth 4.99
+AverageSize 16.26
+Evaluation 1200
+ParsimonyCoeff 0
+*****************************************
+Generation 3
+Time Mon Sep  3 17:47:00 2012
+BestFitness 2616
+WorstFitness 8.58993e+10
+AverageFitness 2.21201e+09
+AverageDepth 5.23
+AverageSize 15.7
+Evaluation 1300
+ParsimonyCoeff 0
+*****************************************
+Generation 4
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1415
+WorstFitness 1.07374e+11
+AverageFitness 3.07108e+09
+AverageDepth 5.57
+AverageSize 15.72
+Evaluation 1400
+ParsimonyCoeff 0
+*****************************************
+Generation 5
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1047
+WorstFitness 4.72446e+10
+AverageFitness 8.59368e+08
+AverageDepth 5.95
+AverageSize 15.58
+Evaluation 1500
+ParsimonyCoeff 0
+*****************************************
+Generation 6
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1047
+WorstFitness 2.82527e+10
+AverageFitness 6.64296e+08
+AverageDepth 6.33
+AverageSize 17.22
+Evaluation 1600
+ParsimonyCoeff 0
+*****************************************
+Generation 7
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1047
+WorstFitness 9.4358e+10
+AverageFitness 1.55877e+09
+AverageDepth 6.46
+AverageSize 17.66
+Evaluation 1700
+ParsimonyCoeff 0
+*****************************************
+Generation 8
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1047
+WorstFitness 4.72446e+10
+AverageFitness 6.6522e+08
+AverageDepth 6.56
+AverageSize 16.82
+Evaluation 1800
+ParsimonyCoeff 0
+*****************************************
+Generation 9
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1047
+WorstFitness 6.44257e+09
+AverageFitness 1.08708e+08
+AverageDepth 6.52
+AverageSize 16.84
+Evaluation 1900
+ParsimonyCoeff 0
+*****************************************
+Generation 10
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1039
+WorstFitness 4.59075e+10
+AverageFitness 7.19318e+08
+AverageDepth 6.48
+AverageSize 17.7
+Evaluation 2000
+ParsimonyCoeff 0
+*****************************************
+Generation 11
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1039
+WorstFitness 1.07374e+11
+AverageFitness 1.59968e+09
+AverageDepth 6.59
+AverageSize 17.78
+Evaluation 2100
+ParsimonyCoeff 0
+*****************************************
+Generation 12
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1039
+WorstFitness 1.07374e+11
+AverageFitness 1.14751e+09
+AverageDepth 6.38
+AverageSize 17.52
+Evaluation 2200
+ParsimonyCoeff 0
+*****************************************
+Generation 13
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1017
+WorstFitness 4.72446e+10
+AverageFitness 1.05558e+09
+AverageDepth 6.59
+AverageSize 17.9
+Evaluation 2300
+ParsimonyCoeff 0
+*****************************************
+Generation 14
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1017
+WorstFitness 2.14817e+09
+AverageFitness 2.1731e+07
+AverageDepth 6.65
+AverageSize 17.76
+Evaluation 2400
+ParsimonyCoeff 0
+*****************************************
+Generation 15
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 9.44893e+10
+AverageFitness 2.25693e+09
+AverageDepth 6.73
+AverageSize 17.14
+Evaluation 2500
+ParsimonyCoeff 0
+*****************************************
+Generation 16
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 9.4358e+10
+AverageFitness 2.91444e+09
+AverageDepth 6.49
+AverageSize 16.52
+Evaluation 2600
+ParsimonyCoeff 0
+*****************************************
+Generation 17
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 6.77285e+10
+AverageFitness 1.02099e+09
+AverageDepth 6.57
+AverageSize 16.76
+Evaluation 2700
+ParsimonyCoeff 0
+*****************************************
+Generation 18
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 4.72446e+10
+AverageFitness 1.17299e+09
+AverageDepth 6.57
+AverageSize 17.58
+Evaluation 2800
+ParsimonyCoeff 0
+*****************************************
+Generation 19
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 4.50972e+10
+AverageFitness 8.71793e+08
+AverageDepth 6.7
+AverageSize 18.38
+Evaluation 2900
+ParsimonyCoeff 0
+*****************************************
+Generation 20
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 5.46786e+10
+AverageFitness 1.05731e+09
+AverageDepth 6.69
+AverageSize 17.76
+Evaluation 3000
+ParsimonyCoeff 0
+*****************************************
+Generation 21
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 1.33782e+10
+AverageFitness 1.51701e+08
+AverageDepth 6.59
+AverageSize 18.28
+Evaluation 3100
+ParsimonyCoeff 0
+*****************************************
+Generation 22
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 5.15974e+10
+AverageFitness 1.78446e+09
+AverageDepth 6.66
+AverageSize 18.2
+Evaluation 3200
+ParsimonyCoeff 0
+*****************************************
+Generation 23
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 4.72446e+10
+AverageFitness 7.90469e+08
+AverageDepth 6.79
+AverageSize 18.16
+Evaluation 3300
+ParsimonyCoeff 0
+*****************************************
+Generation 24
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 9.4771e+10
+AverageFitness 1.39718e+09
+AverageDepth 6.71
+AverageSize 17.92
+Evaluation 3400
+ParsimonyCoeff 0
+*****************************************
+Generation 25
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 4.64384e+10
+AverageFitness 1.08484e+09
+AverageDepth 6.6
+AverageSize 17.7
+Evaluation 3500
+ParsimonyCoeff 0
+*****************************************
+Generation 26
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 9.4358e+10
+AverageFitness 1.49422e+09
+AverageDepth 6.33
+AverageSize 16.68
+Evaluation 3600
+ParsimonyCoeff 0
+*****************************************
+Generation 27
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 4.33507e+09
+AverageFitness 1.09143e+08
+AverageDepth 6.55
+AverageSize 17.44
+Evaluation 3700
+ParsimonyCoeff 0
+*****************************************
+Generation 28
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 4.72446e+10
+AverageFitness 9.1019e+08
+AverageDepth 6.63
+AverageSize 17.66
+Evaluation 3800
+ParsimonyCoeff 0
+*****************************************
+Generation 29
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 4.72446e+10
+AverageFitness 5.70255e+08
+AverageDepth 6.83
+AverageSize 17.8
+Evaluation 3900
+ParsimonyCoeff 0
+*****************************************
+Generation 30
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 4.08022e+10
+AverageFitness 5.54734e+08
+AverageDepth 6.74
+AverageSize 17.42
+Evaluation 4000
+ParsimonyCoeff 0
+*****************************************
+Generation 31
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 4.72446e+10
+AverageFitness 4.72569e+08
+AverageDepth 6.66
+AverageSize 16.78
+Evaluation 4100
+ParsimonyCoeff 0
+*****************************************
+Generation 32
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 1.07374e+11
+AverageFitness 2.06357e+09
+AverageDepth 6.69
+AverageSize 17.98
+Evaluation 4200
+ParsimonyCoeff 0
+*****************************************
+Generation 33
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 1.03079e+11
+AverageFitness 1.86044e+09
+AverageDepth 6.47
+AverageSize 17.06
+Evaluation 4300
+ParsimonyCoeff 0
+*****************************************
+Generation 34
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 7.08669e+10
+AverageFitness 1.62131e+09
+AverageDepth 6.73
+AverageSize 17.76
+Evaluation 4400
+ParsimonyCoeff 0
+*****************************************
+Generation 35
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 5.1917e+10
+AverageFitness 2.44769e+09
+AverageDepth 6.73
+AverageSize 17.36
+Evaluation 4500
+ParsimonyCoeff 0
+*****************************************
+Generation 36
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 8.81179e+10
+AverageFitness 1.14532e+09
+AverageDepth 6.71
+AverageSize 17.1
+Evaluation 4600
+ParsimonyCoeff 0
+*****************************************
+Generation 37
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 9.50538e+09
+AverageFitness 1.19627e+08
+AverageDepth 6.76
+AverageSize 17.78
+Evaluation 4700
+ParsimonyCoeff 0
+*****************************************
+Generation 38
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 4.72446e+10
+AverageFitness 1.48354e+09
+AverageDepth 6.68
+AverageSize 17.92
+Evaluation 4800
+ParsimonyCoeff 0
+*****************************************
+Generation 39
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 3.32803e+10
+AverageFitness 6.18175e+08
+AverageDepth 6.7
+AverageSize 17.62
+Evaluation 4900
+ParsimonyCoeff 0
+*****************************************
+Generation 40
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 2.36788e+10
+AverageFitness 2.38849e+08
+AverageDepth 6.55
+AverageSize 17.44
+Evaluation 5000
+ParsimonyCoeff 0
+*****************************************
+Generation 41
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 9.4358e+10
+AverageFitness 1.15356e+09
+AverageDepth 6.53
+AverageSize 17.22
+Evaluation 5100
+ParsimonyCoeff 0
+*****************************************
+Generation 42
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 4.74909e+10
+AverageFitness 1.09898e+09
+AverageDepth 6.67
+AverageSize 17.92
+Evaluation 5200
+ParsimonyCoeff 0
+*****************************************
+Generation 43
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 5.97465e+10
+AverageFitness 1.04973e+09
+AverageDepth 6.65
+AverageSize 18.16
+Evaluation 5300
+ParsimonyCoeff 0
+*****************************************
+Generation 44
+Time Mon Sep  3 17:47:00 2012
+BestFitness 1001
+WorstFitness 1.28851e+10
+AverageFitness 1.50517e+08
+AverageDepth 6.69
+AverageSize 17.7
+Evaluation 5400
+ParsimonyCoeff 0
+*****************************************
+Generation 45
+Time Mon Sep  3 17:47:00 2012
+BestFitness 996
+WorstFitness 1.07373e+11
+AverageFitness 3.23097e+09
+AverageDepth 6.68
+AverageSize 18.44
+Evaluation 5500
+ParsimonyCoeff 0
+*****************************************
+Generation 46
+Time Mon Sep  3 17:47:00 2012
+BestFitness 996
+WorstFitness 6.65729e+10
+AverageFitness 1.74649e+09
+AverageDepth 6.63
+AverageSize 18.2
+Evaluation 5600
+ParsimonyCoeff 0
+*****************************************
+Generation 47
+Time Mon Sep  3 17:47:00 2012
+BestFitness 996
+WorstFitness 4.50972e+10
+AverageFitness 4.51102e+08
+AverageDepth 6.73
+AverageSize 17.28
+Evaluation 5700
+ParsimonyCoeff 0
+*****************************************
+Generation 48
+Time Mon Sep  3 17:47:00 2012
+BestFitness 988
+WorstFitness 9.4358e+10
+AverageFitness 1.13756e+09
+AverageDepth 6.67
+AverageSize 18.22
+Evaluation 5800
+ParsimonyCoeff 0
+*****************************************
+Generation 49
+Time Mon Sep  3 17:47:00 2012
+BestFitness 988
+WorstFitness 4.29497e+10
+AverageFitness 6.26117e+08
+AverageDepth 6.55
+AverageSize 17.26
+Evaluation 5900
+ParsimonyCoeff 0
+*****************************************
+Generation 50
+Time Mon Sep  3 17:47:00 2012
+BestFitness 988
+WorstFitness 3.43597e+10
+AverageFitness 8.21631e+08
+AverageDepth 6.45
+AverageSize 17.48
+Evaluation 6000
+ParsimonyCoeff 0
+*****************************************
+Generation 51
+Time Mon Sep  3 17:47:00 2012
+BestFitness 988
+WorstFitness 4.19767e+10
+AverageFitness 1.62332e+09
+AverageDepth 6.77
+AverageSize 17.58
+Evaluation 6100
+ParsimonyCoeff 0
+*****************************************
+Generation 52
+Time Mon Sep  3 17:47:00 2012
+BestFitness 988
+WorstFitness 9.4358e+10
+AverageFitness 2.02078e+09
+AverageDepth 6.4
+AverageSize 16.48
+Evaluation 6200
+ParsimonyCoeff 0
+*****************************************
+Generation 53
+Time Mon Sep  3 17:47:00 2012
+BestFitness 988
+WorstFitness 4.72446e+10
+AverageFitness 6.27946e+08
+AverageDepth 6.67
+AverageSize 18.5
+Evaluation 6300
+ParsimonyCoeff 0
+*****************************************
+Generation 54
+Time Mon Sep  3 17:47:00 2012
+BestFitness 988
+WorstFitness 9.4358e+10
+AverageFitness 2.13242e+09
+AverageDepth 6.46
+AverageSize 17.34
+Evaluation 6400
+ParsimonyCoeff 0
+*****************************************
+Generation 55
+Time Mon Sep  3 17:47:00 2012
+BestFitness 988
+WorstFitness 4.96108e+10
+AverageFitness 2.79243e+09
+AverageDepth 6.74
+AverageSize 17.18
+Evaluation 6500
+ParsimonyCoeff 0
+*****************************************
+Generation 56
+Time Mon Sep  3 17:47:00 2012
+BestFitness 988
+WorstFitness 9.23418e+10
+AverageFitness 1.4426e+09
+AverageDepth 6.66
+AverageSize 17.32
+Evaluation 6600
+ParsimonyCoeff 0
+*****************************************
+Generation 57
+Time Mon Sep  3 17:47:00 2012
+BestFitness 988
+WorstFitness 2.79175e+10
+AverageFitness 5.71138e+08
+AverageDepth 6.64
+AverageSize 18.3
+Evaluation 6700
+ParsimonyCoeff 0
+*****************************************
+Generation 58
+Time Mon Sep  3 17:47:00 2012
+BestFitness 988
+WorstFitness 1.07374e+11
+AverageFitness 2.60349e+09
+AverageDepth 6.67
+AverageSize 18.28
+Evaluation 6800
+ParsimonyCoeff 0
+*****************************************
+Generation 59
+Time Mon Sep  3 17:47:00 2012
+BestFitness 988
+WorstFitness 4.72446e+10
+AverageFitness 9.8936e+08
+AverageDepth 6.67
+AverageSize 17.64
+Evaluation 6900
+ParsimonyCoeff 0
+*****************************************
+Generation 60
+Time Mon Sep  3 17:47:00 2012
+BestFitness 988
+WorstFitness 6.33477e+10
+AverageFitness 1.35797e+09
+AverageDepth 6.53
+AverageSize 17.46
+Evaluation 7000
+ParsimonyCoeff 0
+*****************************************
+Generation 61
+Time Mon Sep  3 17:47:00 2012
+BestFitness 988
+WorstFitness 5.33148e+10
+AverageFitness 1.1347e+09
+AverageDepth 6.5
+AverageSize 18.06
+Evaluation 7100
+ParsimonyCoeff 0
+*****************************************
+Generation 62
+Time Mon Sep  3 17:47:00 2012
+BestFitness 988
+WorstFitness 4.72446e+10
+AverageFitness 6.06629e+08
+AverageDepth 6.64
+AverageSize 18.08
+Evaluation 7200
+ParsimonyCoeff 0
+*****************************************
+Generation 63
+Time Mon Sep  3 17:47:00 2012
+BestFitness 988
+WorstFitness 1.07374e+11
+AverageFitness 1.60955e+09
+AverageDepth 6.7
+AverageSize 18.3
+Evaluation 7300
+ParsimonyCoeff 0
+*****************************************
+Generation 64
+Time Mon Sep  3 17:47:00 2012
+BestFitness 988
+WorstFitness 4.83018e+10
+AverageFitness 1.08541e+09
+AverageDepth 6.73
+AverageSize 18.96
+Evaluation 7400
+ParsimonyCoeff 0
+*****************************************
+Generation 65
+Time Mon Sep  3 17:47:00 2012
+BestFitness 988
+WorstFitness 1.07374e+11
+AverageFitness 1.20951e+09
+AverageDepth 6.81
+AverageSize 18.8
+Evaluation 7500
+ParsimonyCoeff 0
+*****************************************
+Generation 66
+Time Mon Sep  3 17:47:00 2012
+BestFitness 988
+WorstFitness 3.65072e+10
+AverageFitness 9.30927e+08
+AverageDepth 6.57
+AverageSize 17.4
+Evaluation 7600
+ParsimonyCoeff 0
+*****************************************
+Generation 67
+Time Mon Sep  3 17:47:00 2012
+BestFitness 988
+WorstFitness 6.87195e+10
+AverageFitness 1.41761e+09
+AverageDepth 6.54
+AverageSize 17.86
+Evaluation 7700
+ParsimonyCoeff 0
+*****************************************
+Generation 68
+Time Mon Sep  3 17:47:00 2012
+BestFitness 988
+WorstFitness 3.43598e+10
+AverageFitness 3.70523e+08
+AverageDepth 6.61
+AverageSize 18.4
+Evaluation 7800
+ParsimonyCoeff 0
+*****************************************
+Generation 69
+Time Mon Sep  3 17:47:00 2012
+BestFitness 979
+WorstFitness 3.22123e+10
+AverageFitness 3.51662e+08
+AverageDepth 6.78
+AverageSize 19.06
+Evaluation 7900
+ParsimonyCoeff 0
+*****************************************
+Generation 70
+Time Mon Sep  3 17:47:00 2012
+BestFitness 979
+WorstFitness 2.14757e+10
+AverageFitness 5.57422e+08
+AverageDepth 6.55
+AverageSize 18.96
+Evaluation 8000
+ParsimonyCoeff 0
+*****************************************
+Generation 71
+Time Mon Sep  3 17:47:00 2012
+BestFitness 956
+WorstFitness 4.7227e+10
+AverageFitness 1.59393e+09
+AverageDepth 6.73
+AverageSize 19
+Evaluation 8100
+ParsimonyCoeff 0
+*****************************************
+Generation 72
+Time Mon Sep  3 17:47:00 2012
+BestFitness 956
+WorstFitness 1.07374e+11
+AverageFitness 3.65734e+09
+AverageDepth 6.67
+AverageSize 21
+Evaluation 8200
+ParsimonyCoeff 0
+*****************************************
+Generation 73
+Time Mon Sep  3 17:47:00 2012
+BestFitness 833
+WorstFitness 5.15396e+10
+AverageFitness 1.09758e+09
+AverageDepth 6.6
+AverageSize 20.52
+Evaluation 8300
+ParsimonyCoeff 0
+*****************************************
+Generation 74
+Time Mon Sep  3 17:47:00 2012
+BestFitness 823
+WorstFitness 6.42308e+10
+AverageFitness 1.99579e+09
+AverageDepth 6.67
+AverageSize 21.32
+Evaluation 8400
+ParsimonyCoeff 0
+*****************************************
+Generation 75
+Time Mon Sep  3 17:47:00 2012
+BestFitness 815
+WorstFitness 4.72446e+10
+AverageFitness 5.72522e+08
+AverageDepth 6.82
+AverageSize 23.64
+Evaluation 8500
+ParsimonyCoeff 0
+*****************************************
+Generation 76
+Time Mon Sep  3 17:47:00 2012
+BestFitness 815
+WorstFitness 5.15396e+10
+AverageFitness 1.00952e+09
+AverageDepth 6.82
+AverageSize 23.46
+Evaluation 8600
+ParsimonyCoeff 0
+*****************************************
+Generation 77
+Time Mon Sep  3 17:47:00 2012
+BestFitness 815
+WorstFitness 3.29836e+10
+AverageFitness 6.90478e+08
+AverageDepth 6.8
+AverageSize 24.26
+Evaluation 8700
+ParsimonyCoeff 0
+*****************************************
+Generation 78
+Time Mon Sep  3 17:47:00 2012
+BestFitness 815
+WorstFitness 4.93921e+10
+AverageFitness 2.38475e+09
+AverageDepth 6.77
+AverageSize 23.5
+Evaluation 8800
+ParsimonyCoeff 0
+*****************************************
+Generation 79
+Time Mon Sep  3 17:47:00 2012
+BestFitness 814
+WorstFitness 3.43597e+10
+AverageFitness 8.08957e+08
+AverageDepth 6.9
+AverageSize 23.52
+Evaluation 8900
+ParsimonyCoeff 0
+*****************************************
+Generation 80
+Time Mon Sep  3 17:47:00 2012
+BestFitness 739
+WorstFitness 5.19957e+10
+AverageFitness 1.12224e+09
+AverageDepth 6.71
+AverageSize 22.62
+Evaluation 9000
+ParsimonyCoeff 0
+*****************************************
+Generation 81
+Time Mon Sep  3 17:47:00 2012
+BestFitness 729
+WorstFitness 4.84662e+10
+AverageFitness 2.14369e+09
+AverageDepth 6.77
+AverageSize 24.74
+Evaluation 9100
+ParsimonyCoeff 0
+*****************************************
+Generation 82
+Time Mon Sep  3 17:47:00 2012
+BestFitness 729
+WorstFitness 1.05227e+11
+AverageFitness 1.80402e+09
+AverageDepth 6.92
+AverageSize 25.26
+Evaluation 9200
+ParsimonyCoeff 0
+*****************************************
+Generation 83
+Time Mon Sep  3 17:47:00 2012
+BestFitness 723
+WorstFitness 3.43597e+10
+AverageFitness 5.89808e+08
+AverageDepth 6.78
+AverageSize 25.86
+Evaluation 9300
+ParsimonyCoeff 0
+*****************************************
+Generation 84
+Time Mon Sep  3 17:47:00 2012
+BestFitness 723
+WorstFitness 1.94069e+10
+AverageFitness 3.01674e+08
+AverageDepth 6.91
+AverageSize 26.18
+Evaluation 9400
+ParsimonyCoeff 0
+*****************************************
+Generation 85
+Time Mon Sep  3 17:47:00 2012
+BestFitness 723
+WorstFitness 5.15396e+10
+AverageFitness 1.31e+09
+AverageDepth 6.9
+AverageSize 26.42
+Evaluation 9500
+ParsimonyCoeff 0
+*****************************************
+Generation 86
+Time Mon Sep  3 17:47:00 2012
+BestFitness 723
+WorstFitness 1.05227e+11
+AverageFitness 2.49235e+09
+AverageDepth 6.88
+AverageSize 25.98
+Evaluation 9600
+ParsimonyCoeff 0
+*****************************************
+Generation 87
+Time Mon Sep  3 17:47:00 2012
+BestFitness 665
+WorstFitness 4.90906e+10
+AverageFitness 1.65216e+09
+AverageDepth 6.8
+AverageSize 26.84
+Evaluation 9700
+ParsimonyCoeff 0
+*****************************************
+Generation 88
+Time Mon Sep  3 17:47:00 2012
+BestFitness 665
+WorstFitness 4.50972e+10
+AverageFitness 8.38382e+08
+AverageDepth 6.89
+AverageSize 27.48
+Evaluation 9800
+ParsimonyCoeff 0
+*****************************************
+Generation 89
+Time Mon Sep  3 17:47:00 2012
+BestFitness 665
+WorstFitness 5.15689e+10
+AverageFitness 1.46094e+09
+AverageDepth 6.94
+AverageSize 29.44
+Evaluation 9900
+ParsimonyCoeff 0
+*****************************************
+Generation 90
+Time Mon Sep  3 17:47:01 2012
+BestFitness 665
+WorstFitness 8.58994e+09
+AverageFitness 3.3904e+08
+AverageDepth 7
+AverageSize 28.92
+Evaluation 10000
+ParsimonyCoeff 0
+*****************************************
+Generation 91
+Time Mon Sep  3 17:47:01 2012
+BestFitness 665
+WorstFitness 3.65072e+10
+AverageFitness 9.47914e+08
+AverageDepth 6.95
+AverageSize 29.68
+Evaluation 10100
+ParsimonyCoeff 0
+*****************************************
+Generation 92
+Time Mon Sep  3 17:47:01 2012
+BestFitness 665
+WorstFitness 3.86547e+10
+AverageFitness 9.99289e+08
+AverageDepth 7
+AverageSize 29.74
+Evaluation 10200
+ParsimonyCoeff 0
+*****************************************
+Generation 93
+Time Mon Sep  3 17:47:01 2012
+BestFitness 665
+WorstFitness 3.43597e+10
+AverageFitness 7.68548e+08
+AverageDepth 7
+AverageSize 29.96
+Evaluation 10300
+ParsimonyCoeff 0
+*****************************************
+Generation 94
+Time Mon Sep  3 17:47:01 2012
+BestFitness 665
+WorstFitness 5.15396e+10
+AverageFitness 1.57614e+09
+AverageDepth 6.96
+AverageSize 30.28
+Evaluation 10400
+ParsimonyCoeff 0
+*****************************************
+Generation 95
+Time Mon Sep  3 17:47:01 2012
+BestFitness 665
+WorstFitness 4.93921e+10
+AverageFitness 2.03384e+09
+AverageDepth 7
+AverageSize 30.98
+Evaluation 10500
+ParsimonyCoeff 0
+*****************************************
+Generation 96
+Time Mon Sep  3 17:47:01 2012
+BestFitness 665
+WorstFitness 3.65072e+10
+AverageFitness 1.0402e+09
+AverageDepth 7
+AverageSize 31.1
+Evaluation 10600
+ParsimonyCoeff 0
+*****************************************
+Generation 97
+Time Mon Sep  3 17:47:01 2012
+BestFitness 665
+WorstFitness 3.43597e+10
+AverageFitness 1.00977e+09
+AverageDepth 7
+AverageSize 31.36
+Evaluation 10700
+ParsimonyCoeff 0
+*****************************************
+Generation 98
+Time Mon Sep  3 17:47:01 2012
+BestFitness 665
+WorstFitness 3.43597e+10
+AverageFitness 7.3248e+08
+AverageDepth 7
+AverageSize 30.34
+Evaluation 10800
+ParsimonyCoeff 0
+*****************************************
+Generation 99
+Time Mon Sep  3 17:47:01 2012
+BestFitness 665
+WorstFitness 4.93921e+10
+AverageFitness 6.1585e+08
+AverageDepth 7
+AverageSize 31.06
+Evaluation 10900
+ParsimonyCoeff 0
+*****************************************
+Generation 100
+Time Mon Sep  3 17:47:01 2012
+BestFitness 665
+WorstFitness 4.93921e+10
+AverageFitness 9.90307e+08
+AverageDepth 7
+AverageSize 32.16
+Evaluation 11000
+ParsimonyCoeff 0
+*****************************************
+Generation 101
+Time Mon Sep  3 17:47:01 2012
+BestFitness 665
+WorstFitness 3.43597e+10
+AverageFitness 5.71375e+08
+AverageDepth 6.98
+AverageSize 31.02
+Evaluation 11100
+ParsimonyCoeff 0
+*****************************************
+Generation 102
+Time Mon Sep  3 17:47:01 2012
+BestFitness 665
+WorstFitness 3.00649e+10
+AverageFitness 1.20272e+09
+AverageDepth 6.9
+AverageSize 31
+Evaluation 11200
+ParsimonyCoeff 0
+*****************************************
+Generation 103
+Time Mon Sep  3 17:47:01 2012
+BestFitness 665
+WorstFitness 6.46626e+10
+AverageFitness 2.08645e+09
+AverageDepth 7
+AverageSize 31.88
+Evaluation 11300
+ParsimonyCoeff 0
+*****************************************
+Generation 104
+Time Mon Sep  3 17:47:01 2012
+BestFitness 588
+WorstFitness 3.40296e+10
+AverageFitness 1.61468e+09
+AverageDepth 7
+AverageSize 31.74
+Evaluation 11400
+ParsimonyCoeff 0
+*****************************************
+Generation 105
+Time Mon Sep  3 17:47:01 2012
+BestFitness 588
+WorstFitness 4.29497e+09
+AverageFitness 2.54333e+08
+AverageDepth 7
+AverageSize 31.04
+Evaluation 11500
+ParsimonyCoeff 0
+*****************************************
+Generation 106
+Time Mon Sep  3 17:47:01 2012
+BestFitness 588
+WorstFitness 4.72447e+10
+AverageFitness 1.21479e+09
+AverageDepth 7
+AverageSize 31.24
+Evaluation 11600
+ParsimonyCoeff 0
+*****************************************
+Generation 107
+Time Mon Sep  3 17:47:01 2012
+BestFitness 588
+WorstFitness 1.07374e+11
+AverageFitness 1.78398e+09
+AverageDepth 7
+AverageSize 31.5
+Evaluation 11700
+ParsimonyCoeff 0
+*****************************************
+Generation 108
+Time Mon Sep  3 17:47:01 2012
+BestFitness 588
+WorstFitness 6.25294e+10
+AverageFitness 1.49302e+09
+AverageDepth 7
+AverageSize 31.88
+Evaluation 11800
+ParsimonyCoeff 0
+*****************************************
+Generation 109
+Time Mon Sep  3 17:47:01 2012
+BestFitness 588
+WorstFitness 4.50972e+10
+AverageFitness 1.18245e+09
+AverageDepth 7
+AverageSize 32.22
+Evaluation 11900
+ParsimonyCoeff 0
+*****************************************
+Generation 110
+Time Mon Sep  3 17:47:01 2012
+BestFitness 588
+WorstFitness 3.43597e+10
+AverageFitness 1.14316e+09
+AverageDepth 6.96
+AverageSize 32.72
+Evaluation 12000
+ParsimonyCoeff 0
+*****************************************
+Generation 111
+Time Mon Sep  3 17:47:01 2012
+BestFitness 582
+WorstFitness 3.43597e+10
+AverageFitness 9.66649e+08
+AverageDepth 6.9
+AverageSize 32.72
+Evaluation 12100
+ParsimonyCoeff 0
+*****************************************
+Generation 112
+Time Mon Sep  3 17:47:01 2012
+BestFitness 582
+WorstFitness 4.50972e+10
+AverageFitness 1.0352e+09
+AverageDepth 7
+AverageSize 35.12
+Evaluation 12200
+ParsimonyCoeff 0
+*****************************************
+Generation 113
+Time Mon Sep  3 17:47:01 2012
+BestFitness 582
+WorstFitness 5.11428e+10
+AverageFitness 1.11559e+09
+AverageDepth 6.84
+AverageSize 34.58
+Evaluation 12300
+ParsimonyCoeff 0
+*****************************************
+Generation 114
+Time Mon Sep  3 17:47:01 2012
+BestFitness 581
+WorstFitness 3.43597e+10
+AverageFitness 7.83686e+08
+AverageDepth 7
+AverageSize 35.78
+Evaluation 12400
+ParsimonyCoeff 0
+*****************************************
+Generation 115
+Time Mon Sep  3 17:47:01 2012
+BestFitness 578
+WorstFitness 3.43598e+10
+AverageFitness 1.13822e+09
+AverageDepth 7
+AverageSize 35.8
+Evaluation 12500
+ParsimonyCoeff 0
+*****************************************
+Generation 116
+Time Mon Sep  3 17:47:01 2012
+BestFitness 532
+WorstFitness 3.43597e+10
+AverageFitness 5.50009e+08
+AverageDepth 7
+AverageSize 36.24
+Evaluation 12600
+ParsimonyCoeff 0
+*****************************************
+Generation 117
+Time Mon Sep  3 17:47:01 2012
+BestFitness 532
+WorstFitness 5.58339e+10
+AverageFitness 1.39102e+09
+AverageDepth 6.96
+AverageSize 36.98
+Evaluation 12700
+ParsimonyCoeff 0
+*****************************************
+Generation 118
+Time Mon Sep  3 17:47:01 2012
+BestFitness 532
+WorstFitness 5.77398e+10
+AverageFitness 1.60562e+09
+AverageDepth 7
+AverageSize 36.88
+Evaluation 12800
+ParsimonyCoeff 0
+*****************************************
+Generation 119
+Time Mon Sep  3 17:47:01 2012
+BestFitness 532
+WorstFitness 1.05034e+11
+AverageFitness 1.63466e+09
+AverageDepth 7
+AverageSize 36.82
+Evaluation 12900
+ParsimonyCoeff 0
+*****************************************
+Generation 120
+Time Mon Sep  3 17:47:01 2012
+BestFitness 532
+WorstFitness 5.62807e+10
+AverageFitness 8.56273e+08
+AverageDepth 6.94
+AverageSize 36.88
+Evaluation 13000
+ParsimonyCoeff 0
+*****************************************
+Generation 121
+Time Mon Sep  3 17:47:01 2012
+BestFitness 532
+WorstFitness 5.36887e+10
+AverageFitness 6.2281e+08
+AverageDepth 7
+AverageSize 37.6
+Evaluation 13100
+ParsimonyCoeff 0
+*****************************************
+Generation 122
+Time Mon Sep  3 17:47:01 2012
+BestFitness 493
+WorstFitness 5.0911e+10
+AverageFitness 1.36852e+09
+AverageDepth 6.94
+AverageSize 38.18
+Evaluation 13200
+ParsimonyCoeff 0
+*****************************************
+Generation 123
+Time Mon Sep  3 17:47:01 2012
+BestFitness 493
+WorstFitness 4.93921e+10
+AverageFitness 1.37597e+09
+AverageDepth 7
+AverageSize 38.74
+Evaluation 13300
+ParsimonyCoeff 0
+*****************************************
+Generation 124
+Time Mon Sep  3 17:47:01 2012
+BestFitness 493
+WorstFitness 5.51587e+10
+AverageFitness 9.59664e+08
+AverageDepth 7
+AverageSize 38.64
+Evaluation 13400
+ParsimonyCoeff 0
+*****************************************
+Generation 125
+Time Mon Sep  3 17:47:01 2012
+BestFitness 493
+WorstFitness 3.43597e+10
+AverageFitness 5.5845e+08
+AverageDepth 7
+AverageSize 38.2
+Evaluation 13500
+ParsimonyCoeff 0
+*****************************************
+Generation 126
+Time Mon Sep  3 17:47:01 2012
+BestFitness 493
+WorstFitness 4.29497e+09
+AverageFitness 1.07396e+08
+AverageDepth 7
+AverageSize 38.42
+Evaluation 13600
+ParsimonyCoeff 0
+*****************************************
+Generation 127
+Time Mon Sep  3 17:47:01 2012
+BestFitness 493
+WorstFitness 3.54265e+10
+AverageFitness 9.49762e+08
+AverageDepth 7
+AverageSize 39.08
+Evaluation 13700
+ParsimonyCoeff 0
+*****************************************
+Generation 128
+Time Mon Sep  3 17:47:01 2012
+BestFitness 493
+WorstFitness 1.05538e+11
+AverageFitness 2.30119e+09
+AverageDepth 7
+AverageSize 38.78
+Evaluation 13800
+ParsimonyCoeff 0
+*****************************************
+Generation 129
+Time Mon Sep  3 17:47:01 2012
+BestFitness 493
+WorstFitness 3.43597e+10
+AverageFitness 4.0804e+08
+AverageDepth 7
+AverageSize 38.38
+Evaluation 13900
+ParsimonyCoeff 0
+*****************************************
+Generation 130
+Time Mon Sep  3 17:47:01 2012
+BestFitness 493
+WorstFitness 2.79173e+10
+AverageFitness 9.23758e+08
+AverageDepth 6.94
+AverageSize 37.82
+Evaluation 14000
+ParsimonyCoeff 0
+*****************************************
+Generation 131
+Time Mon Sep  3 17:47:01 2012
+BestFitness 493
+WorstFitness 1.50324e+10
+AverageFitness 2.3653e+08
+AverageDepth 7
+AverageSize 38.6
+Evaluation 14100
+ParsimonyCoeff 0
+*****************************************
+Generation 132
+Time Mon Sep  3 17:47:01 2012
+BestFitness 493
+WorstFitness 2.79173e+10
+AverageFitness 4.94449e+08
+AverageDepth 7
+AverageSize 38.4
+Evaluation 14200
+ParsimonyCoeff 0
+*****************************************
+Generation 133
+Time Mon Sep  3 17:47:01 2012
+BestFitness 493
+WorstFitness 4.50972e+10
+AverageFitness 1.0099e+09
+AverageDepth 7
+AverageSize 38.84
+Evaluation 14300
+ParsimonyCoeff 0
+*****************************************
+Generation 134
+Time Mon Sep  3 17:47:01 2012
+BestFitness 493
+WorstFitness 1.2885e+10
+AverageFitness 2.14783e+08
+AverageDepth 7
+AverageSize 39.02
+Evaluation 14400
+ParsimonyCoeff 0
+*****************************************
+Generation 135
+Time Mon Sep  3 17:47:01 2012
+BestFitness 493
+WorstFitness 2.79173e+10
+AverageFitness 6.37294e+08
+AverageDepth 7
+AverageSize 38.88
+Evaluation 14500
+ParsimonyCoeff 0
+*****************************************
+Generation 136
+Time Mon Sep  3 17:47:01 2012
+BestFitness 493
+WorstFitness 2.79173e+10
+AverageFitness 5.58466e+08
+AverageDepth 7
+AverageSize 37.88
+Evaluation 14600
+ParsimonyCoeff 0
+*****************************************
+Generation 137
+Time Mon Sep  3 17:47:01 2012
+BestFitness 493
+WorstFitness 2.79173e+10
+AverageFitness 6.73338e+08
+AverageDepth 7
+AverageSize 38.7
+Evaluation 14700
+ParsimonyCoeff 0
+*****************************************
+Generation 138
+Time Mon Sep  3 17:47:01 2012
+BestFitness 480
+WorstFitness 2.01667e+10
+AverageFitness 2.67897e+08
+AverageDepth 7
+AverageSize 38.38
+Evaluation 14800
+ParsimonyCoeff 0
+*****************************************
+Generation 139
+Time Mon Sep  3 17:47:01 2012
+BestFitness 480
+WorstFitness 2.86379e+10
+AverageFitness 1.18835e+09
+AverageDepth 7
+AverageSize 38.86
+Evaluation 14900
+ParsimonyCoeff 0
+*****************************************
+Generation 140
+Time Mon Sep  3 17:47:01 2012
+BestFitness 480
+WorstFitness 3.43597e+10
+AverageFitness 7.02674e+08
+AverageDepth 7
+AverageSize 37.76
+Evaluation 15000
+ParsimonyCoeff 0
+*****************************************
+Generation 141
+Time Mon Sep  3 17:47:01 2012
+BestFitness 480
+WorstFitness 1.50324e+10
+AverageFitness 2.79243e+08
+AverageDepth 6.94
+AverageSize 37.68
+Evaluation 15100
+ParsimonyCoeff 0
+*****************************************
+Generation 142
+Time Mon Sep  3 17:47:01 2012
+BestFitness 480
+WorstFitness 2.79173e+10
+AverageFitness 2.79209e+08
+AverageDepth 7
+AverageSize 38.16
+Evaluation 15200
+ParsimonyCoeff 0
+*****************************************
+Generation 143
+Time Mon Sep  3 17:47:01 2012
+BestFitness 480
+WorstFitness 2.79173e+10
+AverageFitness 7.99679e+08
+AverageDepth 7
+AverageSize 39.28
+Evaluation 15300
+ParsimonyCoeff 0
+*****************************************
+Generation 144
+Time Mon Sep  3 17:47:01 2012
+BestFitness 480
+WorstFitness 2.79173e+10
+AverageFitness 9.13983e+08
+AverageDepth 7
+AverageSize 38.62
+Evaluation 15400
+ParsimonyCoeff 0
+*****************************************
+Generation 145
+Time Mon Sep  3 17:47:01 2012
+BestFitness 480
+WorstFitness 2.79173e+10
+AverageFitness 7.53887e+08
+AverageDepth 7
+AverageSize 38.56
+Evaluation 15500
+ParsimonyCoeff 0
+*****************************************
+Generation 146
+Time Mon Sep  3 17:47:01 2012
+BestFitness 480
+WorstFitness 3.2231e+10
+AverageFitness 1.32235e+09
+AverageDepth 7
+AverageSize 38.32
+Evaluation 15600
+ParsimonyCoeff 0
+*****************************************
+Generation 147
+Time Mon Sep  3 17:47:01 2012
+BestFitness 480
+WorstFitness 2.36224e+10
+AverageFitness 7.49542e+08
+AverageDepth 7
+AverageSize 38.64
+Evaluation 15700
+ParsimonyCoeff 0
+*****************************************
+Generation 148
+Time Mon Sep  3 17:47:02 2012
+BestFitness 480
+WorstFitness 6.98342e+10
+AverageFitness 1.62492e+09
+AverageDepth 7
+AverageSize 38
+Evaluation 15800
+ParsimonyCoeff 0
+*****************************************
+Generation 149
+Time Mon Sep  3 17:47:02 2012
+BestFitness 480
+WorstFitness 5.36871e+10
+AverageFitness 1.26721e+09
+AverageDepth 6.94
+AverageSize 38.48
+Evaluation 15900
+ParsimonyCoeff 0
+*****************************************
+Generation 150
+Time Mon Sep  3 17:47:02 2012
+BestFitness 480
+WorstFitness 2.79173e+10
+AverageFitness 5.17437e+08
+AverageDepth 7
+AverageSize 38.4
+Evaluation 16000
+ParsimonyCoeff 0
+*****************************************
+Generation 151
+Time Mon Sep  3 17:47:02 2012
+BestFitness 480
+WorstFitness 1.04898e+11
+AverageFitness 2.55231e+09
+AverageDepth 6.94
+AverageSize 37.54
+Evaluation 16100
+ParsimonyCoeff 0
+*****************************************
+Generation 152
+Time Mon Sep  3 17:47:02 2012
+BestFitness 480
+WorstFitness 3.65072e+10
+AverageFitness 4.97863e+08
+AverageDepth 7
+AverageSize 38.06
+Evaluation 16200
+ParsimonyCoeff 0
+*****************************************
+Generation 153
+Time Mon Sep  3 17:47:02 2012
+BestFitness 480
+WorstFitness 3.86547e+10
+AverageFitness 1.37549e+09
+AverageDepth 7
+AverageSize 38.16
+Evaluation 16300
+ParsimonyCoeff 0
+*****************************************
+Generation 154
+Time Mon Sep  3 17:47:02 2012
+BestFitness 480
+WorstFitness 3.9652e+10
+AverageFitness 7.27029e+08
+AverageDepth 6.88
+AverageSize 37.98
+Evaluation 16400
+ParsimonyCoeff 0
+*****************************************
+Generation 155
+Time Mon Sep  3 17:47:02 2012
+BestFitness 480
+WorstFitness 1.71799e+10
+AverageFitness 2.81024e+08
+AverageDepth 7
+AverageSize 38.38
+Evaluation 16500
+ParsimonyCoeff 0
+*****************************************
+Generation 156
+Time Mon Sep  3 17:47:02 2012
+BestFitness 480
+WorstFitness 3.43597e+10
+AverageFitness 7.302e+08
+AverageDepth 7
+AverageSize 38.02
+Evaluation 16600
+ParsimonyCoeff 0
+*****************************************
+Generation 157
+Time Mon Sep  3 17:47:02 2012
+BestFitness 480
+WorstFitness 2.79173e+10
+AverageFitness 6.87228e+08
+AverageDepth 7
+AverageSize 37.76
+Evaluation 16700
+ParsimonyCoeff 0
+*****************************************
+Generation 158
+Time Mon Sep  3 17:47:02 2012
+BestFitness 480
+WorstFitness 3.65075e+10
+AverageFitness 6.44354e+08
+AverageDepth 7
+AverageSize 38.32
+Evaluation 16800
+ParsimonyCoeff 0
+*****************************************
+Generation 159
+Time Mon Sep  3 17:47:02 2012
+BestFitness 478
+WorstFitness 6.44265e+09
+AverageFitness 2.38295e+08
+AverageDepth 7
+AverageSize 37.62
+Evaluation 16900
+ParsimonyCoeff 0
+*****************************************
+Generation 160
+Time Mon Sep  3 17:47:02 2012
+BestFitness 444
+WorstFitness 4.09406e+10
+AverageFitness 1.12301e+09
+AverageDepth 6.95
+AverageSize 38.24
+Evaluation 17000
+ParsimonyCoeff 0
+*****************************************
+Generation 161
+Time Mon Sep  3 17:47:02 2012
+BestFitness 444
+WorstFitness 3.22123e+10
+AverageFitness 1.08182e+09
+AverageDepth 6.88
+AverageSize 37.38
+Evaluation 17100
+ParsimonyCoeff 0
+*****************************************
+Generation 162
+Time Mon Sep  3 17:47:02 2012
+BestFitness 429
+WorstFitness 3.43597e+10
+AverageFitness 5.29512e+08
+AverageDepth 7
+AverageSize 38.08
+Evaluation 17200
+ParsimonyCoeff 0
+*****************************************
+Generation 163
+Time Mon Sep  3 17:47:02 2012
+BestFitness 429
+WorstFitness 3.22123e+10
+AverageFitness 4.09377e+08
+AverageDepth 7
+AverageSize 38.42
+Evaluation 17300
+ParsimonyCoeff 0
+*****************************************
+Generation 164
+Time Mon Sep  3 17:47:02 2012
+BestFitness 429
+WorstFitness 6.01295e+10
+AverageFitness 1.35296e+09
+AverageDepth 7
+AverageSize 38.26
+Evaluation 17400
+ParsimonyCoeff 0
+*****************************************
+Generation 165
+Time Mon Sep  3 17:47:02 2012
+BestFitness 429
+WorstFitness 2.36223e+10
+AverageFitness 3.22295e+08
+AverageDepth 7
+AverageSize 39.02
+Evaluation 17500
+ParsimonyCoeff 0
+*****************************************
+Generation 166
+Time Mon Sep  3 17:47:02 2012
+BestFitness 429
+WorstFitness 2.14748e+10
+AverageFitness 3.22617e+08
+AverageDepth 7
+AverageSize 38.34
+Evaluation 17600
+ParsimonyCoeff 0
+*****************************************
+Generation 167
+Time Mon Sep  3 17:47:02 2012
+BestFitness 429
+WorstFitness 3.65072e+10
+AverageFitness 1.10683e+09
+AverageDepth 6.94
+AverageSize 37.86
+Evaluation 17700
+ParsimonyCoeff 0
+*****************************************
+Generation 168
+Time Mon Sep  3 17:47:02 2012
+BestFitness 429
+WorstFitness 6.11316e+10
+AverageFitness 1.98575e+09
+AverageDepth 6.94
+AverageSize 37.86
+Evaluation 17800
+ParsimonyCoeff 0
+*****************************************
+Generation 169
+Time Mon Sep  3 17:47:02 2012
+BestFitness 429
+WorstFitness 1.07374e+10
+AverageFitness 1.60253e+08
+AverageDepth 7
+AverageSize 38.32
+Evaluation 17900
+ParsimonyCoeff 0
+*****************************************
+Generation 170
+Time Mon Sep  3 17:47:02 2012
+BestFitness 429
+WorstFitness 3.43597e+10
+AverageFitness 9.87865e+08
+AverageDepth 7
+AverageSize 38.92
+Evaluation 18000
+ParsimonyCoeff 0
+*****************************************
+Generation 171
+Time Mon Sep  3 17:47:02 2012
+BestFitness 429
+WorstFitness 1.07374e+10
+AverageFitness 1.29043e+08
+AverageDepth 7
+AverageSize 38.46
+Evaluation 18100
+ParsimonyCoeff 0
+*****************************************
+Generation 172
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 2.36223e+10
+AverageFitness 5.13932e+08
+AverageDepth 6.94
+AverageSize 38.62
+Evaluation 18200
+ParsimonyCoeff 0
+*****************************************
+Generation 173
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 2.36223e+10
+AverageFitness 7.73117e+08
+AverageDepth 6.96
+AverageSize 38.7
+Evaluation 18300
+ParsimonyCoeff 0
+*****************************************
+Generation 174
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 3.59936e+10
+AverageFitness 5.31777e+08
+AverageDepth 6.88
+AverageSize 37.04
+Evaluation 18400
+ParsimonyCoeff 0
+*****************************************
+Generation 175
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 4.72447e+10
+AverageFitness 6.22986e+08
+AverageDepth 7
+AverageSize 37.42
+Evaluation 18500
+ParsimonyCoeff 0
+*****************************************
+Generation 176
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 2.14757e+09
+AverageFitness 6.97973e+07
+AverageDepth 7
+AverageSize 38.58
+Evaluation 18600
+ParsimonyCoeff 0
+*****************************************
+Generation 177
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 5.79821e+10
+AverageFitness 1.22492e+09
+AverageDepth 7
+AverageSize 38.42
+Evaluation 18700
+ParsimonyCoeff 0
+*****************************************
+Generation 178
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 2.57698e+10
+AverageFitness 8.42625e+08
+AverageDepth 7
+AverageSize 38.12
+Evaluation 18800
+ParsimonyCoeff 0
+*****************************************
+Generation 179
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 4.8507e+10
+AverageFitness 7.02215e+08
+AverageDepth 6.94
+AverageSize 37.54
+Evaluation 18900
+ParsimonyCoeff 0
+*****************************************
+Generation 180
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 9.01943e+10
+AverageFitness 1.55646e+09
+AverageDepth 6.99
+AverageSize 37.5
+Evaluation 19000
+ParsimonyCoeff 0
+*****************************************
+Generation 181
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 5.58346e+10
+AverageFitness 1.33293e+09
+AverageDepth 6.94
+AverageSize 38.64
+Evaluation 19100
+ParsimonyCoeff 0
+*****************************************
+Generation 182
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 3.00654e+10
+AverageFitness 3.86988e+08
+AverageDepth 7
+AverageSize 38.72
+Evaluation 19200
+ParsimonyCoeff 0
+*****************************************
+Generation 183
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 5.58346e+10
+AverageFitness 1.24556e+09
+AverageDepth 6.94
+AverageSize 37.36
+Evaluation 19300
+ParsimonyCoeff 0
+*****************************************
+Generation 184
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 2.14757e+09
+AverageFitness 7.98614e+07
+AverageDepth 7
+AverageSize 37.98
+Evaluation 19400
+ParsimonyCoeff 0
+*****************************************
+Generation 185
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 9.87842e+10
+AverageFitness 2.13531e+09
+AverageDepth 7
+AverageSize 38.38
+Evaluation 19500
+ParsimonyCoeff 0
+*****************************************
+Generation 186
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 3.00648e+10
+AverageFitness 5.16763e+08
+AverageDepth 7
+AverageSize 38.02
+Evaluation 19600
+ParsimonyCoeff 0
+*****************************************
+Generation 187
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 5.29016e+10
+AverageFitness 8.94938e+08
+AverageDepth 7
+AverageSize 37.92
+Evaluation 19700
+ParsimonyCoeff 0
+*****************************************
+Generation 188
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 3.00648e+10
+AverageFitness 7.94955e+08
+AverageDepth 7
+AverageSize 37.42
+Evaluation 19800
+ParsimonyCoeff 0
+*****************************************
+Generation 189
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 3.00648e+10
+AverageFitness 5.79864e+08
+AverageDepth 7
+AverageSize 38.18
+Evaluation 19900
+ParsimonyCoeff 0
+*****************************************
+Generation 190
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 6.29338e+10
+AverageFitness 9.31803e+08
+AverageDepth 7
+AverageSize 38.26
+Evaluation 20000
+ParsimonyCoeff 0
+*****************************************
+Generation 191
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 2.90744e+10
+AverageFitness 6.34364e+08
+AverageDepth 7
+AverageSize 38.22
+Evaluation 20100
+ParsimonyCoeff 0
+*****************************************
+Generation 192
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 3.98433e+10
+AverageFitness 6.19374e+08
+AverageDepth 7
+AverageSize 38.76
+Evaluation 20200
+ParsimonyCoeff 0
+*****************************************
+Generation 193
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 5.36871e+10
+AverageFitness 1.0182e+09
+AverageDepth 7
+AverageSize 38.56
+Evaluation 20300
+ParsimonyCoeff 0
+*****************************************
+Generation 194
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 2.14748e+10
+AverageFitness 2.57766e+08
+AverageDepth 6.98
+AverageSize 37.34
+Evaluation 20400
+ParsimonyCoeff 0
+*****************************************
+Generation 195
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 4.08028e+10
+AverageFitness 7.30183e+08
+AverageDepth 7
+AverageSize 38.1
+Evaluation 20500
+ParsimonyCoeff 0
+*****************************************
+Generation 196
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 5.36871e+10
+AverageFitness 8.38525e+08
+AverageDepth 7
+AverageSize 38.38
+Evaluation 20600
+ParsimonyCoeff 0
+*****************************************
+Generation 197
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 4.31961e+10
+AverageFitness 1.09771e+09
+AverageDepth 6.94
+AverageSize 37.94
+Evaluation 20700
+ParsimonyCoeff 0
+*****************************************
+Generation 198
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 3.42894e+10
+AverageFitness 7.26599e+08
+AverageDepth 6.94
+AverageSize 37.92
+Evaluation 20800
+ParsimonyCoeff 0
+*****************************************
+Generation 199
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 5.79821e+10
+AverageFitness 1.24559e+09
+AverageDepth 7
+AverageSize 38.14
+Evaluation 20900
+ParsimonyCoeff 0
+*****************************************
+Generation 200
+Time Mon Sep  3 17:47:02 2012
+BestFitness 427
+WorstFitness 2.14751e+09
+AverageFitness 6.44835e+07
+AverageDepth 7
+AverageSize 38.2
+Evaluation 21000
+ParsimonyCoeff 0
+*****************************************
+Generation 201
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 1.07374e+10
+AverageFitness 2.1546e+08
+AverageDepth 7
+AverageSize 38.26
+Evaluation 21100
+ParsimonyCoeff 0
+*****************************************
+Generation 202
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 5.58346e+10
+AverageFitness 1.02716e+09
+AverageDepth 7
+AverageSize 38.7
+Evaluation 21200
+ParsimonyCoeff 0
+*****************************************
+Generation 203
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 2.79173e+10
+AverageFitness 3.23568e+08
+AverageDepth 7
+AverageSize 38.44
+Evaluation 21300
+ParsimonyCoeff 0
+*****************************************
+Generation 204
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 2.36223e+10
+AverageFitness 8.59214e+08
+AverageDepth 6.95
+AverageSize 37.88
+Evaluation 21400
+ParsimonyCoeff 0
+*****************************************
+Generation 205
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 1.28849e+10
+AverageFitness 2.57715e+08
+AverageDepth 7
+AverageSize 38.56
+Evaluation 21500
+ParsimonyCoeff 0
+*****************************************
+Generation 206
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 2.57698e+10
+AverageFitness 3.43641e+08
+AverageDepth 6.94
+AverageSize 38.36
+Evaluation 21600
+ParsimonyCoeff 0
+*****************************************
+Generation 207
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 1.07374e+10
+AverageFitness 1.30116e+08
+AverageDepth 7
+AverageSize 38.42
+Evaluation 21700
+ParsimonyCoeff 0
+*****************************************
+Generation 208
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 2.14749e+10
+AverageFitness 3.43662e+08
+AverageDepth 6.95
+AverageSize 37.58
+Evaluation 21800
+ParsimonyCoeff 0
+*****************************************
+Generation 209
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 5.86782e+10
+AverageFitness 1.66062e+09
+AverageDepth 7
+AverageSize 38.62
+Evaluation 21900
+ParsimonyCoeff 0
+*****************************************
+Generation 210
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 1.07374e+10
+AverageFitness 3.56487e+08
+AverageDepth 7
+AverageSize 38.86
+Evaluation 22000
+ParsimonyCoeff 0
+*****************************************
+Generation 211
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 6.07118e+10
+AverageFitness 1.80215e+09
+AverageDepth 6.88
+AverageSize 38
+Evaluation 22100
+ParsimonyCoeff 0
+*****************************************
+Generation 212
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 3.43597e+10
+AverageFitness 7.75282e+08
+AverageDepth 7
+AverageSize 38.72
+Evaluation 22200
+ParsimonyCoeff 0
+*****************************************
+Generation 213
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 1.07374e+11
+AverageFitness 1.38934e+09
+AverageDepth 7
+AverageSize 38.08
+Evaluation 22300
+ParsimonyCoeff 0
+*****************************************
+Generation 214
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 2.14749e+09
+AverageFitness 6.51348e+07
+AverageDepth 7
+AverageSize 38.3
+Evaluation 22400
+ParsimonyCoeff 0
+*****************************************
+Generation 215
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 2.57698e+10
+AverageFitness 1.15969e+09
+AverageDepth 7
+AverageSize 37.98
+Evaluation 22500
+ParsimonyCoeff 0
+*****************************************
+Generation 216
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 4.72447e+10
+AverageFitness 1.30999e+09
+AverageDepth 7
+AverageSize 38.28
+Evaluation 22600
+ParsimonyCoeff 0
+*****************************************
+Generation 217
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 2.57698e+10
+AverageFitness 3.96791e+08
+AverageDepth 6.89
+AverageSize 37.42
+Evaluation 22700
+ParsimonyCoeff 0
+*****************************************
+Generation 218
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 4.70593e+10
+AverageFitness 1.24148e+09
+AverageDepth 7
+AverageSize 38.4
+Evaluation 22800
+ParsimonyCoeff 0
+*****************************************
+Generation 219
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 2.57698e+10
+AverageFitness 1.27055e+09
+AverageDepth 7
+AverageSize 38.4
+Evaluation 22900
+ParsimonyCoeff 0
+*****************************************
+Generation 220
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 1.07374e+10
+AverageFitness 1.07429e+08
+AverageDepth 6.95
+AverageSize 38.08
+Evaluation 23000
+ParsimonyCoeff 0
+*****************************************
+Generation 221
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 4.50972e+10
+AverageFitness 1.48068e+09
+AverageDepth 7
+AverageSize 38.84
+Evaluation 23100
+ParsimonyCoeff 0
+*****************************************
+Generation 222
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 5.36871e+10
+AverageFitness 1.05655e+09
+AverageDepth 7
+AverageSize 39.2
+Evaluation 23200
+ParsimonyCoeff 0
+*****************************************
+Generation 223
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 4.21021e+10
+AverageFitness 1.33096e+09
+AverageDepth 7
+AverageSize 38.94
+Evaluation 23300
+ParsimonyCoeff 0
+*****************************************
+Generation 224
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 2.36224e+10
+AverageFitness 2.57728e+08
+AverageDepth 6.89
+AverageSize 37.86
+Evaluation 23400
+ParsimonyCoeff 0
+*****************************************
+Generation 225
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 1.04603e+11
+AverageFitness 1.31265e+09
+AverageDepth 6.94
+AverageSize 38.16
+Evaluation 23500
+ParsimonyCoeff 0
+*****************************************
+Generation 226
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 4.37312e+10
+AverageFitness 7.8096e+08
+AverageDepth 6.94
+AverageSize 37.88
+Evaluation 23600
+ParsimonyCoeff 0
+*****************************************
+Generation 227
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 2.36223e+10
+AverageFitness 4.73449e+08
+AverageDepth 7
+AverageSize 38.44
+Evaluation 23700
+ParsimonyCoeff 0
+*****************************************
+Generation 228
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 4.256e+10
+AverageFitness 1.03651e+09
+AverageDepth 7
+AverageSize 39
+Evaluation 23800
+ParsimonyCoeff 0
+*****************************************
+Generation 229
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 1.07374e+11
+AverageFitness 1.46072e+09
+AverageDepth 7
+AverageSize 38.66
+Evaluation 23900
+ParsimonyCoeff 0
+*****************************************
+Generation 230
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 2.36223e+10
+AverageFitness 2.63398e+08
+AverageDepth 6.94
+AverageSize 38.12
+Evaluation 24000
+ParsimonyCoeff 0
+*****************************************
+Generation 231
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 2.36223e+10
+AverageFitness 5.33951e+08
+AverageDepth 7
+AverageSize 38.12
+Evaluation 24100
+ParsimonyCoeff 0
+*****************************************
+Generation 232
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 5.58346e+10
+AverageFitness 9.68423e+08
+AverageDepth 7
+AverageSize 37.64
+Evaluation 24200
+ParsimonyCoeff 0
+*****************************************
+Generation 233
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 5.15397e+10
+AverageFitness 1.43565e+09
+AverageDepth 6.94
+AverageSize 37.82
+Evaluation 24300
+ParsimonyCoeff 0
+*****************************************
+Generation 234
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 6.05903e+10
+AverageFitness 2.00234e+09
+AverageDepth 6.94
+AverageSize 38.7
+Evaluation 24400
+ParsimonyCoeff 0
+*****************************************
+Generation 235
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 2.03124e+10
+AverageFitness 3.10817e+08
+AverageDepth 7
+AverageSize 38.26
+Evaluation 24500
+ParsimonyCoeff 0
+*****************************************
+Generation 236
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 1.07374e+11
+AverageFitness 1.48315e+09
+AverageDepth 7
+AverageSize 38.64
+Evaluation 24600
+ParsimonyCoeff 0
+*****************************************
+Generation 237
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 1.07374e+10
+AverageFitness 1.28897e+08
+AverageDepth 7
+AverageSize 38.5
+Evaluation 24700
+ParsimonyCoeff 0
+*****************************************
+Generation 238
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 5.79821e+10
+AverageFitness 1.75277e+09
+AverageDepth 7
+AverageSize 38.16
+Evaluation 24800
+ParsimonyCoeff 0
+*****************************************
+Generation 239
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 4.48346e+10
+AverageFitness 1.17855e+09
+AverageDepth 7
+AverageSize 39.1
+Evaluation 24900
+ParsimonyCoeff 0
+*****************************************
+Generation 240
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 2.36223e+10
+AverageFitness 7.51197e+08
+AverageDepth 7
+AverageSize 38.38
+Evaluation 25000
+ParsimonyCoeff 0
+*****************************************
+Generation 241
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 3.00648e+10
+AverageFitness 9.53666e+08
+AverageDepth 7
+AverageSize 38.52
+Evaluation 25100
+ParsimonyCoeff 0
+*****************************************
+Generation 242
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 3.86547e+10
+AverageFitness 4.53088e+08
+AverageDepth 6.89
+AverageSize 37.38
+Evaluation 25200
+ParsimonyCoeff 0
+*****************************************
+Generation 243
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 4.84829e+10
+AverageFitness 1.43493e+09
+AverageDepth 6.94
+AverageSize 38.64
+Evaluation 25300
+ParsimonyCoeff 0
+*****************************************
+Generation 244
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 2.36223e+10
+AverageFitness 4.51045e+08
+AverageDepth 7
+AverageSize 38.26
+Evaluation 25400
+ParsimonyCoeff 0
+*****************************************
+Generation 245
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 4.49825e+10
+AverageFitness 4.91227e+08
+AverageDepth 6.94
+AverageSize 37.8
+Evaluation 25500
+ParsimonyCoeff 0
+*****************************************
+Generation 246
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 2.36223e+10
+AverageFitness 3.51102e+08
+AverageDepth 6.95
+AverageSize 38.12
+Evaluation 25600
+ParsimonyCoeff 0
+*****************************************
+Generation 247
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 2.36224e+10
+AverageFitness 6.88304e+08
+AverageDepth 6.95
+AverageSize 38.32
+Evaluation 25700
+ParsimonyCoeff 0
+*****************************************
+Generation 248
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 2.79173e+10
+AverageFitness 7.30192e+08
+AverageDepth 6.94
+AverageSize 38.1
+Evaluation 25800
+ParsimonyCoeff 0
+*****************************************
+Generation 249
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 1.71799e+10
+AverageFitness 3.85073e+08
+AverageDepth 7
+AverageSize 38.6
+Evaluation 25900
+ParsimonyCoeff 0
+*****************************************
+Generation 250
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 2.57698e+10
+AverageFitness 4.93977e+08
+AverageDepth 7
+AverageSize 38.98
+Evaluation 26000
+ParsimonyCoeff 0
+*****************************************
+Generation 251
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 3.19699e+10
+AverageFitness 6.1165e+08
+AverageDepth 6.94
+AverageSize 38.22
+Evaluation 26100
+ParsimonyCoeff 0
+*****************************************
+Generation 252
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 1.03795e+11
+AverageFitness 1.64103e+09
+AverageDepth 7
+AverageSize 38.54
+Evaluation 26200
+ParsimonyCoeff 0
+*****************************************
+Generation 253
+Time Mon Sep  3 17:47:03 2012
+BestFitness 427
+WorstFitness 5.36871e+10
+AverageFitness 1.27251e+09
+AverageDepth 7
+AverageSize 38.4
+Evaluation 26300
+ParsimonyCoeff 0
+*****************************************
+Generation 254
+Time Mon Sep  3 17:47:04 2012
+BestFitness 427
+WorstFitness 6.01295e+10
+AverageFitness 2.54061e+09
+AverageDepth 7
+AverageSize 38.46
+Evaluation 26400
+ParsimonyCoeff 0
+*****************************************
+Generation 255
+Time Mon Sep  3 17:47:04 2012
+BestFitness 427
+WorstFitness 3.65072e+10
+AverageFitness 7.96962e+08
+AverageDepth 7
+AverageSize 38.02
+Evaluation 26500
+ParsimonyCoeff 0
+*****************************************
+Generation 256
+Time Mon Sep  3 17:47:04 2012
+BestFitness 427
+WorstFitness 2.57698e+10
+AverageFitness 5.58397e+08
+AverageDepth 7
+AverageSize 37.94
+Evaluation 26600
+ParsimonyCoeff 0
+*****************************************
+Generation 257
+Time Mon Sep  3 17:47:04 2012
+BestFitness 427
+WorstFitness 5.36871e+10
+AverageFitness 1.32348e+09
+AverageDepth 6.94
+AverageSize 38.22
+Evaluation 26700
+ParsimonyCoeff 0
+*****************************************
+Generation 258
+Time Mon Sep  3 17:47:04 2012
+BestFitness 427
+WorstFitness 5.91967e+10
+AverageFitness 7.63791e+08
+AverageDepth 7
+AverageSize 38.14
+Evaluation 26800
+ParsimonyCoeff 0
+*****************************************
+Generation 259
+Time Mon Sep  3 17:47:04 2012
+BestFitness 423
+WorstFitness 5.58346e+10
+AverageFitness 8.81951e+08
+AverageDepth 7
+AverageSize 38.18
+Evaluation 26900
+ParsimonyCoeff 0
+*****************************************
+Generation 260
+Time Mon Sep  3 17:47:04 2012
+BestFitness 423
+WorstFitness 5.79821e+10
+AverageFitness 2.08588e+09
+AverageDepth 7
+AverageSize 37.92
+Evaluation 27000
+ParsimonyCoeff 0
+*****************************************
+Generation 261
+Time Mon Sep  3 17:47:04 2012
+BestFitness 423
+WorstFitness 1.03509e+11
+AverageFitness 1.91617e+09
+AverageDepth 7
+AverageSize 38.56
+Evaluation 27100
+ParsimonyCoeff 0
+*****************************************
+Generation 262
+Time Mon Sep  3 17:47:04 2012
+BestFitness 423
+WorstFitness 2.57699e+10
+AverageFitness 1.09894e+09
+AverageDepth 7
+AverageSize 38.4
+Evaluation 27200
+ParsimonyCoeff 0
+*****************************************
+Generation 263
+Time Mon Sep  3 17:47:04 2012
+BestFitness 423
+WorstFitness 5.79821e+10
+AverageFitness 9.88336e+08
+AverageDepth 6.95
+AverageSize 38
+Evaluation 27300
+ParsimonyCoeff 0
+*****************************************
+Generation 264
+Time Mon Sep  3 17:47:04 2012
+BestFitness 423
+WorstFitness 2.57698e+10
+AverageFitness 3.65599e+08
+AverageDepth 6.94
+AverageSize 38.5
+Evaluation 27400
+ParsimonyCoeff 0
+*****************************************
+Generation 265
+Time Mon Sep  3 17:47:04 2012
+BestFitness 423
+WorstFitness 2.36223e+10
+AverageFitness 4.0109e+08
+AverageDepth 6.99
+AverageSize 37.82
+Evaluation 27500
+ParsimonyCoeff 0
+*****************************************
+Generation 266
+Time Mon Sep  3 17:47:04 2012
+BestFitness 423
+WorstFitness 4.62072e+10
+AverageFitness 1.40711e+09
+AverageDepth 6.94
+AverageSize 37.94
+Evaluation 27600
+ParsimonyCoeff 0
+*****************************************
+Generation 267
+Time Mon Sep  3 17:47:04 2012
+BestFitness 423
+WorstFitness 2.60389e+10
+AverageFitness 1.20644e+09
+AverageDepth 7
+AverageSize 38.36
+Evaluation 27700
+ParsimonyCoeff 0
+*****************************************
+Generation 268
+Time Mon Sep  3 17:47:04 2012
+BestFitness 423
+WorstFitness 1.03665e+11
+AverageFitness 1.83157e+09
+AverageDepth 7
+AverageSize 38.44
+Evaluation 27800
+ParsimonyCoeff 0
+*****************************************
+Generation 269
+Time Mon Sep  3 17:47:04 2012
+BestFitness 423
+WorstFitness 4.50972e+10
+AverageFitness 7.61464e+08
+AverageDepth 6.88
+AverageSize 37.82
+Evaluation 27900
+ParsimonyCoeff 0
+*****************************************
+Generation 270
+Time Mon Sep  3 17:47:04 2012
+BestFitness 423
+WorstFitness 5.06632e+10
+AverageFitness 1.38711e+09
+AverageDepth 7
+AverageSize 37.56
+Evaluation 28000
+ParsimonyCoeff 0
+*****************************************
+Generation 271
+Time Mon Sep  3 17:47:04 2012
+BestFitness 423
+WorstFitness 2.36223e+10
+AverageFitness 6.66186e+08
+AverageDepth 7
+AverageSize 37.98
+Evaluation 28100
+ParsimonyCoeff 0
+*****************************************
+Generation 272
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 6.87195e+10
+AverageFitness 1.42816e+09
+AverageDepth 6.94
+AverageSize 37.92
+Evaluation 28200
+ParsimonyCoeff 0
+*****************************************
+Generation 273
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 4.55699e+10
+AverageFitness 5.77898e+08
+AverageDepth 7
+AverageSize 38.12
+Evaluation 28300
+ParsimonyCoeff 0
+*****************************************
+Generation 274
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 2.57698e+10
+AverageFitness 8.23686e+08
+AverageDepth 7
+AverageSize 38.02
+Evaluation 28400
+ParsimonyCoeff 0
+*****************************************
+Generation 275
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 2.57698e+10
+AverageFitness 1.057e+09
+AverageDepth 7
+AverageSize 39
+Evaluation 28500
+ParsimonyCoeff 0
+*****************************************
+Generation 276
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 7.93937e+10
+AverageFitness 1.5671e+09
+AverageDepth 7
+AverageSize 38.56
+Evaluation 28600
+ParsimonyCoeff 0
+*****************************************
+Generation 277
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 5.58346e+10
+AverageFitness 1.21769e+09
+AverageDepth 7
+AverageSize 38
+Evaluation 28700
+ParsimonyCoeff 0
+*****************************************
+Generation 278
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 2.36223e+10
+AverageFitness 6.13511e+08
+AverageDepth 7
+AverageSize 38.38
+Evaluation 28800
+ParsimonyCoeff 0
+*****************************************
+Generation 279
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 1.07374e+11
+AverageFitness 2.17561e+09
+AverageDepth 7
+AverageSize 38.16
+Evaluation 28900
+ParsimonyCoeff 0
+*****************************************
+Generation 280
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 2.36223e+10
+AverageFitness 3.00722e+08
+AverageDepth 7
+AverageSize 38
+Evaluation 29000
+ParsimonyCoeff 0
+*****************************************
+Generation 281
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 5.15396e+10
+AverageFitness 1.3396e+09
+AverageDepth 7
+AverageSize 38.46
+Evaluation 29100
+ParsimonyCoeff 0
+*****************************************
+Generation 282
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 1.07374e+11
+AverageFitness 2.54174e+09
+AverageDepth 6.94
+AverageSize 37.74
+Evaluation 29200
+ParsimonyCoeff 0
+*****************************************
+Generation 283
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 4.72446e+10
+AverageFitness 2.26179e+09
+AverageDepth 7
+AverageSize 38.24
+Evaluation 29300
+ParsimonyCoeff 0
+*****************************************
+Generation 284
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 2.36223e+10
+AverageFitness 3.67583e+08
+AverageDepth 6.94
+AverageSize 38.1
+Evaluation 29400
+ParsimonyCoeff 0
+*****************************************
+Generation 285
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 3.59349e+10
+AverageFitness 1.7146e+09
+AverageDepth 7
+AverageSize 38.36
+Evaluation 29500
+ParsimonyCoeff 0
+*****************************************
+Generation 286
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 1.07374e+11
+AverageFitness 1.37446e+09
+AverageDepth 7
+AverageSize 37.86
+Evaluation 29600
+ParsimonyCoeff 0
+*****************************************
+Generation 287
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 5.16272e+10
+AverageFitness 5.37783e+08
+AverageDepth 6.94
+AverageSize 38.42
+Evaluation 29700
+ParsimonyCoeff 0
+*****************************************
+Generation 288
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 2.36223e+10
+AverageFitness 2.79387e+08
+AverageDepth 6.94
+AverageSize 38.22
+Evaluation 29800
+ParsimonyCoeff 0
+*****************************************
+Generation 289
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 2.79173e+10
+AverageFitness 3.23324e+08
+AverageDepth 7
+AverageSize 38.74
+Evaluation 29900
+ParsimonyCoeff 0
+*****************************************
+Generation 290
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 2.79967e+10
+AverageFitness 8.18856e+08
+AverageDepth 7
+AverageSize 38.92
+Evaluation 30000
+ParsimonyCoeff 0
+*****************************************
+Generation 291
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 3.43597e+10
+AverageFitness 7.31149e+08
+AverageDepth 7
+AverageSize 39
+Evaluation 30100
+ParsimonyCoeff 0
+*****************************************
+Generation 292
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 2.36223e+10
+AverageFitness 1.05256e+09
+AverageDepth 6.94
+AverageSize 38.3
+Evaluation 30200
+ParsimonyCoeff 0
+*****************************************
+Generation 293
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 5.59219e+10
+AverageFitness 8.60017e+08
+AverageDepth 7
+AverageSize 38.9
+Evaluation 30300
+ParsimonyCoeff 0
+*****************************************
+Generation 294
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 2.36223e+10
+AverageFitness 4.01488e+08
+AverageDepth 6.94
+AverageSize 37.8
+Evaluation 30400
+ParsimonyCoeff 0
+*****************************************
+Generation 295
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 4.62433e+10
+AverageFitness 1.27851e+09
+AverageDepth 6.94
+AverageSize 37.78
+Evaluation 30500
+ParsimonyCoeff 0
+*****************************************
+Generation 296
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 2.57698e+10
+AverageFitness 1.22639e+09
+AverageDepth 6.94
+AverageSize 37.56
+Evaluation 30600
+ParsimonyCoeff 0
+*****************************************
+Generation 297
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 1.82028e+10
+AverageFitness 3.32507e+08
+AverageDepth 6.94
+AverageSize 38.46
+Evaluation 30700
+ParsimonyCoeff 0
+*****************************************
+Generation 298
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 4.83015e+10
+AverageFitness 6.32981e+08
+AverageDepth 7
+AverageSize 38.88
+Evaluation 30800
+ParsimonyCoeff 0
+*****************************************
+Generation 299
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 1.15362e+10
+AverageFitness 2.2334e+08
+AverageDepth 7
+AverageSize 39.3
+Evaluation 30900
+ParsimonyCoeff 0
+*****************************************
+Generation 300
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 5.49646e+10
+AverageFitness 1.36881e+09
+AverageDepth 7
+AverageSize 38.88
+Evaluation 31000
+ParsimonyCoeff 0
+*****************************************
+Generation 301
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 6.11775e+10
+AverageFitness 1.23462e+09
+AverageDepth 6.94
+AverageSize 38.1
+Evaluation 31100
+ParsimonyCoeff 0
+*****************************************
+Generation 302
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 2.57698e+10
+AverageFitness 1.22132e+09
+AverageDepth 6.88
+AverageSize 36.92
+Evaluation 31200
+ParsimonyCoeff 0
+*****************************************
+Generation 303
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 3.53311e+10
+AverageFitness 1.02677e+09
+AverageDepth 6.94
+AverageSize 38
+Evaluation 31300
+ParsimonyCoeff 0
+*****************************************
+Generation 304
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 3.56376e+10
+AverageFitness 7.0027e+08
+AverageDepth 7
+AverageSize 38.06
+Evaluation 31400
+ParsimonyCoeff 0
+*****************************************
+Generation 305
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 4.29497e+09
+AverageFitness 1.51397e+08
+AverageDepth 6.94
+AverageSize 37.42
+Evaluation 31500
+ParsimonyCoeff 0
+*****************************************
+Generation 306
+Time Mon Sep  3 17:47:04 2012
+BestFitness 421
+WorstFitness 2.36223e+10
+AverageFitness 4.29626e+08
+AverageDepth 6.94
+AverageSize 37.5
+Evaluation 31600
+ParsimonyCoeff 0
+*****************************************
+Generation 307
+Time Mon Sep  3 17:47:05 2012
+BestFitness 421
+WorstFitness 6.2277e+10
+AverageFitness 7.34843e+08
+AverageDepth 7
+AverageSize 37.62
+Evaluation 31700
+ParsimonyCoeff 0
+*****************************************
+Generation 308
+Time Mon Sep  3 17:47:05 2012
+BestFitness 421
+WorstFitness 6.82026e+10
+AverageFitness 2.03888e+09
+AverageDepth 6.92
+AverageSize 37.76
+Evaluation 31800
+ParsimonyCoeff 0
+*****************************************
+Generation 309
+Time Mon Sep  3 17:47:05 2012
+BestFitness 421
+WorstFitness 1.05063e+11
+AverageFitness 3.40784e+09
+AverageDepth 6.95
+AverageSize 36.44
+Evaluation 31900
+ParsimonyCoeff 0
+*****************************************
+Generation 310
+Time Mon Sep  3 17:47:05 2012
+BestFitness 421
+WorstFitness 1.05227e+11
+AverageFitness 4.39392e+09
+AverageDepth 7
+AverageSize 37.56
+Evaluation 32000
+ParsimonyCoeff 0
+*****************************************
+Generation 311
+Time Mon Sep  3 17:47:05 2012
+BestFitness 421
+WorstFitness 5.79821e+10
+AverageFitness 1.70083e+09
+AverageDepth 7
+AverageSize 38.86
+Evaluation 32100
+ParsimonyCoeff 0
+*****************************************
+Generation 312
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 3.96447e+10
+AverageFitness 6.37037e+08
+AverageDepth 7
+AverageSize 38.46
+Evaluation 32200
+ParsimonyCoeff 0
+*****************************************
+Generation 313
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 3.43597e+10
+AverageFitness 9.05007e+08
+AverageDepth 6.94
+AverageSize 37.48
+Evaluation 32300
+ParsimonyCoeff 0
+*****************************************
+Generation 314
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 2.36223e+10
+AverageFitness 5.6184e+08
+AverageDepth 6.99
+AverageSize 36.72
+Evaluation 32400
+ParsimonyCoeff 0
+*****************************************
+Generation 315
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 5.05423e+10
+AverageFitness 8.06593e+08
+AverageDepth 7
+AverageSize 37.56
+Evaluation 32500
+ParsimonyCoeff 0
+*****************************************
+Generation 316
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 1.07374e+11
+AverageFitness 1.80981e+09
+AverageDepth 7
+AverageSize 38.36
+Evaluation 32600
+ParsimonyCoeff 0
+*****************************************
+Generation 317
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 2.41288e+10
+AverageFitness 8.52283e+08
+AverageDepth 6.96
+AverageSize 37.62
+Evaluation 32700
+ParsimonyCoeff 0
+*****************************************
+Generation 318
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 4.29501e+10
+AverageFitness 1.55302e+09
+AverageDepth 6.94
+AverageSize 37.18
+Evaluation 32800
+ParsimonyCoeff 0
+*****************************************
+Generation 319
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 2.57698e+10
+AverageFitness 4.94065e+08
+AverageDepth 7
+AverageSize 38.38
+Evaluation 32900
+ParsimonyCoeff 0
+*****************************************
+Generation 320
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 5.79821e+10
+AverageFitness 1.10434e+09
+AverageDepth 7
+AverageSize 38.52
+Evaluation 33000
+ParsimonyCoeff 0
+*****************************************
+Generation 321
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 2.36223e+10
+AverageFitness 5.44088e+08
+AverageDepth 6.94
+AverageSize 37.42
+Evaluation 33100
+ParsimonyCoeff 0
+*****************************************
+Generation 322
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 3.00648e+10
+AverageFitness 6.01836e+08
+AverageDepth 7
+AverageSize 37.82
+Evaluation 33200
+ParsimonyCoeff 0
+*****************************************
+Generation 323
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 4.29498e+09
+AverageFitness 1.30817e+08
+AverageDepth 7
+AverageSize 37.82
+Evaluation 33300
+ParsimonyCoeff 0
+*****************************************
+Generation 324
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 3.43597e+10
+AverageFitness 3.66223e+08
+AverageDepth 6.94
+AverageSize 38
+Evaluation 33400
+ParsimonyCoeff 0
+*****************************************
+Generation 325
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 3.00648e+10
+AverageFitness 7.95238e+08
+AverageDepth 7
+AverageSize 38.38
+Evaluation 33500
+ParsimonyCoeff 0
+*****************************************
+Generation 326
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 5.34579e+10
+AverageFitness 1.38009e+09
+AverageDepth 7
+AverageSize 38.06
+Evaluation 33600
+ParsimonyCoeff 0
+*****************************************
+Generation 327
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 1.04534e+11
+AverageFitness 1.4547e+09
+AverageDepth 6.89
+AverageSize 37.64
+Evaluation 33700
+ParsimonyCoeff 0
+*****************************************
+Generation 328
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 2.36223e+10
+AverageFitness 5.37066e+08
+AverageDepth 7
+AverageSize 38.4
+Evaluation 33800
+ParsimonyCoeff 0
+*****************************************
+Generation 329
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 5.79821e+10
+AverageFitness 1.9114e+09
+AverageDepth 7
+AverageSize 38.12
+Evaluation 33900
+ParsimonyCoeff 0
+*****************************************
+Generation 330
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 3.22123e+10
+AverageFitness 4.52211e+08
+AverageDepth 7
+AverageSize 38.88
+Evaluation 34000
+ParsimonyCoeff 0
+*****************************************
+Generation 331
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 2.36223e+10
+AverageFitness 2.94549e+08
+AverageDepth 6.94
+AverageSize 38.68
+Evaluation 34100
+ParsimonyCoeff 0
+*****************************************
+Generation 332
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 1.02893e+11
+AverageFitness 2.29818e+09
+AverageDepth 7
+AverageSize 38.88
+Evaluation 34200
+ParsimonyCoeff 0
+*****************************************
+Generation 333
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 1.07482e+10
+AverageFitness 1.50459e+08
+AverageDepth 7
+AverageSize 39.42
+Evaluation 34300
+ParsimonyCoeff 0
+*****************************************
+Generation 334
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 5.79821e+10
+AverageFitness 2.08309e+09
+AverageDepth 6.95
+AverageSize 38.38
+Evaluation 34400
+ParsimonyCoeff 0
+*****************************************
+Generation 335
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 6.01295e+10
+AverageFitness 1.8052e+09
+AverageDepth 6.98
+AverageSize 38.4
+Evaluation 34500
+ParsimonyCoeff 0
+*****************************************
+Generation 336
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 5.58346e+10
+AverageFitness 8.02003e+08
+AverageDepth 6.97
+AverageSize 38.3
+Evaluation 34600
+ParsimonyCoeff 0
+*****************************************
+Generation 337
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 6.01294e+10
+AverageFitness 1.33187e+09
+AverageDepth 6.98
+AverageSize 38.8
+Evaluation 34700
+ParsimonyCoeff 0
+*****************************************
+Generation 338
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 2.36223e+10
+AverageFitness 3.11311e+08
+AverageDepth 7
+AverageSize 37.82
+Evaluation 34800
+ParsimonyCoeff 0
+*****************************************
+Generation 339
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 4.72448e+10
+AverageFitness 1.16681e+09
+AverageDepth 7
+AverageSize 37.92
+Evaluation 34900
+ParsimonyCoeff 0
+*****************************************
+Generation 340
+Time Mon Sep  3 17:47:05 2012
+BestFitness 408
+WorstFitness 2.79173e+10
+AverageFitness 3.86805e+08
+AverageDepth 7
+AverageSize 38.54
+Evaluation 35000
+ParsimonyCoeff 0
+*****************************************
+Generation 341
+Time Mon Sep  3 17:47:05 2012
+BestFitness 404
+WorstFitness 2.36223e+10
+AverageFitness 9.25145e+08
+AverageDepth 6.91
+AverageSize 37.76
+Evaluation 35100
+ParsimonyCoeff 0
+*****************************************
+Generation 342
+Time Mon Sep  3 17:47:05 2012
+BestFitness 404
+WorstFitness 6.01295e+10
+AverageFitness 2.08004e+09
+AverageDepth 7
+AverageSize 39.22
+Evaluation 35200
+ParsimonyCoeff 0
+*****************************************
+Generation 343
+Time Mon Sep  3 17:47:05 2012
+BestFitness 404
+WorstFitness 4.86779e+10
+AverageFitness 1.55056e+09
+AverageDepth 7
+AverageSize 38.1
+Evaluation 35300
+ParsimonyCoeff 0
+*****************************************
+Generation 344
+Time Mon Sep  3 17:47:05 2012
+BestFitness 403
+WorstFitness 1.03126e+11
+AverageFitness 1.91176e+09
+AverageDepth 7
+AverageSize 38.04
+Evaluation 35400
+ParsimonyCoeff 0
+*****************************************
+Generation 345
+Time Mon Sep  3 17:47:05 2012
+BestFitness 403
+WorstFitness 3.88826e+10
+AverageFitness 4.53473e+08
+AverageDepth 6.94
+AverageSize 38.12
+Evaluation 35500
+ParsimonyCoeff 0
+*****************************************
+Generation 346
+Time Mon Sep  3 17:47:05 2012
+BestFitness 403
+WorstFitness 1.28849e+10
+AverageFitness 3.0067e+08
+AverageDepth 7
+AverageSize 37.18
+Evaluation 35600
+ParsimonyCoeff 0
+*****************************************
+Generation 347
+Time Mon Sep  3 17:47:05 2012
+BestFitness 362
+WorstFitness 2.57698e+10
+AverageFitness 5.4007e+08
+AverageDepth 7
+AverageSize 38.08
+Evaluation 35700
+ParsimonyCoeff 0
+*****************************************
+Generation 348
+Time Mon Sep  3 17:47:05 2012
+BestFitness 362
+WorstFitness 2.25787e+09
+AverageFitness 2.25968e+07
+AverageDepth 7
+AverageSize 37.5
+Evaluation 35800
+ParsimonyCoeff 0
+*****************************************
+Generation 349
+Time Mon Sep  3 17:47:05 2012
+BestFitness 362
+WorstFitness 1.50324e+10
+AverageFitness 3.03369e+08
+AverageDepth 7
+AverageSize 36.72
+Evaluation 35900
+ParsimonyCoeff 0
+*****************************************
+Generation 350
+Time Mon Sep  3 17:47:05 2012
+BestFitness 362
+WorstFitness 2.57698e+10
+AverageFitness 1.33148e+09
+AverageDepth 7
+AverageSize 36.68
+Evaluation 36000
+ParsimonyCoeff 0
+*****************************************
+Generation 351
+Time Mon Sep  3 17:47:05 2012
+BestFitness 362
+WorstFitness 1.71799e+10
+AverageFitness 7.73141e+08
+AverageDepth 7
+AverageSize 37.7
+Evaluation 36100
+ParsimonyCoeff 0
+*****************************************
+Generation 352
+Time Mon Sep  3 17:47:05 2012
+BestFitness 362
+WorstFitness 1.71799e+10
+AverageFitness 6.44354e+08
+AverageDepth 7
+AverageSize 36.74
+Evaluation 36200
+ParsimonyCoeff 0
+*****************************************
+Generation 353
+Time Mon Sep  3 17:47:05 2012
+BestFitness 362
+WorstFitness 6.2277e+10
+AverageFitness 1.63234e+09
+AverageDepth 7
+AverageSize 37.74
+Evaluation 36300
+ParsimonyCoeff 0
+*****************************************
+Generation 354
+Time Mon Sep  3 17:47:05 2012
+BestFitness 354
+WorstFitness 2.57698e+10
+AverageFitness 6.44328e+08
+AverageDepth 6.94
+AverageSize 37.24
+Evaluation 36400
+ParsimonyCoeff 0
+*****************************************
+Generation 355
+Time Mon Sep  3 17:47:05 2012
+BestFitness 354
+WorstFitness 1.71799e+10
+AverageFitness 3.24964e+08
+AverageDepth 7
+AverageSize 38.12
+Evaluation 36500
+ParsimonyCoeff 0
+*****************************************
+Generation 356
+Time Mon Sep  3 17:47:05 2012
+BestFitness 354
+WorstFitness 2.14749e+09
+AverageFitness 3.88234e+07
+AverageDepth 6.98
+AverageSize 37.84
+Evaluation 36600
+ParsimonyCoeff 0
+*****************************************
+Generation 357
+Time Mon Sep  3 17:47:05 2012
+BestFitness 354
+WorstFitness 2.36223e+10
+AverageFitness 6.22847e+08
+AverageDepth 7
+AverageSize 37.84
+Evaluation 36700
+ParsimonyCoeff 0
+*****************************************
+Generation 358
+Time Mon Sep  3 17:47:05 2012
+BestFitness 354
+WorstFitness 1.71799e+10
+AverageFitness 1.07376e+09
+AverageDepth 7
+AverageSize 37.06
+Evaluation 36800
+ParsimonyCoeff 0
+*****************************************
+Generation 359
+Time Mon Sep  3 17:47:05 2012
+BestFitness 354
+WorstFitness 2.40647e+10
+AverageFitness 7.34767e+08
+AverageDepth 6.95
+AverageSize 36.8
+Evaluation 36900
+ParsimonyCoeff 0
+*****************************************
+Generation 360
+Time Mon Sep  3 17:47:05 2012
+BestFitness 354
+WorstFitness 1.28849e+10
+AverageFitness 2.79218e+08
+AverageDepth 6.94
+AverageSize 36.08
+Evaluation 37000
+ParsimonyCoeff 0
+*****************************************
+Generation 361
+Time Mon Sep  3 17:47:06 2012
+BestFitness 354
+WorstFitness 1.71799e+10
+AverageFitness 8.37996e+08
+AverageDepth 6.94
+AverageSize 36.16
+Evaluation 37100
+ParsimonyCoeff 0
+*****************************************
+Generation 362
+Time Mon Sep  3 17:47:06 2012
+BestFitness 354
+WorstFitness 1.07374e+11
+AverageFitness 2.11544e+09
+AverageDepth 7
+AverageSize 37.1
+Evaluation 37200
+ParsimonyCoeff 0
+*****************************************
+Generation 363
+Time Mon Sep  3 17:47:06 2012
+BestFitness 354
+WorstFitness 1.71799e+10
+AverageFitness 7.94618e+08
+AverageDepth 7
+AverageSize 36
+Evaluation 37300
+ParsimonyCoeff 0
+*****************************************
+Generation 364
+Time Mon Sep  3 17:47:06 2012
+BestFitness 354
+WorstFitness 1.71799e+10
+AverageFitness 7.73125e+08
+AverageDepth 6.98
+AverageSize 35.3
+Evaluation 37400
+ParsimonyCoeff 0
+*****************************************
+Generation 365
+Time Mon Sep  3 17:47:06 2012
+BestFitness 354
+WorstFitness 1.71799e+10
+AverageFitness 4.7248e+08
+AverageDepth 7
+AverageSize 36.38
+Evaluation 37500
+ParsimonyCoeff 0
+*****************************************
+Generation 366
+Time Mon Sep  3 17:47:06 2012
+BestFitness 354
+WorstFitness 1.50324e+10
+AverageFitness 4.73096e+08
+AverageDepth 6.87
+AverageSize 35.44
+Evaluation 37600
+ParsimonyCoeff 0
+*****************************************
+Generation 367
+Time Mon Sep  3 17:47:06 2012
+BestFitness 354
+WorstFitness 1.93274e+10
+AverageFitness 7.73128e+08
+AverageDepth 6.94
+AverageSize 35.98
+Evaluation 37700
+ParsimonyCoeff 0
+*****************************************
+Generation 368
+Time Mon Sep  3 17:47:06 2012
+BestFitness 354
+WorstFitness 1.71799e+10
+AverageFitness 5.44804e+08
+AverageDepth 6.89
+AverageSize 36.58
+Evaluation 37800
+ParsimonyCoeff 0
+*****************************************
+Generation 369
+Time Mon Sep  3 17:47:06 2012
+BestFitness 354
+WorstFitness 4.92745e+10
+AverageFitness 7.50459e+08
+AverageDepth 7
+AverageSize 37.98
+Evaluation 37900
+ParsimonyCoeff 0
+*****************************************
+Generation 370
+Time Mon Sep  3 17:47:06 2012
+BestFitness 354
+WorstFitness 1.76909e+10
+AverageFitness 5.88623e+08
+AverageDepth 7
+AverageSize 38.04
+Evaluation 38000
+ParsimonyCoeff 0
+*****************************************
+Generation 371
+Time Mon Sep  3 17:47:06 2012
+BestFitness 354
+WorstFitness 1.28849e+10
+AverageFitness 1.71844e+08
+AverageDepth 7
+AverageSize 37.38
+Evaluation 38100
+ParsimonyCoeff 0
+*****************************************
+Generation 372
+Time Mon Sep  3 17:47:06 2012
+BestFitness 354
+WorstFitness 3.70872e+10
+AverageFitness 9.35878e+08
+AverageDepth 7
+AverageSize 37.42
+Evaluation 38200
+ParsimonyCoeff 0
+*****************************************
+Generation 373
+Time Mon Sep  3 17:47:06 2012
+BestFitness 301
+WorstFitness 9.70243e+10
+AverageFitness 1.31855e+09
+AverageDepth 7
+AverageSize 37.14
+Evaluation 38300
+ParsimonyCoeff 0
+*****************************************
+Generation 374
+Time Mon Sep  3 17:47:06 2012
+BestFitness 301
+WorstFitness 4.93921e+10
+AverageFitness 1.11674e+09
+AverageDepth 7
+AverageSize 37.48
+Evaluation 38400
+ParsimonyCoeff 0
+*****************************************
+Generation 375
+Time Mon Sep  3 17:47:06 2012
+BestFitness 275
+WorstFitness 3.68188e+10
+AverageFitness 1.10365e+09
+AverageDepth 7
+AverageSize 37.42
+Evaluation 38500
+ParsimonyCoeff 0
+*****************************************
+Generation 376
+Time Mon Sep  3 17:47:06 2012
+BestFitness 275
+WorstFitness 5.61183e+10
+AverageFitness 1.11578e+09
+AverageDepth 7
+AverageSize 37.16
+Evaluation 38600
+ParsimonyCoeff 0
+*****************************************
+Generation 377
+Time Mon Sep  3 17:47:06 2012
+BestFitness 275
+WorstFitness 5.79821e+10
+AverageFitness 1.48972e+09
+AverageDepth 7
+AverageSize 37.58
+Evaluation 38700
+ParsimonyCoeff 0
+*****************************************
+Generation 378
+Time Mon Sep  3 17:47:06 2012
+BestFitness 275
+WorstFitness 1.36519e+10
+AverageFitness 5.71069e+08
+AverageDepth 6.99
+AverageSize 38.1
+Evaluation 38800
+ParsimonyCoeff 0
+*****************************************
+Generation 379
+Time Mon Sep  3 17:47:06 2012
+BestFitness 275
+WorstFitness 2.14748e+10
+AverageFitness 7.35211e+08
+AverageDepth 6.94
+AverageSize 38.36
+Evaluation 38900
+ParsimonyCoeff 0
+*****************************************
+Generation 380
+Time Mon Sep  3 17:47:06 2012
+BestFitness 275
+WorstFitness 2.08807e+10
+AverageFitness 5.74646e+08
+AverageDepth 7
+AverageSize 38.46
+Evaluation 39000
+ParsimonyCoeff 0
+*****************************************
+Generation 381
+Time Mon Sep  3 17:47:06 2012
+BestFitness 275
+WorstFitness 1.71799e+10
+AverageFitness 5.02976e+08
+AverageDepth 6.94
+AverageSize 38.54
+Evaluation 39100
+ParsimonyCoeff 0
+*****************************************
+Generation 382
+Time Mon Sep  3 17:47:06 2012
+BestFitness 275
+WorstFitness 1.59704e+10
+AverageFitness 7.46744e+08
+AverageDepth 7
+AverageSize 40.12
+Evaluation 39200
+ParsimonyCoeff 0
+*****************************************
+Generation 383
+Time Mon Sep  3 17:47:06 2012
+BestFitness 275
+WorstFitness 5.15396e+10
+AverageFitness 9.69063e+08
+AverageDepth 7
+AverageSize 40.8
+Evaluation 39300
+ParsimonyCoeff 0
+*****************************************
+Generation 384
+Time Mon Sep  3 17:47:06 2012
+BestFitness 275
+WorstFitness 5.79821e+10
+AverageFitness 1.23726e+09
+AverageDepth 7
+AverageSize 40.92
+Evaluation 39400
+ParsimonyCoeff 0
+*****************************************
+Generation 385
+Time Mon Sep  3 17:47:06 2012
+BestFitness 275
+WorstFitness 1.2885e+10
+AverageFitness 4.51477e+08
+AverageDepth 7
+AverageSize 41.26
+Evaluation 39500
+ParsimonyCoeff 0
+*****************************************
+Generation 386
+Time Mon Sep  3 17:47:06 2012
+BestFitness 275
+WorstFitness 1.28849e+10
+AverageFitness 3.00654e+08
+AverageDepth 7
+AverageSize 40.36
+Evaluation 39600
+ParsimonyCoeff 0
+*****************************************
+Generation 387
+Time Mon Sep  3 17:47:06 2012
+BestFitness 275
+WorstFitness 1.28849e+10
+AverageFitness 2.79226e+08
+AverageDepth 7
+AverageSize 39.84
+Evaluation 39700
+ParsimonyCoeff 0
+*****************************************
+Generation 388
+Time Mon Sep  3 17:47:06 2012
+BestFitness 275
+WorstFitness 1.28849e+10
+AverageFitness 1.50358e+08
+AverageDepth 6.94
+AverageSize 39.74
+Evaluation 39800
+ParsimonyCoeff 0
+*****************************************
+Generation 389
+Time Mon Sep  3 17:47:06 2012
+BestFitness 275
+WorstFitness 2.38298e+10
+AverageFitness 9.7947e+08
+AverageDepth 7
+AverageSize 40.18
+Evaluation 39900
+ParsimonyCoeff 0
+*****************************************
+Generation 390
+Time Mon Sep  3 17:47:06 2012
+BestFitness 275
+WorstFitness 5.79821e+10
+AverageFitness 7.30172e+08
+AverageDepth 7
+AverageSize 39.68
+Evaluation 40000
+ParsimonyCoeff 0
+*****************************************
+Generation 391
+Time Mon Sep  3 17:47:06 2012
+BestFitness 275
+WorstFitness 1.28849e+10
+AverageFitness 1.72028e+08
+AverageDepth 6.98
+AverageSize 40.12
+Evaluation 40100
+ParsimonyCoeff 0
+*****************************************
+Generation 392
+Time Mon Sep  3 17:47:06 2012
+BestFitness 275
+WorstFitness 1.50324e+10
+AverageFitness 1.7272e+08
+AverageDepth 6.94
+AverageSize 40.22
+Evaluation 40200
+ParsimonyCoeff 0
+*****************************************
+Generation 393
+Time Mon Sep  3 17:47:06 2012
+BestFitness 271
+WorstFitness 5.79821e+10
+AverageFitness 1.03083e+09
+AverageDepth 6.97
+AverageSize 40.58
+Evaluation 40300
+ParsimonyCoeff 0
+*****************************************
+Generation 394
+Time Mon Sep  3 17:47:06 2012
+BestFitness 271
+WorstFitness 4.51176e+09
+AverageFitness 6.66143e+07
+AverageDepth 7
+AverageSize 40.44
+Evaluation 40400
+ParsimonyCoeff 0
+*****************************************
+Generation 395
+Time Mon Sep  3 17:47:06 2012
+BestFitness 271
+WorstFitness 2.44678e+10
+AverageFitness 6.31294e+08
+AverageDepth 7
+AverageSize 40.4
+Evaluation 40500
+ParsimonyCoeff 0
+*****************************************
+Generation 396
+Time Mon Sep  3 17:47:06 2012
+BestFitness 271
+WorstFitness 5.88234e+10
+AverageFitness 1.42042e+09
+AverageDepth 6.94
+AverageSize 41.14
+Evaluation 40600
+ParsimonyCoeff 0
+*****************************************
+Generation 397
+Time Mon Sep  3 17:47:06 2012
+BestFitness 271
+WorstFitness 3.58238e+10
+AverageFitness 8.95179e+08
+AverageDepth 6.98
+AverageSize 41.24
+Evaluation 40700
+ParsimonyCoeff 0
+*****************************************
+Generation 398
+Time Mon Sep  3 17:47:06 2012
+BestFitness 271
+WorstFitness 4.55767e+10
+AverageFitness 5.19799e+08
+AverageDepth 6.94
+AverageSize 40.74
+Evaluation 40800
+ParsimonyCoeff 0
+*****************************************
+Generation 399
+Time Mon Sep  3 17:47:06 2012
+BestFitness 271
+WorstFitness 4.08023e+10
+AverageFitness 8.38967e+08
+AverageDepth 7
+AverageSize 42.62
+Evaluation 40900
+ParsimonyCoeff 0
+*****************************************
+Generation 400
+Time Mon Sep  3 17:47:06 2012
+BestFitness 271
+WorstFitness 1.50324e+10
+AverageFitness 1.7251e+08
+AverageDepth 7
+AverageSize 42.44
+Evaluation 41000
+ParsimonyCoeff 0
+*****************************************
+Generation 401
+Time Mon Sep  3 17:47:06 2012
+BestFitness 271
+WorstFitness 5.79821e+10
+AverageFitness 7.82717e+08
+AverageDepth 6.98
+AverageSize 40.66
+Evaluation 41100
+ParsimonyCoeff 0
+*****************************************
+Generation 402
+Time Mon Sep  3 17:47:06 2012
+BestFitness 260
+WorstFitness 5.08478e+10
+AverageFitness 9.90126e+08
+AverageDepth 7
+AverageSize 42.28
+Evaluation 41200
+ParsimonyCoeff 0
+*****************************************
+Generation 403
+Time Mon Sep  3 17:47:06 2012
+BestFitness 260
+WorstFitness 3.22125e+10
+AverageFitness 4.08075e+08
+AverageDepth 7
+AverageSize 41.14
+Evaluation 41300
+ParsimonyCoeff 0
+*****************************************
+Generation 404
+Time Mon Sep  3 17:47:06 2012
+BestFitness 260
+WorstFitness 3.23184e+10
+AverageFitness 7.85774e+08
+AverageDepth 7
+AverageSize 41.66
+Evaluation 41400
+ParsimonyCoeff 0
+*****************************************
+Generation 405
+Time Mon Sep  3 17:47:06 2012
+BestFitness 260
+WorstFitness 1.50324e+10
+AverageFitness 4.29571e+08
+AverageDepth 7
+AverageSize 40.8
+Evaluation 41500
+ParsimonyCoeff 0
+*****************************************
+Generation 406
+Time Mon Sep  3 17:47:06 2012
+BestFitness 260
+WorstFitness 5.78012e+10
+AverageFitness 5.9955e+08
+AverageDepth 7
+AverageSize 41.18
+Evaluation 41600
+ParsimonyCoeff 0
+*****************************************
+Generation 407
+Time Mon Sep  3 17:47:06 2012
+BestFitness 260
+WorstFitness 1.07374e+11
+AverageFitness 1.98716e+09
+AverageDepth 7
+AverageSize 41.2
+Evaluation 41700
+ParsimonyCoeff 0
+*****************************************
+Generation 408
+Time Mon Sep  3 17:47:06 2012
+BestFitness 260
+WorstFitness 1.07374e+10
+AverageFitness 2.79231e+08
+AverageDepth 6.94
+AverageSize 40.34
+Evaluation 41800
+ParsimonyCoeff 0
+*****************************************
+Generation 409
+Time Mon Sep  3 17:47:06 2012
+BestFitness 260
+WorstFitness 3.79129e+10
+AverageFitness 1.40998e+09
+AverageDepth 7
+AverageSize 40.78
+Evaluation 41900
+ParsimonyCoeff 0
+*****************************************
+Generation 410
+Time Mon Sep  3 17:47:06 2012
+BestFitness 260
+WorstFitness 3.87811e+10
+AverageFitness 1.28555e+09
+AverageDepth 6.96
+AverageSize 39.96
+Evaluation 42000
+ParsimonyCoeff 0
+*****************************************
+Generation 411
+Time Mon Sep  3 17:47:06 2012
+BestFitness 260
+WorstFitness 1.28849e+10
+AverageFitness 3.31496e+08
+AverageDepth 7
+AverageSize 40.9
+Evaluation 42100
+ParsimonyCoeff 0
+*****************************************
+Generation 412
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 1.28849e+10
+AverageFitness 1.75481e+08
+AverageDepth 7
+AverageSize 41.3
+Evaluation 42200
+ParsimonyCoeff 0
+*****************************************
+Generation 413
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 4.0841e+10
+AverageFitness 7.09335e+08
+AverageDepth 7
+AverageSize 40.5
+Evaluation 42300
+ParsimonyCoeff 0
+*****************************************
+Generation 414
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 1.28849e+10
+AverageFitness 4.72637e+08
+AverageDepth 6.94
+AverageSize 40.48
+Evaluation 42400
+ParsimonyCoeff 0
+*****************************************
+Generation 415
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 4.29497e+09
+AverageFitness 4.29907e+07
+AverageDepth 7
+AverageSize 40.24
+Evaluation 42500
+ParsimonyCoeff 0
+*****************************************
+Generation 416
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 1.99372e+10
+AverageFitness 3.7739e+08
+AverageDepth 7
+AverageSize 40.42
+Evaluation 42600
+ParsimonyCoeff 0
+*****************************************
+Generation 417
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 3.65074e+10
+AverageFitness 1.03448e+09
+AverageDepth 7
+AverageSize 40.42
+Evaluation 42700
+ParsimonyCoeff 0
+*****************************************
+Generation 418
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 1.28849e+10
+AverageFitness 1.93293e+08
+AverageDepth 6.98
+AverageSize 40.78
+Evaluation 42800
+ParsimonyCoeff 0
+*****************************************
+Generation 419
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 9.51159e+10
+AverageFitness 1.08138e+09
+AverageDepth 6.94
+AverageSize 40.72
+Evaluation 42900
+ParsimonyCoeff 0
+*****************************************
+Generation 420
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 3.43597e+10
+AverageFitness 6.87214e+08
+AverageDepth 7
+AverageSize 41.54
+Evaluation 43000
+ParsimonyCoeff 0
+*****************************************
+Generation 421
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 5.79819e+10
+AverageFitness 1.29916e+09
+AverageDepth 7
+AverageSize 41.26
+Evaluation 43100
+ParsimonyCoeff 0
+*****************************************
+Generation 422
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 5.6048e+10
+AverageFitness 1.03502e+09
+AverageDepth 7
+AverageSize 41.2
+Evaluation 43200
+ParsimonyCoeff 0
+*****************************************
+Generation 423
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 2.36226e+10
+AverageFitness 4.51046e+08
+AverageDepth 7
+AverageSize 41.52
+Evaluation 43300
+ParsimonyCoeff 0
+*****************************************
+Generation 424
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 3.08046e+10
+AverageFitness 5.02445e+08
+AverageDepth 7
+AverageSize 40.9
+Evaluation 43400
+ParsimonyCoeff 0
+*****************************************
+Generation 425
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 5.36871e+10
+AverageFitness 8.80494e+08
+AverageDepth 7
+AverageSize 40.16
+Evaluation 43500
+ParsimonyCoeff 0
+*****************************************
+Generation 426
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 1.28849e+10
+AverageFitness 1.93828e+08
+AverageDepth 7
+AverageSize 41.68
+Evaluation 43600
+ParsimonyCoeff 0
+*****************************************
+Generation 427
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 2.1475e+09
+AverageFitness 2.16088e+07
+AverageDepth 7
+AverageSize 41.32
+Evaluation 43700
+ParsimonyCoeff 0
+*****************************************
+Generation 428
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 4.72448e+10
+AverageFitness 6.65892e+08
+AverageDepth 7
+AverageSize 41.96
+Evaluation 43800
+ParsimonyCoeff 0
+*****************************************
+Generation 429
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 1.71801e+10
+AverageFitness 3.6554e+08
+AverageDepth 7
+AverageSize 41.42
+Evaluation 43900
+ParsimonyCoeff 0
+*****************************************
+Generation 430
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 2.36225e+10
+AverageFitness 4.75223e+08
+AverageDepth 7
+AverageSize 41.96
+Evaluation 44000
+ParsimonyCoeff 0
+*****************************************
+Generation 431
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 3.22123e+10
+AverageFitness 8.59012e+08
+AverageDepth 6.94
+AverageSize 41.48
+Evaluation 44100
+ParsimonyCoeff 0
+*****************************************
+Generation 432
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 4.29497e+09
+AverageFitness 1.29276e+08
+AverageDepth 7
+AverageSize 41.48
+Evaluation 44200
+ParsimonyCoeff 0
+*****************************************
+Generation 433
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 5.7982e+10
+AverageFitness 8.37743e+08
+AverageDepth 6.98
+AverageSize 41.68
+Evaluation 44300
+ParsimonyCoeff 0
+*****************************************
+Generation 434
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 5.29946e+10
+AverageFitness 7.23336e+08
+AverageDepth 6.94
+AverageSize 40.76
+Evaluation 44400
+ParsimonyCoeff 0
+*****************************************
+Generation 435
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 5.36872e+10
+AverageFitness 8.19273e+08
+AverageDepth 7
+AverageSize 41
+Evaluation 44500
+ParsimonyCoeff 0
+*****************************************
+Generation 436
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 5.79821e+10
+AverageFitness 1.29417e+09
+AverageDepth 7
+AverageSize 40.34
+Evaluation 44600
+ParsimonyCoeff 0
+*****************************************
+Generation 437
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 2.45612e+10
+AverageFitness 5.68425e+08
+AverageDepth 7
+AverageSize 40.84
+Evaluation 44700
+ParsimonyCoeff 0
+*****************************************
+Generation 438
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 2.03526e+10
+AverageFitness 3.03878e+08
+AverageDepth 7
+AverageSize 40.22
+Evaluation 44800
+ParsimonyCoeff 0
+*****************************************
+Generation 439
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 4.32272e+10
+AverageFitness 1.17317e+09
+AverageDepth 6.96
+AverageSize 39.44
+Evaluation 44900
+ParsimonyCoeff 0
+*****************************************
+Generation 440
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 4.97584e+10
+AverageFitness 9.71197e+08
+AverageDepth 6.97
+AverageSize 39.8
+Evaluation 45000
+ParsimonyCoeff 0
+*****************************************
+Generation 441
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 1.28849e+10
+AverageFitness 4.51016e+08
+AverageDepth 7
+AverageSize 40.32
+Evaluation 45100
+ParsimonyCoeff 0
+*****************************************
+Generation 442
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 2.14749e+09
+AverageFitness 2.39636e+07
+AverageDepth 7
+AverageSize 40.5
+Evaluation 45200
+ParsimonyCoeff 0
+*****************************************
+Generation 443
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 4.29497e+09
+AverageFitness 8.73471e+07
+AverageDepth 7
+AverageSize 40.38
+Evaluation 45300
+ParsimonyCoeff 0
+*****************************************
+Generation 444
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 1.50324e+10
+AverageFitness 3.4365e+08
+AverageDepth 7
+AverageSize 40.56
+Evaluation 45400
+ParsimonyCoeff 0
+*****************************************
+Generation 445
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 5.40757e+10
+AverageFitness 1.00593e+09
+AverageDepth 6.98
+AverageSize 40.42
+Evaluation 45500
+ParsimonyCoeff 0
+*****************************************
+Generation 446
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 5.15397e+10
+AverageFitness 1.03101e+09
+AverageDepth 6.97
+AverageSize 40
+Evaluation 45600
+ParsimonyCoeff 0
+*****************************************
+Generation 447
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 2.14749e+09
+AverageFitness 5.12857e+07
+AverageDepth 6.98
+AverageSize 39.02
+Evaluation 45700
+ParsimonyCoeff 0
+*****************************************
+Generation 448
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 1.28849e+10
+AverageFitness 5.36901e+08
+AverageDepth 7
+AverageSize 40.62
+Evaluation 45800
+ParsimonyCoeff 0
+*****************************************
+Generation 449
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 1.46974e+10
+AverageFitness 4.43202e+08
+AverageDepth 7
+AverageSize 40.22
+Evaluation 45900
+ParsimonyCoeff 0
+*****************************************
+Generation 450
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 1.28849e+10
+AverageFitness 1.73305e+08
+AverageDepth 6.94
+AverageSize 39.52
+Evaluation 46000
+ParsimonyCoeff 0
+*****************************************
+Generation 451
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 5.79821e+10
+AverageFitness 1.05231e+09
+AverageDepth 6.98
+AverageSize 40.42
+Evaluation 46100
+ParsimonyCoeff 0
+*****************************************
+Generation 452
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 5.79821e+10
+AverageFitness 7.13227e+08
+AverageDepth 6.94
+AverageSize 39.82
+Evaluation 46200
+ParsimonyCoeff 0
+*****************************************
+Generation 453
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 5.79821e+10
+AverageFitness 8.60987e+08
+AverageDepth 7
+AverageSize 41.32
+Evaluation 46300
+ParsimonyCoeff 0
+*****************************************
+Generation 454
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 5.21253e+10
+AverageFitness 7.14588e+08
+AverageDepth 7
+AverageSize 41.04
+Evaluation 46400
+ParsimonyCoeff 0
+*****************************************
+Generation 455
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 4.29497e+09
+AverageFitness 8.59649e+07
+AverageDepth 6.94
+AverageSize 40
+Evaluation 46500
+ParsimonyCoeff 0
+*****************************************
+Generation 456
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 1.50324e+10
+AverageFitness 4.08391e+08
+AverageDepth 7
+AverageSize 41
+Evaluation 46600
+ParsimonyCoeff 0
+*****************************************
+Generation 457
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 3.89168e+10
+AverageFitness 6.3653e+08
+AverageDepth 7
+AverageSize 41.4
+Evaluation 46700
+ParsimonyCoeff 0
+*****************************************
+Generation 458
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 7.22535e+09
+AverageFitness 1.33272e+08
+AverageDepth 7
+AverageSize 41.16
+Evaluation 46800
+ParsimonyCoeff 0
+*****************************************
+Generation 459
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 1.07374e+11
+AverageFitness 2.62992e+09
+AverageDepth 6.94
+AverageSize 40.62
+Evaluation 46900
+ParsimonyCoeff 0
+*****************************************
+Generation 460
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 1.28849e+10
+AverageFitness 3.43994e+08
+AverageDepth 7
+AverageSize 40.3
+Evaluation 47000
+ParsimonyCoeff 0
+*****************************************
+Generation 461
+Time Mon Sep  3 17:47:07 2012
+BestFitness 260
+WorstFitness 2.45612e+10
+AverageFitness 6.32175e+08
+AverageDepth 7
+AverageSize 40.8
+Evaluation 47100
+ParsimonyCoeff 0
+*****************************************
+Generation 462
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 2.14749e+09
+AverageFitness 2.15321e+07
+AverageDepth 6.94
+AverageSize 40.12
+Evaluation 47200
+ParsimonyCoeff 0
+*****************************************
+Generation 463
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 4.58461e+10
+AverageFitness 1.34623e+09
+AverageDepth 7
+AverageSize 40.72
+Evaluation 47300
+ParsimonyCoeff 0
+*****************************************
+Generation 464
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 5.577e+10
+AverageFitness 1.37379e+09
+AverageDepth 7
+AverageSize 40.24
+Evaluation 47400
+ParsimonyCoeff 0
+*****************************************
+Generation 465
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 3.436e+10
+AverageFitness 4.29584e+08
+AverageDepth 6.95
+AverageSize 40.34
+Evaluation 47500
+ParsimonyCoeff 0
+*****************************************
+Generation 466
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 4.60587e+10
+AverageFitness 8.90874e+08
+AverageDepth 7
+AverageSize 40.48
+Evaluation 47600
+ParsimonyCoeff 0
+*****************************************
+Generation 467
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 1.50324e+10
+AverageFitness 3.0071e+08
+AverageDepth 7
+AverageSize 40.22
+Evaluation 47700
+ParsimonyCoeff 0
+*****************************************
+Generation 468
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 3.65072e+10
+AverageFitness 4.51e+08
+AverageDepth 7
+AverageSize 40.58
+Evaluation 47800
+ParsimonyCoeff 0
+*****************************************
+Generation 469
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 4.82528e+10
+AverageFitness 9.33559e+08
+AverageDepth 7
+AverageSize 40.76
+Evaluation 47900
+ParsimonyCoeff 0
+*****************************************
+Generation 470
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 3.43597e+10
+AverageFitness 6.01351e+08
+AverageDepth 7
+AverageSize 40.68
+Evaluation 48000
+ParsimonyCoeff 0
+*****************************************
+Generation 471
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 5.79821e+10
+AverageFitness 7.30187e+08
+AverageDepth 7
+AverageSize 41.16
+Evaluation 48100
+ParsimonyCoeff 0
+*****************************************
+Generation 472
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 1.05227e+11
+AverageFitness 1.20264e+09
+AverageDepth 7
+AverageSize 40.52
+Evaluation 48200
+ParsimonyCoeff 0
+*****************************************
+Generation 473
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 2.45086e+10
+AverageFitness 6.39219e+08
+AverageDepth 7
+AverageSize 41.16
+Evaluation 48300
+ParsimonyCoeff 0
+*****************************************
+Generation 474
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 1.35556e+10
+AverageFitness 1.80506e+08
+AverageDepth 7
+AverageSize 40.7
+Evaluation 48400
+ParsimonyCoeff 0
+*****************************************
+Generation 475
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 1.28849e+10
+AverageFitness 2.1481e+08
+AverageDepth 7
+AverageSize 41.2
+Evaluation 48500
+ParsimonyCoeff 0
+*****************************************
+Generation 476
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 1.07374e+11
+AverageFitness 1.4517e+09
+AverageDepth 7
+AverageSize 40.72
+Evaluation 48600
+ParsimonyCoeff 0
+*****************************************
+Generation 477
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 2.45611e+10
+AverageFitness 2.67105e+08
+AverageDepth 7
+AverageSize 39.96
+Evaluation 48700
+ParsimonyCoeff 0
+*****************************************
+Generation 478
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 5.16524e+10
+AverageFitness 5.46667e+08
+AverageDepth 7
+AverageSize 40.28
+Evaluation 48800
+ParsimonyCoeff 0
+*****************************************
+Generation 479
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 2.14752e+09
+AverageFitness 6.4482e+07
+AverageDepth 7
+AverageSize 40.18
+Evaluation 48900
+ParsimonyCoeff 0
+*****************************************
+Generation 480
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 1.28849e+10
+AverageFitness 1.50438e+08
+AverageDepth 7
+AverageSize 40.3
+Evaluation 49000
+ParsimonyCoeff 0
+*****************************************
+Generation 481
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 8.37518e+10
+AverageFitness 1.1642e+09
+AverageDepth 7
+AverageSize 41.06
+Evaluation 49100
+ParsimonyCoeff 0
+*****************************************
+Generation 482
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 1.28849e+10
+AverageFitness 2.58988e+08
+AverageDepth 7
+AverageSize 40.56
+Evaluation 49200
+ParsimonyCoeff 0
+*****************************************
+Generation 483
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 1.28849e+10
+AverageFitness 1.71924e+08
+AverageDepth 6.94
+AverageSize 40.64
+Evaluation 49300
+ParsimonyCoeff 0
+*****************************************
+Generation 484
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 1.28849e+10
+AverageFitness 4.30766e+08
+AverageDepth 7
+AverageSize 41.24
+Evaluation 49400
+ParsimonyCoeff 0
+*****************************************
+Generation 485
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 2.14748e+09
+AverageFitness 2.15106e+07
+AverageDepth 7
+AverageSize 41.08
+Evaluation 49500
+ParsimonyCoeff 0
+*****************************************
+Generation 486
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 7.69352e+09
+AverageFitness 1.41407e+08
+AverageDepth 7
+AverageSize 41.48
+Evaluation 49600
+ParsimonyCoeff 0
+*****************************************
+Generation 487
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 1.28849e+10
+AverageFitness 1.50437e+08
+AverageDepth 7
+AverageSize 40.06
+Evaluation 49700
+ParsimonyCoeff 0
+*****************************************
+Generation 488
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 4.34812e+10
+AverageFitness 5.44052e+08
+AverageDepth 6.94
+AverageSize 40.2
+Evaluation 49800
+ParsimonyCoeff 0
+*****************************************
+Generation 489
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 3.65536e+10
+AverageFitness 8.60698e+08
+AverageDepth 6.94
+AverageSize 40.4
+Evaluation 49900
+ParsimonyCoeff 0
+*****************************************
+Generation 490
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 1.28849e+10
+AverageFitness 5.58651e+08
+AverageDepth 7
+AverageSize 40.12
+Evaluation 50000
+ParsimonyCoeff 0
+*****************************************
+Generation 491
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 2.1475e+09
+AverageFitness 8.77182e+07
+AverageDepth 6.88
+AverageSize 39.28
+Evaluation 50100
+ParsimonyCoeff 0
+*****************************************
+Generation 492
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 1.28849e+10
+AverageFitness 3.81345e+08
+AverageDepth 7
+AverageSize 40.82
+Evaluation 50200
+ParsimonyCoeff 0
+*****************************************
+Generation 493
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 1.28849e+10
+AverageFitness 6.66967e+08
+AverageDepth 7
+AverageSize 40.48
+Evaluation 50300
+ParsimonyCoeff 0
+*****************************************
+Generation 494
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 5.80231e+10
+AverageFitness 9.0239e+08
+AverageDepth 7
+AverageSize 40.9
+Evaluation 50400
+ParsimonyCoeff 0
+*****************************************
+Generation 495
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 1.28849e+10
+AverageFitness 4.12353e+08
+AverageDepth 6.94
+AverageSize 40.7
+Evaluation 50500
+ParsimonyCoeff 0
+*****************************************
+Generation 496
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 1.28849e+10
+AverageFitness 3.76196e+08
+AverageDepth 6.98
+AverageSize 40.36
+Evaluation 50600
+ParsimonyCoeff 0
+*****************************************
+Generation 497
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 2.14749e+09
+AverageFitness 2.15045e+07
+AverageDepth 7
+AverageSize 40.78
+Evaluation 50700
+ParsimonyCoeff 0
+*****************************************
+Generation 498
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 7.46649e+10
+AverageFitness 8.11202e+08
+AverageDepth 6.94
+AverageSize 40
+Evaluation 50800
+ParsimonyCoeff 0
+*****************************************
+Generation 499
+Time Mon Sep  3 17:47:08 2012
+BestFitness 260
+WorstFitness 5.15395e+10
+AverageFitness 9.30876e+08
+AverageDepth 6.94
+AverageSize 40.96
+Evaluation 50900
+ParsimonyCoeff 0

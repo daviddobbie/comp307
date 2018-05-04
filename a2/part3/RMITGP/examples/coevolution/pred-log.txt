@@ -1,0 +1,189 @@
+*****************************************
+Generation 0
+Time Tue Aug 23 14:19:42 2005
+BestFitness 0.166667
+WorstFitness 1
+AverageFitness 0.664417
+AverageDepth 1.46
+AverageSize 2.425
+Evaluation 200
+*****************************************
+Generation 1
+Time Tue Aug 23 14:19:42 2005
+BestFitness 0.142857
+WorstFitness 1
+AverageFitness 0.635631
+AverageDepth 1.56
+AverageSize 3.035
+Evaluation 400
+*****************************************
+Generation 2
+Time Tue Aug 23 14:19:42 2005
+BestFitness 0.142857
+WorstFitness 1
+AverageFitness 0.562131
+AverageDepth 1.665
+AverageSize 3.87
+Evaluation 600
+*****************************************
+Generation 3
+Time Tue Aug 23 14:19:42 2005
+BestFitness 0.125
+WorstFitness 1
+AverageFitness 0.537089
+AverageDepth 1.95
+AverageSize 5.215
+Evaluation 800
+*****************************************
+Generation 4
+Time Tue Aug 23 14:19:42 2005
+BestFitness 0.0909091
+WorstFitness 1
+AverageFitness 0.524455
+AverageDepth 2.28
+AverageSize 6.76
+Evaluation 1000
+*****************************************
+Generation 5
+Time Tue Aug 23 14:19:43 2005
+BestFitness 0.142857
+WorstFitness 1
+AverageFitness 0.515631
+AverageDepth 2.395
+AverageSize 7.215
+Evaluation 1200
+*****************************************
+Generation 6
+Time Tue Aug 23 14:19:43 2005
+BestFitness 0.142857
+WorstFitness 1
+AverageFitness 0.506857
+AverageDepth 2.41
+AverageSize 6.86
+Evaluation 1400
+*****************************************
+Generation 7
+Time Tue Aug 23 14:19:43 2005
+BestFitness 0.125
+WorstFitness 1
+AverageFitness 0.509637
+AverageDepth 2.88
+AverageSize 9.115
+Evaluation 1600
+*****************************************
+Generation 8
+Time Tue Aug 23 14:19:43 2005
+BestFitness 0.125
+WorstFitness 1
+AverageFitness 0.489673
+AverageDepth 2.985
+AverageSize 9.715
+Evaluation 1800
+*****************************************
+Generation 9
+Time Tue Aug 23 14:19:43 2005
+BestFitness 0.142857
+WorstFitness 1
+AverageFitness 0.51044
+AverageDepth 3.295
+AverageSize 10.735
+Evaluation 2000
+*****************************************
+Generation 10
+Time Tue Aug 23 14:19:43 2005
+BestFitness 0.142857
+WorstFitness 1
+AverageFitness 0.500095
+AverageDepth 3.455
+AverageSize 11.18
+Evaluation 2200
+*****************************************
+Generation 11
+Time Tue Aug 23 14:19:43 2005
+BestFitness 0.166667
+WorstFitness 1
+AverageFitness 0.504833
+AverageDepth 3.52
+AverageSize 11.835
+Evaluation 2400
+*****************************************
+Generation 12
+Time Tue Aug 23 14:19:43 2005
+BestFitness 0.125
+WorstFitness 1
+AverageFitness 0.498935
+AverageDepth 3.41
+AverageSize 11.165
+Evaluation 2600
+*****************************************
+Generation 13
+Time Tue Aug 23 14:19:44 2005
+BestFitness 0.142857
+WorstFitness 1
+AverageFitness 0.504357
+AverageDepth 3.775
+AverageSize 12.295
+Evaluation 2800
+*****************************************
+Generation 14
+Time Tue Aug 23 14:19:44 2005
+BestFitness 0.125
+WorstFitness 1
+AverageFitness 0.470089
+AverageDepth 4.05
+AverageSize 13.69
+Evaluation 3000
+*****************************************
+Generation 15
+Time Tue Aug 23 14:19:44 2005
+BestFitness 0.125
+WorstFitness 1
+AverageFitness 0.457256
+AverageDepth 4.4
+AverageSize 15.11
+Evaluation 3200
+*****************************************
+Generation 16
+Time Tue Aug 23 14:19:44 2005
+BestFitness 0.142857
+WorstFitness 1
+AverageFitness 0.457429
+AverageDepth 4.41
+AverageSize 15.11
+Evaluation 3400
+*****************************************
+Generation 17
+Time Tue Aug 23 14:19:44 2005
+BestFitness 0.125
+WorstFitness 1
+AverageFitness 0.421262
+AverageDepth 4.485
+AverageSize 15.42
+Evaluation 3600
+*****************************************
+Generation 18
+Time Tue Aug 23 14:19:45 2005
+BestFitness 0.1
+WorstFitness 1
+AverageFitness 0.406679
+AverageDepth 4.495
+AverageSize 15.695
+Evaluation 3800
+*****************************************
+Generation 19
+Time Tue Aug 23 14:19:45 2005
+BestFitness 0.142857
+WorstFitness 1
+AverageFitness 0.437429
+AverageDepth 4.635
+AverageSize 16.22
+Evaluation 4000
+*****************************************
+Generation 20
+Time Tue Aug 23 14:19:45 2005
+BestFitness 0.142857
+WorstFitness 1
+AverageFitness 0.467976
+AverageDepth 4.76
+AverageSize 16.35
+Evaluation 4200

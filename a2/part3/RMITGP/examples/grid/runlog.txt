@@ -1,0 +1,63 @@
+*****************************************
+Generation 0
+Time Tue Aug 23 14:21:30 2005
+BestFitness 1151.35
+WorstFitness Inf
+AverageFitness Inf
+AverageDepth 4.53516
+AverageSize 81.7891
+Evaluation 32
+*****************************************
+Generation 1
+Time Tue Aug 23 14:21:31 2005
+BestFitness 1151.35
+WorstFitness Inf
+AverageFitness Inf
+AverageDepth 2.71094
+AverageSize 11.5703
+Evaluation 32
+*****************************************
+Generation 2
+Time Tue Aug 23 14:21:31 2005
+BestFitness 1133.44
+WorstFitness Inf
+AverageFitness Inf
+AverageDepth 2.96094
+AverageSize 12.5
+Evaluation 32
+*****************************************
+Generation 3
+Time Tue Aug 23 14:21:31 2005
+BestFitness 1133.44
+WorstFitness Inf
+AverageFitness Inf
+AverageDepth 3.48828
+AverageSize 16.1172
+Evaluation 32
+*****************************************
+Generation 4
+Time Tue Aug 23 14:21:31 2005
+BestFitness 1133.44
+WorstFitness Inf
+AverageFitness Inf
+AverageDepth 5.43359
+AverageSize 40.4766
+Evaluation 32
+*****************************************
+Generation 5
+Time Tue Aug 23 14:21:32 2005
+BestFitness 1133.44
+WorstFitness Inf
+AverageFitness Inf
+AverageDepth 6.17188
+AverageSize 42.4922
+Evaluation 32
+*****************************************
+Generation 6
+Time Tue Aug 23 14:21:32 2005
+BestFitness 1133.44
+WorstFitness Inf
+AverageFitness Inf
+AverageDepth 7.20703
+AverageSize 43.625
+Evaluation 32

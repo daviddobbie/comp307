@@ -1,0 +1,11 @@
+#
+# GNU graphing of EMO_graph_data
+#
+
+set title "2d plot of Multi Objective (EMO) testing results"
+set xlabel "False Positives"
+set ylabel "False Negatives"
+set xrange [0:100]
+set yrange [0:100]
+plot "EMO_graph_data.txt" using 2:3 # , \
+# '' using 2:3:((($1<30)?$1:" ")) with labels
