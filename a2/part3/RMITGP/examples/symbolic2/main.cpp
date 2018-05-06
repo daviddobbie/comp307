@@ -48,7 +48,7 @@ int main (int argc, char* argv[])
    pop.setReturnType(ReturnDouble::TYPENUM);
 
    //Set the depth limit for the system
-   symConfig.maxDepth = 3;
+   symConfig.maxDepth = 8;
    symConfig.minDepth = 1;
 
    //Set the depth limit for the population
@@ -68,7 +68,20 @@ int main (int argc, char* argv[])
    //Add the terminals we need 
    symConfig.termSet.addNodeToSet(ReturnDouble::TYPENUM, RandDouble::generate);
    symConfig.termSet.addNodeToSet(ReturnDouble::TYPENUM, CTDouble::generate);
+   symConfig.termSet.addNodeToSet(ReturnDouble::TYPENUM, USzDouble::generate);
 
+   symConfig.termSet.addNodeToSet(ReturnDouble::TYPENUM, UShpDouble::generate);
+   symConfig.termSet.addNodeToSet(ReturnDouble::TYPENUM, MADouble::generate);
+
+   symConfig.termSet.addNodeToSet(ReturnDouble::TYPENUM, SESzDouble::generate);
+   symConfig.termSet.addNodeToSet(ReturnDouble::TYPENUM, BNDouble::generate);
+
+   symConfig.termSet.addNodeToSet(ReturnDouble::TYPENUM, BCDouble::generate);
+   symConfig.termSet.addNodeToSet(ReturnDouble::TYPENUM, NNDouble::generate);
+
+   symConfig.termSet.addNodeToSet(ReturnDouble::TYPENUM, MDouble::generate);
+
+   symConfig.termSet.addNodeToSet(ReturnDouble::TYPENUM, XDouble::generate);
 
    //Add the functions we need
    symConfig.funcSet.addNodeToSet(ReturnDouble::TYPENUM, PlusDouble::generate);

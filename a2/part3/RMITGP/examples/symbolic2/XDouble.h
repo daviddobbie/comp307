@@ -49,6 +49,130 @@ class CTDouble :  public Terminal
    protected:
 };
 
+class USzDouble :  public Terminal
+{
+   private:
+      static double value; //The data for this class 
+   public:
+      USzDouble(GPConfig *conf);
+      virtual ~USzDouble();
+      static Terminal* generate(const string &name, GPConfig *conf);
+      virtual void evaluate(ReturnData *out);  
+      virtual Node* copy();
+      static void setValue(double v);
+   protected:
+};
+
+/*              UShp                 */
+class UShpDouble :  public Terminal
+{
+   private:
+      static double value; //The data for this class 
+   public:
+      UShpDouble(GPConfig *conf);
+      virtual ~UShpDouble();
+      static Terminal* generate(const string &name, GPConfig *conf);
+      virtual void evaluate(ReturnData *out);  
+      virtual Node* copy();
+      static void setValue(double v);
+   protected:
+};
+
+/*              MA                 */
+class MADouble :  public Terminal
+{
+   private:
+      static double value; //The data for this class 
+   public:
+      MADouble(GPConfig *conf);
+      virtual ~MADouble();
+      static Terminal* generate(const string &name, GPConfig *conf);
+      virtual void evaluate(ReturnData *out);  
+      virtual Node* copy();
+      static void setValue(double v);
+   protected:
+};
+
+
+
+/*              SESz                 */
+class SESzDouble :  public Terminal
+{
+   private:
+      static double value; //The data for this class 
+   public:
+      SESzDouble(GPConfig *conf);
+      virtual ~SESzDouble();
+      static Terminal* generate(const string &name, GPConfig *conf);
+      virtual void evaluate(ReturnData *out);  
+      virtual Node* copy();
+      static void setValue(double v);
+   protected:
+};
+
+
+/*              BN                */
+class BNDouble :  public Terminal
+{
+   private:
+      static double value; //The data for this class 
+   public:
+      BNDouble(GPConfig *conf);
+      virtual ~BNDouble();
+      static Terminal* generate(const string &name, GPConfig *conf);
+      virtual void evaluate(ReturnData *out);  
+      virtual Node* copy();
+      static void setValue(double v);
+   protected:
+};
+
+/*              BC                 */
+class BCDouble :  public Terminal
+{
+   private:
+      static double value; //The data for this class 
+   public:
+      BCDouble(GPConfig *conf);
+      virtual ~BCDouble();
+      static Terminal* generate(const string &name, GPConfig *conf);
+      virtual void evaluate(ReturnData *out);  
+      virtual Node* copy();
+      static void setValue(double v);
+   protected:
+};
+
+/*              NN                 */
+class NNDouble :  public Terminal
+{
+   private:
+      static double value; //The data for this class 
+   public:
+      NNDouble(GPConfig *conf);
+      virtual ~NNDouble();
+      static Terminal* generate(const string &name, GPConfig *conf);
+      virtual void evaluate(ReturnData *out);  
+      virtual Node* copy();
+      static void setValue(double v);
+   protected:
+};
+
+/*              M                 */
+class MDouble :  public Terminal
+{
+   private:
+      static double value; //The data for this class 
+   public:
+      MDouble(GPConfig *conf);
+      virtual ~MDouble();
+      static Terminal* generate(const string &name, GPConfig *conf);
+      virtual void evaluate(ReturnData *out);  
+      virtual Node* copy();
+      static void setValue(double v);
+   protected:
+};
+
+
+
 
 
 #endif
