@@ -22,7 +22,7 @@ using namespace std;
 #include "XDouble.h"
 
 
-const int SymbolicFitness::FITNESS_CASES = 20;
+const int SymbolicFitness::FITNESS_CASES = 699;
 const int SymbolicFitness::NUM_TEST_CASES = 1000;
 
 SymbolicFitness::SymbolicFitness(GPConfig *conf) : Fitness(conf)
@@ -88,41 +88,55 @@ void SymbolicFitness::initFitness()
 
       // parse thru each line, returns it as a string
       while (fgets(line, sizeof(line), inFile)) { // standard C I/O file reading loop
-            char * ptr;
-                  printf("%s\n",line);
 
             std::string str(line);
-            stringstream ss(str);
+            std::stringstream ss(str);
+            std::string cell;
 
-            if (iterID > 1){
-                  double xVal;
-                  double yVal;
-                  //extracts out the doubles number by number.
-                  /*
-                  while (*ptr == ' '){ ptr ++;}
-                  double xVal = strtod(line, &ptr);
-                  while (*ptr == ' '){ ptr ++;}
-                  double yVal = strtod(line, &ptr);  
-      */
-                  //sscanf(line, "%*[^0-9]%lf%*[^0-9]%lf", &xVal, &yVal);
-                  cout << "with cpp" << str << "\n";
-                  printf("THISWORKS%s\n",str);
-                  xVal = strtod(line, &ptr); 
+            double xVal;
+            double yVal;
+            //extracts out the doubles number by number.
+            /*
+            while (*ptr == ' '){ ptr ++;}
+            double xVal = strtod(line, &ptr);
+            while (*ptr == ' '){ ptr ++;}
+            double yVal = strtod(line, &ptr);  
+*/
+            //sscanf(line, "%*[^0-9]%lf%*[^0-9]%lf", &xVal, &yVal);
+            std::cout << str << "\n";
+            //xVal = strtod(line, &ptr); 
 
-                  for(int i = 0; i < 9; ++i){
-                        xVal = strtod(line, &ptr); 
-                        xValues[9*(iterID-2) + i] = xVal; //for several inputs
-                        printf("x=%lf",xVal);
+
+            int pushIndx = -1;
+            while(std::getline(ss,cell, ',')) //parse comma sep. values
+            {
+                  std::cout << "parsing line\n";
+                  if (pushIndx >= 0 && pushIndx < 9){
+                        xVal = atof(cell.c_str());
+                        std::cout << 9*(iterID) + pushIndx;
+                        xValues[9*(iterID) + pushIndx] = xVal;
+                        printf("x=%lf\n", xVal);
                   }
-                  printf("\n");
-                  yVal = strtod(ptr, &ptr); 
-
-
-                  xValues[iterID-2] = xVal;
-                  targetFunc[iterID-2] = yVal;
-
-                  printf("xVal = %f, yVal = %f\n", xValues[iterID-2], targetFunc[iterID-2]);
+                  else if(pushIndx == 9)
+                  {
+                        yVal = atof(cell.c_str());
+                        std::cout << (iterID);
+                        printf("y=%lf\n", yVal);
+                        targetFunc[iterID] = yVal;
+                  }
+                  pushIndx ++;
             }
+            /*
+            for(int i = 0; i < 9; ++i){
+                  xVal = strtod(line, &ptr); 
+                  xValues[9*(iterID-2) + i] = xVal; //for several inputs
+                  printf("x=%lf",xVal);
+            }
+            printf("\n");
+            */
+            //xValues[iterID] = xVal;
+            //targetFunc[iterID] = yVal;
+            //printf("xVal = %f, yVal = %f\n", xValues[iterID-2], targetFunc[iterID-2]);
             iterID ++;
       }
       //SymbolicFitness::FITNESS_CASES = iterID -2;

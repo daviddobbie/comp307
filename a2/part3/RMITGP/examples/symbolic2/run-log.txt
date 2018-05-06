@@ -1,0 +1,1100 @@
+*****************************************
+Generation 0
+Time Mon May  7 11:06:33 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 2.786
+AverageSize 20.108
+StandardDeviationSize 38.8053
+Evaluation 1000
+ParsimonyCoeff 0
+*****************************************
+Generation 1
+Time Mon May  7 11:06:33 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 1.91
+AverageSize 5.2
+StandardDeviationSize 12.1078
+Evaluation 1200
+ParsimonyCoeff 0
+*****************************************
+Generation 2
+Time Mon May  7 11:06:33 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 2.185
+AverageSize 5.98
+StandardDeviationSize 9.50366
+Evaluation 1400
+ParsimonyCoeff 0
+*****************************************
+Generation 3
+Time Mon May  7 11:06:33 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 2.61
+AverageSize 9.14
+StandardDeviationSize 12.3426
+Evaluation 1600
+ParsimonyCoeff 0
+*****************************************
+Generation 4
+Time Mon May  7 11:06:33 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 3.195
+AverageSize 13.28
+StandardDeviationSize 13.7361
+Evaluation 1800
+ParsimonyCoeff 0
+*****************************************
+Generation 5
+Time Mon May  7 11:06:33 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 3.93
+AverageSize 18.65
+StandardDeviationSize 13.8469
+Evaluation 2000
+ParsimonyCoeff 0
+*****************************************
+Generation 6
+Time Mon May  7 11:06:33 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 4.825
+AverageSize 23.82
+StandardDeviationSize 12.334
+Evaluation 2200
+ParsimonyCoeff 0
+*****************************************
+Generation 7
+Time Mon May  7 11:06:34 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 5.4
+AverageSize 26.95
+StandardDeviationSize 10.3874
+Evaluation 2400
+ParsimonyCoeff 0
+*****************************************
+Generation 8
+Time Mon May  7 11:06:34 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 5.9
+AverageSize 30.45
+StandardDeviationSize 8.67396
+Evaluation 2600
+ParsimonyCoeff 0
+*****************************************
+Generation 9
+Time Mon May  7 11:06:34 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.16
+AverageSize 31.48
+StandardDeviationSize 8.44805
+Evaluation 2800
+ParsimonyCoeff 0
+*****************************************
+Generation 10
+Time Mon May  7 11:06:34 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.205
+AverageSize 31.25
+StandardDeviationSize 9.86699
+Evaluation 3000
+ParsimonyCoeff 0
+*****************************************
+Generation 11
+Time Mon May  7 11:06:35 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.355
+AverageSize 31.57
+StandardDeviationSize 8.78266
+Evaluation 3200
+ParsimonyCoeff 0
+*****************************************
+Generation 12
+Time Mon May  7 11:06:35 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.46
+AverageSize 32.35
+StandardDeviationSize 8.91053
+Evaluation 3400
+ParsimonyCoeff 0
+*****************************************
+Generation 13
+Time Mon May  7 11:06:35 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.335
+AverageSize 31.42
+StandardDeviationSize 9.52804
+Evaluation 3600
+ParsimonyCoeff 0
+*****************************************
+Generation 14
+Time Mon May  7 11:06:36 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.495
+AverageSize 33.11
+StandardDeviationSize 9.59207
+Evaluation 3800
+ParsimonyCoeff 0
+*****************************************
+Generation 15
+Time Mon May  7 11:06:36 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.6
+AverageSize 34.35
+StandardDeviationSize 9.69523
+Evaluation 4000
+ParsimonyCoeff 0
+*****************************************
+Generation 16
+Time Mon May  7 11:06:36 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.685
+AverageSize 33.99
+StandardDeviationSize 9.37016
+Evaluation 4200
+ParsimonyCoeff 0
+*****************************************
+Generation 17
+Time Mon May  7 11:06:37 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.675
+AverageSize 34.04
+StandardDeviationSize 9.54979
+Evaluation 4400
+ParsimonyCoeff 0
+*****************************************
+Generation 18
+Time Mon May  7 11:06:37 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.75
+AverageSize 34.74
+StandardDeviationSize 9.69187
+Evaluation 4600
+ParsimonyCoeff 0
+*****************************************
+Generation 19
+Time Mon May  7 11:06:37 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.67
+AverageSize 34.35
+StandardDeviationSize 10.9104
+Evaluation 4800
+ParsimonyCoeff 0
+*****************************************
+Generation 20
+Time Mon May  7 11:06:37 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.675
+AverageSize 34.19
+StandardDeviationSize 10.0082
+Evaluation 5000
+ParsimonyCoeff 0
+*****************************************
+Generation 21
+Time Mon May  7 11:06:38 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.715
+AverageSize 33.96
+StandardDeviationSize 10.2625
+Evaluation 5200
+ParsimonyCoeff 0
+*****************************************
+Generation 22
+Time Mon May  7 11:06:38 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.66
+AverageSize 33.96
+StandardDeviationSize 11.1301
+Evaluation 5400
+ParsimonyCoeff 0
+*****************************************
+Generation 23
+Time Mon May  7 11:06:38 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.855
+AverageSize 34.96
+StandardDeviationSize 11.1193
+Evaluation 5600
+ParsimonyCoeff 0
+*****************************************
+Generation 24
+Time Mon May  7 11:06:39 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.915
+AverageSize 35.96
+StandardDeviationSize 10.9981
+Evaluation 5800
+ParsimonyCoeff 0
+*****************************************
+Generation 25
+Time Mon May  7 11:06:39 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.055
+AverageSize 37
+StandardDeviationSize 11.0436
+Evaluation 6000
+ParsimonyCoeff 0
+*****************************************
+Generation 26
+Time Mon May  7 11:06:39 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.81
+AverageSize 35.75
+StandardDeviationSize 10.5251
+Evaluation 6200
+ParsimonyCoeff 0
+*****************************************
+Generation 27
+Time Mon May  7 11:06:40 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.855
+AverageSize 35.35
+StandardDeviationSize 11.2204
+Evaluation 6400
+ParsimonyCoeff 0
+*****************************************
+Generation 28
+Time Mon May  7 11:06:40 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.86
+AverageSize 34.99
+StandardDeviationSize 10.0866
+Evaluation 6600
+ParsimonyCoeff 0
+*****************************************
+Generation 29
+Time Mon May  7 11:06:40 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.805
+AverageSize 35.46
+StandardDeviationSize 10.7419
+Evaluation 6800
+ParsimonyCoeff 0
+*****************************************
+Generation 30
+Time Mon May  7 11:06:41 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.8
+AverageSize 35.88
+StandardDeviationSize 10.0412
+Evaluation 7000
+ParsimonyCoeff 0
+*****************************************
+Generation 31
+Time Mon May  7 11:06:41 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.865
+AverageSize 35.88
+StandardDeviationSize 10.7604
+Evaluation 7200
+ParsimonyCoeff 0
+*****************************************
+Generation 32
+Time Mon May  7 11:06:41 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.82
+AverageSize 35.94
+StandardDeviationSize 11.0107
+Evaluation 7400
+ParsimonyCoeff 0
+*****************************************
+Generation 33
+Time Mon May  7 11:06:42 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.97
+AverageSize 37.71
+StandardDeviationSize 12.6868
+Evaluation 7600
+ParsimonyCoeff 0
+*****************************************
+Generation 34
+Time Mon May  7 11:06:42 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.82
+AverageSize 36.81
+StandardDeviationSize 12.7571
+Evaluation 7800
+ParsimonyCoeff 0
+*****************************************
+Generation 35
+Time Mon May  7 11:06:42 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.98
+AverageSize 37.8
+StandardDeviationSize 12.421
+Evaluation 8000
+ParsimonyCoeff 0
+*****************************************
+Generation 36
+Time Mon May  7 11:06:43 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.125
+AverageSize 38.42
+StandardDeviationSize 12.3589
+Evaluation 8200
+ParsimonyCoeff 0
+*****************************************
+Generation 37
+Time Mon May  7 11:06:43 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.055
+AverageSize 38.25
+StandardDeviationSize 12.7506
+Evaluation 8400
+ParsimonyCoeff 0
+*****************************************
+Generation 38
+Time Mon May  7 11:06:44 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.045
+AverageSize 38.47
+StandardDeviationSize 13.5048
+Evaluation 8600
+ParsimonyCoeff 0
+*****************************************
+Generation 39
+Time Mon May  7 11:06:44 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.025
+AverageSize 38.28
+StandardDeviationSize 12.3968
+Evaluation 8800
+ParsimonyCoeff 0
+*****************************************
+Generation 40
+Time Mon May  7 11:06:44 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.99
+AverageSize 38.66
+StandardDeviationSize 12.5827
+Evaluation 9000
+ParsimonyCoeff 0
+*****************************************
+Generation 41
+Time Mon May  7 11:06:45 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.945
+AverageSize 37.99
+StandardDeviationSize 13.3177
+Evaluation 9200
+ParsimonyCoeff 0
+*****************************************
+Generation 42
+Time Mon May  7 11:06:45 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.09
+AverageSize 37.84
+StandardDeviationSize 13.2474
+Evaluation 9400
+ParsimonyCoeff 0
+*****************************************
+Generation 43
+Time Mon May  7 11:06:45 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.325
+AverageSize 39.68
+StandardDeviationSize 13.42
+Evaluation 9600
+ParsimonyCoeff 0
+*****************************************
+Generation 44
+Time Mon May  7 11:06:46 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.36
+AverageSize 40.13
+StandardDeviationSize 12.9932
+Evaluation 9800
+ParsimonyCoeff 0
+*****************************************
+Generation 45
+Time Mon May  7 11:06:46 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.49
+AverageSize 40.57
+StandardDeviationSize 13.4415
+Evaluation 10000
+ParsimonyCoeff 0
+*****************************************
+Generation 46
+Time Mon May  7 11:06:46 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.51
+AverageSize 40.03
+StandardDeviationSize 13.1148
+Evaluation 10200
+ParsimonyCoeff 0
+*****************************************
+Generation 47
+Time Mon May  7 11:06:47 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.535
+AverageSize 40.54
+StandardDeviationSize 13.517
+Evaluation 10400
+ParsimonyCoeff 0
+*****************************************
+Generation 48
+Time Mon May  7 11:06:47 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.535
+AverageSize 40.68
+StandardDeviationSize 13.237
+Evaluation 10600
+ParsimonyCoeff 0
+*****************************************
+Generation 49
+Time Mon May  7 11:06:48 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.56
+AverageSize 40.86
+StandardDeviationSize 11.9088
+Evaluation 10800
+ParsimonyCoeff 0
+*****************************************
+Generation 50
+Time Mon May  7 11:06:48 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.53
+AverageSize 41.25
+StandardDeviationSize 13.4446
+Evaluation 11000
+ParsimonyCoeff 0
+*****************************************
+Generation 51
+Time Mon May  7 11:06:48 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.71
+AverageSize 41.23
+StandardDeviationSize 12.535
+Evaluation 11200
+ParsimonyCoeff 0
+*****************************************
+Generation 52
+Time Mon May  7 11:06:49 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.305
+AverageSize 39.26
+StandardDeviationSize 13.8742
+Evaluation 11400
+ParsimonyCoeff 0
+*****************************************
+Generation 53
+Time Mon May  7 11:06:49 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.395
+AverageSize 40.19
+StandardDeviationSize 13.5722
+Evaluation 11600
+ParsimonyCoeff 0
+*****************************************
+Generation 54
+Time Mon May  7 11:06:49 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.33
+AverageSize 39.95
+StandardDeviationSize 13.2105
+Evaluation 11800
+ParsimonyCoeff 0
+*****************************************
+Generation 55
+Time Mon May  7 11:06:50 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.13
+AverageSize 38.75
+StandardDeviationSize 13.3446
+Evaluation 12000
+ParsimonyCoeff 0
+*****************************************
+Generation 56
+Time Mon May  7 11:06:50 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.245
+AverageSize 39.68
+StandardDeviationSize 13.3827
+Evaluation 12200
+ParsimonyCoeff 0
+*****************************************
+Generation 57
+Time Mon May  7 11:06:51 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.21
+AverageSize 38.99
+StandardDeviationSize 12.8522
+Evaluation 12400
+ParsimonyCoeff 0
+*****************************************
+Generation 58
+Time Mon May  7 11:06:51 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.16
+AverageSize 38.65
+StandardDeviationSize 12.3295
+Evaluation 12600
+ParsimonyCoeff 0
+*****************************************
+Generation 59
+Time Mon May  7 11:06:51 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.065
+AverageSize 37.99
+StandardDeviationSize 12.2147
+Evaluation 12800
+ParsimonyCoeff 0
+*****************************************
+Generation 60
+Time Mon May  7 11:06:52 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.17
+AverageSize 38.34
+StandardDeviationSize 12.0085
+Evaluation 13000
+ParsimonyCoeff 0
+*****************************************
+Generation 61
+Time Mon May  7 11:06:52 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.195
+AverageSize 39.26
+StandardDeviationSize 13.3766
+Evaluation 13200
+ParsimonyCoeff 0
+*****************************************
+Generation 62
+Time Mon May  7 11:06:52 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.145
+AverageSize 39.57
+StandardDeviationSize 14.1016
+Evaluation 13400
+ParsimonyCoeff 0
+*****************************************
+Generation 63
+Time Mon May  7 11:06:53 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.22
+AverageSize 40.22
+StandardDeviationSize 13.9381
+Evaluation 13600
+ParsimonyCoeff 0
+*****************************************
+Generation 64
+Time Mon May  7 11:06:53 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.135
+AverageSize 39.98
+StandardDeviationSize 12.9707
+Evaluation 13800
+ParsimonyCoeff 0
+*****************************************
+Generation 65
+Time Mon May  7 11:06:53 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.125
+AverageSize 39.05
+StandardDeviationSize 12.7066
+Evaluation 14000
+ParsimonyCoeff 0
+*****************************************
+Generation 66
+Time Mon May  7 11:06:54 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.055
+AverageSize 39.21
+StandardDeviationSize 12.942
+Evaluation 14200
+ParsimonyCoeff 0
+*****************************************
+Generation 67
+Time Mon May  7 11:06:54 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.1
+AverageSize 41.32
+StandardDeviationSize 14.5072
+Evaluation 14400
+ParsimonyCoeff 0
+*****************************************
+Generation 68
+Time Mon May  7 11:06:55 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.11
+AverageSize 40.81
+StandardDeviationSize 15.4319
+Evaluation 14600
+ParsimonyCoeff 0
+*****************************************
+Generation 69
+Time Mon May  7 11:06:55 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.175
+AverageSize 41.66
+StandardDeviationSize 14.8137
+Evaluation 14800
+ParsimonyCoeff 0
+*****************************************
+Generation 70
+Time Mon May  7 11:06:55 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.21
+AverageSize 40.48
+StandardDeviationSize 14.083
+Evaluation 15000
+ParsimonyCoeff 0
+*****************************************
+Generation 71
+Time Mon May  7 11:06:56 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.24
+AverageSize 40.62
+StandardDeviationSize 13.7497
+Evaluation 15200
+ParsimonyCoeff 0
+*****************************************
+Generation 72
+Time Mon May  7 11:06:56 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.36
+AverageSize 41.37
+StandardDeviationSize 14.1182
+Evaluation 15400
+ParsimonyCoeff 0
+*****************************************
+Generation 73
+Time Mon May  7 11:06:57 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.495
+AverageSize 43.06
+StandardDeviationSize 14.5793
+Evaluation 15600
+ParsimonyCoeff 0
+*****************************************
+Generation 74
+Time Mon May  7 11:06:57 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.45
+AverageSize 44.15
+StandardDeviationSize 16.0791
+Evaluation 15800
+ParsimonyCoeff 0
+*****************************************
+Generation 75
+Time Mon May  7 11:06:57 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.39
+AverageSize 42.7
+StandardDeviationSize 15.3281
+Evaluation 16000
+ParsimonyCoeff 0
+*****************************************
+Generation 76
+Time Mon May  7 11:06:58 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.625
+AverageSize 46.19
+StandardDeviationSize 14.8366
+Evaluation 16200
+ParsimonyCoeff 0
+*****************************************
+Generation 77
+Time Mon May  7 11:06:58 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.75
+AverageSize 46.99
+StandardDeviationSize 13.9047
+Evaluation 16400
+ParsimonyCoeff 0
+*****************************************
+Generation 78
+Time Mon May  7 11:06:59 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.54
+AverageSize 44.78
+StandardDeviationSize 14.7007
+Evaluation 16600
+ParsimonyCoeff 0
+*****************************************
+Generation 79
+Time Mon May  7 11:06:59 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.635
+AverageSize 45.16
+StandardDeviationSize 14.2371
+Evaluation 16800
+ParsimonyCoeff 0
+*****************************************
+Generation 80
+Time Mon May  7 11:06:59 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.325
+AverageSize 42.71
+StandardDeviationSize 13.7439
+Evaluation 17000
+ParsimonyCoeff 0
+*****************************************
+Generation 81
+Time Mon May  7 11:07:00 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.51
+AverageSize 44.57
+StandardDeviationSize 12.9443
+Evaluation 17200
+ParsimonyCoeff 0
+*****************************************
+Generation 82
+Time Mon May  7 11:07:00 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.55
+AverageSize 46.25
+StandardDeviationSize 14.2667
+Evaluation 17400
+ParsimonyCoeff 0
+*****************************************
+Generation 83
+Time Mon May  7 11:07:01 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.375
+AverageSize 44.43
+StandardDeviationSize 13.5873
+Evaluation 17600
+ParsimonyCoeff 0
+*****************************************
+Generation 84
+Time Mon May  7 11:07:01 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.35
+AverageSize 43.61
+StandardDeviationSize 13.4212
+Evaluation 17800
+ParsimonyCoeff 0
+*****************************************
+Generation 85
+Time Mon May  7 11:07:02 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.475
+AverageSize 44.68
+StandardDeviationSize 13.0329
+Evaluation 18000
+ParsimonyCoeff 0
+*****************************************
+Generation 86
+Time Mon May  7 11:07:02 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.56
+AverageSize 44.35
+StandardDeviationSize 14.63
+Evaluation 18200
+ParsimonyCoeff 0
+*****************************************
+Generation 87
+Time Mon May  7 11:07:03 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.69
+AverageSize 45.25
+StandardDeviationSize 14.762
+Evaluation 18400
+ParsimonyCoeff 0
+*****************************************
+Generation 88
+Time Mon May  7 11:07:03 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.77
+AverageSize 44.19
+StandardDeviationSize 16.1581
+Evaluation 18600
+ParsimonyCoeff 0
+*****************************************
+Generation 89
+Time Mon May  7 11:07:03 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.645
+AverageSize 43.12
+StandardDeviationSize 15.864
+Evaluation 18800
+ParsimonyCoeff 0
+*****************************************
+Generation 90
+Time Mon May  7 11:07:04 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.325
+AverageSize 40.54
+StandardDeviationSize 16.4714
+Evaluation 19000
+ParsimonyCoeff 0
+*****************************************
+Generation 91
+Time Mon May  7 11:07:04 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.315
+AverageSize 40.35
+StandardDeviationSize 15.1379
+Evaluation 19200
+ParsimonyCoeff 0
+*****************************************
+Generation 92
+Time Mon May  7 11:07:05 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.145
+AverageSize 39.25
+StandardDeviationSize 14.8741
+Evaluation 19400
+ParsimonyCoeff 0
+*****************************************
+Generation 93
+Time Mon May  7 11:07:05 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.15
+AverageSize 38.1
+StandardDeviationSize 13.7517
+Evaluation 19600
+ParsimonyCoeff 0
+*****************************************
+Generation 94
+Time Mon May  7 11:07:05 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.315
+AverageSize 38.85
+StandardDeviationSize 14.3888
+Evaluation 19800
+ParsimonyCoeff 0
+*****************************************
+Generation 95
+Time Mon May  7 11:07:06 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.29
+AverageSize 37.95
+StandardDeviationSize 12.9583
+Evaluation 20000
+ParsimonyCoeff 0
+*****************************************
+Generation 96
+Time Mon May  7 11:07:06 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.265
+AverageSize 37.88
+StandardDeviationSize 13.4932
+Evaluation 20200
+ParsimonyCoeff 0
+*****************************************
+Generation 97
+Time Mon May  7 11:07:06 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.255
+AverageSize 37.63
+StandardDeviationSize 11.2562
+Evaluation 20400
+ParsimonyCoeff 0
+*****************************************
+Generation 98
+Time Mon May  7 11:07:07 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 7.06
+AverageSize 36.18
+StandardDeviationSize 12.0784
+Evaluation 20600
+ParsimonyCoeff 0
+*****************************************
+Generation 99
+Time Mon May  7 11:07:07 2018
+BestFitness 482
+WorstFitness inf
+AverageFitness inf
+AverageDepth 6.96
+AverageSize 36.21
+StandardDeviationSize 11.0252
+Evaluation 20800
+ParsimonyCoeff 0
