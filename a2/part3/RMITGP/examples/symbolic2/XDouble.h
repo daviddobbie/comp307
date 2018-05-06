@@ -10,6 +10,17 @@
  XDouble is a variable terminal. 
 ***************************************************************************/
 
+
+/*
+    Note from David Dobbie, COMP 307 Assignment 2 Part 3:
+        * To add on several inputs to the genetic program there are several
+        * classes that are very similar. This is due to the package requiring
+        * the main differentiation between inputs - what it is called - to be
+        * inherited through the constructor. C++ does not allow separate constructors
+        * for classes that inherit. 
+*/
+
+
 class GPConfig;
 
 #include <string>

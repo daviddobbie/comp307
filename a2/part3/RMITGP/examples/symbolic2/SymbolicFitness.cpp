@@ -27,7 +27,7 @@ const int SymbolicFitness::NUM_TEST_CASES = 1000;
 
 SymbolicFitness::SymbolicFitness(GPConfig *conf) : Fitness(conf)
 {
-   xValues = new double[FITNESS_CASES];
+   xValues = new double[FITNESS_CASES*9];
    targetFunc = new double[FITNESS_CASES];
    generationCounter = 0;
 //   if(TARPEIAN) conf->activateTarpeian(this); // QCS 20120917
@@ -105,12 +105,17 @@ void SymbolicFitness::initFitness()
                   double yVal = strtod(line, &ptr);  
       */
                   //sscanf(line, "%*[^0-9]%lf%*[^0-9]%lf", &xVal, &yVal);
+                  cout << "with cpp" << str << "\n";
+                  printf("THISWORKS%s\n",str);
+                  xVal = strtod(line, &ptr); 
 
-
-                  xVal = strtod(line, &ptr);
-                  yVal = strtod(ptr, &ptr);  
-                  printf("x=%f, y=%f\n",xVal, yVal);
-
+                  for(int i = 0; i < 9; ++i){
+                        xVal = strtod(line, &ptr); 
+                        xValues[9*(iterID-2) + i] = xVal; //for several inputs
+                        printf("x=%lf",xVal);
+                  }
+                  printf("\n");
+                  yVal = strtod(ptr, &ptr); 
 
 
                   xValues[iterID-2] = xVal;
