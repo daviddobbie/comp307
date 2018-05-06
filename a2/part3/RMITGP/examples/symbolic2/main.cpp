@@ -14,7 +14,10 @@ using namespace std;
 #include "MultDouble.h"
 #include "DivideDouble.h"
 
+
 #include "XDouble.h"
+
+
 #include "RandDouble.h"
 
 #include "ReturnDouble.h"
@@ -64,7 +67,8 @@ int main (int argc, char* argv[])
 
    //Add the terminals we need 
    symConfig.termSet.addNodeToSet(ReturnDouble::TYPENUM, RandDouble::generate);
-   symConfig.termSet.addNodeToSet(ReturnDouble::TYPENUM, XDouble::generate);
+   symConfig.termSet.addNodeToSet(ReturnDouble::TYPENUM, CTDouble::generate);
+
 
    //Add the functions we need
    symConfig.funcSet.addNodeToSet(ReturnDouble::TYPENUM, PlusDouble::generate);
@@ -108,7 +112,7 @@ int main (int argc, char* argv[])
    
       /*Do 1000 generations, returns true if solution is found
         (see fitness class*/
-      if (pop.evolve(1000))
+      if (pop.evolve(100))
       {
          cout << "Found solution" << endl;
       }

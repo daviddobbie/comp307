@@ -21,6 +21,7 @@ using namespace std;
 
 #include "XDouble.h"
 
+
 const int SymbolicFitness::FITNESS_CASES = 20;
 const int SymbolicFitness::NUM_TEST_CASES = 1000;
 
@@ -135,7 +136,7 @@ void SymbolicFitness::assignFitness(GeneticProgram* pop[], int popSize)
       pop[i]->setFitness(0.0);
       for(j=0; j<FITNESS_CASES; j++)
       {
-         XDouble::setValue(xValues[j]);
+         CTDouble::setValue(xValues[j]);
          pop[i]->evaluate(&rd);
 
          //Unfortunately we have to check for NaN
@@ -173,7 +174,7 @@ void SymbolicFitness::assignFitness(GeneticProgram* pop[], int popSize)
 void SymbolicFitness::outputResults(GeneticProgram *program, const char *filename)
 {
    int i;
-   double xDouble;
+   double CTDouble;
    ofstream outputFile;
    string progString;
    ReturnDouble rd;
@@ -194,16 +195,16 @@ void SymbolicFitness::outputResults(GeneticProgram *program, const char *filenam
 
    for (i=0; i<NUM_TEST_CASES; i++)
    {
-      xDouble = (double)i;
-      XDouble::setValue(xDouble);
+      CTDouble = (double)i;
+      CTDouble::setValue(CTDouble);
 
       program->evaluate(&rd);
   /*    
-      outputFile << xDouble << " "
-   //            << (3 * xDouble) + 14.45 << " "
-                 << (1.5 * (xDouble * xDouble * xDouble)) +
-                    (3.2 * (xDouble * xDouble)) +
-                    (4.0 * xDouble) -127.2 << " "
+      outputFile << CTDouble << " "
+   //            << (3 * CTDouble) + 14.45 << " "
+                 << (1.5 * (CTDouble * CTDouble * CTDouble)) +
+                    (3.2 * (CTDouble * CTDouble)) +
+                    (4.0 * CTDouble) -127.2 << " "
                  << rd.getData() << endl;
                  */
    }

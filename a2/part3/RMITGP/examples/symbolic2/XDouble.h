@@ -19,24 +19,36 @@ class XDouble : public Terminal
 {
    private:
       static double value; //The data for this class 
-
    public:
       XDouble(GPConfig *conf);
       virtual ~XDouble();
-
       static Terminal* generate(const string &name, GPConfig *conf);
-
       virtual void evaluate(ReturnData *out);  
-
       /**********************************
        Copies this terminal and returns
        a pointer to the copy.
       **********************************/
       virtual Node* copy();
-
       static void setValue(double v);
-
    protected:
 };
+
+
+
+class CTDouble :  public Terminal
+{
+   private:
+      static double value; //The data for this class 
+   public:
+      CTDouble(GPConfig *conf);
+      virtual ~CTDouble();
+      static Terminal* generate(const string &name, GPConfig *conf);
+      virtual void evaluate(ReturnData *out);  
+      virtual Node* copy();
+      static void setValue(double v);
+   protected:
+};
+
+
 
 #endif
