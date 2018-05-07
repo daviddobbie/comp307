@@ -26,6 +26,8 @@ class SymbolicFitness : public Fitness
 
       double *xValues;
       double *targetFunc;
+      double *xTestValues;
+      double *targetTestFunc;
 
       //This constant controls the number of points to use for
       //writing the test data out (x rang 0 (NUM_TEST_CASES-1))
@@ -48,6 +50,7 @@ class SymbolicFitness : public Fitness
       virtual double best();
       virtual double worst();
 
+      virtual void testFitness(GeneticProgram* pop[], int popSize);
       /******************************************
        Writes out the results of executing a 
        program to the file. Along with the 

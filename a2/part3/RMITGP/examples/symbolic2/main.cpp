@@ -122,7 +122,7 @@ int main (int argc, char* argv[])
    
       /*Do 1000 generations, returns true if solution is found
         (see fitness class*/
-      if (pop.evolve(500))
+      if (pop.evolve(50))
       {
          cout << "Found solution" << endl;
       }
@@ -135,7 +135,7 @@ int main (int argc, char* argv[])
       cout << "Best program" << endl
            << "Fitness " << pop.getBest()->getFitness() << endl
            << str1 << endl;
-      cout << "Training Classification accuracy = " <<  100*(pop.getBest()->getFitness()/699.0) << "\%\n";
+      cout << "Training Classification accuracy = " <<  100*(pop.getBest()->getFitness()/399.0) << "\%\n";
    }
    catch (const string & s)
    {
