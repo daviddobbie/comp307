@@ -23,8 +23,8 @@ using namespace std;
 #include "XDouble.h"
 
 
-const int SymbolicFitness::FITNESS_CASES = 399;
-const int SymbolicFitness::NUM_TEST_CASES = 200;
+const int SymbolicFitness::FITNESS_CASES = 599;
+const int SymbolicFitness::NUM_TEST_CASES = 100;
 int GENERATION_COUNTER = 0;
 
 
@@ -167,13 +167,13 @@ void SymbolicFitness::initFitness()
                         else xVal = atof(cell.c_str());
                         //std::cout << 9*(iterID) + pushIndx;
                         xTestValues[9*(iterID) + pushIndx] = xVal;
-                        printf("x=%lf\n", xVal);
+                        //printf("x=%lf\n", xVal);
                   }
                   else if(pushIndx == 9)
                   {
                         yVal = atof(cell.c_str());
                         //std::cout << (iterID);
-                        printf("y=%lf\n", yVal);
+                        //printf("y=%lf\n", yVal);
                         targetTestFunc[iterID] = yVal;
                   }
                   pushIndx ++;
@@ -186,7 +186,7 @@ void SymbolicFitness::initFitness()
 
 void SymbolicFitness::assignFitness(GeneticProgram* pop[], int popSize)
 {
-   int i,j,k;
+   int i,j;
    ReturnDouble rd;
 
    for(i=0; i<popSize; i++)
@@ -233,15 +233,15 @@ void SymbolicFitness::assignFitness(GeneticProgram* pop[], int popSize)
                               */
                   /*pop[i]->setFitness(pop[i]->getFitness() + 
                               fabs(targetFunc[j] - rd.getData())    );*/
-                  if (targetFunc[j] == 4.0){
-                        if(rd.getData() > 3){
+                  if (targetFunc[j] > 3.0){
+                        if(rd.getData() > 3.0){
                               pop[i]->setFitness(pop[i]->getFitness() + 0); //no addition to error
                         }else{
                               pop[i]->setFitness(pop[i]->getFitness() + 1); //addition to error since wrong classification
                         }
                   }
                   else{
-                        if(rd.getData() > 3){
+                        if(rd.getData() > 3.0){
                               pop[i]->setFitness(pop[i]->getFitness() + 1); //addition to error since wrong classification
                         }else{
                               pop[i]->setFitness(pop[i]->getFitness() + 0); // no addition to error
@@ -252,14 +252,16 @@ void SymbolicFitness::assignFitness(GeneticProgram* pop[], int popSize)
    }
 
 }
-
-void SymbolicFitness::testFitness(GeneticProgram* pop[], int popSize){
+// tests the testset's fitness for the population
+double SymbolicFitness::testFitness(GeneticProgram* pop[], int popSize){
    int i,j,k;
    ReturnDouble rd;
-
+   double bestFitness = 10000;
+   double currFitness;
    for(i=0; i<popSize; i++)
    {
-      pop[i]->setFitness(0.0);
+      currFitness = 0;
+      //std::cout << "New program tested!\n";
       for(j=0; j<NUM_TEST_CASES; j++)
       {
             //load all of the variable terminal nodes
@@ -281,28 +283,33 @@ void SymbolicFitness::testFitness(GeneticProgram* pop[], int popSize){
                         if (!std::isfinite(rd.getData()))
             #endif
             {
-                  pop[i]->setFitness(this->worst());
                   continue;         
             }
             else
             {
-                  if (targetFunc[j] == 4.0){
-                        if(rd.getData() > 3){
-                              pop[i]->setFitness(pop[i]->getFitness() + 0); //no addition to error
+                  if (targetTestFunc[j] > 3.0){ // where target is more than 3
+                        if(rd.getData() > 3.0){
+                              currFitness = currFitness + 0; //no addition to error
+                              //cout << "1correct\n";
                         }else{
-                              pop[i]->setFitness(pop[i]->getFitness() + 1); //addition to error since wrong classification
+                              currFitness = currFitness + 1; //addition to error since wrong classification
+                              //cout << "2incorrect\n";
                         }
                   }
-                  else{
-                        if(rd.getData() > 3){
-                              pop[i]->setFitness(pop[i]->getFitness() + 1); //addition to error since wrong classification
+                  else{ // where target is less than 3
+                        if(rd.getData() > 3.0){
+                              currFitness = currFitness + 1; //addition to error since wrong classification
+                              //cout << "3incorrect\n";
                         }else{
-                              pop[i]->setFitness(pop[i]->getFitness() + 0); // no addition to error
+                              currFitness = currFitness + 0; // no addition to error
+                              //cout << "4correct\n";
                         }
                   }
             }           
       }
+      if (currFitness < bestFitness) bestFitness = currFitness;
    }   
+   return bestFitness;
 }
 
 
@@ -354,18 +361,8 @@ bool SymbolicFitness::solutionFound(GeneticProgram* pop[], int popSize)
    GENERATION_COUNTER ++;
    double bestFitness = 10000;
    double currFitness;
-
-   double testBestFitness = 10000;
-   double testCurrFitness;
-
-
    // training set fitness
-   for (; i<popSize; i++)
-   {
-      currFitness = pop[i]->getFitness();
-      if (currFitness < bestFitness)
-         bestFitness = currFitness;
-   }
+   assignFitness(pop, popSize);
    for (; i<popSize; i++)
    {
       currFitness = pop[i]->getFitness();
@@ -376,22 +373,20 @@ bool SymbolicFitness::solutionFound(GeneticProgram* pop[], int popSize)
 
    //cout << "Test Set fitness \n";
 
-   testFitness(pop, popSize);
-   for (i = 0; i<popSize; i++)
-   {
-      testCurrFitness = pop[i]->getFitness();
-      if (testCurrFitness < testBestFitness)
-         testBestFitness = testCurrFitness;
-   }
+   double bestTestFitness = testFitness(pop, popSize);
+   
+   /*
+   assignFitness(pop, popSize);
+   // training set fitness
    for (; i<popSize; i++)
    {
-      testCurrFitness = pop[i]->getFitness();
-      if (testCurrFitness < testBestFitness)
-         testBestFitness = testCurrFitness;
-   }  
-
+      currFitness = pop[i]->getFitness();
+      if (currFitness < bestFitness)
+         bestFitness = currFitness;
+   }
+*/
    std::cout << "gen = " << GENERATION_COUNTER << "; Train Fit = " << bestFitness << 
-    "; Test Fit = "  << testBestFitness << "\n";
+    "; Test Fit = "  << bestTestFitness << "\n";
    if (currFitness < 1)
    {
          return true;

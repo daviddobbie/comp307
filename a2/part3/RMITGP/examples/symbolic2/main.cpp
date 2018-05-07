@@ -36,7 +36,7 @@ int main (int argc, char* argv[])
    GPConfig symConfig;
    
    //Declare a population, giving the size and a log file name
-   Population pop(200, 1000,  "run-log.txt", &symConfig);
+   Population pop(250, 1000,  "run-log.txt", &symConfig);
    string s1;
   
    //Set the rates of mutation etc 
@@ -48,8 +48,8 @@ int main (int argc, char* argv[])
    pop.setReturnType(ReturnDouble::TYPENUM);
 
    //Set the depth limit for the system
-   symConfig.maxDepth = 8;
-   symConfig.minDepth = 1;
+   symConfig.maxDepth = 4;
+   symConfig.minDepth = 0;
 
    //Set the depth limit for the population
    pop.setDepthLimit(symConfig.maxDepth);
@@ -122,7 +122,7 @@ int main (int argc, char* argv[])
    
       /*Do 1000 generations, returns true if solution is found
         (see fitness class*/
-      if (pop.evolve(50))
+      if (pop.evolve(150))
       {
          cout << "Found solution" << endl;
       }
@@ -134,8 +134,8 @@ int main (int argc, char* argv[])
       pop.getBest()->print(str1);
       cout << "Best program" << endl
            << "Fitness " << pop.getBest()->getFitness() << endl
-           << str1 << endl;
-      cout << "Training Classification accuracy = " <<  100*(pop.getBest()->getFitness()/399.0) << "\%\n";
+           << str1 << endl;    
+      cout << "Training Classification accuracy = " <<  100*(1-pop.getBest()->getFitness()/599) << "\%\n"; 
    }
    catch (const string & s)
    {

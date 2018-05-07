@@ -1,8 +1,8 @@
 Population at generation 50
-File created at Mon May  7 13:47:17 2018
-numIndividuals 200
-depthLimit 8
-initdepthLimit 8
+File created at Mon May  7 15:46:33 2018
+numIndividuals 300
+depthLimit 3
+initdepthLimit 3
 minDepth 1
 returnType 2
 mutationRate 0.15
@@ -10,1401 +10,2101 @@ crossoverRate 0.8
 elitismRate 0.05
 ###################################
 Individual 0
-Fitness 78
+Fitness 17
 Depth 5
-Size 9
+Size 13
 Range 
-Program (/ (* UShp (- (/ UShp USz) BN)) NN)
+Program (- (* UShp (- (* BN USz) (/ 13.952149 SESz))) (/ SESz NN))
 ###################################
 Individual 1
-Fitness 82
-Depth 2
-Size 3
+Fitness 17
+Depth 5
+Size 13
 Range 
-Program (/ USz USz)
+Program (- (* SESz (- (* BN USz) (/ 13.952149 SESz))) (/ BN NN))
 ###################################
 Individual 2
-Fitness 82
-Depth 2
-Size 3
+Fitness 17
+Depth 5
+Size 13
 Range 
-Program (- M UShp)
+Program (- (* UShp (- (* BN USz) (/ 13.952149 SESz))) (/ SESz NN))
 ###################################
 Individual 3
-Fitness 82
-Depth 4
-Size 9
+Fitness 17
+Depth 5
+Size 13
 Range 
-Program (- (- BN UShp) (* UShp (/ SESz M)))
+Program (- (* UShp (- (* BN USz) (/ 13.952149 SESz))) (/ SESz NN))
 ###################################
 Individual 4
-Fitness 82
-Depth 4
-Size 9
+Fitness 17
+Depth 5
+Size 13
 Range 
-Program (- (- BN NN) (* USz (/ SESz M)))
+Program (- (* SESz (- (* BN USz) (/ 13.952149 SESz))) (/ BN NN))
 ###################################
 Individual 5
-Fitness 82
-Depth 3
-Size 5
+Fitness 17
+Depth 5
+Size 13
 Range 
-Program (/ BN (+ SESz USz))
+Program (- (* SESz (- (* BN USz) (/ 13.952149 SESz))) (/ BN NN))
 ###################################
 Individual 6
-Fitness 82
-Depth 4
-Size 9
+Fitness 17
+Depth 5
+Size 13
 Range 
-Program (/ BN (- (* MA USz) (/ BN UShp)))
+Program (- (* SESz (- (* BN USz) (/ 13.952149 SESz))) (/ BN NN))
 ###################################
 Individual 7
-Fitness 82
-Depth 2
-Size 3
+Fitness 17
+Depth 5
+Size 11
 Range 
-Program (- BN CT)
+Program (- (* UShp (- (* BN USz) NN)) (/ SESz NN))
 ###################################
 Individual 8
-Fitness 82
-Depth 1
-Size 1
+Fitness 17
+Depth 3
+Size 7
 Range 
-Program NN
+Program (- (* UShp M) (/ SESz NN))
 ###################################
 Individual 9
-Fitness 83
-Depth 3
-Size 5
+Fitness 17
+Depth 5
+Size 13
 Range 
-Program (/ (* UShp NN) NN)
+Program (- (* UShp (- (* BN USz) (/ 13.952149 SESz))) (/ SESz NN))
 ###################################
 Individual 10
-Fitness 83
-Depth 2
-Size 3
+Fitness 17
+Depth 5
+Size 13
 Range 
-Program (/ UShp NN)
+Program (- (* 13.952149 (- (* BN USz) (/ 13.952149 SESz))) (/ BN NN))
 ###################################
 Individual 11
-Fitness 83
-Depth 2
-Size 3
+Fitness 17
+Depth 6
+Size 15
 Range 
-Program (+ SESz USz)
+Program (- (* SESz (- (* BN USz) (/ (* BN USz) SESz))) (/ BN NN))
 ###################################
 Individual 12
-Fitness 83
-Depth 3
-Size 7
+Fitness 17
+Depth 5
+Size 11
 Range 
-Program (/ (/ M M) (/ CT NN))
+Program (- (* UShp (- (* BN USz) USz)) (/ SESz NN))
 ###################################
 Individual 13
-Fitness 83
-Depth 6
+Fitness 17
+Depth 5
 Size 15
 Range 
-Program (+ (/ CT SESz) (/ BN (- (- SESz UShp) (+ (/ M NN) 31.024322))))
+Program (- (* SESz (- (* BN USz) (/ 13.952149 SESz))) (/ BN (/ 13.952149 SESz)))
 ###################################
 Individual 14
-Fitness 83
-Depth 1
-Size 1
+Fitness 17
+Depth 5
+Size 15
 Range 
-Program BC
+Program (- (* (* SESz USz) (- (* BN USz) (/ 13.952149 SESz))) (/ SESz NN))
 ###################################
 Individual 15
-Fitness 83
-Depth 2
-Size 3
+Fitness 17
+Depth 5
+Size 11
 Range 
-Program (+ M BN)
+Program (- (* SESz (- (* BN USz) (/ 13.952149 SESz))) MA)
 ###################################
 Individual 16
-Fitness 83
-Depth 3
-Size 5
+Fitness 17
+Depth 5
+Size 13
 Range 
-Program (- BC (+ BC SESz))
+Program (- (* SESz (- (* BN USz) (/ USz SESz))) (/ BN NN))
 ###################################
 Individual 17
-Fitness 83
-Depth 2
-Size 3
+Fitness 17
+Depth 5
+Size 13
 Range 
-Program (- BN UShp)
+Program (- (* BN (- (* BN USz) (/ 13.952149 SESz))) (/ BN NN))
 ###################################
 Individual 18
-Fitness 83
-Depth 8
-Size 33
+Fitness 17
+Depth 5
+Size 13
 Range 
-Program (/ (- M BN) (- (* (- (- MA (/ SESz M)) SESz) M) (- NN (/ (- (* UShp (/ BN BC)) SESz) (- (* BN BN) (* SESz (- UShp UShp)))))))
+Program (- (* UShp (- (* BN USz) (/ 13.952149 SESz))) (/ SESz NN))
 ###################################
 Individual 19
-Fitness 83
-Depth 1
-Size 1
+Fitness 18
+Depth 5
+Size 13
 Range 
-Program M
+Program (- (* UShp (- (* BN USz) (/ 13.952149 SESz))) (/ USz NN))
 ###################################
 Individual 20
-Fitness 83
-Depth 1
-Size 1
+Fitness 18
+Depth 4
+Size 9
 Range 
-Program BN
+Program (- (* BN USz) (/ (/ 13.952149 NN) SESz))
 ###################################
 Individual 21
-Fitness 84
-Depth 1
-Size 1
+Fitness 18
+Depth 4
+Size 9
 Range 
-Program SESz
+Program (- (* BN USz) (/ (/ 13.952149 NN) 13.952149))
 ###################################
 Individual 22
-Fitness 84
-Depth 7
-Size 21
+Fitness 18
+Depth 4
+Size 9
 Range 
-Program (/ NN (- (* (- (- MA (/ BC M)) SESz) M) (- BN (/ (- BN (+ SESz M)) USz))))
+Program (- (* BN USz) (/ (/ 13.952149 NN) SESz))
 ###################################
 Individual 23
-Fitness 84
-Depth 8
-Size 15
+Fitness 18
+Depth 4
+Size 9
 Range 
-Program (- NN (* NN (+ UShp (/ UShp (- USz (/ SESz (+ USz NN)))))))
+Program (- (* BN USz) (/ (/ 13.952149 SESz) NN))
 ###################################
 Individual 24
-Fitness 84
+Fitness 18
 Depth 4
-Size 7
+Size 9
 Range 
-Program (- BC (- (/ BN SESz) BC))
+Program (- (* BN USz) (/ (/ 13.952149 NN) SESz))
 ###################################
 Individual 25
-Fitness 84
-Depth 2
-Size 3
+Fitness 18
+Depth 4
+Size 9
 Range 
-Program (- NN BC)
+Program (- (* BN USz) (/ (/ 13.952149 NN) SESz))
 ###################################
 Individual 26
-Fitness 84
-Depth 2
-Size 3
+Fitness 18
+Depth 4
+Size 9
 Range 
-Program (/ MA SESz)
+Program (- (* BN USz) (/ (/ 13.952149 NN) SESz))
 ###################################
 Individual 27
-Fitness 84
-Depth 3
-Size 5
+Fitness 18
+Depth 4
+Size 9
 Range 
-Program (- BC (/ BN CT))
+Program (- (* BN USz) (/ (/ 13.952149 NN) SESz))
 ###################################
 Individual 28
-Fitness 84
-Depth 2
-Size 3
+Fitness 18
+Depth 5
+Size 13
 Range 
-Program (- BC BN)
+Program (- (* UShp (- (* BN USz) (/ 13.952149 SESz))) (/ USz NN))
 ###################################
 Individual 29
-Fitness 84
-Depth 3
-Size 7
+Fitness 18
+Depth 4
+Size 9
 Range 
-Program (- (* BC BN) (/ BN UShp))
+Program (- (* BN USz) (/ (/ 13.952149 NN) SESz))
 ###################################
 Individual 30
-Fitness 84
-Depth 1
-Size 1
+Fitness 18
+Depth 4
+Size 9
 Range 
-Program BN
+Program (- (* BN USz) (/ (/ 13.952149 NN) SESz))
 ###################################
 Individual 31
-Fitness 84
-Depth 3
-Size 5
+Fitness 18
+Depth 4
+Size 9
 Range 
-Program (- (/ BC BN) SESz)
+Program (- (* BN USz) (/ (/ BN NN) SESz))
 ###################################
 Individual 32
-Fitness 84
-Depth 2
-Size 3
+Fitness 18
+Depth 4
+Size 9
 Range 
-Program (- SESz USz)
+Program (- (* USz BN) (/ (/ NN NN) SESz))
 ###################################
 Individual 33
-Fitness 84
-Depth 8
-Size 19
+Fitness 18
+Depth 5
+Size 11
 Range 
-Program (/ SESz (+ BN (- (* USz BN) (/ (/ (/ M NN) (+ (/ BC NN) BN)) SESz))))
+Program (- (* BN USz) (/ (/ 13.952149 (/ BN BN)) SESz))
 ###################################
 Individual 34
-Fitness 84
-Depth 3
-Size 5
+Fitness 18
+Depth 4
+Size 9
 Range 
-Program (/ (/ SESz M) SESz)
+Program (- (* BN USz) (/ (/ BN NN) SESz))
 ###################################
 Individual 35
-Fitness 84
-Depth 2
-Size 3
+Fitness 18
+Depth 5
+Size 13
 Range 
-Program (/ BC CT)
+Program (- (* BN (/ (/ 13.952149 NN) SESz)) (/ (/ 13.952149 SESz) NN))
 ###################################
 Individual 36
-Fitness 84
-Depth 1
-Size 1
+Fitness 18
+Depth 4
+Size 9
 Range 
-Program UShp
+Program (- (* BN USz) (/ (/ 13.952149 NN) SESz))
 ###################################
 Individual 37
-Fitness 84
-Depth 1
-Size 1
+Fitness 18
+Depth 4
+Size 9
 Range 
-Program NN
+Program (- (* BN CT) (/ (/ 13.952149 NN) SESz))
 ###################################
 Individual 38
-Fitness 84
-Depth 8
-Size 31
+Fitness 18
+Depth 3
+Size 7
 Range 
-Program (- (* (/ 53.309860 BN) (* (- 81.661467 (* (+ 88.362306 (* M MA)) (* (- UShp BN) (* CT MA)))) (/ (/ NN CT) BC))) (+ 22.691801 (/ M UShp)))
+Program (- (* BN USz) (/ SESz SESz))
 ###################################
 Individual 39
-Fitness 84
-Depth 1
-Size 1
+Fitness 18
+Depth 4
+Size 9
 Range 
-Program BC
+Program (- (* BN USz) (/ (/ 13.952149 NN) SESz))
 ###################################
 Individual 40
-Fitness 84
+Fitness 18
 Depth 4
-Size 7
+Size 9
 Range 
-Program (/ (/ (- MA UShp) UShp) BN)
+Program (- (/ 13.952149 NN) (/ (/ 13.952149 SESz) NN))
 ###################################
 Individual 41
-Fitness 84
-Depth 3
-Size 5
+Fitness 18
+Depth 4
+Size 9
 Range 
-Program (- (/ BN SESz) UShp)
+Program (- (* USz BN) (/ (/ USz NN) SESz))
 ###################################
 Individual 42
-Fitness 84
-Depth 3
-Size 5
+Fitness 18
+Depth 4
+Size 9
 Range 
-Program (- (- SESz NN) SESz)
+Program (- (* BN USz) (/ (/ 13.952149 NN) BC))
 ###################################
 Individual 43
-Fitness 84
-Depth 2
-Size 3
+Fitness 18
+Depth 4
+Size 9
 Range 
-Program (- SESz BN)
+Program (- (* BN USz) (/ (/ 13.952149 SESz) BN))
 ###################################
 Individual 44
-Fitness 84
-Depth 2
-Size 3
+Fitness 18
+Depth 4
+Size 7
 Range 
-Program (* BC M)
+Program (- SESz (/ (/ 13.952149 NN) SESz))
 ###################################
 Individual 45
-Fitness 84
-Depth 2
-Size 3
+Fitness 18
+Depth 5
+Size 13
 Range 
-Program (+ M MA)
+Program (- (* UShp (- (* BN SESz) (/ 13.952149 SESz))) (/ USz NN))
 ###################################
 Individual 46
-Fitness 84
-Depth 3
-Size 5
+Fitness 18
+Depth 4
+Size 9
 Range 
-Program (/ (/ BN UShp) CT)
+Program (- (* BN USz) (/ (/ 13.952149 NN) SESz))
 ###################################
 Individual 47
-Fitness 84
-Depth 6
-Size 11
+Fitness 18
+Depth 4
+Size 9
 Range 
-Program (/ BC (* (* (+ UShp (/ M CT)) BN) NN))
+Program (- (* BN USz) (/ (/ UShp NN) SESz))
 ###################################
 Individual 48
-Fitness 84
-Depth 3
-Size 5
+Fitness 18
+Depth 4
+Size 9
 Range 
-Program (- (/ BN SESz) BC)
+Program (- (* BN 13.952149) (/ (/ 13.952149 NN) SESz))
 ###################################
 Individual 49
-Fitness 84
-Depth 2
-Size 3
+Fitness 18
+Depth 4
+Size 9
 Range 
-Program (/ BC USz)
+Program (- (* BN USz) (/ (/ 13.952149 USz) SESz))
 ###################################
 Individual 50
-Fitness 85
-Depth 2
-Size 3
+Fitness 18
+Depth 5
+Size 13
 Range 
-Program (- USz BN)
+Program (- (* UShp (- (* BN USz) (/ 13.952149 SESz))) (/ NN NN))
 ###################################
 Individual 51
-Fitness 85
-Depth 1
-Size 1
+Fitness 20
+Depth 5
+Size 13
 Range 
-Program CT
+Program (- (* NN (- (* BN SESz) (/ 13.952149 SESz))) (/ SESz USz))
 ###################################
 Individual 52
-Fitness 85
-Depth 1
-Size 1
+Fitness 20
+Depth 5
+Size 13
 Range 
-Program BC
+Program (- (* SESz (- (+ UShp BN) (/ 13.952149 SESz))) (/ BN 13.952149))
 ###################################
 Individual 53
-Fitness 85
-Depth 3
-Size 5
+Fitness 20
+Depth 5
+Size 11
 Range 
-Program (/ (- MA BN) SESz)
+Program (- (* USz USz) (/ (/ (/ 13.952149 NN) NN) SESz))
 ###################################
 Individual 54
-Fitness 85
-Depth 6
-Size 11
-Range 
-Program (/ BC (/ SESz (- USz (- (* M CT) UShp))))
-###################################
-Individual 55
-Fitness 85
-Depth 3
-Size 5
-Range 
-Program (- (- 18.402830 SESz) BN)
-###################################
-Individual 56
-Fitness 85
-Depth 4
-Size 9
-Range 
-Program (/ BN (/ (+ BN SESz) (- USz M)))
-###################################
-Individual 57
-Fitness 85
-Depth 2
-Size 3
-Range 
-Program (- USz BN)
-###################################
-Individual 58
-Fitness 86
-Depth 3
-Size 7
-Range 
-Program (/ (- SESz SESz) (/ BN USz))
-###################################
-Individual 59
-Fitness 86
-Depth 6
-Size 13
-Range 
-Program (/ BN (/ BN (/ (+ BN (* UShp SESz)) (- USz M))))
-###################################
-Individual 60
-Fitness 86
-Depth 6
-Size 17
-Range 
-Program (/ (* (- (+ BC (/ 30.660932 55.148069)) (* USz (/ M BN))) (+ USz BC)) MA)
-###################################
-Individual 61
-Fitness 86
-Depth 1
-Size 1
-Range 
-Program UShp
-###################################
-Individual 62
-Fitness 86
-Depth 6
-Size 17
-Range 
-Program (/ (* (- (+ BC (/ 30.660932 55.148069)) (* USz (/ BC BN))) (+ USz BC)) MA)
-###################################
-Individual 63
-Fitness 86
-Depth 6
-Size 17
-Range 
-Program (/ (* (- (+ BC (/ 30.660932 55.148069)) (* USz (/ NN BN))) (+ USz BC)) MA)
-###################################
-Individual 64
-Fitness 86
-Depth 1
-Size 1
-Range 
-Program SESz
-###################################
-Individual 65
-Fitness 87
-Depth 3
-Size 5
-Range 
-Program (- (- NN BN) BN)
-###################################
-Individual 66
-Fitness 87
-Depth 2
-Size 3
-Range 
-Program (/ BC BN)
-###################################
-Individual 67
-Fitness 88
-Depth 2
-Size 3
-Range 
-Program (/ SESz UShp)
-###################################
-Individual 68
-Fitness 88
-Depth 6
-Size 13
-Range 
-Program (/ UShp (- UShp (- BC (/ (- USz SESz) (- MA UShp)))))
-###################################
-Individual 69
-Fitness 88
-Depth 6
-Size 13
-Range 
-Program (/ (/ SESz (- USz (- (* M CT) (- M BC)))) UShp)
-###################################
-Individual 70
-Fitness 88
-Depth 2
-Size 3
-Range 
-Program (- BN CT)
-###################################
-Individual 71
-Fitness 88
-Depth 8
+Fitness 20
+Depth 5
 Size 15
 Range 
-Program (/ UShp (- UShp (- BC (/ (- (* UShp (/ BN M)) SESz) BN))))
+Program (- (* (/ 13.952149 SESz) (- (* BN USz) (/ BC SESz))) (/ BN NN))
 ###################################
-Individual 72
-Fitness 89
-Depth 2
-Size 3
+Individual 55
+Fitness 20
+Depth 5
+Size 13
 Range 
-Program (- NN UShp)
+Program (- (* NN (- (* BN USz) (/ 13.952149 SESz))) (/ SESz USz))
 ###################################
-Individual 73
-Fitness 89
+Individual 56
+Fitness 20
 Depth 5
 Size 11
 Range 
-Program (- (* (/ (+ M BN) (/ BN UShp)) BN) M)
+Program (- (* SESz USz) (/ (/ (/ 13.952149 NN) NN) SESz))
 ###################################
-Individual 74
-Fitness 89
-Depth 4
-Size 7
+Individual 57
+Fitness 20
+Depth 5
+Size 13
 Range 
-Program (- USz (+ (+ M M) MA))
+Program (- (* NN (- (* BN USz) (/ 13.952149 SESz))) (/ SESz USz))
 ###################################
-Individual 75
-Fitness 89
+Individual 58
+Fitness 20
+Depth 4
+Size 9
+Range 
+Program (- (* BN SESz) (/ (/ 13.952149 NN) SESz))
+###################################
+Individual 59
+Fitness 20
+Depth 4
+Size 9
+Range 
+Program (- (* BN USz) (/ (/ 13.952149 NN) SESz))
+###################################
+Individual 60
+Fitness 20
+Depth 5
+Size 13
+Range 
+Program (- (* UShp (- (* BN USz) (/ 13.952149 SESz))) (/ BN USz))
+###################################
+Individual 61
+Fitness 21
+Depth 5
+Size 13
+Range 
+Program (- (* (/ BN NN) (- (* BN USz) (/ 13.952149 SESz))) SESz)
+###################################
+Individual 62
+Fitness 21
 Depth 3
-Size 5
-Range 
-Program (- NN (+ SESz 87.919171))
-###################################
-Individual 76
-Fitness 89
-Depth 4
 Size 7
 Range 
-Program (- USz (/ (/ BN UShp) BN))
+Program (- (* BN USz) (/ USz SESz))
 ###################################
-Individual 77
-Fitness 89
-Depth 6
+Individual 63
+Fitness 21
+Depth 3
+Size 7
+Range 
+Program (- (* BN USz) (/ 13.952149 SESz))
+###################################
+Individual 64
+Fitness 21
+Depth 3
+Size 7
+Range 
+Program (- (* BN MA) (/ 13.952149 SESz))
+###################################
+Individual 65
+Fitness 21
+Depth 5
+Size 15
+Range 
+Program (- (* SESz (- (* BN USz) (/ 13.952149 SESz))) (/ (/ 13.952149 SESz) SESz))
+###################################
+Individual 66
+Fitness 21
+Depth 5
+Size 15
+Range 
+Program (- (* SESz (- (* BN USz) (/ 13.952149 SESz))) (/ (/ 13.952149 SESz) 13.952149))
+###################################
+Individual 67
+Fitness 21
+Depth 5
+Size 13
+Range 
+Program (- (* 13.952149 (- (* BN USz) (/ 13.952149 SESz))) (/ SESz SESz))
+###################################
+Individual 68
+Fitness 21
+Depth 3
+Size 7
+Range 
+Program (- (* BN USz) (/ BN SESz))
+###################################
+Individual 69
+Fitness 21
+Depth 4
+Size 9
+Range 
+Program (- (* SESz USz) (/ (/ 13.952149 SESz) SESz))
+###################################
+Individual 70
+Fitness 21
+Depth 5
+Size 15
+Range 
+Program (- (* (* BN USz) (- (* BN USz) (/ 13.952149 SESz))) (/ 13.952149 NN))
+###################################
+Individual 71
+Fitness 21
+Depth 5
 Size 11
 Range 
-Program (- (* (/ (+ M (- UShp USz)) SESz) BN) M)
+Program (- (* SESz (- (* BN USz) (/ 13.952149 SESz))) USz)
+###################################
+Individual 72
+Fitness 21
+Depth 4
+Size 11
+Range 
+Program (- (* SESz (/ 13.952149 SESz)) (/ (/ 13.952149 SESz) SESz))
+###################################
+Individual 73
+Fitness 21
+Depth 3
+Size 7
+Range 
+Program (- (+ SESz BC) (/ 13.952149 SESz))
+###################################
+Individual 74
+Fitness 21
+Depth 5
+Size 15
+Range 
+Program (- (* SESz (- (* BN USz) (/ 13.952149 MA))) (/ (/ 13.952149 SESz) SESz))
+###################################
+Individual 75
+Fitness 21
+Depth 4
+Size 9
+Range 
+Program (- (* BN USz) (/ (* BN BN) SESz))
+###################################
+Individual 76
+Fitness 21
+Depth 5
+Size 13
+Range 
+Program (- (* 13.952149 (- (* BN M) (/ 13.952149 SESz))) (/ SESz NN))
+###################################
+Individual 77
+Fitness 22
+Depth 5
+Size 13
+Range 
+Program (- (* UShp (- (* BN USz) (/ 13.952149 SESz))) (/ UShp NN))
 ###################################
 Individual 78
-Fitness 89
-Depth 1
-Size 1
+Fitness 22
+Depth 3
+Size 7
 Range 
-Program USz
+Program (- (* BN USz) (/ BN USz))
 ###################################
 Individual 79
-Fitness 89
-Depth 2
-Size 3
+Fitness 22
+Depth 5
+Size 13
 Range 
-Program (- USz CT)
+Program (- (* SESz (- (* BN USz) (/ 13.952149 SESz))) (+ UShp BN))
 ###################################
 Individual 80
-Fitness 90
+Fitness 22
+Depth 7
+Size 21
+Range 
+Program (- (* UShp (- (* BN USz) (/ (/ 13.952149 NN) (- (* BN USz) (/ 13.952149 SESz))))) (/ SESz NN))
+###################################
+Individual 81
+Fitness 22
+Depth 5
+Size 13
+Range 
+Program (- (* BC (- (* BN USz) (/ 13.952149 SESz))) (* BN USz))
+###################################
+Individual 82
+Fitness 22
 Depth 3
 Size 5
 Range 
-Program (- (* CT M) CT)
+Program (- SESz (+ UShp BN))
 ###################################
-Individual 81
-Fitness 91
+Individual 83
+Fitness 22
+Depth 5
+Size 15
+Range 
+Program (- (* (/ 13.952149 NN) (- (* BN USz) (/ 13.952149 SESz))) (/ BN NN))
+###################################
+Individual 84
+Fitness 22
+Depth 5
+Size 15
+Range 
+Program (- (* (/ 13.952149 NN) (- (* BN USz) (/ 13.952149 SESz))) (/ BN UShp))
+###################################
+Individual 85
+Fitness 22
 Depth 4
 Size 7
 Range 
-Program (- (* (* USz BN) NN) SESz)
+Program (- 13.952149 (/ (/ 13.952149 NN) USz))
 ###################################
-Individual 82
-Fitness 91
-Depth 1
-Size 1
+Individual 86
+Fitness 22
+Depth 4
+Size 9
 Range 
-Program SESz
+Program (- (* (/ 13.952149 NN) 11.368429) (/ BC NN))
 ###################################
-Individual 83
-Fitness 91
+Individual 87
+Fitness 22
+Depth 5
+Size 13
+Range 
+Program (- (* BC (- (* BN USz) (/ 13.952149 SESz))) (+ UShp BC))
+###################################
+Individual 88
+Fitness 22
+Depth 6
+Size 15
+Range 
+Program (- (* SESz (- (* BN USz) (/ (/ 13.952149 NN) M))) (/ SESz NN))
+###################################
+Individual 89
+Fitness 22
+Depth 5
+Size 17
+Range 
+Program (- (* (/ (* BN USz) 13.952149) (- (* BN USz) (/ 13.952149 SESz))) (/ BC NN))
+###################################
+Individual 90
+Fitness 22
+Depth 5
+Size 13
+Range 
+Program (- (* NN (- (* BN USz) (/ 13.952149 SESz))) (/ UShp NN))
+###################################
+Individual 91
+Fitness 22
+Depth 6
+Size 17
+Range 
+Program (- (* (/ 13.952149 NN) (- (* BN USz) (/ 13.952149 (/ 13.952149 NN)))) (/ BN BN))
+###################################
+Individual 92
+Fitness 22
+Depth 4
+Size 11
+Range 
+Program (- (* BN UShp) (- (* BN USz) (/ 13.952149 SESz)))
+###################################
+Individual 93
+Fitness 22
+Depth 5
+Size 13
+Range 
+Program (- (* BC (- (* BN USz) (/ 13.952149 SESz))) (/ UShp NN))
+###################################
+Individual 94
+Fitness 22
+Depth 5
+Size 13
+Range 
+Program (- (* (/ 13.952149 NN) (- (* BN USz) (/ 13.952149 SESz))) NN)
+###################################
+Individual 95
+Fitness 23
+Depth 7
+Size 17
+Range 
+Program (- (* USz (- (* (- (* BN USz) (/ 13.952149 SESz)) USz) (/ USz SESz))) CT)
+###################################
+Individual 96
+Fitness 23
+Depth 5
+Size 13
+Range 
+Program (- (* USz (- (* BN USz) (/ 13.952149 SESz))) (/ 13.952149 NN))
+###################################
+Individual 97
+Fitness 23
+Depth 7
+Size 17
+Range 
+Program (- (* 96.395808 (- (* (- (* BN USz) (/ 13.952149 SESz)) USz) (/ 13.952149 SESz))) CT)
+###################################
+Individual 98
+Fitness 23
+Depth 5
+Size 11
+Range 
+Program (- (* USz (- (* BN UShp) (/ 13.952149 USz))) UShp)
+###################################
+Individual 99
+Fitness 23
+Depth 6
+Size 15
+Range 
+Program (- (* SESz (- (* BN USz) (/ (/ 13.952149 NN) SESz))) (/ SESz NN))
+###################################
+Individual 100
+Fitness 23
 Depth 6
 Size 13
 Range 
-Program (* (- (* (- NN (+ SESz M)) BN) (/ BN 85.009124)) BC)
+Program (- (* USz (- (* BN UShp) (/ 13.952149 (* BN BN)))) SESz)
 ###################################
-Individual 84
-Fitness 91
-Depth 2
-Size 3
+Individual 101
+Fitness 23
+Depth 6
+Size 15
 Range 
-Program (* BC BN)
+Program (- (* USz (- (* BN USz) (/ (* BN USz) SESz))) (/ SESz NN))
 ###################################
-Individual 85
-Fitness 91
-Depth 8
-Size 21
+Individual 102
+Fitness 23
+Depth 7
+Size 17
 Range 
-Program (* MA (- (+ USz (/ (- (- (* BN UShp) (* 73.048926 USz)) SESz) SESz)) (* (/ MA BN) USz)))
+Program (- (* USz (- (* (- (* BN USz) (/ 13.952149 SESz)) USz) (/ 13.952149 NN))) CT)
 ###################################
-Individual 86
-Fitness 91
-Depth 4
-Size 9
+Individual 103
+Fitness 23
+Depth 6
+Size 15
 Range 
-Program (* (- (* USz BN) (/ BN 85.009124)) SESz)
+Program (- (* USz (- (* BN USz) (/ (/ 13.952149 NN) SESz))) (/ SESz USz))
 ###################################
-Individual 87
-Fitness 91
-Depth 1
-Size 1
-Range 
-Program UShp
-###################################
-Individual 88
-Fitness 91
-Depth 3
-Size 5
-Range 
-Program (/ (+ MA CT) NN)
-###################################
-Individual 89
-Fitness 91
+Individual 104
+Fitness 23
 Depth 5
 Size 11
 Range 
-Program (- (* (* M (+ USz CT)) BN) (/ BN UShp))
-###################################
-Individual 90
-Fitness 91
-Depth 1
-Size 1
-Range 
-Program M
-###################################
-Individual 91
-Fitness 91
-Depth 1
-Size 1
-Range 
-Program BC
-###################################
-Individual 92
-Fitness 91
-Depth 3
-Size 5
-Range 
-Program (/ (* M NN) NN)
-###################################
-Individual 93
-Fitness 91
-Depth 1
-Size 1
-Range 
-Program NN
-###################################
-Individual 94
-Fitness 91
-Depth 8
-Size 25
-Range 
-Program (/ (/ MA SESz) (/ (+ USz (/ (/ BC SESz) MA)) (/ USz (+ (* BN M) (* BC (- (- USz M) UShp))))))
-###################################
-Individual 95
-Fitness 91
-Depth 2
-Size 3
-Range 
-Program (- USz SESz)
-###################################
-Individual 96
-Fitness 91
-Depth 2
-Size 3
-Range 
-Program (- BN CT)
-###################################
-Individual 97
-Fitness 91
-Depth 1
-Size 1
-Range 
-Program SESz
-###################################
-Individual 98
-Fitness 92
-Depth 5
-Size 9
-Range 
-Program (- (* (/ (+ CT BN) M) BN) M)
-###################################
-Individual 99
-Fitness 92
-Depth 2
-Size 3
-Range 
-Program (- USz M)
-###################################
-Individual 100
-Fitness 93
-Depth 3
-Size 5
-Range 
-Program (* (- USz SESz) CT)
-###################################
-Individual 101
-Fitness 93
-Depth 3
-Size 7
-Range 
-Program (- (* USz USz) (/ BN UShp))
-###################################
-Individual 102
-Fitness 93
-Depth 1
-Size 1
-Range 
-Program USz
-###################################
-Individual 103
-Fitness 93
-Depth 1
-Size 1
-Range 
-Program BN
-###################################
-Individual 104
-Fitness 93
-Depth 3
-Size 7
-Range 
-Program (- (* BC USz) (/ BN UShp))
+Program (- (* USz (- (* BN UShp) (/ 13.952149 USz))) MA)
 ###################################
 Individual 105
-Fitness 94
-Depth 3
-Size 5
-Range 
-Program (- BN (/ NN UShp))
-###################################
-Individual 106
-Fitness 94
-Depth 1
-Size 1
-Range 
-Program CT
-###################################
-Individual 107
-Fitness 94
-Depth 1
-Size 1
-Range 
-Program BN
-###################################
-Individual 108
-Fitness 94
-Depth 2
-Size 3
-Range 
-Program (/ UShp SESz)
-###################################
-Individual 109
-Fitness 94
-Depth 2
-Size 3
-Range 
-Program (* 18.910827 UShp)
-###################################
-Individual 110
-Fitness 94
-Depth 1
-Size 1
-Range 
-Program M
-###################################
-Individual 111
-Fitness 94
-Depth 1
-Size 1
-Range 
-Program MA
-###################################
-Individual 112
-Fitness 94
-Depth 2
-Size 3
-Range 
-Program (/ BC SESz)
-###################################
-Individual 113
-Fitness 94
-Depth 1
-Size 1
-Range 
-Program M
-###################################
-Individual 114
-Fitness 94
+Fitness 24
 Depth 7
 Size 19
 Range 
-Program (/ NN (- (/ BC USz) (- UShp (/ (/ (/ BN UShp) UShp) (- (* M CT) UShp)))))
+Program (- (* UShp (- (* BN (- (* BN USz) (/ 13.952149 SESz))) (/ 13.952149 SESz))) (/ SESz CT))
+###################################
+Individual 106
+Fitness 24
+Depth 1
+Size 1
+Range 
+Program USz
+###################################
+Individual 107
+Fitness 24
+Depth 5
+Size 9
+Range 
+Program (- MA (/ (/ (/ 13.952149 NN) SESz) UShp))
+###################################
+Individual 108
+Fitness 24
+Depth 6
+Size 15
+Range 
+Program (- (* NN (- (* (* BN USz) USz) (/ SESz SESz))) (/ 13.952149 USz))
+###################################
+Individual 109
+Fitness 24
+Depth 1
+Size 1
+Range 
+Program 89.779965
+###################################
+Individual 110
+Fitness 24
+Depth 4
+Size 9
+Range 
+Program (- (* BN USz) (/ (/ 13.952149 USz) SESz))
+###################################
+Individual 111
+Fitness 24
+Depth 4
+Size 9
+Range 
+Program (- (* BN USz) (/ (/ NN UShp) SESz))
+###################################
+Individual 112
+Fitness 24
+Depth 4
+Size 9
+Range 
+Program (- (* BN USz) (/ (/ 13.952149 CT) SESz))
+###################################
+Individual 113
+Fitness 24
+Depth 4
+Size 9
+Range 
+Program (- (* BN USz) (/ (/ 13.952149 CT) BN))
+###################################
+Individual 114
+Fitness 24
+Depth 4
+Size 9
+Range 
+Program (- (* BN USz) (/ (/ 13.952149 CT) SESz))
 ###################################
 Individual 115
-Fitness 94
-Depth 4
-Size 13
+Fitness 25
+Depth 7
+Size 17
 Range 
-Program (+ (* BN (/ NN UShp)) (* (* 32.618732 UShp) (- SESz BN)))
+Program (- (* BC (* NN (* (- (* BN NN) (/ 13.952149 SESz)) MA))) (/ 13.952149 SESz))
 ###################################
 Individual 116
-Fitness 95
-Depth 2
-Size 3
-Range 
-Program (* 0.389572 SESz)
-###################################
-Individual 117
-Fitness 95
-Depth 2
-Size 3
-Range 
-Program (- BC SESz)
-###################################
-Individual 118
-Fitness 95
-Depth 4
-Size 7
-Range 
-Program (- (- BN (+ BN BC)) BN)
-###################################
-Individual 119
-Fitness 95
-Depth 6
-Size 11
-Range 
-Program (/ USz (- UShp (- BC (/ UShp (- 94.252663 UShp)))))
-###################################
-Individual 120
-Fitness 95
-Depth 3
-Size 7
-Range 
-Program (- (* USz BN) (/ BN SESz))
-###################################
-Individual 121
-Fitness 95
-Depth 3
-Size 5
-Range 
-Program (* M (- USz SESz))
-###################################
-Individual 122
-Fitness 95
+Fitness 25
 Depth 7
 Size 15
 Range 
-Program (/ USz (- UShp (- BC (/ (* USz BN) (- (* M CT) UShp)))))
+Program (- (* BC (* NN (* (- (* BN NN) (/ 13.952149 SESz)) MA))) NN)
 ###################################
-Individual 123
-Fitness 96
-Depth 4
-Size 9
-Range 
-Program (- (* BC (- UShp BC)) (/ BN UShp))
-###################################
-Individual 124
-Fitness 96
-Depth 6
-Size 15
-Range 
-Program (- (* USz BN) (/ (/ BN UShp) (- (/ (* NN BN) BN) SESz)))
-###################################
-Individual 125
-Fitness 96
-Depth 4
-Size 9
-Range 
-Program (- SESz (/ (/ BN UShp) (- USz SESz)))
-###################################
-Individual 126
-Fitness 96
-Depth 3
-Size 7
-Range 
-Program (- (* SESz BN) (/ BN UShp))
-###################################
-Individual 127
-Fitness 96
-Depth 4
-Size 9
-Range 
-Program (- (* USz BN) (/ UShp (/ MA MA)))
-###################################
-Individual 128
-Fitness 96
-Depth 2
-Size 3
-Range 
-Program (/ SESz UShp)
-###################################
-Individual 129
-Fitness 96
-Depth 3
-Size 5
-Range 
-Program (- BN (/ BN UShp))
-###################################
-Individual 130
-Fitness 97
-Depth 2
-Size 3
-Range 
-Program (* SESz 72.657990)
-###################################
-Individual 131
-Fitness 97
-Depth 4
-Size 9
-Range 
-Program (- (* USz BN) (/ (/ BN UShp) UShp))
-###################################
-Individual 132
-Fitness 97
-Depth 3
-Size 7
-Range 
-Program (- (* USz BN) (/ BN SESz))
-###################################
-Individual 133
-Fitness 97
-Depth 3
-Size 7
-Range 
-Program (- (* USz BN) (/ BN SESz))
-###################################
-Individual 134
-Fitness 97
-Depth 2
-Size 3
-Range 
-Program (/ M NN)
-###################################
-Individual 135
-Fitness 97
-Depth 3
-Size 5
-Range 
-Program (- (* USz BN) BC)
-###################################
-Individual 136
-Fitness 97
-Depth 3
-Size 7
-Range 
-Program (- (* USz BN) (/ BN SESz))
-###################################
-Individual 137
-Fitness 97
-Depth 3
-Size 7
-Range 
-Program (- (* UShp BN) (/ BN SESz))
-###################################
-Individual 138
-Fitness 97
-Depth 3
-Size 7
-Range 
-Program (- (* 31.838862 BC) (/ BN BN))
-###################################
-Individual 139
-Fitness 97
-Depth 3
-Size 5
-Range 
-Program (/ BC (/ M UShp))
-###################################
-Individual 140
-Fitness 97
-Depth 3
-Size 5
-Range 
-Program (- BC (/ BN UShp))
-###################################
-Individual 141
-Fitness 97
-Depth 4
-Size 9
-Range 
-Program (- (* USz UShp) (/ (/ BN UShp) UShp))
-###################################
-Individual 142
-Fitness 98
-Depth 3
-Size 5
-Range 
-Program (- (* USz BN) SESz)
-###################################
-Individual 143
-Fitness 98
-Depth 3
-Size 7
-Range 
-Program (- (* USz BN) (/ BN M))
-###################################
-Individual 144
-Fitness 98
-Depth 4
-Size 9
-Range 
-Program (- (* USz (- SESz UShp)) (/ BN UShp))
-###################################
-Individual 145
-Fitness 98
-Depth 1
-Size 1
-Range 
-Program MA
-###################################
-Individual 146
-Fitness 98
-Depth 3
-Size 7
-Range 
-Program (- (* USz BN) (/ BN UShp))
-###################################
-Individual 147
-Fitness 98
-Depth 1
-Size 1
-Range 
-Program BN
-###################################
-Individual 148
-Fitness 98
-Depth 1
-Size 1
-Range 
-Program BN
-###################################
-Individual 149
-Fitness 98
-Depth 2
-Size 3
-Range 
-Program (+ UShp USz)
-###################################
-Individual 150
-Fitness 98
-Depth 3
-Size 5
-Range 
-Program (- UShp (/ BN UShp))
-###################################
-Individual 151
-Fitness 98
-Depth 3
-Size 7
-Range 
-Program (- (* USz BN) (/ BN UShp))
-###################################
-Individual 152
-Fitness 98
-Depth 3
-Size 7
-Range 
-Program (- (* USz NN) (/ BN UShp))
-###################################
-Individual 153
-Fitness 98
-Depth 3
-Size 7
-Range 
-Program (- (* USz BN) (/ BN UShp))
-###################################
-Individual 154
-Fitness 98
-Depth 3
-Size 7
-Range 
-Program (- (* USz BN) (/ BN UShp))
-###################################
-Individual 155
-Fitness 98
-Depth 3
-Size 7
-Range 
-Program (- (* USz BN) (/ BN UShp))
-###################################
-Individual 156
-Fitness 98
-Depth 2
-Size 3
-Range 
-Program (- USz SESz)
-###################################
-Individual 157
-Fitness 98
-Depth 3
-Size 5
-Range 
-Program (- UShp (/ BN UShp))
-###################################
-Individual 158
-Fitness 98
-Depth 3
-Size 7
-Range 
-Program (- (* USz BN) (/ BN UShp))
-###################################
-Individual 159
-Fitness 98
-Depth 3
-Size 7
-Range 
-Program (- (* USz BN) (/ BN USz))
-###################################
-Individual 160
-Fitness 98
-Depth 3
-Size 5
-Range 
-Program (- (* USz BN) BN)
-###################################
-Individual 161
-Fitness 98
-Depth 2
-Size 3
-Range 
-Program (/ UShp 2.605413)
-###################################
-Individual 162
-Fitness 98
-Depth 3
-Size 7
-Range 
-Program (- (* UShp BN) (/ BN UShp))
-###################################
-Individual 163
-Fitness 98
+Individual 117
+Fitness 25
 Depth 5
 Size 11
 Range 
-Program (- (* (* UShp (/ BN M)) BN) (/ BN UShp))
+Program (- (* UShp (- (* BN USz) (/ 13.952149 USz))) USz)
 ###################################
-Individual 164
-Fitness 99
-Depth 1
-Size 1
+Individual 118
+Fitness 26
+Depth 3
+Size 7
 Range 
-Program BC
+Program (- (* BN SESz) (/ BN SESz))
 ###################################
-Individual 165
-Fitness 99
-Depth 1
-Size 1
+Individual 119
+Fitness 26
+Depth 3
+Size 7
 Range 
-Program BN
+Program (- (* BN USz) (/ BN SESz))
 ###################################
-Individual 166
-Fitness 99
-Depth 1
-Size 1
-Range 
-Program 74.793458
-###################################
-Individual 167
-Fitness 99
-Depth 1
-Size 1
-Range 
-Program USz
-###################################
-Individual 168
-Fitness 99
-Depth 1
-Size 1
-Range 
-Program UShp
-###################################
-Individual 169
-Fitness 99
-Depth 1
-Size 1
-Range 
-Program BN
-###################################
-Individual 170
-Fitness 99
-Depth 2
-Size 3
-Range 
-Program (* UShp SESz)
-###################################
-Individual 171
-Fitness 99
-Depth 1
-Size 1
-Range 
-Program BC
-###################################
-Individual 172
-Fitness 99
-Depth 2
-Size 3
-Range 
-Program (* USz BN)
-###################################
-Individual 173
-Fitness 99
-Depth 2
-Size 3
-Range 
-Program (/ BN UShp)
-###################################
-Individual 174
-Fitness 99
-Depth 2
-Size 3
-Range 
-Program (/ SESz UShp)
-###################################
-Individual 175
-Fitness 99
-Depth 1
-Size 1
-Range 
-Program SESz
-###################################
-Individual 176
-Fitness 99
-Depth 1
-Size 1
-Range 
-Program SESz
-###################################
-Individual 177
-Fitness 104
-Depth 1
-Size 1
-Range 
-Program UShp
-###################################
-Individual 178
-Fitness 104
-Depth 1
-Size 1
-Range 
-Program UShp
-###################################
-Individual 179
-Fitness 104
-Depth 1
-Size 1
-Range 
-Program BN
-###################################
-Individual 180
-Fitness 104
-Depth 1
-Size 1
-Range 
-Program SESz
-###################################
-Individual 181
-Fitness 104
-Depth 1
-Size 1
-Range 
-Program NN
-###################################
-Individual 182
-Fitness 104
-Depth 1
-Size 1
-Range 
-Program CT
-###################################
-Individual 183
-Fitness 104
-Depth 2
-Size 3
-Range 
-Program (* USz BN)
-###################################
-Individual 184
-Fitness 104
-Depth 1
-Size 1
-Range 
-Program BC
-###################################
-Individual 185
-Fitness 104
-Depth 1
-Size 1
-Range 
-Program BN
-###################################
-Individual 186
-Fitness 104
-Depth 1
-Size 1
-Range 
-Program USz
-###################################
-Individual 187
-Fitness 105
-Depth 6
-Size 15
-Range 
-Program (+ (/ CT BN) (/ BN (- (- MA MA) (+ (/ M BN) 31.024322))))
-###################################
-Individual 188
-Fitness 105
+Individual 120
+Fitness 26
 Depth 3
 Size 5
 Range 
-Program (+ (* UShp BC) 13.026258)
+Program (- (* BN USz) SESz)
 ###################################
-Individual 189
-Fitness 105
+Individual 121
+Fitness 27
 Depth 6
 Size 15
 Range 
-Program (+ (/ CT BN) (/ BN (- (- 25.555610 UShp) (+ (/ M CT) 31.024322))))
+Program (- (* M (- (* BN USz) (/ (* BN USz) SESz))) (* SESz USz))
 ###################################
-Individual 190
-Fitness 105
-Depth 6
-Size 15
+Individual 122
+Fitness 27
+Depth 4
+Size 7
 Range 
-Program (+ (/ CT BN) (/ BN (- (- MA UShp) (+ (/ M CT) 31.024322))))
+Program (- (* (/ 13.952149 NN) UShp) USz)
 ###################################
-Individual 191
-Fitness 105
+Individual 123
+Fitness 27
 Depth 5
 Size 13
 Range 
-Program (+ (/ CT BN) (/ BN (- (- MA UShp) (+ USz 31.024322))))
+Program (- (* (/ 13.952149 NN) (- (* BN USz) (/ 13.952149 SESz))) USz)
 ###################################
-Individual 192
-Fitness 105
-Depth 7
-Size 15
+Individual 124
+Fitness 29
+Depth 3
+Size 7
 Range 
-Program (+ (* UShp BC) (+ (* M (* (/ (+ M BN) M) BN)) USz))
+Program (- (* UShp USz) (/ UShp SESz))
 ###################################
-Individual 193
-Fitness 110
+Individual 125
+Fitness 29
 Depth 6
+Size 17
+Range 
+Program (- (* BN (- (* BN (/ NN NN)) (/ (/ 13.952149 NN) SESz))) (/ SESz NN))
+###################################
+Individual 126
+Fitness 29
+Depth 4
+Size 9
+Range 
+Program (- (* BN 13.952149) (/ (/ 13.952149 NN) CT))
+###################################
+Individual 127
+Fitness 29
+Depth 4
+Size 9
+Range 
+Program (- (* NN SESz) (/ (/ 13.952149 NN) SESz))
+###################################
+Individual 128
+Fitness 29
+Depth 4
+Size 9
+Range 
+Program (- (* BN SESz) (/ (/ 13.952149 NN) 13.952149))
+###################################
+Individual 129
+Fitness 29
+Depth 4
+Size 9
+Range 
+Program (- (* BN SESz) (/ (/ 13.952149 NN) UShp))
+###################################
+Individual 130
+Fitness 29
+Depth 5
+Size 13
+Range 
+Program (- (* MA (- (* BN USz) (/ 13.952149 NN))) (/ UShp 13.952149))
+###################################
+Individual 131
+Fitness 29
+Depth 6
+Size 17
+Range 
+Program (- (* 13.952149 (- (* BN (/ NN NN)) (/ (/ 13.952149 NN) SESz))) (/ SESz NN))
+###################################
+Individual 132
+Fitness 29
+Depth 4
+Size 9
+Range 
+Program (- (* BN SESz) (/ (/ 13.952149 NN) M))
+###################################
+Individual 133
+Fitness 29
+Depth 4
+Size 9
+Range 
+Program (- (* UShp USz) (/ (/ 13.952149 SESz) SESz))
+###################################
+Individual 134
+Fitness 29
+Depth 4
 Size 11
 Range 
-Program (/ (* UShp (/ BN (/ NN (- SESz UShp)))) UShp)
+Program (- (* BN NN) (/ (/ 13.952149 NN) (/ USz SESz)))
 ###################################
-Individual 194
-Fitness 110
+Individual 135
+Fitness 29
+Depth 4
+Size 7
+Range 
+Program (- USz (/ (/ 13.952149 NN) UShp))
+###################################
+Individual 136
+Fitness 29
+Depth 4
+Size 9
+Range 
+Program (- (* BN SESz) (/ (/ 13.952149 NN) USz))
+###################################
+Individual 137
+Fitness 30
+Depth 4
+Size 7
+Range 
+Program (- USz (/ (/ 13.952149 BN) BN))
+###################################
+Individual 138
+Fitness 30
+Depth 3
+Size 7
+Range 
+Program (- (* BN USz) (/ 13.952149 UShp))
+###################################
+Individual 139
+Fitness 30
+Depth 3
+Size 7
+Range 
+Program (- (+ SESz UShp) (/ BC BN))
+###################################
+Individual 140
+Fitness 30
+Depth 6
+Size 17
+Range 
+Program (- (* NN SESz) (/ (/ (* SESz USz) (/ (* SESz USz) (/ 13.952149 NN))) CT))
+###################################
+Individual 141
+Fitness 30
+Depth 5
+Size 13
+Range 
+Program (- (* SESz (- (* BN USz) (/ SESz NN))) (/ USz BC))
+###################################
+Individual 142
+Fitness 30
+Depth 3
+Size 7
+Range 
+Program (- (* BN USz) (/ USz NN))
+###################################
+Individual 143
+Fitness 30
+Depth 5
+Size 13
+Range 
+Program (- (* UShp (- (* BN USz) (/ SESz NN))) (/ USz BN))
+###################################
+Individual 144
+Fitness 31
+Depth 4
+Size 9
+Range 
+Program (- (* SESz UShp) (/ (/ 13.952149 SESz) NN))
+###################################
+Individual 145
+Fitness 31
+Depth 3
+Size 5
+Range 
+Program (- (* BN USz) UShp)
+###################################
+Individual 146
+Fitness 31
+Depth 4
+Size 9
+Range 
+Program (- (* SESz UShp) (/ (/ 13.952149 SESz) SESz))
+###################################
+Individual 147
+Fitness 31
+Depth 3
+Size 7
+Range 
+Program (- (* BN USz) (/ M UShp))
+###################################
+Individual 148
+Fitness 31
+Depth 4
+Size 11
+Range 
+Program (- (* (* BN USz) BN) (/ (/ 13.952149 NN) 13.952149))
+###################################
+Individual 149
+Fitness 31
+Depth 3
+Size 7
+Range 
+Program (- (* BN USz) (/ M CT))
+###################################
+Individual 150
+Fitness 31
+Depth 4
+Size 9
+Range 
+Program (- (* BN USz) (/ (/ 13.952149 NN) SESz))
+###################################
+Individual 151
+Fitness 31
+Depth 3
+Size 7
+Range 
+Program (- (* BN USz) (* USz BN))
+###################################
+Individual 152
+Fitness 31
 Depth 5
 Size 11
 Range 
-Program (/ (* UShp (/ BN (/ NN BN))) (- M BC))
+Program (- (* USz USz) (/ (/ (* 17.489774 SESz) SESz) 13.952149))
 ###################################
-Individual 195
-Fitness 111
-Depth 2
-Size 3
+Individual 153
+Fitness 31
+Depth 4
+Size 9
 Range 
-Program (+ M MA)
+Program (- (* BN USz) (/ (/ 13.952149 NN) 13.952149))
 ###################################
-Individual 196
-Fitness 114
+Individual 154
+Fitness 31
+Depth 4
+Size 11
+Range 
+Program (- (* (* NN USz) USz) (/ (/ USz NN) USz))
+###################################
+Individual 155
+Fitness 31
+Depth 4
+Size 9
+Range 
+Program (- (* BN USz) (/ (/ 13.952149 SESz) USz))
+###################################
+Individual 156
+Fitness 31
+Depth 5
+Size 11
+Range 
+Program (- (* USz BN) (/ (/ 13.952149 (/ 13.952149 13.952149)) 13.952149))
+###################################
+Individual 157
+Fitness 32
+Depth 5
+Size 15
+Range 
+Program (- (* (* BN USz) (- (* BN USz) (/ 13.952149 SESz))) (/ USz NN))
+###################################
+Individual 158
+Fitness 33
 Depth 5
 Size 9
 Range 
-Program (* (* (/ (+ UShp UShp) M) MA) CT)
+Program (- BN (/ (/ (* SESz USz) NN) SESz))
 ###################################
-Individual 197
-Fitness 116
+Individual 159
+Fitness 33
+Depth 4
+Size 9
+Range 
+Program (- (* BN MA) (/ (/ USz NN) SESz))
+###################################
+Individual 160
+Fitness 33
+Depth 3
+Size 5
+Range 
+Program (- (* BN USz) SESz)
+###################################
+Individual 161
+Fitness 33
+Depth 4
+Size 9
+Range 
+Program (- (* BN UShp) (/ (/ USz NN) SESz))
+###################################
+Individual 162
+Fitness 33
+Depth 5
+Size 11
+Range 
+Program (- (* BN USz) (/ (/ (* SESz USz) NN) SESz))
+###################################
+Individual 163
+Fitness 33
+Depth 3
+Size 5
+Range 
+Program (- (* UShp USz) SESz)
+###################################
+Individual 164
+Fitness 33
+Depth 5
+Size 11
+Range 
+Program (- (* BN 13.952149) (/ (/ (* SESz USz) NN) SESz))
+###################################
+Individual 165
+Fitness 34
+Depth 5
+Size 13
+Range 
+Program (- (* UShp USz) (/ (/ (* USz USz) NN) (/ 13.952149 NN)))
+###################################
+Individual 166
+Fitness 34
+Depth 3
+Size 7
+Range 
+Program (- (* BN USz) (/ BN SESz))
+###################################
+Individual 167
+Fitness 34
+Depth 3
+Size 7
+Range 
+Program (- (* BN BN) (/ M SESz))
+###################################
+Individual 168
+Fitness 34
+Depth 3
+Size 5
+Range 
+Program (- NN (/ NN SESz))
+###################################
+Individual 169
+Fitness 34
 Depth 2
 Size 3
 Range 
-Program (/ CT NN)
+Program (* SESz SESz)
 ###################################
-Individual 198
-Fitness 116
+Individual 170
+Fitness 34
+Depth 3
+Size 7
+Range 
+Program (- (* BN USz) (/ SESz NN))
+###################################
+Individual 171
+Fitness 34
+Depth 3
+Size 7
+Range 
+Program (- (* BN USz) (/ NN USz))
+###################################
+Individual 172
+Fitness 34
+Depth 3
+Size 7
+Range 
+Program (- (* BN USz) (/ NN SESz))
+###################################
+Individual 173
+Fitness 34
+Depth 5
+Size 11
+Range 
+Program (- (* BN USz) (/ (/ 13.952149 (/ 13.952149 NN)) SESz))
+###################################
+Individual 174
+Fitness 35
+Depth 5
+Size 11
+Range 
+Program (- (* BN BN) (/ (/ (* BN BC) 13.952149) 13.952149))
+###################################
+Individual 175
+Fitness 35
+Depth 5
+Size 13
+Range 
+Program (- (* USz (- (* BN SESz) (/ UShp SESz))) (/ 13.952149 BN))
+###################################
+Individual 176
+Fitness 35
+Depth 5
+Size 11
+Range 
+Program (- (* USz (- (* BN USz) SESz)) (/ USz NN))
+###################################
+Individual 177
+Fitness 35
+Depth 3
+Size 7
+Range 
+Program (- (* BN USz) (/ BN USz))
+###################################
+Individual 178
+Fitness 35
+Depth 5
+Size 11
+Range 
+Program (- (/ SESz SESz) (/ (/ (* BN BC) 13.952149) 13.952149))
+###################################
+Individual 179
+Fitness 35
+Depth 3
+Size 7
+Range 
+Program (- (* USz BN) (/ NN USz))
+###################################
+Individual 180
+Fitness 35
+Depth 5
+Size 11
+Range 
+Program (- (* BN USz) (/ (/ (/ 13.952149 UShp) NN) UShp))
+###################################
+Individual 181
+Fitness 35
+Depth 4
+Size 9
+Range 
+Program (- (* SESz USz) (/ (/ SESz NN) SESz))
+###################################
+Individual 182
+Fitness 35
+Depth 4
+Size 9
+Range 
+Program (- (* BN USz) (/ (/ UShp NN) UShp))
+###################################
+Individual 183
+Fitness 35
+Depth 3
+Size 7
+Range 
+Program (- (* BN BN) (/ NN USz))
+###################################
+Individual 184
+Fitness 35
+Depth 5
+Size 11
+Range 
+Program (- (* USz BN) (/ (/ (* BN BC) 13.952149) SESz))
+###################################
+Individual 185
+Fitness 35
+Depth 5
+Size 11
+Range 
+Program (- (* BN USz) (/ (/ (/ 13.952149 UShp) 13.952149) BN))
+###################################
+Individual 186
+Fitness 35
+Depth 4
+Size 9
+Range 
+Program (- (* NN BN) (/ (/ BN 60.584050) SESz))
+###################################
+Individual 187
+Fitness 35
+Depth 5
+Size 11
+Range 
+Program (- (* USz BN) (/ (/ (* BN BC) 13.952149) SESz))
+###################################
+Individual 188
+Fitness 35
 Depth 2
 Size 3
 Range 
 Program (* UShp USz)
 ###################################
+Individual 189
+Fitness 35
+Depth 3
+Size 7
+Range 
+Program (- (* UShp BN) (/ USz UShp))
+###################################
+Individual 190
+Fitness 36
+Depth 5
+Size 13
+Range 
+Program (- (* UShp (- (* USz USz) (/ 13.952149 SESz))) (/ SESz NN))
+###################################
+Individual 191
+Fitness 36
+Depth 5
+Size 15
+Range 
+Program (- (* (* NN USz) (- (* NN USz) (/ 13.952149 SESz))) (/ 13.952149 13.952149))
+###################################
+Individual 192
+Fitness 36
+Depth 7
+Size 17
+Range 
+Program (- (* UShp (- (* NN (- M (/ 13.952149 SESz))) (/ 13.952149 SESz))) (/ 13.952149 13.952149))
+###################################
+Individual 193
+Fitness 36
+Depth 5
+Size 13
+Range 
+Program (- (* BN (- (* BN USz) (/ 13.952149 SESz))) (/ SESz 13.952149))
+###################################
+Individual 194
+Fitness 36
+Depth 3
+Size 5
+Range 
+Program (- NN (/ SESz NN))
+###################################
+Individual 195
+Fitness 36
+Depth 5
+Size 13
+Range 
+Program (- (* BN USz) (/ (/ 13.952149 NN) (* (/ 13.952149 SESz) USz)))
+###################################
+Individual 196
+Fitness 37
+Depth 4
+Size 7
+Range 
+Program (- UShp (/ (/ 13.952149 USz) USz))
+###################################
+Individual 197
+Fitness 37
+Depth 5
+Size 13
+Range 
+Program (- (* UShp (- (* BN USz) (/ USz SESz))) (/ NN NN))
+###################################
+Individual 198
+Fitness 37
+Depth 7
+Size 17
+Range 
+Program (- (* (/ SESz UShp) (* NN (* (- (* BN NN) (/ 13.952149 SESz)) MA))) BN)
+###################################
 Individual 199
-Fitness 116
+Fitness 37
+Depth 6
+Size 13
+Range 
+Program (- (* USz (- CT (/ (/ 13.952149 NN) SESz))) (/ USz NN))
+###################################
+Individual 200
+Fitness 37
+Depth 5
+Size 11
+Range 
+Program (- (* NN USz) (/ (/ 13.952149 (/ SESz NN)) USz))
+###################################
+Individual 201
+Fitness 37
+Depth 6
+Size 13
+Range 
+Program (- (* SESz (- CT (/ (/ 13.952149 NN) SESz))) (/ SESz NN))
+###################################
+Individual 202
+Fitness 37
+Depth 4
+Size 11
+Range 
+Program (- (* NN USz) (/ (/ 13.952149 USz) (/ 13.952149 SESz)))
+###################################
+Individual 203
+Fitness 37
+Depth 5
+Size 11
+Range 
+Program (- (* UShp (- (* BC SESz) BN)) (/ USz NN))
+###################################
+Individual 204
+Fitness 38
+Depth 4
+Size 7
+Range 
+Program (- UShp (/ (/ 13.952149 MA) SESz))
+###################################
+Individual 205
+Fitness 38
 Depth 4
 Size 9
 Range 
-Program (* (/ (/ MA SESz) (/ BN USz)) 18.402830)
+Program (- (* NN USz) (/ (/ NN NN) NN))
+###################################
+Individual 206
+Fitness 38
+Depth 4
+Size 11
+Range 
+Program (- (* BN (/ 13.952149 SESz)) (/ (/ 13.952149 SESz) SESz))
+###################################
+Individual 207
+Fitness 38
+Depth 4
+Size 9
+Range 
+Program (- (* BN SESz) (/ (/ 13.952149 SESz) SESz))
+###################################
+Individual 208
+Fitness 38
+Depth 5
+Size 11
+Range 
+Program (- (* USz USz) (/ (/ (* UShp USz) SESz) NN))
+###################################
+Individual 209
+Fitness 38
+Depth 4
+Size 11
+Range 
+Program (- (* USz USz) (/ (/ 13.952149 NN) (* BN USz)))
+###################################
+Individual 210
+Fitness 38
+Depth 1
+Size 1
+Range 
+Program CT
+###################################
+Individual 211
+Fitness 39
+Depth 4
+Size 7
+Range 
+Program (- USz (/ (/ 13.952149 SESz) BN))
+###################################
+Individual 212
+Fitness 39
+Depth 5
+Size 11
+Range 
+Program (- (/ UShp BN) (/ (/ (/ 13.952149 NN) SESz) NN))
+###################################
+Individual 213
+Fitness 39
+Depth 5
+Size 13
+Range 
+Program (- (* NN (- (* SESz USz) (/ SESz UShp))) (/ 13.952149 USz))
+###################################
+Individual 214
+Fitness 39
+Depth 5
+Size 13
+Range 
+Program (- (* UShp (- (* SESz USz) (/ SESz UShp))) (/ 13.952149 USz))
+###################################
+Individual 215
+Fitness 39
+Depth 1
+Size 1
+Range 
+Program SESz
+###################################
+Individual 216
+Fitness 40
+Depth 4
+Size 11
+Range 
+Program (- (* (/ BN NN) UShp) (/ (/ 13.952149 NN) SESz))
+###################################
+Individual 217
+Fitness 40
+Depth 4
+Size 9
+Range 
+Program (- (* BN BN) (/ (/ 13.952149 NN) SESz))
+###################################
+Individual 218
+Fitness 40
+Depth 4
+Size 9
+Range 
+Program (- (* BN BC) (/ (/ 13.952149 NN) SESz))
+###################################
+Individual 219
+Fitness 40
+Depth 5
+Size 9
+Range 
+Program (- (* BN (- (* BN USz) NN)) SESz)
+###################################
+Individual 220
+Fitness 40
+Depth 4
+Size 9
+Range 
+Program (- (* BN BN) (/ (/ 13.952149 NN) SESz))
+###################################
+Individual 221
+Fitness 40
+Depth 4
+Size 9
+Range 
+Program (- (* BN BN) (/ (/ 13.952149 NN) SESz))
+###################################
+Individual 222
+Fitness 40
+Depth 5
+Size 11
+Range 
+Program (- (* BN (- (* BN USz) (/ 13.952149 SESz))) USz)
+###################################
+Individual 223
+Fitness 40
+Depth 4
+Size 7
+Range 
+Program (- USz (/ (/ 13.952149 NN) SESz))
+###################################
+Individual 224
+Fitness 40
+Depth 4
+Size 9
+Range 
+Program (- (* BN BN) (/ (/ 13.952149 NN) NN))
+###################################
+Individual 225
+Fitness 40
+Depth 4
+Size 9
+Range 
+Program (- (* BN BC) (/ (/ 13.952149 NN) SESz))
+###################################
+Individual 226
+Fitness 40
+Depth 5
+Size 11
+Range 
+Program (- 13.952149 (/ (/ 13.952149 NN) (/ (* BN USz) SESz)))
+###################################
+Individual 227
+Fitness 41
+Depth 6
+Size 15
+Range 
+Program (- (* USz (- (* (* BN USz) USz) (/ 13.952149 SESz))) (/ BN NN))
+###################################
+Individual 228
+Fitness 41
+Depth 5
+Size 11
+Range 
+Program (- (* SESz SESz) (/ (/ (/ 13.952149 SESz) SESz) NN))
+###################################
+Individual 229
+Fitness 41
+Depth 6
+Size 15
+Range 
+Program (- (* SESz (- (* (* BN USz) USz) (/ 13.952149 SESz))) (/ BN NN))
+###################################
+Individual 230
+Fitness 42
+Depth 4
+Size 11
+Range 
+Program (- (* BN NN) (/ (/ 13.952149 NN) (/ 13.952149 SESz)))
+###################################
+Individual 231
+Fitness 42
+Depth 3
+Size 5
+Range 
+Program (- BN (/ USz BN))
+###################################
+Individual 232
+Fitness 43
+Depth 3
+Size 5
+Range 
+Program (- BN (/ BC BN))
+###################################
+Individual 233
+Fitness 43
+Depth 3
+Size 7
+Range 
+Program (- (* NN USz) (/ NN BN))
+###################################
+Individual 234
+Fitness 43
+Depth 4
+Size 9
+Range 
+Program (- (* BN SESz) (/ USz (* BN USz)))
+###################################
+Individual 235
+Fitness 43
+Depth 3
+Size 7
+Range 
+Program (- (* NN USz) (/ BN BN))
+###################################
+Individual 236
+Fitness 43
+Depth 3
+Size 5
+Range 
+Program (- (* BN USz) CT)
+###################################
+Individual 237
+Fitness 43
+Depth 3
+Size 7
+Range 
+Program (- (* BN NN) (/ CT SESz))
+###################################
+Individual 238
+Fitness 44
+Depth 5
+Size 19
+Range 
+Program (- (* (- (* BN USz) (/ 13.952149 SESz)) (- (* BN USz) (/ 13.952149 SESz))) (/ 51.744073 BN))
+###################################
+Individual 239
+Fitness 44
+Depth 4
+Size 9
+Range 
+Program (- (* BN NN) (/ (/ 13.952149 NN) SESz))
+###################################
+Individual 240
+Fitness 44
+Depth 5
+Size 13
+Range 
+Program (- (* (/ SESz NN) (- (* BN USz) USz)) (/ BC NN))
+###################################
+Individual 241
+Fitness 44
+Depth 5
+Size 11
+Range 
+Program (- (* BN NN) (/ (/ (* BN USz) 13.952149) SESz))
+###################################
+Individual 242
+Fitness 45
+Depth 5
+Size 13
+Range 
+Program (- (* UShp (- (* BN NN) (/ 13.952149 BN))) (/ SESz BN))
+###################################
+Individual 243
+Fitness 45
+Depth 3
+Size 5
+Range 
+Program (- (* USz NN) USz)
+###################################
+Individual 244
+Fitness 45
+Depth 5
+Size 15
+Range 
+Program (- (* UShp (- (* BN USz) (/ 13.952149 BN))) (/ SESz (/ 13.952149 NN)))
+###################################
+Individual 245
+Fitness 45
+Depth 5
+Size 13
+Range 
+Program (- (* UShp (- (* BN USz) (/ 13.952149 BN))) (/ USz NN))
+###################################
+Individual 246
+Fitness 46
+Depth 4
+Size 11
+Range 
+Program (- (* (/ BN USz) USz) (/ (/ 13.952149 SESz) SESz))
+###################################
+Individual 247
+Fitness 46
+Depth 5
+Size 13
+Range 
+Program (- (* UShp (- (* BC USz) (/ SESz UShp))) (* UShp NN))
+###################################
+Individual 248
+Fitness 46
+Depth 5
+Size 13
+Range 
+Program (- (* (/ BN SESz) USz) (/ (/ 13.952149 (* USz USz)) SESz))
+###################################
+Individual 249
+Fitness 46
+Depth 4
+Size 13
+Range 
+Program (- (* (/ BN SESz) (* NN UShp)) (/ (/ 13.952149 SESz) SESz))
+###################################
+Individual 250
+Fitness 46
+Depth 4
+Size 9
+Range 
+Program (- (* CT USz) (/ (/ 13.952149 SESz) SESz))
+###################################
+Individual 251
+Fitness 46
+Depth 4
+Size 13
+Range 
+Program (- (* (/ BN SESz) (/ 13.952149 NN)) (/ (/ 13.952149 SESz) SESz))
+###################################
+Individual 252
+Fitness 47
+Depth 4
+Size 9
+Range 
+Program (- (* BN M) (/ (/ 13.952149 NN) BN))
+###################################
+Individual 253
+Fitness 47
+Depth 4
+Size 9
+Range 
+Program (- (* BN M) (/ (/ 13.952149 NN) BN))
+###################################
+Individual 254
+Fitness 47
+Depth 4
+Size 9
+Range 
+Program (- (* CT UShp) (/ (/ 13.952149 NN) SESz))
+###################################
+Individual 255
+Fitness 47
+Depth 3
+Size 5
+Range 
+Program (- (* SESz USz) SESz)
+###################################
+Individual 256
+Fitness 47
+Depth 1
+Size 1
+Range 
+Program NN
+###################################
+Individual 257
+Fitness 48
+Depth 3
+Size 5
+Range 
+Program (- (* USz BN) SESz)
+###################################
+Individual 258
+Fitness 48
+Depth 4
+Size 7
+Range 
+Program (- BC (/ (/ 13.952149 NN) SESz))
+###################################
+Individual 259
+Fitness 49
+Depth 2
+Size 3
+Range 
+Program (- SESz USz)
+###################################
+Individual 260
+Fitness 49
+Depth 2
+Size 3
+Range 
+Program (* BN NN)
+###################################
+Individual 261
+Fitness 50
+Depth 4
+Size 7
+Range 
+Program (- USz (/ (/ 13.952149 USz) USz))
+###################################
+Individual 262
+Fitness 50
+Depth 4
+Size 11
+Range 
+Program (- (* USz (* BN USz)) (/ (* BN USz) BN))
+###################################
+Individual 263
+Fitness 50
+Depth 4
+Size 11
+Range 
+Program (- (* USz (* BN USz)) (/ (* BN USz) M))
+###################################
+Individual 264
+Fitness 50
+Depth 4
+Size 7
+Range 
+Program (- BN (/ (/ NN USz) USz))
+###################################
+Individual 265
+Fitness 50
+Depth 4
+Size 7
+Range 
+Program (- BN (/ (/ 13.952149 USz) USz))
+###################################
+Individual 266
+Fitness 50
+Depth 4
+Size 9
+Range 
+Program (- (* NN USz) (/ (/ 13.952149 NN) BN))
+###################################
+Individual 267
+Fitness 51
+Depth 3
+Size 5
+Range 
+Program (- (* BN UShp) SESz)
+###################################
+Individual 268
+Fitness 51
+Depth 4
+Size 9
+Range 
+Program (- (* BN BN) (/ (/ 13.952149 NN) SESz))
+###################################
+Individual 269
+Fitness 51
+Depth 5
+Size 11
+Range 
+Program (- (* USz (- CT (/ UShp SESz))) (/ SESz NN))
+###################################
+Individual 270
+Fitness 52
+Depth 3
+Size 5
+Range 
+Program (- (* SESz USz) USz)
+###################################
+Individual 271
+Fitness 52
+Depth 3
+Size 5
+Range 
+Program (- (* SESz UShp) M)
+###################################
+Individual 272
+Fitness 53
+Depth 5
+Size 11
+Range 
+Program (- (* USz (- BN (/ 13.952149 SESz))) (/ SESz NN))
+###################################
+Individual 273
+Fitness 54
+Depth 5
+Size 11
+Range 
+Program (- (* MA USz) (/ (/ (* USz BN) NN) 13.952149))
+###################################
+Individual 274
+Fitness 55
+Depth 5
+Size 11
+Range 
+Program (- (* 13.952149 BN) (/ (/ (* 17.489774 SESz) NN) 13.952149))
+###################################
+Individual 275
+Fitness 55
+Depth 3
+Size 7
+Range 
+Program (- (* BN BN) (/ CT BN))
+###################################
+Individual 276
+Fitness 55
+Depth 3
+Size 5
+Range 
+Program (- USz (/ CT UShp))
+###################################
+Individual 277
+Fitness 55
+Depth 3
+Size 7
+Range 
+Program (- (* BN BN) (/ NN UShp))
+###################################
+Individual 278
+Fitness 59
+Depth 4
+Size 9
+Range 
+Program (- (* USz BN) (/ (* BN USz) SESz))
+###################################
+Individual 279
+Fitness 60
+Depth 3
+Size 7
+Range 
+Program (- (* M USz) (/ NN SESz))
+###################################
+Individual 280
+Fitness 61
+Depth 5
+Size 9
+Range 
+Program (- BC (/ (/ 13.952149 (* USz USz)) USz))
+###################################
+Individual 281
+Fitness 61
+Depth 4
+Size 7
+Range 
+Program (- UShp (/ (/ 13.952149 NN) UShp))
+###################################
+Individual 282
+Fitness 62
+Depth 3
+Size 7
+Range 
+Program (- (* SESz USz) (/ NN SESz))
+###################################
+Individual 283
+Fitness 62
+Depth 3
+Size 7
+Range 
+Program (- (* USz USz) (/ SESz SESz))
+###################################
+Individual 284
+Fitness 65
+Depth 4
+Size 11
+Range 
+Program (- (* BN NN) (/ (* BN USz) (* BN NN)))
+###################################
+Individual 285
+Fitness 65
+Depth 6
+Size 13
+Range 
+Program (- (/ 13.952149 SESz) (/ (/ (- M (/ 13.952149 SESz)) NN) 13.952149))
+###################################
+Individual 286
+Fitness 65
+Depth 4
+Size 9
+Range 
+Program (- (* SESz USz) (/ (/ BN NN) SESz))
+###################################
+Individual 287
+Fitness 65
+Depth 6
+Size 13
+Range 
+Program (- (* BN BN) (/ (/ (- BN (/ 13.952149 SESz)) NN) 13.952149))
+###################################
+Individual 288
+Fitness 65
+Depth 4
+Size 9
+Range 
+Program (- (* BN BN) (/ (/ USz NN) 13.952149))
+###################################
+Individual 289
+Fitness 65
+Depth 4
+Size 9
+Range 
+Program (- (* (* BN USz) USz) (/ BN SESz))
+###################################
+Individual 290
+Fitness 67
+Depth 4
+Size 11
+Range 
+Program (- (* (* USz USz) (* USz SESz)) (/ 13.952149 SESz))
+###################################
+Individual 291
+Fitness 67
+Depth 4
+Size 9
+Range 
+Program (- (* (* USz USz) (/ UShp BN)) SESz)
+###################################
+Individual 292
+Fitness 73
+Depth 3
+Size 7
+Range 
+Program (- (* BN MA) (+ M 13.952149))
+###################################
+Individual 293
+Fitness 94
+Depth 4
+Size 7
+Range 
+Program (- NN (/ (/ 13.952149 NN) BN))
+###################################
+Individual 294
+Fitness 96
+Depth 4
+Size 7
+Range 
+Program (- (* USz (/ SESz NN)) USz)
+###################################
+Individual 295
+Fitness 97
+Depth 4
+Size 7
+Range 
+Program (- SESz (/ SESz (/ 13.952149 SESz)))
+###################################
+Individual 296
+Fitness 116
+Depth 4
+Size 7
+Range 
+Program (- MA (/ (* BN BN) SESz))
+###################################
+Individual 297
+Fitness 185
+Depth 1
+Size 1
+Range 
+Program CT
+###################################
+Individual 298
+Fitness 340
+Depth 4
+Size 9
+Range 
+Program (- (* SESz 13.952149) (/ (/ 13.952149 USz) SESz))
+###################################
+Individual 299
+Fitness 379
+Depth 3
+Size 7
+Range 
+Program (- (* 13.952149 CT) (/ 13.952149 CT))

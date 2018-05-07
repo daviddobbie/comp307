@@ -13,13 +13,13 @@ using namespace std;
 
 #include "If.h"
 #include "ReturnDouble.h"
-#include "ReturnBoolean.h"
+//#include "ReturnBoolean.h"
 
 #include "GPConfig.h"
 
 If::If(GPConfig *conf) : Function(ReturnDouble::TYPENUM, 3, "if", conf)
 {
-	setArgNReturnType(0, ReturnBoolean::TYPENUM); //first argument bool
+	setArgNReturnType(0, ReturnDouble::TYPENUM); //first argument bool
 	setArgNReturnType(1, ReturnDouble::TYPENUM);  //second and third 
 	setArgNReturnType(2, ReturnDouble::TYPENUM);  //doubles 
 }
@@ -51,13 +51,12 @@ void If::evaluate(ReturnData *out)
 		}
 	}
 	
-	ReturnBoolean rb;
 	ReturnDouble rd;
 	
-	getArgN(0)->evaluate(&rb); 
+	getArgN(0)->evaluate(&rd); 
 	
 	//if the first argument was true execute 2nd argument
-	if (rb.getData() == true)
+	if (rd.getData() > 3.0) // sets true/false point to be 3.0
 		getArgN(1)->evaluate(&rd);
 	//otherwise execute third argument
 	else
@@ -70,6 +69,7 @@ Node* If::copy()
 {
 	int i;
 	Function *tmp = new If(config);
+	
 	
 	if (tmp == NULL)
 		throw string("If::copy() Error, out of memory");
