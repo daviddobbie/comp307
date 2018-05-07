@@ -18,6 +18,7 @@ using namespace std;
 
 #include "SymbolicFitness.h"
 #include "ReturnDouble.h"
+#include "ReturnInt.h"
 
 #include "XDouble.h"
 
@@ -107,20 +108,20 @@ void SymbolicFitness::initFitness()
             //xVal = strtod(line, &ptr); 
 
 
-            int pushIndx = -1;
+            int pushIndx = -1; // to ignore the ID on the csv file
             while(std::getline(ss,cell, ',')) //parse comma sep. values
             {
                   std::cout << "parsing line\n";
                   if (pushIndx >= 0 && pushIndx < 9){
                         xVal = atof(cell.c_str());
-                        std::cout << 9*(iterID) + pushIndx;
+                        //std::cout << 9*(iterID) + pushIndx;
                         xValues[9*(iterID) + pushIndx] = xVal;
                         printf("x=%lf\n", xVal);
                   }
                   else if(pushIndx == 9)
                   {
                         yVal = atof(cell.c_str());
-                        std::cout << (iterID);
+                        //std::cout << (iterID);
                         printf("y=%lf\n", yVal);
                         targetFunc[iterID] = yVal;
                   }
@@ -147,7 +148,7 @@ void SymbolicFitness::initFitness()
 
 void SymbolicFitness::assignFitness(GeneticProgram* pop[], int popSize)
 {
-   int i,j;
+   int i,j,k;
    ReturnDouble rd;
 
    for(i=0; i<popSize; i++)
@@ -155,36 +156,60 @@ void SymbolicFitness::assignFitness(GeneticProgram* pop[], int popSize)
       pop[i]->setFitness(0.0);
       for(j=0; j<FITNESS_CASES; j++)
       {
-         CTDouble::setValue(xValues[j]);
-         pop[i]->evaluate(&rd);
+                  //load all of the variable terminal nodes
+                  CTDouble::setValue(xValues[j*9]);
+                  USzDouble::setValue(xValues[j*9 + 1]);
+                  UShpDouble::setValue(xValues[j*9 + 2]);
+                  MADouble::setValue(xValues[j*9 + 3]);
+                  SESzDouble::setValue(xValues[j*9 + 4]);
+                  BNDouble::setValue(xValues[j*9 + 5]);
+                  BCDouble::setValue(xValues[j*9 + 6]);
+                  NNDouble::setValue(xValues[j*9 + 7]);
+                  MDouble::setValue(xValues[j*9 + 8]);
 
-         //Unfortunately we have to check for NaN
-         //We should probably also check for Infinity but I'm not sure
-         //of a portable way to do that.
-         /*#ifdef WIN32
-         if (_isnan(rd.getData()))
-         #else
-         if (isnan(rd.getData()))
-         #endif*/
-#ifdef WIN32
-                  if (!_finite(rd.getData()))
-#else
-                  if (!std::isfinite(rd.getData()))
-#endif
-         {
-            pop[i]->setFitness(this->worst());
-            continue;         
-         }
-         else
-         {
-               /*
-            pop[i]->setFitness(pop[i]->getFitness() + 
-                           
-                           pow(fabs(targetFunc[j] - rd.getData()) , 2.0)    );
-                           */
-            pop[i]->setFitness(pop[i]->getFitness() + 
-                           fabs(targetFunc[j] - rd.getData())    );
-         }
+                  pop[i]->evaluate(&rd);
+
+                  //Unfortunately we have to check for NaN
+                  //We should probably also check for Infinity but I'm not sure
+                  //of a portable way to do that.
+                  /*#ifdef WIN32
+                  if (_isnan(rd.getData()))
+                  #else
+                  if (isnan(rd.getData()))
+                  #endif*/
+                  #ifdef WIN32
+                              if (!_finite(rd.getData()))
+                  #else
+                              if (!std::isfinite(rd.getData()))
+                  #endif
+                  {
+                        pop[i]->setFitness(this->worst());
+                        continue;         
+                  }
+                  else
+                  {
+                        /*
+                        pop[i]->setFitness(pop[i]->getFitness() + 
+                                    
+                                    pow(fabs(targetFunc[j] - rd.getData()) , 2.0)    );
+                                    */
+                        /*pop[i]->setFitness(pop[i]->getFitness() + 
+                                    fabs(targetFunc[j] - rd.getData())    );*/
+                        if (targetFunc[j] == 4.0){
+                              if(rd.getData() > 3){
+                                   pop[i]->setFitness(pop[i]->getFitness() + 0); //no addition to error
+                              }else{
+                                   pop[i]->setFitness(pop[i]->getFitness() + 1); //addition to error since wrong classification
+                              }
+                        }
+                        else{
+                              if(rd.getData() > 3){
+                                   pop[i]->setFitness(pop[i]->getFitness() + 1); //addition to error since wrong classification
+                              }else{
+                                   pop[i]->setFitness(pop[i]->getFitness() + 0); // no addition to error
+                              }
+                        }
+                  }           
       }
    }
 
@@ -236,7 +261,7 @@ bool SymbolicFitness::solutionFound(GeneticProgram* pop[], int popSize)
    int i=0;
    for (; i<popSize; i++)
    {
-      if (pop[i]->getFitness() <= 0.1)
+      if (pop[i]->getFitness() < 1)
          return true;
    }
    return false;

@@ -13,7 +13,7 @@ using namespace std;
 #include "MinusDouble.h"
 #include "MultDouble.h"
 #include "DivideDouble.h"
-
+#include "If.h"
 
 #include "XDouble.h"
 
@@ -69,25 +69,22 @@ int main (int argc, char* argv[])
    symConfig.termSet.addNodeToSet(ReturnDouble::TYPENUM, RandDouble::generate);
    symConfig.termSet.addNodeToSet(ReturnDouble::TYPENUM, CTDouble::generate);
    symConfig.termSet.addNodeToSet(ReturnDouble::TYPENUM, USzDouble::generate);
-
    symConfig.termSet.addNodeToSet(ReturnDouble::TYPENUM, UShpDouble::generate);
    symConfig.termSet.addNodeToSet(ReturnDouble::TYPENUM, MADouble::generate);
-
    symConfig.termSet.addNodeToSet(ReturnDouble::TYPENUM, SESzDouble::generate);
    symConfig.termSet.addNodeToSet(ReturnDouble::TYPENUM, BNDouble::generate);
-
    symConfig.termSet.addNodeToSet(ReturnDouble::TYPENUM, BCDouble::generate);
    symConfig.termSet.addNodeToSet(ReturnDouble::TYPENUM, NNDouble::generate);
-
    symConfig.termSet.addNodeToSet(ReturnDouble::TYPENUM, MDouble::generate);
 
-   symConfig.termSet.addNodeToSet(ReturnDouble::TYPENUM, XDouble::generate);
-
    //Add the functions we need
+
    symConfig.funcSet.addNodeToSet(ReturnDouble::TYPENUM, PlusDouble::generate);
    symConfig.funcSet.addNodeToSet(ReturnDouble::TYPENUM, MinusDouble::generate);
    symConfig.funcSet.addNodeToSet(ReturnDouble::TYPENUM, MultDouble::generate);
    symConfig.funcSet.addNodeToSet(ReturnDouble::TYPENUM, DivideDouble::generate);
+   symConfig.funcSet.addNodeToSet(ReturnDouble::TYPENUM, If::generate);
+   
 
    //Create the program generator
    symConfig.programGenerator = new ProgramGenerator(&symConfig);
@@ -125,7 +122,7 @@ int main (int argc, char* argv[])
    
       /*Do 1000 generations, returns true if solution is found
         (see fitness class*/
-      if (pop.evolve(100))
+      if (pop.evolve(500))
       {
          cout << "Found solution" << endl;
       }
@@ -138,6 +135,7 @@ int main (int argc, char* argv[])
       cout << "Best program" << endl
            << "Fitness " << pop.getBest()->getFitness() << endl
            << str1 << endl;
+      cout << "Training Classification accuracy = " <<  100*(pop.getBest()->getFitness()/699.0) << "\%\n";
    }
    catch (const string & s)
    {
