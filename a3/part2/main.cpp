@@ -101,11 +101,11 @@ vector<dataRow> parseFile(char* fileName, int isTraining){
 void printData(vector<dataRow> d){
     for(int i = 0; i < d.size(); ++i){
       dataRow dr = d[i];
-      printf("Attributes = ");
+      printf("Data point %d = {", i );
       for(int j = 0; j < dr.attributes.size(); ++j){
         printf("%d, ", dr.attributes[j]);
       }
-      printf("res = %d\n",dr.result);
+      printf("} result = %d\n",dr.result);
     }
 }
 
@@ -160,6 +160,44 @@ probability calcIndependentProbs(vector<dataRow> dataTable, int givenResult){
   return p;
 }
 
+/*
+@ Inputs: probability given result = 0, prob given result = 1, data row
+@ Functions: returns the class that the data row is to be classified into
+*/
+int bayesianClassifier(probability pGiven0, probability pGiven1, dataRow d){
+  int result = 0; // default to classify for 0 - NOT SPAM
+  double likelihoodIs0 = 1;
+  double likelihoodIs1 = 1;
+
+
+  double probExtract = 0.0;
+
+
+  // testing viability for result being 0
+  for (int idx = 0; idx < 12; ++idx){
+      if (d.attributes[idx] == 0) probExtract = 1 - pGiven0.probOfAttribute[idx];
+      else probExtract = pGiven0.probOfAttribute[idx];
+
+      likelihoodIs0 = likelihoodIs0 * probExtract;
+  } 
+
+  // testing viability for result being 1
+  for (int idx = 0; idx < 12; ++idx){
+      if (d.attributes[idx] == 0) probExtract = 1 - pGiven1.probOfAttribute[idx]; //use complement value
+      else probExtract = pGiven1.probOfAttribute[idx];
+
+      likelihoodIs1 = likelihoodIs1 * probExtract;
+  } 
+  cout << "Likelihood for result = 0 is " << likelihoodIs0 << "\n";
+  cout << "Likelihood for result = 1 is " << likelihoodIs1 << "\n";  
+  if (likelihoodIs1 > likelihoodIs0) return 1;
+  if (likelihoodIs0 > likelihoodIs1) return 0;
+
+  return result;
+}
+
+
+
 
 /*
 @Inputs: command arguments: the dataset to be parse and read from
@@ -193,6 +231,15 @@ int main(int argc, char** argv)
     cout << "Probability of results given class is 0\n";
     probability pResult0 = calcIndependentProbs(trainingData, 0);
     printProb(pResult0);
+
+    
+    for(int i = 0; i < testData.size(); ++i){
+      testData[i].result = bayesianClassifier(pResult0, pResult1, testData[i]);
+    }
+
+    cout << "Classified test data \n";
+    printData(testData);
+
     
   }
   std::cout << "Closing...\n";
