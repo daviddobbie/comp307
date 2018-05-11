@@ -28,6 +28,12 @@ typedef struct{
   int result;
 } dataRow;
 
+
+typedef struct{
+  vector<double> probOfAttribute; //probability of result
+  int givenResult;
+} probability;
+
 vector<dataRow> trainingData;
 vector<dataRow> testData;
 
@@ -103,6 +109,57 @@ void printData(vector<dataRow> d){
     }
 }
 
+/*
+  @ Inputs: vector of datarows
+  @ Function: Printout ofthe data
+*/
+void printProb(probability p){
+    for(int i = 0; i < p.probOfAttribute.size(); ++i){
+      printf("P(P_%d=1|c=%d) = %llf\n", i, p.givenResult , p.probOfAttribute[i]);
+    }
+    printf("\n");
+}
+
+
+
+
+/*
+Inputs: vector of data rows ,what given result we are looking for
+functions: the probability such of each attribute for a given result
+*/
+probability calcIndependentProbs(vector<dataRow> dataTable, int givenResult){
+  probability p;
+  dataRow dr;
+  int totalCount = 0;
+  for (int attribIndx = 0; attribIndx < 12; attribIndx ++){ //go thru each attribute, add up result of 1
+    p.probOfAttribute.push_back(0); //init at 0    
+  }
+  //cout << "Size of attribute vector = " << p.probOfAttribute.size() << "\n";
+// ------------------------
+  p.givenResult = givenResult; //since we are counting based on a result value
+    for (int dataIndx = 0; dataIndx < dataTable.size(); dataIndx ++){
+      dr = dataTable[dataIndx];
+      //cout << "Data point result is = " << dr.result << "\n";
+      //printf("Difference is = %d\n", dr.result - givenResult);
+      //cout << "Given result to analyse is = " << givenResult << "\n";
+        if(dr.result - givenResult == 0){
+          //cout << "Total count = " << totalCount  << "\n";
+          totalCount ++;
+            for (int attribIndx = 0; attribIndx < dr.attributes.size(); attribIndx ++){ //go thru each attribute, add up result of 1
+                p.probOfAttribute[attribIndx] = p.probOfAttribute[attribIndx] + dr.attributes[attribIndx];
+            }
+        }
+  }
+// ----------------------
+  for (int attribIndx = 0; attribIndx < p.probOfAttribute.size(); attribIndx ++){ //go thru each attribute, add up result of 1
+    if (p.probOfAttribute[attribIndx] == 0) p.probOfAttribute[attribIndx] = 1; //prevent a zero probability on each attribute
+    p.probOfAttribute[attribIndx] = p.probOfAttribute[attribIndx] / double(totalCount);
+  }
+
+
+  return p;
+}
+
 
 /*
 @Inputs: command arguments: the dataset to be parse and read from
@@ -124,12 +181,18 @@ int main(int argc, char** argv)
 
     testFile = *(argv+2);
     testData = parseFile(testFile, 0);
-
+/*
     cout << "Training Data \n";
     printData(trainingData);
     cout << "Test Data \n";
     printData(testData);
-
+*/
+    cout << "Probability of results given class is 1\n";
+    probability pResult1 = calcIndependentProbs(trainingData, 1);
+    printProb(pResult1);
+    cout << "Probability of results given class is 0\n";
+    probability pResult0 = calcIndependentProbs(trainingData, 0);
+    printProb(pResult0);
     
   }
   std::cout << "Closing...\n";
