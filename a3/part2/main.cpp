@@ -21,7 +21,7 @@ using namespace std;
 #include <string.h>
 #include <math.h>
 
-bool DEBUG = true;
+bool DEBUG = false;
 
 typedef struct{
   vector<int> attributes;

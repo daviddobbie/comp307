@@ -1,8 +1,8 @@
-To execute the nearestNeighbour classifier, we use the command:
+To execute the naiveBayes classifier, we use the command:
 
-Template
+Template:
 
-
+.\naiveBayes .\spamLabelled.dat .\spamUnlabelled.dat
 
 
 The assumption for this program is the values are all space separated with no 

@@ -1,0 +1,64 @@
+Parsing....\spamLabelled.dat
+Parsing .\spamLabelled.dat Complete
+Parsing....\spamUnlabelled.dat
+Parsing .\spamUnlabelled.dat Complete
+Probability of results given class is 1
+P(P_0=1|c=1) = 0.666667
+P(P_1=1|c=1) = 0.588235
+P(P_2=1|c=1) = 0.450980
+P(P_3=1|c=1) = 0.607843
+P(P_4=1|c=1) = 0.490196
+P(P_5=1|c=1) = 0.352941
+P(P_6=1|c=1) = 0.784314
+P(P_7=1|c=1) = 0.764706
+P(P_8=1|c=1) = 0.333333
+P(P_9=1|c=1) = 0.666667
+P(P_10=1|c=1) = 0.666667
+P(P_11=1|c=1) = 0.784314
+
+Probability of results given class is 0
+P(P_0=1|c=0) = 0.355705
+P(P_1=1|c=0) = 0.577181
+P(P_2=1|c=0) = 0.342282
+P(P_3=1|c=0) = 0.395973
+P(P_4=1|c=0) = 0.335570
+P(P_5=1|c=0) = 0.469799
+P(P_6=1|c=0) = 0.503356
+P(P_7=1|c=0) = 0.348993
+P(P_8=1|c=0) = 0.241611
+P(P_9=1|c=0) = 0.288591
+P(P_10=1|c=0) = 0.583893
+P(P_11=1|c=0) = 0.335570
+
+Likelihood for result = 0 is 0.000620141
+Likelihood for result = 1 is 1.18441e-005
+Likelihood for result = 0 is 5.48398e-005
+Likelihood for result = 1 is 0.000216239
+Likelihood for result = 0 is 0.0001715
+Likelihood for result = 1 is 0.000731155
+Likelihood for result = 0 is 0.000810464
+Likelihood for result = 1 is 2.05298e-005
+Likelihood for result = 0 is 0.000122611
+Likelihood for result = 1 is 0.00022996
+Likelihood for result = 0 is 6.08232e-005
+Likelihood for result = 1 is 0.000219347
+Likelihood for result = 0 is 0.000441123
+Likelihood for result = 1 is 1.34727e-005
+Likelihood for result = 0 is 0.000528917
+Likelihood for result = 1 is 0.000242755
+Likelihood for result = 0 is 4.95793e-005
+Likelihood for result = 1 is 0.000731155
+Likelihood for result = 0 is 0.000923666
+Likelihood for result = 1 is 8.00661e-005
+Classified test data
+Data point 0 = {1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, } result = 0
+Data point 1 = {0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, } result = 1
+Data point 2 = {1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, } result = 1
+Data point 3 = {0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, } result = 0
+Data point 4 = {1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, } result = 1
+Data point 5 = {1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, } result = 1
+Data point 6 = {0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, } result = 0
+Data point 7 = {0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, } result = 0
+Data point 8 = {1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, } result = 1
+Data point 9 = {1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, } result = 0
+Closing...
